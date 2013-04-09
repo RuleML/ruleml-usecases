@@ -1,0 +1,44 @@
+%Search Attractions
+1. getAttraction(?Attraction:Attractions, Bhutan:Country)
+2. getAttraction(?Attraction:Attractions, Chamkhar:Town)
+3. getAttraction(?Attraction:Attractions, Paro:Town)
+
+%Search Route
+getRouteDetails(startPoint->Paro:Province;  endPoint->Trashigang:Province;  routeList->?Routes;  shortestRoute->?ShortestRoute)
+
+getProvinceDetails(region->?Region:Region; name->Bumthang:Province; ?ProvinceDetails)
+
+
+%LocationCentric Recommendation:
+Query 1:
+locCentricRecommend(typeOfRecommend->SystemRecommendation;
+                    userInputs->[startPoint->Paro:Province;
+                     numProvinces->2:Integer];
+                   [?Routes, ?Recommendations, ?TotalBusHours])
+Query 2:				   
+ locCentricRecommend(typeOfRecommend->UserPrefBased;
+                     userInputs->[startPoint->Paro:Province;
+                                  userPref->[Chukha:Province];
+                                  endPoint->Thimphu:Province];
+                         [?Route, 
+                          ?Recommendations,
+                          ?TotalBusHours:Real])
+				   	   
+%Travel Planning:
+eTourPlan(typeOfPlanning->EventCentric;
+userInputs->[
+ startPoint->Paro:Province;
+ endPoint->Thimphu:Province;
+ userStartDate->date[2008:Real,10:Real,01:Real];
+ userEndDate->date[2008:Real,11:Real,10:Real];
+ maxBreak->10:Real;
+ minBreak->0:Real;
+ attractionRecommendation->No;
+ eventNum->1:Integer];
+ ?TravelResult)
+ 
+ 
+ 
+		 
+
+

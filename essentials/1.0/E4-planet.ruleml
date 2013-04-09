@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ 
+<RuleML xmlns="http://www.ruleml.org/1.0/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ruleml.org/1.0/xsd http://www.ruleml.org/1.0/xsd/hornlog.xsd"> 
+ <Assert mapClosure="universal"> 
+  <Implies> 
+   <And> 
+    <Atom> 
+     <Rel>lessThanOrEqual</Rel> 
+     <Data>1930</Data> 
+     <Var>year</Var> 
+    </Atom> 
+    <Atom> 
+     <Rel>lessThanOrEqual</Rel> 
+     <Var>year</Var> 
+     <Data>2006</Data> 
+    </Atom> 
+   </And> 
+   <Atom> 
+    <Rel>planet</Rel> 
+    <Ind iri="http://en.wikipedia.org/wiki/Pluto"/> 
+    <Expr> 
+     <Fun>AD</Fun> 
+     <Var>year</Var> 
+    </Expr> 
+   </Atom> 
+  </Implies> 
+ </Assert> 
+</RuleML>

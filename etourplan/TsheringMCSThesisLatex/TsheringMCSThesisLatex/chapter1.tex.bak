@@ -1,0 +1,65 @@
+%%-----------Chapters start-------------------------------------
+%%-----------Chapter 1------------------------------------------
+\chapter{Introduction}
+
+\hspace{0.3in} eTourPlan is a knowledge-based travel planner as well as an activity recommender. To accommodate a tourist based on their preferences, our offer to such a user should be multi-optional and of good quality. We aim to come up with a solution to this complex problem existing in the tourism domain using Semantic Web Techniques.
+
+\hspace{0.2in}In Section 1.1, we give an overview of a knowledge-based travel planner, eTourplan prototype.
+Next We give the thesis objective, followed by the thesis organization in Section 1.2
+\hspace{0.3in}
+
+\section{Overview}
+
+\hspace{0.3in}To recommend a list of activities or places to visit is much easier than planning a scheduled trip for a tourist. In general, most travel recommenders [1, 6, 7] are location-centric and therefore do not function as complete trip planners. The time necessary to visit a number of places available at a destination can be more than the user's available time. Therefore, the planner should make an intelligent selection of the events to be included in the plan with respect to time and distance.
+
+\hspace{0.3in}Our eTourplan functions as a travel planner which aids the selection/scheduling of various tour aspects, such as the route to be taken, sightseeing and accommodations; according to user preferences and constraints.
+It can also function independently as a recommender of events, sightseeing and routes, primarily for users who are less restricted by time constraints.
+
+
+\subsection{Thesis Objective and Methodology}
+
+\hspace{0.3in}Considering a user's preference is an essential practice of any planner in general and is therefore highly prioritized in this planner.
+ The eTourplan planner considers the following user preferences:
+\begin{itemize}
+    \item Time period: Users would have a preference for the duration of their trip, as well a preference for the maximum event duration and the maximum break between main events. For instance, a tourist might want to plan a month long vacation in February with each event which last for not longer than 5 days.
+    \item Transportation features: A user may have a preferred mode of transportation and a preference of maximum travel hours in a day. For instance, a tourist would want to travel by bus rather than by car because it is less expensive; and not travel for more than 9 hours in a day.
+    \item Accommodation features: A user would have a preferred accommodation type and price range. For instance, a tourist may prefers to stay in a guest house than a hotel and be willing to spend between \$150- \$250 per night.
+    \item Sightseeing and other activities: A User's preferred theme of sightseeing 	or other activities. For instance, a tourist can be more specific by selecting one of the three themes of activities, namely Cultural\_Religious\_Heritage, Nature and Recreation
+\end{itemize}
+
+\subsection{Location-centric recommender}
+
+\hspace The eTourplan recommender can schedule a trip without time constraints, such that the user could then check to find the best plan at different locations before setting their travel time. For instance, the recommnder can provide an activity list considering all his preferences, to a tourist who specifically wants to visit CityX, CityY during the travel trip.
+
+\hspace For the ease of novices and for more general purpose, the user can also retrieve a solely system generated recommendation of the entire plan. Basically, it would plan the route by selecting the system recommended provinces and it will provide a general recommendation of activities and accommodation of all available activities and events.
+
+
+\section{Key Operations of the Planner}
+
+\hspace{0.3in}The eTourplan prototype performs the following primary operations:
+
+\begin{itemize}
+    \item Plan an event-oriented travel with recommendations of sightseeing activities  and accommodations according to a user's preferences
+    \item Plan a location-oriented travel with recommendations of events, sightseeing activities and accommodations
+
+     \item Provide a system-generated recommendation of events, sightseeing activities and accommodations across the route of selected attractive provinces. This will be useful for users who have no specific preferences
+     \item Search activities based on location and activity theme
+\end{itemize}
+
+\hspace Besides the main event/activity planning operations, the system can also provide a route plan between two locations based on the following options:
+
+\begin{itemize}
+    \item Plan a trip via some user preferred provinces
+    \item User's choice of transportation mode.[e.g. hike, bike, bus, cab]
+
+\end{itemize}
+
+\section{Thesis Objectives}
+\section{Thesis Organization}
+%\section{Concluding Remarks}
+%\hspace{0.3in}In this section, we have introduced the current stage
+%of the development of web-based social networking, followed by
+%concept of the Semantic Web and then the thesis objective. We have
+%also presented how this thesis is organized. In the next chapter, we
+%are going to provide the basic concepts of social networking related
+%to this thesis.

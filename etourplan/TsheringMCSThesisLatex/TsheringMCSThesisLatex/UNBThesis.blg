@@ -1,0 +1,37 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: C:\Documents and Settings\student\Desktop\JieLiMCSThesisLatex\UNBThesis.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: glossary.aux
+A level-1 auxiliary file: chapter1.aux
+The style file: plain.bst
+A level-1 auxiliary file: appendices.aux
+A level-1 auxiliary file: vita.aux
+Database file #1: reference.bib
+I was expecting a `,' or a `}'---line 83 of file reference.bib
+ :   page = "180-200"
+ :                   ',
+I'm skipping whatever remains of this entry
+Repeated entry---line 111 of file reference.bib
+ : @misc{FR:02
+ :            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 252 of file reference.bib
+ : @misc{HB:05
+ :            ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 305 of file reference.bib
+ : 
+ : @MISC{DBLM:02,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "JieL:06"
+Warning--I didn't find a database entry for "deri:04"
+Warning--to sort, need author or key in stu:05
+Warning--to sort, need author or key in md:05
+Warning--to sort, need author or key in sr:05
+Warning--to sort, need author or key in EF:05
+Warning--to sort, need author or key in Tech:06
+Warning--to sort, need author or key in faq:05
+Warning--to sort, need author or key in foaf:06
+Warning--empty year in RB:00
+(There were 4 error messages)

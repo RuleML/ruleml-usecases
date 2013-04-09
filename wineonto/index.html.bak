@@ -1,0 +1,304 @@
+<?cocoon-format type="text/html"><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WineOnto Use Case</title>
+<style type="text/css">
+       h1 { font-size: 32pt; font-weight: bold }
+       h2 { font-size: 16pt; font-weight: bold }
+       ul { line-height: 120% }
+       ol { line-height: 120% }
+       p { line-height: 100% }
+     </style>
+</head>
+<body bgcolor="#FFFFFF">
+    <center>
+      <br>
+      
+    <br>
+    <h1>RuleML Use Case WineOnto
+      <br>
+      <i>The Wine Ontology</i>
+</h1>
+    <h2>Monika Machunik, Harold Boley</h2>    
+    Version History, 2010-12-28: First Version-Version 0.1
+    <br>
+    <h2>Version History, 2011-01-15: Current Version</h2>
+</center>
+  <br>
+  <p>The well-known Wine Ontology is made available as a sizeable RuleML Use Case in Web rule conversion, upgrading, and normalization.</p>
+  <p>The WineOnto is a use case of RuleML knowledge bases generated from a non-XML source. Wine Ontology is a publicly available, complex ontology, which was used in
+    <a href="http://rulebench.projects.semwebcentral.org/">OpenRuleBench</a> as a benchmark data set for testing reasoning engines. OpenRuleBench is an open benchmarking project for rule engines. The Wine Ontology contains information about wines - their names, origin and type.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#Overview">Overview</a></li>
+<li><a href="#Step%201:%20Prolog%20-&gt;%20POSL%20Conversion">Step 1: Prolog -&gt; POSL Conversion</a></li>
+<li><a href="#Step%202:%20POSL%20-&gt;%20RuleML%200.91%20Conversion%20-%20alternative%201%20(POSL%20-&gt;%20RuleML%200.89%20-&gt;%20RuleML%200.91)">Step 2: POSL -&gt; RuleML 0.91 Conversion - alternative 1 (POSL -&gt; RuleML 0.89 -&gt; RuleML 0.91)</a></li>
+<li><a href="#Step%202:%20POSL%20-&gt;%20RuleML%200.91%20Conversion%20-%20alternative%202%20(POSL%20-&gt;%20RuleML%200.91)">Step 2: POSL -&gt; RuleML 0.91 Conversion - alternative 2 (POSL -&gt; RuleML 0.91)</a></li>
+<li><a href="#Step%203:%20RuleML%200.91%20-%20RuleML%201.0%20Conversion">Step 3: RuleML 0.91 - RuleML 1.0 Conversion</a></li>
+<li><a href="#OO%20jDREW%20Query%20Examples">OO jDREW Query Examples</a></li>
+<li><a href="#Examples%20of%20own%20rules%20added%20on%20top%20of%20WineOnto">Examples of own rules added on top of WineOnto</a></li>
+</ul>
+<h2><a name="Overview">Overview</a></h2>
+  
+  
+  <p> The Wine Ontology (WineOnto) use case is the result of generating RuleML 1.0 from data stored in Prolog files. These files can be accessed from pages of <a href="http://projects.semwebcentral.org/">SemWebCentral</a>, a portal with open source tools for the Semantic Web. These files are also linked from <a href="http://rulebench.projects.semwebcentral.org/">OpenRuleBench</a> web page. The Wine Ontology data is stored in two main files, one containing data/facts (can be found <a href="http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/data/wine_data.tgz?root=rulebench">here</a>), and the other containing rules (can be found <a href="http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/xsb/wine.P?root=rulebench">here</a>).</p>
+  
+  <p>WineOnto is realized in three steps. Firstly, the Prolog source is converted into POSL format, by using the <a href="http://ruleml.org/posl/PrologPOSLConverterDoc.html">Prolog-POSL Converter</a>. Next, the POSL version is converted into RuleML 0.91 format, in one of the two alternative ways. One way is converting from POSL to RuleML 0.89 format by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator.jnlp">POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>), and then manually modifying the resulting RuleML 0.89 file to make it valid against RuleML 0.91 schema. The other, shorter way, is converting the POSL files straight to RuleML 0.91 format, by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>). Finally, the ontology data is converted from RuleML 0.91 to RuleML 1.0 format by using the <a href="http://ruleml.org/1.0/#XSLT-Based%20Upgrader">XSLT-based RuleML 0.91-1.0 Upgrader</a>).</p>
+  
+<p>Once more direct tools are available, the above desribed migration path of the Wine Ontology could be simplified and shortened even more. For example, data stored in POSL format could be translated straight to RuleML 1.0 format. Also upgrading from RuleML 0.89 to RuleML 0.91 could be done automatically, once a XSLT-based 0.89-0.91 Upgrader is available.</p>
+  
+  
+  
+  
+  
+  <p>The RuleML 1.0 result was then used in the Java-based RuleML implementation of Object-Oriented jDREW to test Wine Ontology queries. The examples of queries are presented at the bottom of this document.</p>
+<h2><a name="Step 1: Prolog -&gt; POSL Conversion">Step 1: Prolog -&gt; POSL Conversion</a></h2>
+  
+  
+  <p>This step was performed using the <a href="http://ruleml.org/posl/PrologPOSLConverterDoc.html">Prolog-POSL Converter</a>. The original Prolog files, as well as their corresponding POSL files, are presented below:</p>
+  
+  <p>Original Documents:</p>
+  <ul>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped.pl">wine_data_stripped.pl</a>
+    </li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology.pl">wine_ontology.pl</a>
+    </li>
+</ul>
+  <p>Converted Documents:</p>
+  <ul>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped.posl">wine_data_stripped.posl</a>
+    </li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology.posl">wine_ontology.posl</a>
+    </li>
+</ul>
+<h2><a name="Step 2: POSL -&gt; RuleML 0.91 Conversion - alternative 1 (POSL -&gt; RuleML 0.89 -&gt; RuleML 0.91)">Step 2: POSL -&gt; RuleML 0.91 Conversion - alternative 1 (POSL -&gt; RuleML 0.89 -&gt; RuleML 0.91)</a></h2>
+      
+  <p>By using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator.jnlp">POSL-RuleML Translator Application</a> the POSL files were converted to RuleML 0.89 format. Additionally, because the translator does not include XSL Schema information, the following attributes were manually added to the root Assert XML element:
+  <b><pre>         
+    &lt;Assert
+      xmlns="http://www.ruleml.org/0.89/xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.ruleml.org/0.89/xsd http://www.ruleml.org/0.89/xsd/datalog.xsd"&gt;
+      </pre></b>
+  The POSL files and their corresponding RuleML 0.89 files are shown below:</p>
+  
+  <p>Input Documents:</p>  
+  <ul>    
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped.posl">wine_data_stripped.posl</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology.posl">wine_ontology.posl</a>
+</li>
+    </ul>
+  <p>Converted Documents:</p>
+  <ul>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_089.ruleml">wine_data_stripped_089.ruleml</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_089.ruleml">wine_ontology_089.ruleml</a>
+</li>
+</ul>
+      
+  <p>Next, a conversion from RuleML 0.89 to RuleML 0.91 was needed. Because of current lack of a XSLT-based RuleML 0.89-0.91 Upgrader, the RuleML 0.89 -&gt; RuleML 0.91 conversion had to be performed manually. Only one modification was required, though:</p>
+  <ul>
+    
+    <li>The And element, appearing as first and only child of the Assert element, was removed.</li>
+</ul>
+  <p>The RuleML 0.89 and their corresponding RuleML 0.91 files can be viewed here:</p>
+  
+  <p>Input Documents:</p>
+  <ul>    
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_089.ruleml">wine_data_stripped_089.ruleml</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_089.ruleml">wine_ontology_089.ruleml</a>
+</li>
+    </ul>
+  <p>Converted Documents:</p>
+  <ul>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_091.ruleml">wine_data_stripped_091.ruleml</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_091.ruleml">wine_ontology_091.ruleml</a>
+</li>
+</ul>
+<h2><a name="Step 2: POSL -&gt; RuleML 0.91 Conversion - alternative 2 (POSL -&gt; RuleML 0.91)">Step 2: POSL -&gt; RuleML 0.91 Conversion - alternative 2 (POSL -&gt; RuleML 0.91)</a></h2>
+            
+  <p>By using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> the POSL files could be converted straight to RuleML 0.91 format. Additionally, because the translator does not include XSL Schema information, the following attributes should be manually added to the root Assert XML element:</p>
+  <b><pre>         
+    &lt;Assert
+      xmlns="http://www.ruleml.org/0.91/xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.ruleml.org/0.91/xsd http://www.ruleml.org/0.91/xsd/datalog.xsd"&gt;
+      </pre></b>
+      <p>The POSL files and their corresponding RuleML 0.91 files can be viewed here:</p>
+  
+  <p>Input Documents:</p>
+  <ul>    
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped.posl">wine_data_stripped.posl</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology.posl">wine_ontology.posl</a>
+</li>
+    </ul>
+  <p>Converted Documents:</p>
+  <ul>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_091.ruleml">wine_data_stripped_091.ruleml</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_091.ruleml">wine_ontology_091.ruleml</a>
+</li>
+</ul>
+      
+      <h2><a name="Step 3: RuleML 0.91 - RuleML 1.0 Conversion">Step 3: RuleML 0.91 - RuleML 1.0 Conversion</a></h2>
+  
+  <p>The conversion from RuleML 0.91 to RuleML 1.0 was done by using the
+    <a href="http://ruleml.org/1.0/#XSLT-Based%20Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a>. The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:</p>
+    
+  <p>Input Documents:</p>
+  <ul>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_091.ruleml">wine_data_stripped_091.ruleml</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_091.ruleml">wine_ontology_091.ruleml</a>
+</li>
+    </ul>
+  <p>Final Documents:</p>
+  <ul>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_100.ruleml">wine_data_stripped_100.ruleml</a>
+</li>
+    <li>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_100.ruleml">wine_ontology_100.ruleml</a>
+</li>
+</ul>
+<h2><a name="OO jDREW Query Examples">OO jDREW Query Examples</a></h2>
+  
+  <p>The RuleML facts and rules can be executed with the
+    <a href="http://www.jdrew.org/oojdrew/">OO jDREW Engine</a>. Please note that at the time of this writing, OO jDREW is supporting the POSL, RuleML 0.89, and RuleML 0.91 formats only. However, the above Wine Ontology is already an early use case for RuleML 1.0.</p>
+<p>Below, examples of queries with reasonable run times are presented, along with their description and results:</p>
+  <ul>
+    <li>
+<b><pre>drywine(?X)</pre></b>
+    <p>This query enumerates dry wines in the ontology. The first few results of this query are shown below: 
+     <b><pre>    ?X = mariettacabernetsauvignon
+    ?X = pagemillwinerycabernetsauvignon
+    ?X = santacruzmountainvineyardcabernetsauvignon
+    ?X = formancabernetsauvignon  
+    ...
+    </pre></b>
+    In OO jDREW, for each dry wine a proof tree can be shown explaining the way the query was answered. Below is an example of the proof tree for mariettacabernetsauvignon wine:
+    <b><pre> drywine(mariettacabernetsauvignon):-q46(mariettacabernetsauvignon),wine(mariettacabernetsauvignon).
+    - q46(mariettacabernetsauvignon):-q31(mariettacabernetsauvignon).
+      - q31(mariettacabernetsauvignon):-cabernetsauvignon(mariettacabernetsauvignon).
+        - cabernetsauvignon(mariettacabernetsauvignon):-cabernetsauvignon_aux(mariettacabernetsauvignon).
+          - cabernetsauvignon_aux(mariettacabernetsauvignon).
+    - wine(mariettacabernetsauvignon):-cabernetsauvignon(mariettacabernetsauvignon).
+      - cabernetsauvignon(mariettacabernetsauvignon):-cabernetsauvignon_aux(mariettacabernetsauvignon).
+        - cabernetsauvignon_aux(mariettacabernetsauvignon). 
+    </pre></b></p>
+</li>
+    
+    <li>
+<b><pre>drywine(mariettacabernetsauvignon)</pre></b>
+    <p>This query asks whether the mariettacabernetsauvignon wine is a dry wine. The result of the query is a proof tree showing why the mariettacabernetsauvignon wine is a dry wine:  
+    <b><pre>  drywine(mariettacabernetsauvignon):-q46(mariettacabernetsauvignon),wine(mariettacabernetsauvignon).
+    - q46(mariettacabernetsauvignon):-q31(mariettacabernetsauvignon).
+      - q31(mariettacabernetsauvignon):-cabernetsauvignon(mariettacabernetsauvignon).
+        - cabernetsauvignon(mariettacabernetsauvignon):-cabernetsauvignon_aux(mariettacabernetsauvignon).
+    - wine(mariettacabernetsauvignon):-cabernetsauvignon(mariettacabernetsauvignon).
+      - cabernetsauvignon(mariettacabernetsauvignon):-cabernetsauvignon_aux(mariettacabernetsauvignon).
+        - cabernetsauvignon_aux(mariettacabernetsauvignon).  </pre></b></p> </li>
+        
+    <li>
+<b><pre>locatedin(?X, centraltexasregion)</pre></b>
+    <p>This query enumerates wines which are located in central Texas region. The first few results of this query are shown below:   
+    <b><pre>    ?X = stgenevievetexaswhite
+    ?X = stgenevievetexaswhite
+    ?X = stgenevievetexaswhite
+    ?X = stgenevievetexaswhite
+    ...</pre></b>
+    Because in the ontology there are several rules leading to a conclusion that stgenevievetexaswhite is a central Texas wine, we got multiple identical results. However, their proof trees differ. For each stgenevievetexaswhite wine, a proof tree can be shown explaining the way the query was answered. Below is an example of the proof tree for the first two stgenevievetexaswhite wines:
+    <b><pre> locatedin(stgenevievetexaswhite, centraltexasregion):-locatedin_aux(stgenevievetexaswhite, centraltexasregion).
+    - locatedin_aux(stgenevievetexaswhite, centraltexasregion).</pre></b>
+    <b><pre> locatedin(stgenevievetexaswhite, centraltexasregion):-locatedin(stgenevievetexaswhite, centraltexasregion),kaon2equal(stgenevievetexaswhite, stgenevievetexaswhite).
+    - locatedin(stgenevievetexaswhite, centraltexasregion):-locatedin_aux(stgenevievetexaswhite, centraltexasregion).
+      - locatedin_aux(stgenevievetexaswhite, centraltexasregion).
+    - kaon2equal(stgenevievetexaswhite, stgenevievetexaswhite):-kaon2hu(stgenevievetexaswhite).
+      - kaon2hu(stgenevievetexaswhite):-kaon2namedobjects(stgenevievetexaswhite).
+        - kaon2namedobjects(stgenevievetexaswhite).</pre></b></p>
+</li>
+    
+        
+    <li>
+<b><pre>burgundy(chateaudemeursaultmeursault)</pre></b>  
+    <p>This query checks if the chateaudemeursaultmeursault wine is a burgundy wine. The result of the query is a proof tree showing that in fact the chateaudemeursaultmeursault wine is a burgundy wine:    
+    <b><pre> burgundy(chateaudemeursaultmeursault):-whiteburgundy(chateaudemeursaultmeursault).
+    - hiteburgundy(chateaudemeursaultmeursault):-meursault(chateaudemeursaultmeursault).
+      - meursault(chateaudemeursaultmeursault):-meursault_aux(chateaudemeursaultmeursault).
+        - meursault_aux(chateaudemeursaultmeursault).</pre></b></p>
+</li>
+          
+    <li>
+<b><pre>bordeaux(chateaulafiterothschildpauillac)</pre></b>
+    <p>This query checks if the chateaulafiterothschildpauillac wine is a bordeaux wine. The result of the query is a proof tree showing that in fact the chateaulafiterothschildpauillac wine is a bordeaux wine:    
+    <b><pre> bordeaux(chateaulafiterothschildpauillac):-medoc(chateaulafiterothschildpauillac).    
+    - medoc(chateaulafiterothschildpauillac):-pauillac(chateaulafiterothschildpauillac).
+      - pauillac(chateaulafiterothschildpauillac):-pauillac_aux(chateaulafiterothschildpauillac).
+        pauillac_aux(chateaulafiterothschildpauillac).</pre></b></p>
+</li>
+    
+   </ul>
+  <h2><a name="Examples of own rules added on top of WineOnto">Examples of own rules added on top of WineOnto</a></h2>
+  
+  <p>New user-defined rules can be added to the exisiting Wine Ontology. Below a rule defining European wine together with corresponding query, its description and results are presented: </p>
+  
+  <ul>
+    <li>
+<b><pre> europeanwine(?X):-locatedin(?X, germanregion).
+ europeanwine(?X):-locatedin(?X, frenchregion).
+ europeanwine(?X):-locatedin(?X, italianregion).</pre></b>
+    <p>European wine is a wine or region located in either the German, French or Italian region. The query executing this rule is the following:
+    <b><pre>europeanwine(?X)</pre></b>    
+    This enumerates European wines in the ontology, using the additional rule described above. The first few results of this query are shown below: 
+     <b><pre>    ?X = loireregion
+    ?X = bordeauxregion
+    ?X = alsaceregion
+    ?X = bourgogneregion
+    ...  
+    </pre></b>
+    For each European region, a proof tree showing the way this conclusion was obtained is shown. Below is an example of the proof tree for loireregion region:
+    <b><pre> europeanwine(loireregion):-locatedin(loireregion, frenchregion).
+    - locatedin(loireregion, frenchregion):-locatedin_aux(loireregion, frenchregion).
+      - locatedin_aux(loireregion, frenchregion). 
+    </pre></b></p>
+</li>
+    
+  </ul>
+    
+  <br>
+  <p>Site Contact:
+    <a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>. 		Page Version: 2011-01-15
+    <br>
+    <br>
+    <br>
+    <a name="Practice-Preach"></a>
+    <small>"Practice what you preach": XML source of this homepage at
+      <a href="index.xml">index.xml</a>;
+      <br>transformed to HTML via the adaptation of
+      <a href="http://www.dfki.uni-kl.de/~sintek/">Michael Sintek</a>'s SliML
+      <a href="http://www.w3.org/TR/xslt">XSLT</a>stylesheet at
+      <a href="http://www.dfki.uni-kl.de/~boley/xslt/homepage.xsl">homepage.xsl</a>(View | Page Source)</small></p>
+</body>
+</html>

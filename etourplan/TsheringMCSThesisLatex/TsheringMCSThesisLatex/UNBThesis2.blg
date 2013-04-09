@@ -1,0 +1,457 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: C:\Users\Tshering\Desktop\TsheringMCSThesisLatex\UNBThesis2.aux
+A level-1 auxiliary file: dedication.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: Acronyms.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: chapter5.aux
+A level-1 auxiliary file: chapter6.aux
+A level-1 auxiliary file: chapter7.aux
+The style file: amsplain.bst
+A level-1 auxiliary file: appendices.aux
+A level-1 auxiliary file: vita.aux
+Database file #1: reference.bib
+I was expecting a `,' or a `}'---line 44 of file reference.bib
+ :   publisher =    "IASTED"
+ :                          ',
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 96 of file reference.bib
+ :   page = "180-200"
+ :                   ',
+I'm skipping whatever remains of this entry
+Repeated entry---line 172 of file reference.bib
+ : @misc{RB:02
+ :            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 362 of file reference.bib
+ : @misc{HB:05
+ :            ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 476 of file reference.bib
+ :   
+ :   year =         {2000},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "DBLP:conf/w3c/TabetWSVJMPFD05"
+refers to entry "DBLP:conf/w3c/2005r", which doesn't exist
+Warning--to sort, need author or key in Tech:06
+Warning--to sort, need author or key in md:05
+Warning--to sort, need author or key in sr:05
+if is an illegal style-file command---line 1192 of file amsplain.bst
+ :   if
+ :     $
+`author' is a function literal, not a string, for entry Tech:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+1
+---the literal stack isn't empty for entry Tech:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry md:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+1
+---the literal stack isn't empty for entry md:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry sr:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+1
+---the literal stack isn't empty for entry sr:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry io:04
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry io:04
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry LemireCOLA2003
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry LemireCOLA2003
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry DBLP:08
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry DBLP:08
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry deri:04
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry deri:04
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry MA:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry MA:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry oojdrew:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry oojdrew:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry BM:04
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry BM:04
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry TB:2000
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry TB:2000
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry YB2:08
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry YB2:08
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry YB1:08
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry YB1:08
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry HB:01
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry HB:01
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry Boley01b
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry Boley01b
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry HB:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry HB:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry ly:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry ly:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry JieL:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry JieL:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry Boley:08:RBL
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry Boley:08:RBL
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry DB:03
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry DB:03
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry DB:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry DB:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry RB:00
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry RB:00
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry RB:02
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry RB:02
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry JC2:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry JC2:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry JC:07
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry JC:07
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry CM:04
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry CM:04
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry US:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry US:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry TF:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry TF:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry acm:JD1
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry acm:JD1
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry acm:JD2
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry acm:JD2
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry yd:02
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry yd:02
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry LD:04
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry LD:04
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry Ld:03
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry Ld:03
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry AG:07
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry AG:07
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry DTR:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry DTR:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry ls:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry ls:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry AF:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry AF:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry gruber93towards
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry gruber93towards
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry ERH:01
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry ERH:01
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry MT:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry MT:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry JJ:03
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry JJ:03
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry AJ:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry AJ:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry JSY:07
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry JSY:07
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry MK:95
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry MK:95
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry jl:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry jl:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry MaclachlanBoley05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry MaclachlanBoley05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry AS:02
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry AS:02
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry MM:02
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry MM:02
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry NISO:04
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry NISO:04
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry SBP:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry SBP:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry rdf:06
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry rdf:06
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry FR:02
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry FR:02
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry acm:04
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry acm:04
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry JD:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry JD:05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry DBLP:conf/w3c/TabetWSVJMPFD05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry DBLP:conf/w3c/TabetWSVJMPFD05
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry BS:01
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry BS:01
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry TB:90
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry TB:90
+while executing---line 1197 of file amsplain.bst
+`author' is a function literal, not a string, for entry MZ:05
+while executing---line 1197 of file amsplain.bst
+ptr=2, stack=
+'184
+0
+---the literal stack isn't empty for entry MZ:05
+while executing---line 1197 of file amsplain.bst
+Warning--missing booktitle in deri:04
+Warning--missing year in RB:00
+Warning--missing chapter and pages in CM:04
+Warning--missing chapter and pages in JJ:03
+Warning--missing chapter and pages in BS:01
+(There were 123 error messages)

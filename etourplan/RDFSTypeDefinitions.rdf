@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/Ontology1164049376.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.owl-ontologies.com/Ontology1164049376.owl">
+
+<rdfs:Class rdf:ID="Events"/>
+ 
+ <rdfs:Class rdf:about="Adventure">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Bird_watching">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Cattle_driving">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Rock_climbing">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>
+	
+  <rdfs:Class rdf:about="Caving">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>	
+  
+  <rdfs:Class rdf:about="Trekking">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>	
+       		
+  <rdfs:Class rdf:about="Agriculture">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>	
+			
+  <rdfs:Class rdf:about="Arts">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Architecture">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Decorative">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Design">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>	
+
+  <rdfs:Class rdf:about="Exhibition">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Fashion">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Painting">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Photography">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Sculpture">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Festival">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Annual_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+ 
+  <rdfs:Class rdf:about="Dance_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+  			
+  <rdfs:Class rdf:about="Film_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>		
+  
+  <rdfs:Class rdf:about="Gastronomic_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="International_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Music_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="National_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Seasonal_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Traditional_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Market">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_daily">
+    <rdfs:subClassOf rdf:resource="Market"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_fair">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_flea">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_handicraft">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class> 
+  
+   <rdfs:Class rdf:about="Market_street">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_weekly">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+ 			
+  <rdfs:Class rdf:about="Nature">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nature_animals">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Nature_parks">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nature_plants">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nature_zoos">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>			
+  
+  <rdfs:Class rdf:about="Night_Life">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nightlife_balls">
+    <rdfs:subClassOf rdf:resource="Night_Life"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nightlife_food">
+    <rdfs:subClassOf rdf:resource="Night_Life"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Nightlife_party">
+    <rdfs:subClassOf rdf:resource="Night_Life"/>
+  </rdfs:Class>
+  			 
+  <rdfs:Class rdf:about="Religion">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Religion_parade">
+    <rdfs:subClassOf rdf:resource="Religion"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Religion_pilgrimage">
+    <rdfs:subClassOf rdf:resource="Religion"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Religion_service">
+    <rdfs:subClassOf rdf:resource="Religion"/>
+  </rdfs:Class>						
+				  
+  <rdfs:Class rdf:about="Sport">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Sport_cycling">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Sport_tennis">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_archery">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_football">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_basketball">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_golf">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_hiking">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_biking">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Trade">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Trade_fair_agriculture">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class>
+  
+ <rdfs:Class rdf:about="Trade_fair_expo">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Trade_fair_thematic">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Trade_fair_tourism">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class> 
+
+<rdfs:Class rdf:ID="Attractions"/>
+ 
+ <rdfs:Class rdf:about="Archaeological_site">
+    <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Culture">
+    <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Entertainment">
+      <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Buildings">
+      <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+   
+  <rdfs:Class rdf:ID="Cave">
+    <rdfs:subClassOf rdf:resource="Archaeological_site"/>
+  </rdfs:Class>
+   
+   <rdfs:Class rdf:ID="Prehistoric_shelter">
+    <rdfs:subClassOf rdf:resource="Archaeological_site"/>
+  </rdfs:Class>
+        
+  <rdfs:Class rdf:about="Ruins">
+      <rdfs:subClassOf rdf:resource="Archaeological_site"/>
+  </rdfs:Class> 
+  
+  <rdfs:Class rdf:ID="Crafts_show">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+       
+  <rdfs:Class rdf:ID="Popular_architecture">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Farm_house">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+     
+  <rdfs:Class rdf:ID="Place_of_pilgrimage">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+     
+  <rdfs:Class rdf:ID="Series_of_sculptures">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Textiles">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="CityOrTown_excavations">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Boat_trips">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Garden">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="National_park">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Stadium">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+   
+  <rdfs:Class rdf:ID="Outings_and_daytrips">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Scenic_drive">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Theatre">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Water_fall">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Zoo">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Historical_buildings">
+      <rdfs:subClassOf rdf:resource="Buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Modern_buildings">
+      <rdfs:subClassOf rdf:resource="Buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Castle">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+ <rdfs:Class rdf:about="Fortress">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class> 
+
+ <rdfs:Class rdf:about="Museums">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>  
+  
+   <rdfs:Class rdf:about="Local_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="National_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Regional_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Private_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Monastery">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+ <rdfs:Class rdf:about="Monument">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Palace">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Temple">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Temple_fortress">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="National_library">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Industrial_buildings">
+      <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Office_buildings">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Modern_palace">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Power_station">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="University">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+
+<rdfs:Class rdf:ID="Accommodation"/>
+ 
+ <rdfs:Class rdf:about="Guest_house">
+    <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Hotel">
+    <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Apartment">
+      <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Lodge">
+      <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+   
+  <rdfs:Class rdf:ID="Resort">
+    <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+ 
+
+
+<rdfs:Class rdf:ID="Country"/>
+<rdfs:Class rdf:ID="Region"/>
+<rdfs:Class rdf:ID="Province"/>
+<rdfs:Class rdf:ID="Block"/>
+<rdfs:Class rdf:ID="Subblock"/>
+ 
+ <rdfs:Class rdf:about="City">
+   <rdfs:subClassOf rdf:resource="Subblock"/>
+ </rdfs:Class>
+
+ <rdfs:Class rdf:about="Town">
+    <rdfs:subClassOf rdf:resource="Subblock"/>
+ </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Village">
+     <rdfs:subClassOf rdf:resource="Subblock"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Place">
+    <rdfs:subClassOf rdf:resource="Subblock"/>
+  </rdfs:Class>
+ </rdf:RDF>     
+
+

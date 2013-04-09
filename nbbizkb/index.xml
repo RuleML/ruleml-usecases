@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="http://www.ruleml.org/homepage.xsl" type="text/xsl"?>
+
+<!-- Written by Harold Boley -->
+<!-- XSLT addition by David Hirtle -->
+
+<homepage>
+
+	<title>NBBizKB Use Case</title>
+
+	<opening>
+		<center>
+			<br/>
+<!--			<a href="http://www.ruleml.org"><img src="http://www.ruleml.org/logo/rulemllogo2_transparent.gif" border="none" alt="RuleML"/></a>
+-->
+			<br/>
+			<h1>RuleML Use Case NBBizKB<br/>
+				<i>The New Brunswick Business Knowledge Base</i>
+			</h1>
+			<h2>Anna Maclachlan, Harold Boley, Marcel Ball, David Hirtle
+			</h2>
+			<h4>Version History, 2004-02-27: First Version
+			</h4><br/>
+			<h4>Version History, 2005-07-02: Second Version
+			</h4>
+			<h2>Version History, 2005-08-10: Current Version
+			</h2>
+		</center>
+		<br/>
+		
+		<p>NBBizKB is a real-world use case for RuleML knowledge bases.
+		Its facts have been created in a systematic manner using several
+		<a href="http://www.humanweb.ca/metaxtract/nbbizkb/">Metaxtract resources</a>.
+		This has been interleaved with the engineering of the NBBizKB rules.</p>
+	</opening>
+	
+	
+	<section>
+		<header>Overview</header>
+		<p>The New Brunswick Business Knowledge Base (NBBizKB)
+is realized in Object-Oriented RuleML.
+NBBizKB implements a
+two-step design. First, facts are extracted from static CSV
+tables and HTML pages. Second,
+rules are developed to derive information implicit in the fact
+base. Rule
+derivation employs the Java-based RuleML implementation of Object-Oriented jDREW
+to perform validation, business category mapping, and integration.
+This application of
+RuleML rules over RuleML facts for New Brunswick business
+comprises both a regional e-Business case study and a use case
+for Semantic Web rules.</p>
+<p>This knowledge base is described in
+<a href="nbbizkb.pdf">Semantic Web Rules for Business Information</a> at the IASTED Conference
+<a href="http://www.iasted.org/conferences/2005/calgary/wtas-programmain.htm">WTAS 2005</a>
+(<a href="http://www.ruleml.org/usecases/nbbizkb/nbbizkb-talk.pdf">talk</a>,
+<a href="http://www.ruleml.org/usecases/nbbizkb/nbbizkb-talk-pp4.pdf">talk-pp4</a>).</p>
+	</section>
+	
+	<section>
+		<header>NBBizKB Facts</header>
+                 <itemize>
+                   <item>NBBizKB Biznet fact base in RuleML: <a href="biznetSAMPLE.ruleml">biznetSAMPLE.ruleml</a></item>
+                   <item>NBBizKB Yahoo! fact base in RuleML: <a href="yahooSAMPLE.ruleml">yahooSAMPLE.ruleml</a></item>
+                </itemize>
+	</section>
+	
+	<section>
+		<header>NBBizKB Rules</header>
+                 <itemize>
+                   <item>NBBizKB rule base in POSL: <a href="NBBizKBRules.posl">NBBizKBRules.posl</a></item>
+                   <item>NBBizKB rule base in RuleML: <a href="NBBizKBRules.ruleml">NBBizKBRules.ruleml</a></item>
+                </itemize>
+	</section>
+	
+	<section>
+		<header>OO jDREW Execution</header>
+                 <p>The RuleML facts and rules can be combined into one rulebase
+		 and executed bottom-up with the <a href="http://www.jdrew.org/oojdrew/">OO jDREW BU Engine</a>.</p>
+	</section>
+
+	<section>
+		<header>XSLT Composition</header>
+                 <p>NBBizKB is also significant as a use case for the <a href="http://www.w3.org/TR/xslt">XSLT</a>-based 			upgrader stylesheets used to
+		automatically update existing (version 0.85+) RuleML knowledge bases to the most current version.
+		Presented here is a step-by-step trace of updating the NBBizKB knowledge bases
+		from RuleML version 0.85 to 0.89 by the sequential application of XSLT stylesheets. Note that this process
+		of "piping" the output of one XSLT to the input of another can be done automatically, e.g. with
+		a simple Java program.</p>
+		<p>NBBizKB was originally realized in 
+		<a href="http://www.ruleml.org/0.85">RuleML 0.85</a>, the most current version at the time:</p>
+		<ul>
+		<li><a href="archive/biznetSAMPLE_085.ruleml">biznetSAMPLE_085.ruleml</a></li>
+		<li><a href="archive/yahooSAMPLE_085.ruleml">yahooSAMPLE_085.ruleml</a></li>
+		<li><a href="archive/NBBizKBRules_085.ruleml">NBBizKBRules_085.ruleml</a></li>
+		</ul>
+		<p>The subsequent version, <a href="http://www.ruleml.org/0.86">RuleML 0.86</a>, is syntactically
+		identical to 0.85, so translation isn't necessary. <a href="http://www.ruleml.org/0.87">RuleML 0.87</a>,
+		on the other hand, included significant syntactical changes (including case-distinguised Type/role tags),
+		all of which are performed automatically via the <a href="http://www.ruleml.org/0.87/#XSLT">0.87 upgrader 			XSLT</a> with the following output:</p>
+		<ul>
+		<li><a href="archive/biznetSAMPLE_087.ruleml">biznetSAMPLE_087.ruleml</a></li>
+		<li><a href="archive/yahooSAMPLE_087.ruleml">yahooSAMPLE_087.ruleml</a></li>
+		<li><a href="archive/NBBizKBRules_087.ruleml">NBBizKBRules_087.ruleml</a></li>
+		</ul>
+		<p>Similarly, <a href="http://www.ruleml.org/0.88">RuleML 0.88</a> included a number of
+		(mostly <a href="http://www.ruleml.org/fol/">FOL RuleML</a>-motivated) changes to the syntax, all of which
+		are handled (relative to the previous version, as always) by the
+		<a href="http://www.ruleml.org/0.88/#XSLT-Based%20Upgrader">0.88 upgrader XSLT</a>, yielding the following 			output:
+		</p>
+		<ul>
+		<li><a href="archive/biznetSAMPLE_088.ruleml">biznetSAMPLE_088.ruleml</a></li>
+		<li><a href="archive/yahooSAMPLE_088.ruleml">yahooSAMPLE_088.ruleml</a></li>
+		<li><a href="archive/NBBizKBRules_088.ruleml">NBBizKBRules_088.ruleml</a></li>
+		</ul>
+		<p>The final step of the journey to the current
+		<a href="http://www.ruleml.org/0.89">RuleML 0.89</a> is made possible by the
+		<a href="http://www.ruleml.org/0.89/#XSLT-Based%20Upgrader">0.89 upgrader XSLT</a>. The final output appears 			in the previous sections of this document.</p>
+	</section>
+		
+	<closing>
+		<p>
+		Site Contact:
+		<a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>.
+		Page Version: 2005-08-10
+		
+		<br/>
+		<br/>
+		<br/>
+		<a name="Practice-Preach"/>
+		<small>"Practice what you preach": XML source of this homepage at <a href="http://www.ruleml.org/usecases/nbbizkb/index.xml">index.xml</a>;
+	      <br/>
+	      transformed to HTML via the adaptation of <a href="http://www.dfki.uni-kl.de/~sintek/">Michael Sintek</a>'s SliML <a href="http://www.w3.org/TR/xslt">XSLT</a> stylesheet at <a href="http://www.dfki.uni-kl.de/~boley/xslt/homepage.xsl">homepage.xsl</a> (View | Page Source)
+	   </small>
+		</p>
+	</closing>
+	
+</homepage>

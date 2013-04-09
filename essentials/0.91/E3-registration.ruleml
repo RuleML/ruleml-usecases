@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleML
+xmlns="http://www.ruleml.org/0.91/xsd"
+xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation=
+"http://www.ruleml.org/0.91/xsd
+http://www.ruleml.org/0.91/xsd/hornlog.xsd"
+>
+   <Assert mapClosure="universal">
+      <Implies>
+         <And>
+            <Atom>
+               <Rel>emission</Rel>
+               <Var type="Real">V</Var>
+               <Expr>
+                  <Fun>CO2</Fun>
+                  <Var>E</Var>
+               </Expr>
+            </Atom>
+            <Atom>
+               <Rel>weight</Rel>
+               <Var type="Real">V</Var>
+               <Expr>
+                  <Fun>kg</Fun>
+                  <Var>W</Var>
+               </Expr>
+            </Atom>
+            <Atom>
+               <Rel>emiweight</Rel>
+               <Expr>
+                  <Fun>CAD</Fun>
+                  <Var type="Decimal">R</Var>
+               </Expr>
+               <Expr>
+                  <Fun>CO2</Fun>
+                  <Var>E</Var>
+               </Expr>
+               <Expr>
+                  <Fun>kg</Fun>
+                  <Var>W</Var>
+               </Expr>
+            </Atom>
+         </And>
+         <Atom>
+            <Rel>registration</Rel>
+            <Var type="Van">V</Var>
+            <Expr>
+               <Fun>CAD</Fun>
+               <Var type="Decimal">R</Var>
+            </Expr>
+         </Atom>
+      </Implies>
+      <Implies>
+         <And>
+            <Atom>
+               <Rel>emission</Rel>
+               <Var type="Real">V</Var>
+               <Expr>
+                  <Fun>CO2</Fun>
+                  <Var>E</Var>
+               </Expr>
+            </Atom>
+            <Atom>
+               <Rel>speed</Rel>
+               <Var type="Real">V</Var>
+               <Expr>
+                  <Fun>kmh</Fun>
+                  <Var>S</Var>
+               </Expr>
+            </Atom>
+            <Atom>
+               <Rel>emispeed</Rel>
+               <Expr>
+                  <Fun>CAD</Fun>
+                  <Var type="Real">R</Var>
+               </Expr>
+               <Expr>
+                  <Fun>CO2</Fun>
+                  <Var>E</Var>
+               </Expr>
+               <Expr>
+                  <Fun>kmh</Fun>
+                  <Var>S</Var>
+               </Expr>
+            </Atom>
+         </And>
+         <Atom>
+            <Rel>registration</Rel>
+            <Var type="Car">V</Var>
+            <Expr>
+               <Fun>CAD</Fun>
+               <Var type="Real">R</Var>
+            </Expr>
+         </Atom>
+      </Implies>
+   </Assert>
+</RuleML>

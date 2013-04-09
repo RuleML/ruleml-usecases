@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rulebase
+xmlns="http://www.ruleml.org/0.85/xsd"
+xsi:schemaLocation="http://www.ruleml.org/0.85/xsd http://www.ruleml.org/0.85/xsd/hornlog.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>Alert</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <var>N</var>
+            </_slot>
+            <_slot name="LANGUAGE_SPOK">
+               <ind>ENGL</ind>
+            </_slot>
+            <_slot name="LANGUAGE_WRIT">
+               <ind>FREN</ind>
+            </_slot>
+         </atom>
+      </_head>
+      <_body>
+         <atom>
+            <_opr>
+               <rel>BIZNET_ENT</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <var>N</var>
+            </_slot>
+            <_slot name="LANGUAGE_SPOK">
+               <ind>ENGL</ind>
+            </_slot>
+            <_slot name="LANGUAGE_WRIT">
+               <ind>FREN</ind>
+            </_slot>
+            <_restslo>
+               <var/>
+            </_restslo>
+         </atom>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>Alert</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <var>N</var>
+            </_slot>
+            <_slot name="LANGUAGE_SPOK">
+               <ind>FREN</ind>
+            </_slot>
+            <_slot name="LANGUAGE_WRIT">
+               <ind>ENGL</ind>
+            </_slot>
+         </atom>
+      </_head>
+      <_body>
+         <atom>
+            <_opr>
+               <rel>BIZNET_ENT</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <var>N</var>
+            </_slot>
+            <_slot name="LANGUAGE_SPOK">
+               <ind>FREN</ind>
+            </_slot>
+            <_slot name="LANGUAGE_WRIT">
+               <ind>ENGL</ind>
+            </_slot>
+            <_restslo>
+               <var/>
+            </_restslo>
+         </atom>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>Alert</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <var>N</var>
+            </_slot>
+            <_slot name="LANGUAGE_SPOK">
+               <var>S</var>
+            </_slot>
+            <_slot name="LANGUAGE_WRIT">
+               <ind>BILI</ind>
+            </_slot>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>BIZNET_ENT</rel>
+               </_opr>
+               <_slot name="NUMBER">
+                  <var>N</var>
+               </_slot>
+               <_slot name="LANGUAGE_SPOK">
+                  <var>S</var>
+               </_slot>
+               <_slot name="LANGUAGE_WRIT">
+                  <ind>BILI</ind>
+               </_slot>
+               <_restslo>
+                  <var/>
+               </_restslo>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>eq</rel>
+                  </_opr>
+                  <var>S</var>
+                  <ind>BILI</ind>
+               </atom>
+            <!--</naf>-->
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>Alert</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <var>N</var>
+            </_slot>
+            <_slot name="CURRENT_EMPLOYMENT">
+               <plex>
+                  <_slot name="MAX">
+                     <var>EMax</var>
+                  </_slot>
+                  <_slot name="MIN">
+                     <var>EMin</var>
+                  </_slot>
+               </plex>
+            </_slot>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>BIZNET_ENT</rel>
+               </_opr>
+               <_slot name="NUMBER">
+                  <var>N</var>
+               </_slot>
+               <_slot name="CURRENT_EMPLOYMENT">
+                  <plex>
+                     <_slot name="MAX">
+                        <var>EMax</var>
+                     </_slot>
+                     <_slot name="MIN">
+                        <var>EMin</var>
+                     </_slot>
+                  </plex>
+               </_slot>
+               <_restslo>
+                  <var/>
+               </_restslo>
+            </atom>
+            <atom>
+               <_opr>
+                  <rel>numericGreaterThan</rel>
+               </_opr>
+               <var>EMin</var>
+               <var>EMax</var>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>Alert</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <ind>none</ind>
+            </_slot>
+            <_slot name="BIZNET">
+               <ind>complete</ind>
+            </_slot>
+         </atom>
+      </_head>
+      <_body>
+         <!--<naf>-->
+            <atom>
+               <_opr>
+                  <rel>BIZNET_ENT</rel>
+               </_opr>
+               <_slot name="NUMBER">
+                  <var>No</var>
+               </_slot>
+               <_slot name="LANGUAGE_SPOK">
+                  <var>LSpok</var>
+               </_slot>
+               <_slot name="LANGUAGE_WRIT">
+                  <var>LWrit</var>
+               </_slot>
+               <_slot name="CURRENT_EMPLOYMENT">
+                  <plex>
+                     <_slot name="MAX">
+                        <var>EMax</var>
+                     </_slot>
+                     <_slot name="MIN">
+                        <var>EMin</var>
+                     </_slot>
+                  </plex>
+               </_slot>
+               <_slot name="NAME">
+                  <var>Ne</var>
+               </_slot>
+               <_slot name="ESTABLISHED">
+                  <var>Est</var>
+               </_slot>
+               <_slot name="INDUSTRIAL_REGION">
+                  <var>Reg</var>
+               </_slot>
+               <_slot name="EXPORT">
+                  <var>X</var>
+               </_slot>
+               <_slot name="NAICS_INDUSTRY_SECTOR">
+                  <var>S</var>
+               </_slot>
+               <_slot name="CONTACT">
+                  <plex>
+                     <_slot name="PHONE">
+                        <var>P</var>
+                     </_slot>
+                     <_slot name="FAX">
+                        <var>Fax</var>
+                     </_slot>
+                     <_slot name="E_MAIL">
+                        <var>Email</var>
+                     </_slot>
+                     <_slot name="WEB_SITE">
+                        <var>URL</var>
+                     </_slot>
+                     <_slot name="CONTACT_PERSON">
+                        <plex>
+                           <_slot name="PERSON_TITLE">
+                              <var>Title</var>
+                           </_slot>
+                           <_slot name="FIRSTNAME">
+                              <var>First</var>
+                           </_slot>
+                           <_slot name="LASTNAME">
+                              <var>Last</var>
+                           </_slot>
+                           <_slot name="POSITION_ENG">
+                              <var>PosE</var>
+                           </_slot>
+                           <_slot name="POSITION_FR">
+                              <var>PosF</var>
+                           </_slot>
+                        </plex>
+                     </_slot>
+                     <_slot name="MAILING_ADDRESS">
+                        <plex>
+                           <_slot name="ADDRESS_LINE1_ENG">
+                              <var>MLe</var>
+                           </_slot>
+                           <_slot name="ADDRESS_LINE1_FR">
+                              <var>MLf</var>
+                           </_slot>
+                           <_slot name="CITY">
+                              <var>MCity</var>
+                           </_slot>
+                           <_slot name="PROVINCE">
+                              <var>MProv</var>
+                           </_slot>
+                           <_slot name="POSTAL_CODE">
+                              <var>MCode</var>
+                           </_slot>
+                        </plex>
+                     </_slot>
+                     <_slot name="PLANT_ADDRESS">
+                        <plex>
+                           <_slot name="ADDRESS_LINE1_ENG">
+                              <var>PLe</var>
+                           </_slot>
+                           <_slot name="ADDRESS_LINE1_FR">
+                              <var>PLf</var>
+                           </_slot>
+                           <_slot name="CITY">
+                              <var>PCity</var>
+                           </_slot>
+                           <_slot name="COUNTY">
+                              <var>PCounty</var>
+                           </_slot>
+                        </plex>
+                     </_slot>
+                  </plex>
+               </_slot>
+               <_restslo>
+                  <var/>
+               </_restslo>
+            </atom>
+         <!--</naf>-->
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>Alert</rel>
+            </_opr>
+            <_slot name="NUMBER">
+               <ind>none</ind>
+            </_slot>
+            <_slot name="YAHOO">
+               <ind>complete</ind>
+            </_slot>
+         </atom>
+      </_head>
+      <_body>
+         <!--<naf>-->
+            <atom>
+               <_opr>
+                  <rel>YAHOO_ENT</rel>
+               </_opr>
+               <_slot name="PHONE">
+                  <var>P</var>
+               </_slot>
+               <_slot name="FAX">
+                  <var>Fax</var>
+               </_slot>
+               <_slot name="WEB_SITE">
+                  <var>URL</var>
+               </_slot>
+               <_slot name="OPER_NAME">
+                  <var>Ne</var>
+               </_slot>
+               <_slot name="MAIL_ENG">
+                  <var>MLe</var>
+               </_slot>
+               <_slot name="MAIL_PLACE">
+                  <var>MCity</var>
+               </_slot>
+               <_slot name="MAIL_PROV">
+                  <var>MProv</var>
+               </_slot>
+               <_slot name="MAIL_POST">
+                  <var>MCode</var>
+               </_slot>
+               <_slot name="CATEGORY">
+                  <var>C</var>
+               </_slot>
+               <_restslo>
+                  <var/>
+               </_restslo>
+            </atom>
+         <!--</naf>-->
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>YAHOO_ENT</rel>
+            </_opr>
+            <_slot name="PHONE">
+               <var>P</var>
+            </_slot>
+            <_slot name="KEY">
+               <var>Pnorm</var>
+            </_slot>
+            <_restslo>
+               <var>Rest</var>
+            </_restslo>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>YAHOO_ENT</rel>
+               </_opr>
+               <_slot name="PHONE">
+                  <var>P</var>
+               </_slot>
+               <_restslo>
+                  <var>Rest</var>
+               </_restslo>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>YAHOO_ENT</rel>
+                  </_opr>
+                  <_slot name="PHONE">
+                     <var>P</var>
+                  </_slot>
+                  <_slot name="KEY">
+                     <var>K</var>
+                  </_slot>
+                  <_restslo>
+                     <var>Rest</var>
+                  </_restslo>
+               </atom>
+            <!--</naf>-->
+            <atom>
+               <_opr>
+                  <rel>normphone</rel>
+               </_opr>
+               <var>P</var>
+               <var>Pnorm</var>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>BIZNET_ENT</rel>
+            </_opr>
+            <cterm>
+               <_opc>
+                  <ctor>CONTACT</ctor>
+               </_opc>
+               <_slot name="PHONE">
+                  <var>P</var>
+               </_slot>
+               <_restslo>
+                  <var>Details</var>
+               </_restslo>
+            </cterm>
+            <_slot name="KEY">
+               <var>Pnorm</var>
+            </_slot>
+            <_restslo>
+               <var>Rest</var>
+            </_restslo>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>BIZNET_ENT</rel>
+               </_opr>
+               <cterm>
+                  <_opc>
+                     <ctor>CONTACT</ctor>
+                  </_opc>
+                  <_slot name="PHONE">
+                     <var>P</var>
+                  </_slot>
+                  <_restslo>
+                     <var>Details</var>
+                  </_restslo>
+               </cterm>
+               <_restslo>
+                  <var>Rest</var>
+               </_restslo>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>BIZNET_ENT</rel>
+                  </_opr>
+                  <cterm>
+                     <_opc>
+                        <ctor>CONTACT</ctor>
+                     </_opc>
+                     <_slot name="PHONE">
+                        <var>P</var>
+                     </_slot>
+                     <_restslo>
+                        <var>Details</var>
+                     </_restslo>
+                  </cterm>
+                  <_slot name="KEY">
+                     <var>K</var>
+                  </_slot>
+                  <_restslo>
+                     <var>Rest</var>
+                  </_restslo>
+               </atom>
+            <!--</naf>-->
+            <atom>
+               <_opr>
+                  <rel>normphone</rel>
+               </_opr>
+               <var>P</var>
+               <var>Pnorm</var>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+   <fact>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>normphone</rel>
+            </_opr>
+            <var>Phone</var>
+            <var>Phone</var>
+         </atom>
+      </_head>
+   </fact>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>YahooUniqEnt</rel>
+            </_opr>
+            <_slot name="PHONE">
+               <var>P</var>
+            </_slot>
+            <_slot name="CATEGORY">
+               <var>C</var>
+            </_slot>
+            <_restslo>
+               <var>Rest</var>
+            </_restslo>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>YAHOO_ENT</rel>
+               </_opr>
+               <_slot name="PHONE">
+                  <var>P</var>
+               </_slot>
+               <_slot name="CATEGORY">
+                  <var>C</var>
+               </_slot>
+               <_restslo>
+                  <var>Rest</var>
+               </_restslo>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>YahooUniqEnt</rel>
+                  </_opr>
+                  <_slot name="PHONE">
+                     <var>P</var>
+                  </_slot>
+                  <_slot name="CATEGORY">
+                     <var>C</var>
+                  </_slot>
+                  <_restslo>
+                     <var/>
+                  </_restslo>
+               </atom>
+            <!--</naf>-->
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>BiznetUniqEnt</rel>
+            </_opr>
+            <cterm>
+               <_opc>
+                  <ctor>CONTACT</ctor>
+               </_opc>
+               <_slot name="PHONE">
+                  <var>P</var>
+               </_slot>
+               <_restslo>
+                  <var>Details</var>
+               </_restslo>
+            </cterm>
+            <_slot name="NAICS_INDUSTRY_SECTOR">
+               <var>S</var>
+            </_slot>
+            <_restslo>
+               <var>Rest</var>
+            </_restslo>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>BIZNET_ENT</rel>
+               </_opr>
+               <cterm>
+                  <_opc>
+                     <ctor>CONTACT</ctor>
+                  </_opc>
+                  <_slot name="PHONE">
+                     <var>P</var>
+                  </_slot>
+                  <_restslo>
+                     <var>Details</var>
+                  </_restslo>
+               </cterm>
+               <_slot name="NAICS_INDUSTRY_SECTOR">
+                  <var>S</var>
+               </_slot>
+               <_restslo>
+                  <var>Rest</var>
+               </_restslo>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>BiznetUniqEnt</rel>
+                  </_opr>
+                  <cterm>
+                     <_opc>
+                        <ctor>CONTACT</ctor>
+                     </_opc>
+                     <_slot name="PHONE">
+                        <var>P</var>
+                     </_slot>
+                     <_restslo>
+                        <var>Details</var>
+                     </_restslo>
+                  </cterm>
+                  <_slot name="NAICS_INDUSTRY_SECTOR">
+                     <var>S</var>
+                  </_slot>
+                  <_restslo>
+                     <var/>
+                  </_restslo>
+               </atom>
+            <!--</naf>-->
+         </and>
+      </_body>
+   </imp>
+   <fact>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>CSCPath</rel>
+            </_opr>
+            <plex>
+               <var>Cfin</var>
+               <_restpos>
+                  <var>SCList</var>
+               </_restpos>
+            </plex>
+            <var>Cfin</var>
+            <plex>
+               <var>Cfin</var>
+               <_restpos>
+                  <var>SCList</var>
+               </_restpos>
+            </plex>
+         </atom>
+      </_head>
+   </fact>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>CSCPath</rel>
+            </_opr>
+            <plex>
+               <var>C</var>
+               <_restpos>
+                  <var>SCList</var>
+               </_restpos>
+            </plex>
+            <var>Cfin</var>
+            <var>Path</var>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>eq</rel>
+                  </_opr>
+                  <var>C</var>
+                  <var>Cfin</var>
+               </atom>
+            <!--</naf>-->
+            <atom>
+               <_opr>
+                  <rel>SectorCategory</rel>
+               </_opr>
+               <var>Snext</var>
+               <var>C</var>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>member</rel>
+                  </_opr>
+                  <var>Snext</var>
+                  <var>SCList</var>
+               </atom>
+            <!--</naf>-->
+            <atom>
+               <_opr>
+                  <rel>SectorCategory</rel>
+               </_opr>
+               <var>Snext</var>
+               <var>Cnext</var>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>member</rel>
+                  </_opr>
+                  <var>Cnext</var>
+                  <plex>
+                     <var>C</var>
+                     <_restpos>
+                        <var>SCList</var>
+                     </_restpos>
+                  </plex>
+               </atom>
+            <!--</naf>-->
+            <atom>
+               <_opr>
+                  <rel>CSCPath</rel>
+               </_opr>
+               <plex>
+                  <var>Cnext</var>
+                  <var>Snext</var>
+                  <var>C</var>
+                  <_restpos>
+                     <var>SCList</var>
+                  </_restpos>
+               </plex>
+               <var>Cfin</var>
+               <var>Path</var>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>uniqueCategory</rel>
+            </_opr>
+            <var>S</var>
+            <var>C</var>
+            <var>CategoryList</var>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>SectorCategory</rel>
+               </_opr>
+               <var>S</var>
+               <var>C</var>
+            </atom>
+            <atom>
+               <_opr>
+                  <rel>remove</rel>
+               </_opr>
+               <var>C</var>
+               <var>CategoryList</var>
+               <var>CategoryListprime</var>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>checkCategoryList</rel>
+                  </_opr>
+                  <var>S</var>
+                  <var>CategoryListprime</var>
+               </atom>
+            <!--</naf>-->
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>checkCategoryList</rel>
+            </_opr>
+            <var>S</var>
+            <var>CategoryListprime</var>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>member</rel>
+               </_opr>
+               <var>Cprime</var>
+               <var>CategoryListprime</var>
+            </atom>
+            <atom>
+               <_opr>
+                  <rel>SectorCategory</rel>
+               </_opr>
+               <var>S</var>
+               <var>Cprime</var>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>SectorCategory</rel>
+            </_opr>
+            <var>S</var>
+            <var>C</var>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>IdSectorCategory</rel>
+               </_opr>
+               <var>K1</var>
+               <var>S</var>
+               <var>C</var>
+            </atom>
+            <atom>
+               <_opr>
+                  <rel>IdSectorCategory</rel>
+               </_opr>
+               <var>K2</var>
+               <var>S</var>
+               <var>C</var>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>eq</rel>
+                  </_opr>
+                  <var>K1</var>
+                  <var>K2</var>
+               </atom>
+            <!--</naf>-->
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>IdSectorCategory</rel>
+            </_opr>
+            <var>K</var>
+            <var>S</var>
+            <var>C</var>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>BIZNET_ENT</rel>
+               </_opr>
+               <_slot name="NAICS_INDUSTRY_SECTOR">
+                  <var>S</var>
+               </_slot>
+               <_slot name="KEY">
+                  <var>K</var>
+               </_slot>
+               <_restslo>
+                  <var/>
+               </_restslo>
+            </atom>
+            <atom>
+               <_opr>
+                  <rel>YAHOO_ENT</rel>
+               </_opr>
+               <_slot name="CATEGORY">
+                  <var>C</var>
+               </_slot>
+               <_slot name="KEY">
+                  <var>K</var>
+               </_slot>
+               <_restslo>
+                  <var/>
+               </_restslo>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>NBEnterprise</rel>
+            </_opr>
+            <_slot name="KEY">
+               <var>K</var>
+            </_slot>
+            <_restslo>
+               <var>Rest</var>
+            </_restslo>
+         </atom>
+      </_head>
+      <_body>
+         <atom>
+            <_opr>
+               <rel>BIZNET_ENT</rel>
+            </_opr>
+            <_slot name="KEY">
+               <var>K</var>
+            </_slot>
+            <_restslo>
+               <var>Rest</var>
+            </_restslo>
+         </atom>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>NBEnterprise</rel>
+            </_opr>
+            <_slot name="NAME">
+               <var>Ne</var>
+            </_slot>
+            <_slot name="NAICS_INDUSTRY_SECTOR">
+               <var>S</var>
+            </_slot>
+            <_slot name="CONTACT">
+               <plex>
+                  <_slot name="PHONE">
+                     <var>P</var>
+                  </_slot>
+                  <_slot name="FAX">
+                     <var>Fax</var>
+                  </_slot>
+                  <_slot name="WEB_SITE">
+                     <var>URL</var>
+                  </_slot>
+                  <_slot name="MAILING_ADDRESS">
+                     <plex>
+                        <_slot name="ADDRESS_LINE1_ENG">
+                           <var>MLe</var>
+                        </_slot>
+                        <_slot name="CITY">
+                           <var>MCity</var>
+                        </_slot>
+                        <_slot name="PROVINCE">
+                           <var>MProv</var>
+                        </_slot>
+                        <_slot name="POSTAL_CODE">
+                           <var>MCode</var>
+                        </_slot>
+                     </plex>
+                  </_slot>
+               </plex>
+            </_slot>
+            <_slot name="KEY">
+               <var>K</var>
+            </_slot>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <atom>
+               <_opr>
+                  <rel>YAHOO_ENT</rel>
+               </_opr>
+               <_slot name="PHONE">
+                  <var>P</var>
+               </_slot>
+               <_slot name="FAX">
+                  <var>Fax</var>
+               </_slot>
+               <_slot name="WEB_SITE">
+                  <var>URL</var>
+               </_slot>
+               <_slot name="OPER_NAME">
+                  <var>Ne</var>
+               </_slot>
+               <_slot name="MAIL_ENG">
+                  <var>MLe</var>
+               </_slot>
+               <_slot name="MAIL_PLACE">
+                  <var>MCity</var>
+               </_slot>
+               <_slot name="MAIL_PROV">
+                  <var>MProv</var>
+               </_slot>
+               <_slot name="MAIL_POST">
+                  <var>MCode</var>
+               </_slot>
+               <_slot name="CATEGORY">
+                  <var>C</var>
+               </_slot>
+               <_slot name="KEY">
+                  <var>K</var>
+               </_slot>
+            </atom>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>BIZNET_ENT</rel>
+                  </_opr>
+                  <_slot name="KEY">
+                     <var>K</var>
+                  </_slot>
+                  <_restslo>
+                     <var/>
+                  </_restslo>
+               </atom>
+            <!--</naf>-->
+            <atom>
+               <_opr>
+                  <rel>SectorCategory</rel>
+               </_opr>
+               <var>S</var>
+               <var>C</var>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+   <fact>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>member</rel>
+            </_opr>
+            <var>X</var>
+            <plex>
+               <var>X</var>
+               <_restpos>
+                  <var>Tail</var>
+               </_restpos>
+            </plex>
+         </atom>
+      </_head>
+   </fact>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>member</rel>
+            </_opr>
+            <var>X</var>
+            <plex>
+               <var>Head</var>
+               <_restpos>
+                  <var>Tail</var>
+               </_restpos>
+            </plex>
+         </atom>
+      </_head>
+      <_body>
+         <atom>
+            <_opr>
+               <rel>member</rel>
+            </_opr>
+            <var>X</var>
+            <var>Tail</var>
+         </atom>
+      </_body>
+   </imp>
+   <fact>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>remove</rel>
+            </_opr>
+            <var>X</var>
+            <plex/>
+            <plex/>
+         </atom>
+      </_head>
+   </fact>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>remove</rel>
+            </_opr>
+            <var>X</var>
+            <plex>
+               <var>X</var>
+               <_restpos>
+                  <var>Tail</var>
+               </_restpos>
+            </plex>
+            <var>L</var>
+         </atom>
+      </_head>
+      <_body>
+         <atom>
+            <_opr>
+               <rel>remove</rel>
+            </_opr>
+            <var>X</var>
+            <var>Tail</var>
+            <var>L</var>
+         </atom>
+      </_body>
+   </imp>
+   <imp>
+      <_head>
+         <atom>
+            <_opr>
+               <rel>remove</rel>
+            </_opr>
+            <var>X</var>
+            <plex>
+               <var>Head</var>
+               <_restpos>
+                  <var>Tail</var>
+               </_restpos>
+            </plex>
+            <plex>
+               <var>Head</var>
+               <_restpos>
+                  <var>L2</var>
+               </_restpos>
+            </plex>
+         </atom>
+      </_head>
+      <_body>
+         <and>
+            <!--<naf>-->
+               <atom>
+                  <_opr>
+                     <rel>eq</rel>
+                  </_opr>
+                  <var>X</var>
+                  <var>Head</var>
+               </atom>
+            <!--</naf>-->
+            <atom>
+               <_opr>
+                  <rel>remove</rel>
+               </_opr>
+               <var>X</var>
+               <var>Tail</var>
+               <var>L2</var>
+            </atom>
+         </and>
+      </_body>
+   </imp>
+</rulebase>
+
