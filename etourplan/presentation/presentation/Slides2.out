@@ -1,0 +1,21 @@
+\BOOKMARK [2][]{Outline0.1}{1. Introduction}{}
+\BOOKMARK [3][]{Outline0.1.1.3}{1.1 Motivation}{Outline0.1}
+\BOOKMARK [3][]{Outline0.1.2.4}{1.2 Motivation}{Outline0.1}
+\BOOKMARK [2][]{Outline0.2}{2. Background}{}
+\BOOKMARK [3][]{Outline0.2.1.5}{2.1 Methodology for QoS Mechanism}{Outline0.2}
+\BOOKMARK [2][]{Outline0.3}{3. Experiments}{}
+\BOOKMARK [3][]{Outline0.3.1.7}{3.1 Testing the QoS domain}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.2.12}{3.2 Characteristic of Packet Scheduler \(HTB qdisc\)}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.3.15}{3.3 Testing to Find the Minimum Bandwidth with HTB}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.4.16}{3.4 Evaluating the rate and burst at the policer}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.5.23}{3.5 Number of Dropped Packets}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.6.24}{3.6 Packet Loss Distribution}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.7.26}{3.7 Burst Packet Drop Timestamps}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.8.30}{3.8 Characteristics of Tcpdump}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.9.32}{3.9 Inter Packet Times}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.10.38}{3.11 Shaper }{Outline0.3}
+\BOOKMARK [2][]{Outline0.4}{4 Testing and Analysis}{}
+\BOOKMARK [3][]{Outline0.4.1.43}{4.1 MPEG2 Videos}{Outline0.4}
+\BOOKMARK [2][]{Outline0.5}{5. Conclusion and Future work}{}
+\BOOKMARK [3][]{Outline0.5.1.47}{5.1 Conclusion}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.2.48}{5.2 Future Work}{Outline0.5}

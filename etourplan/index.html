@@ -1,0 +1,91 @@
+<?cocoon-format type="text/html"><html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<title>eTourPlan</title>
+<style type="text/css">
+       h1 { font-size: 32pt; font-weight: bold }
+       h2 { font-size: 16pt; font-weight: bold }
+       ul { line-height: 120% }
+       ol { line-height: 120% }
+       p { line-height: 100% }
+     </style>
+</head>
+<body bgcolor="#FFFFFF">
+		<center>
+			<br>
+			
+			<br>
+			<h1>eTourPlan<br>
+				<i>A Knowledge-Based Tourist Route and Activity Planner</i>
+			</h1>
+			  <h2>Harold Boley, Przemyslaw Rafal Pochec, Tshering Dema
+			  </h2>
+                  Version History, 2008-09-09: Version 0.1
+                  
+			<br>
+			
+
+		</center>
+		<br>
+
+	<h2>Contents</h2>
+<ul>
+<li><a href="#Overview">Overview</a></li>
+<li><a href="#Prototype">Prototype</a></li>
+</ul>
+<h2><a name="Overview">Overview</a></h2>
+		
+		<p>Tourism is the world's largest and fastest growing industry. There are many conventional
+tourism service providers which are competitively trying to provide the best travel plans
+and recommendations to customers based on their interests. The Semantic Web is a major
+endeavour to enhance the Web by enriching its content with semantic (meta)data that can
+be processed by inference-enabled Web applications. eTourism is a prime candidate for
+such enrichment, since it is an information-based business. As with any such business,
+providing the required relevant information for the consumer means a better end product.
+Thus, providing a well-structured and comprehensive Knowledge Base (KB) for consulting
+will help bolster eTourism business. We have designed and implemented a KB
+consisting of tourism domain-specific information. Our KB stores facts about Bhutan, which
+are structured by a light-weight ontology (adapted from the Harmonise eTourism ontology)
+and used by partonomy rules that encode the geographical partitioning of tourist regions
+and provide a basis for activity search capabilities. On top of these, the KBs planning rules
+are applied to deduce recommendations of routes, activities (attractions and events), and
+accommodations. We also discussed transferring Friend Of A Friend (FOAF) concepts
+for semantically describing persons or organizations, to tourist-entity profiles. The FOAF-like 
+Harmonise relation &quot;relatedTo&quot; between tourist entities is used to chain through Bhutan provinces 
+and attraction profiles, hence to provide attraction-centric recommendations.
+This prototype, eTourPlan, an eTourism planner using Semantic Web techniques, has been implemented 
+in RuleML/POSL. Results of running eTourPlan in the prototype RuleML engine OO jDREW are reported.
+</p>	
+<h2><a name="Prototype">Prototype</a></h2>
+		
+		<p>The eTourPlan prototype -- its theory and implementation -- is described in detail in the documents below.
+	   </p>
+		<ul>
+			<li>eTourPlan: A Knowledge-Based Tourist Route and Activity Planner (Presentation): <a href="http://www.ruleml.org/usecases/etourplan/eTourPlanPresentation.pdf">PDF</a> [<a href="http://www.ruleml.org/usecases/etourplan/presentation/presentation/Presentation.tex">Latex Source</a>] </li>
+			<li>eTourPlan: A Knowledge-Based Tourist Route and Activity Planner (Thesis): <a href="http://www.ruleml.org/usecases/etourplan/TsheringMCSThesis.pdf">PDF</a> [<a href="http://www.ruleml.org/usecases/etourplan/TsheringMCSThesisLatex/TsheringMCSThesisLatex/UNBThesis2.tex">Latex Source</a>]</li>			
+			<li>eTourPlan KB (fact and rule profiles): <a href="http://www.ruleml.org/usecases/etourplan/eTourPlanKB.posl">POSL</a>
+</li>
+			<li>RDFS Taxonomies (adapted from the Harmonise classification): <a href="http://www.ruleml.org/usecases/etourplan/RDFSTypeDefinitions.rdf">RDF</a>
+</li>	
+			<li>Readme file on the execution of the Activity Planner: <a href="http://www.ruleml.org/usecases/etourplan/readme">Readme</a> [<a href="http://www.ruleml.org/usecases/etourplan/TestQueries">Test Queries</a>]</li>	
+			<li>OO jDREW Homepage: <a href="http://www.jdrew.org/oojdrew">OO jDREW</a>
+</li>	
+	</ul>
+	<br>
+		<p>
+		Site Contact:
+		<a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>.
+		Page Version: 2008-09-16
+		<br>
+			<br>
+			<br>
+
+			<a name="Practice-Preach"></a>
+			<small>&quot;Practice what you preach&quot;: XML source of this homepage at <a href="index.xml">index.xml</a>;
+	      <br>
+	      transformed to HTML via the adaptation of <a href="http://www.dfki.uni-kl.de/~sintek/">Michael Sintek</a>'s SliML <a href="http://www.w3.org/TR/xslt">XSLT</a> stylesheet at <a href="http://www.dfki.uni-kl.de/~boley/xslt/homepage.xsl">homepage.xsl</a> (View | Page Source)
+	   </small>
+
+		</p>
+	</body>
+</html>

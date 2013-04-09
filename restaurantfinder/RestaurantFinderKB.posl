@@ -1,0 +1,816 @@
+%The dish rules:
+
+% A dish is international cuisine if it is North American, or European, or Asian:
+international_cuisine(?X):-north_american(?X).    
+international_cuisine(?X):-european(?X).
+international_cuisine(?X):-asian(?X).
+
+% A dish is North American if it is American, or Mexican:
+north_american(?X):-american(?X). 	
+north_american(?X):-mexican(?X).
+european(?X):-french(?X).
+european(?X):-italian(?X).
+asian(?X):-indian(?X).
+asian(?X):-chinese(?X).
+
+% Dish nationality rules:
+american(?X):-pizza(?X).
+american(?X):-sandwich(?X).
+american(?X):-fish_sticks(?X).
+american(?X):-lobster(?X).
+american(?X):-steak(?X).
+american(?X):-burger(?X).
+american(?X):-macaroni_and_cheese(?X).
+american(?X):-nachos(?X).
+american(?X):-muffin(?X).
+american(?X):-waffles(?X).
+american(?X):-pie(?X).
+american(?X):-brownies(?X).
+
+mexican(?X):-tacos(?X).
+mexican(?X):-enchiladas(?X).
+mexican(?X):-burrito(?X).
+mexican(?X):-quesadillas(?X).
+mexican(?X):-nachos(?X).
+mexican(?X):-flan(?X).
+mexican(?X):-churros(?X).
+
+french(?X):-quiche(?X).
+french(?X):-baguette(?X).
+french(?X):-soupe(?X).
+french(?X):-escargots(?X).
+french(?X):-crepe(?X).
+french(?X):-mousse(?X).
+
+italian(?X):-pizza(?X).
+italian(?X):-spaghetti(?X).
+italian(?X):-lasagna(?X).
+italian(?X):-ravioli(?X).
+italian(?X):-bruschetta(?X).
+italian(?X):-minestrone(?X).
+italian(?X):-gelato(?X).
+italian(?X):-cheesecake(?X).
+
+indian(?X):-gosht(?X).
+indian(?X):-naan(?X).
+indian(?X):-biryani(?X).
+indian(?X):-paratha(?X).
+indian(?X):-payasam(?X).
+indian(?X):-pulao(?X).
+indian(?X):-rasam(?X).
+indian(?X):-sambhar(?X).
+indian(?X):-kulfi(?X).
+indian(?X):-jalebi(?X).
+
+chinese(?X):-chow_mein(?X).
+chinese(?X):-lo_mein(?X).
+chinese(?X):-egg_rolls(?X).
+chinese(?X):-fried_rice(?X).
+chinese(?X):-dumplings(?X).
+chinese(?X):-squid(?X).
+chinese(?X):-pudding(?X).
+chinese(?X):-tart(?X).
+
+% Dish 'Main Type' category rules:
+pasta(?X):-macaroni_and_cheese(?X).
+pasta(?X):-spaghetti(?X).
+pasta(?X):-lasagna(?X).
+pasta(?X):-ravioli(?X).
+
+soup(?X):-soupe(?X).
+soup(?X):-minestrone(?X).
+
+bread(?X):-baguette(?X).
+bread(?X):-bruschetta(?X).
+bread(?X):-naan(?X).
+
+seafood(?X):-fish_sticks(?X).
+seafood(?X):-lobster(?X).
+seafood(?X):-escargots(?X).
+seafood(?X):-squid(?X).
+
+delicacy(?X):-lobster(?X).
+delicacy(?X):-escargots(?X).
+delicacy(?X):-squid(?X).
+
+breakfast(?X):-muffin(?X).
+breakfast(?X):-waffle(?X).
+breakfast(?X):-crepe(?X).
+
+dessert(?X):-muffin(?X).   
+dessert(?X):-waffle(?X).
+dessert(?X):-pie(?X).
+dessert(?X):-brownie(?X).
+dessert(?X):-flan(?X).
+dessert(?X):-churros(?X).
+dessert(?X):-crepe(?X).
+dessert(?X):-mousse(?X).
+dessert(?X):-gelato(?X).
+dessert(?X):-cheesecake(?X).
+dessert(?X):-kulfi(?X).
+dessert(?X):-jalebi(?X).
+dessert(?X):-pudding(?X).
+dessert(?X):-tart(?X).
+
+dish(?X):-pizza(?X).              %american dishes
+dish(?X):-sandwich(?X).
+dish(?X):-fish_sticks(?X).
+dish(?X):-lobster(?X).
+dish(?X):-steak(?X).
+dish(?X):-burger(?X).
+dish(?X):-macaroni_and_cheese(?X).
+dish(?X):-nachos(?X).
+dish(?X):-muffin(?X).
+dish(?X):-waffles(?X).
+dish(?X):-pie(?X).
+dish(?X):-brownies(?X).
+dish(?X):-tacos(?X).              %mexican dishes
+dish(?X):-enchiladas(?X).
+dish(?X):-burrito(?X).
+dish(?X):-quesadillas(?X).
+dish(?X):-flan(?X).
+dish(?X):-churros(?X).
+dish(?X):-quiche(?X).            %french dishes
+dish(?X):-baguette(?X).
+dish(?X):-soupe(?X).
+dish(?X):-escargots(?X).
+dish(?X):-crepe(?X).
+dish(?X):-mousse(?X).
+dish(?X):-spaghetti(?X).       %italian dishes
+dish(?X):-lasagna(?X).
+dish(?X):-ravioli(?X).
+dish(?X):-bruschetta(?X).
+dish(?X):-minestrone(?X).
+dish(?X):-gelato(?X).
+dish(?X):-cheesecake(?X).
+dish(?X):-gosht(?X).             %indian dishes
+dish(?X):-naan(?X).
+dish(?X):-biryani(?X).
+dish(?X):-paratha(?X).
+dish(?X):-payasam(?X).
+dish(?X):-pulao(?X).
+dish(?X):-rasam(?X).
+dish(?X):-sambhar(?X).
+dish(?X):-kulfi(?X).
+dish(?X):-jalebi(?X).
+dish(?X):-chow_mein(?X).     %chinese dishes  
+dish(?X):-lo_mein(?X).
+dish(?X):-egg_rolls(?X).
+dish(?X):-fried_rice(?X).
+dish(?X):-dumplings(?X).
+dish(?X):-squid(?X).
+dish(?X):-pudding(?X).
+dish(?X):-tart(?X).
+
+% A rule simulating RDFS's subPropertyOf:
+serves_veg(?X, ?Y):-serves(?X, ?Y), vegetarian(?Y). 
+
+
+% The dish facts:
+
+% American dish instances
+sandwich(omelet_sandwich). 
+sandwich(vegetable_sandwich).
+vegetarian(vegetable_sandwich).
+sandwich(chicken_sandwich).
+sandwich(egg_salad_sandwich).
+
+fish_sticks(fish_sticks).
+
+burger(burger_and_fries).
+burger(hamburger).
+burger(veggie_burger).
+vegetarian(veggie_burger).
+burger(cheese_burger).
+
+muffin(blueberry_muffin).
+muffin(bran_muffin).
+muffin(mixed_fruit_muffin).
+
+waffles(whole_wheat_waffles).
+waffles(blueberry_waffles).
+
+brownies(caramel_turtle_brownies).
+brownies(chestnut_truffle_brownies).
+
+steak(flaming_steak_diane).
+steak(pan_fried_rib_steak).
+
+lobster(lobster_chowder).
+lobster(maine_lobster_stew).
+
+macaroni_and_cheese(macaroni_and_cheese).
+
+pie(apple_pie).
+pie(blueberry_pie).
+pie(lemon_meringue_pie).
+
+nachos(blue_corn_nachos).
+nachos(veggie_medley_nachos).
+vegetarian(veggie_medley_nachos).
+
+pizza(meat_pizza).
+pizza(veg_pizza).
+vegetarian(veg_pizza).
+
+
+% Mexican dish instances:
+tacos(garlic_tacos).
+tacos(beef_tacos).
+tacos(tofu_tacos).
+vegetarian(tofu_tacos).
+
+enchiladas(beef_enchiladas).
+enchiladas(chicken_enchiladas).  
+enchiladas(breakfast_enchiladas).
+vegetarian(breakfast_enchiladas).
+breakfast(breakfast_enchiladas).
+
+burrito(bean_burrito).
+burrito(beef_burrito).
+vegetarian(bean_burrito).
+
+quesadillas(cheese_quesadillas).
+quesadillas(chicken_quesadillas).
+
+nachos(veggie_medley_nachos).
+nachos(cheese_nachos).
+vegetarian(veggie_medley_nachos).
+
+flan(caramel_drizzled_flan).
+flan(chocolate_flan).
+
+churros(apple_churros).
+
+
+% French dish instances:
+mousse(chocolate_mousse).
+mousse(strawberry_mousse).
+mousse(vanilla_mousse).
+
+crepe(breakfast_crepe).
+crepe(chocolate_crepe).
+crepe(veg_crepe).
+vegetarian(veg_crepe).
+
+quiche(quiche_lorraine).
+quiche(veg_quiche).
+vegetarian(veg_quiche).
+
+baguette(baguette).
+vegetarian(baguette).
+
+soupe(soupe_oignon).
+soupe(soupe_lentilles).
+vegetarian(soupe_lentilles).
+
+escargots(escargots_burgundy). 
+
+
+% Italian dish instances:
+pizza(pineapple_pizza).
+pizza(chicken_pizza).
+pizza(anchovey_pizza).
+pizza(olive_pizza).
+pizza(meat_pizza).
+vegetarian(pineapple_pizza).
+seafood(anchovey_pizza).
+
+spaghetti(meatball_spaghetti).
+spaghetti(spinach_spaghetti).
+vegetarian(spinach_spaghetti).
+
+lasagna(three_cheese_lasagna).
+lasagna(beef_lasagna).
+vegetarian(three_cheese_lasagna).
+
+ravioli(cheese_ravioli).
+ravioli(beef_ravioli).
+
+brushetta(garlic_bruschetta).
+bruchetta(cheese_topped_bruschetta).
+vegetarian(garlic_bruschetta).
+vegetarian(cheese_topped_bruschetta).
+
+minestrone(veggie_medley_minestrone).
+minestrone(cheese_topped_minestrone).
+vegetarian(veggie_medley_minestrone).
+vegetarian(cheese_topped_minestrone).
+
+gelato(vanilla_gelato).
+gelato(strawberry_gelato).
+gelato(chocolate_gelato).
+
+cheesecake(chocolate_cheesecake).
+cheesecake(cherry_cheesecake).
+
+
+% Indian dish instances:
+paratha(allu_paratha).
+vegetarian(allu_paratha).
+paratha(shahi_paratha).
+
+naan(gobi_naan).
+vegetarian(gobi_naan).
+
+gosht(masala_gosht).
+vegetarian(masala_gosht).
+gosht(mutton_masala_gosht).
+gosht(gosht_e_akbari).
+vegetarian(gosht_e_akbari).
+gosht(chicken_gosht_e_akbari).
+
+biryani(murgh_dum_biryani).
+vegetarian(murgh_dum_biryani).
+biryani(meat_murgh_dum_biryani).
+biryani(yakhni_biryani).
+vegetarian(yakhni_biryani).
+biryani(beef_yakhni_biryani).
+
+pulao(mattar_pulao).
+vegetarian(mattar_pulao).
+pulao(panchrangi_pulao).
+vegetarian(panchrangi_pulao).
+
+rasam(pepper_rasam).
+vegetarian(pepper_rasam).
+rasam(tomato_rasam).
+vegetarian(tomato_rasam).
+
+sambhar(kadamba_sambhar).
+vegetarian(kadamba_sambhar).
+sambhar(chicken_sambhar).
+
+payasam(pal_payasam).
+payasam(semiya_payasam).
+
+kulfi(mango_kulfi).
+kulfi(almond_kulfi).
+
+jalebi(jalebi).
+
+
+% Chinese dish instances:
+chow_mein(chicken_chow_mein).
+chow_mein(veg_chow_mein).
+vegetarian(veg_chow_mein).
+
+lo_mein(beef_lo_mein).
+lo_mein(veg_lo_mein).
+vegetarian(veg_lo_mein).
+
+squid(fried_squid).
+squid(squid_balls).
+
+dumplings(pork_dumplings).
+dumplings(vegan_dumplings).
+vegetarian(vegan_dumplings).
+
+fried_rice(chicken_fried_rice).
+fried_rice(veg_fried_rice).
+vegetarian(veg_fried_rice).
+
+pudding(mango_pudding).
+pudding(coconut_pudding).
+
+tart(sago_tart).
+tart(custard_tart).
+
+egg_rolls(meat_egg_roll).
+egg_rolls(veg_egg_roll).
+vegetarian(veg_egg_roll).
+
+
+% Sample facts for searching for ingredient information:
+chicken(chicken_burger).
+chocolate(chocolate_mousse).
+
+
+% The Restaurant Facts:
+% French-Italian Restaurant
+restaurant(uri01).
+location(uri01, Moncton).
+name(uri01, "Chez Henri").
+star_rating(uri01, 4).
+european(uri01).
+serves(uri01, chocolate_mousse).
+serves(uri01, strawberry_mousse).
+serves(uri01, veg_crepe).
+serves(uri01, veg_crepe).
+serves(uri01,breakfast_crepe).
+serves(uri01, escargots_burgundy).
+serves(uri01, baguette).
+serves(uri01, quiche_lorraine).
+serves(uri01, soupe_lentilles).
+serves(uri01, veggie_medley_minestrone).
+serves(uri01, garlic_brushetta).
+serves(uri01, vanilla_gelato).
+serves(uri01, three_cheese_lasagna).
+serves(uri01, beef_lasagna).
+
+% Chinese Restaurant
+restaurant(uri02).
+location(uri02, Moncton).
+name(uri02, "Fangs Palace").
+star_rating(uri02, 3).
+chinese(uri02).
+serves(uri02, veg_lo_mein).
+serves(uri02, veg_lo_mein).
+serves(uri02, veg_chow_mein).
+serves(uri02, chicken_chow_mein).
+serves(uri02, pork_dumplings).
+serves(uri02, veg_fried_rice).
+serves(uri02, chicken_fried_rice).
+serves(uri02, veg_egg_roll).
+serves(uri02, mango_pudding).
+serves(uri02, sago_tart).
+
+% Mexican Restaurant
+restaurant(uri03).
+location(uri03, "Saint John").
+name(uri03, "El Taco").
+star_rating(uri03, 2).
+mexican(uri03).
+serves(uri03, beef_tacos).
+serves(uri03, tofu_tacos).
+serves(uri03, chicken_quesadillas).
+serves(uri03, cheese_quesadillas).
+serves(uri03, bean_burrito).
+serves(uri03, beef_burrito).
+serves(uri03, cheese_nachos).
+serves(uri03, chocolate_flan).
+
+% Italian Restaurant
+restaurant(uri04).
+location(uri04, Moncton).
+name(uri04, "Papas Pizza").
+star_rating(uri04, 3).
+italian(uri04).
+serves(uri04, pineapple_pizza).
+serves(uri04, anchovy_pizza).
+serves(uri04, chicken_pizza).
+serves(uri04, olive_pizza).
+serves(uri04, meat_pizza).
+serves(uri04, meatball_spaghetti).
+serves(uri04, three_cheese_lasagna).
+serves(uri04, beef_lasagna).
+serves(uri04, cheese_ravioli).
+serves(uri04, beef_ravioli).
+serves(uri04, chocolate_cheesecake).
+serves(uri04, cherry_cheesecake).
+
+% Indian Restaurant
+restaurant(uri05).
+location(uri05, Fredericton).
+name(uri05, "Spice of India").
+star_rating(uri05, 3).
+indian(uri05).
+serves(uri05, allu_paratha).
+serves(uri05, shahi_paratha).
+serves(uri05, masala_gosht).
+serves(uri05, tomato_rasam).
+serves(uri05, chicken_sambhar).
+serves(uri05, mango_kulfi).
+
+% American Restaurant
+restaurant(uri06).
+location(uri06, Fredericton). %At multiple locations
+location(uri06, Moncton).
+location(uri06, "Saint John").
+name(uri06, Cruisers).
+star_rating(uri06, 2).
+american(uri06).
+serves(uri06, meat_pizza).
+serves(uri06, burger_and_fries).
+serves(uri06, veg_pizza).
+serves(uri06, fish_sticks).
+serves(uri06, apple_pie).
+serves(uri06, macaroni_and_cheese).
+
+
+
+% Italian-American restaurant:
+restaurant(uri07).
+location(uri07, Fredericton).
+name(uri07, "Luigi's Place").
+star_rating(uri07, 3).
+italian(uri07).
+american(uri07).
+serves(uri07, meat_pizza).  
+serves(uri07, chicken_pizza).
+serves(uri07, spinach_spaghetti).
+serves(uri07, beef_lasagna).
+serves(uri07, cheese_topped_bruschetta).  
+serves(uri07, beef_ravioli).
+serves(uri07, veg_pizza). % american
+serves(uri07, veggie_burger).
+serves(uri07, cheese_burger).
+serves(uri07, chicken_sandwich).
+serves(uri07, lemon_meringue_pie).
+serves(uri07, strawberry_gelato).
+serves(uri07, chocolate_cheesecake).  
+
+% American restaurant (vegetarian breakfast place):
+restaurant(uri08).
+location(uri08, "Saint John").
+name(uri08, "Martha's Munchies").
+star_rating(uri08, 2).
+american(uri08).
+vegetarian(uri08).
+serves(uri08, macaroni_and_cheese).
+serves(uri08, whole_wheat_waffles).
+serves(uri08, blueberry_waffles).
+serves(uri08, blueberry_muffin).
+serves(uri08, bran_muffin).
+serves(uri08, mixed_fruit_muffin).
+serves(uri08, apple_pie).
+serves(uri08, blueberry_pie).
+serves(uri08, veggie_medley_nachos).
+
+% Mexican restaurant:
+restaurant(uri09).
+location(uri09, Moncton).
+name(uri09, "Amigos").
+star_rating(uri09, 3).
+mexican(uri09).
+serves(uri09, garlic_tacos).
+serves(uri09, tofu_tacos).
+serves(uri09, beef_enchiladas).
+serves(uri09, bean_burrito).
+serves(uri09, chicken_quesadillas).  
+serves(uri09, veggie_medley_nachos).
+serves(uri09, caramel_drizzled_flan).
+serves(uri09, apple_churros).
+
+% French restaurant:
+restaurant(uri10).
+location(uri10, Fredericton).
+name(uri10, "Le Diner").
+star_rating(uri10, 2).
+french(uri10).
+serves(uri10, breakfast_crepe).
+serves(uri10, veg_crepe).
+serves(uri10, veg_quiche).
+serves(uri10, soupe_oignon).
+serves(uri10, soupe_lentilles).
+serves(uri10, baguette).
+serves(uri10, vanilla_mousse).
+
+% Indian restaurant:
+restaurant(uri11).
+location(uri11, "Saint John").
+name(uri11, "Babul Biryani House").
+star_rating(uri11, 4).
+indian(uri11).
+serves(uri11, murgh_dum_biryani).
+serves(uri11, yakhni_biryani).
+serves(uri11, shahi_paratha).
+serves(uri11, gobi_naan).
+serves(uri11, gosht_e_akbari).
+serves(uri11, kadamba_sambhar).
+serves(uri11, chicken_sambhar).
+serves(uri11, pal_payasam).
+serves(uri11, mango_kulfi).
+serves(uri11, almond_kulfi).
+serves(uri11, jalebi).
+
+% Chinese restaurant:
+restaurant(uri12).
+location(uri12, Fredericton).
+name(uri12, "Ming's Marvelous Meals").
+star_rating(uri12, 3).
+chinese(uri12).
+serves(uri12, beef_lo_mein).
+serves(uri12, chicken_chow_mein).
+serves(uri12, veg_chow_mein).
+serves(uri12, vegan_dumplings).
+serves(uri12, chicken_fried_rice).
+serves(uri12, veg_fried_rice).
+serves(uri12, sago_tart).
+serves(uri12, custard_tart).
+
+
+
+% Mexican Restaurant
+restaurant(uri13).
+location(uri13, Fredericton).
+name(uri13, "Tacos Paradise").
+star_rating(uri13, 4).
+mexican(uri13).
+serves(uri13, tofu_tacos).
+serves(uri13, garlic_tacos).
+serves(uri13, beef_enchiladas).
+serves(uri13, breakfast_enchiladas).
+serves(uri13, cheese_quesadillas).
+serves(uri13, bean_burrito).
+serves(uri13, beef_burrito).
+serves(uri13, veggie_medley_nachos).
+serves(uri13, cheese_nachos).
+serves(uri13, apple_churros).
+serves(uri13, caramel_drizzled_flan).
+
+% Italian Restaurant
+restaurant(uri14).
+location(uri14, "Saint John").
+name(uri14, "Pizza world").
+star_rating(uri14, 3).
+italian(uri14).
+serves(uri14, pineapple_pizza).
+serves(uri14, anchovy_pizza).
+serves(uri14, olive_pizza).
+serves(uri14, meat_pizza).
+serves(uri14, meatball_spaghetti).
+serves(uri14, three_cheese_lasagna).
+serves(uri14, beef_lasagna).
+serves(uri14, cheese_ravioli).
+serves(uri14, garlic_bruschetta).
+serves(uri14, veggie_medley_minestrone).
+serves(uri14, vanilla_gelato).
+serves(uri14, strawberry_gelato).
+serves(uri14, chocolate_cheesecake).
+
+% American Restaurant
+restaurant(uri15).
+location(uri15, Fredericton). 
+name(uri15, "Latins world").
+star_rating(uri15, 4).
+american(uri15).
+serves(uri15, omelet_sandwich).
+serves(uri15, vegetable_sandwich).
+serves(uri15, hamburger).
+serves(uri15, blueberry_muffin).
+serves(uri15, bran_muffin).
+serves(uri15, caramel_turtle_brownies).
+serves(uri15, flaming_steak_diane).
+serves(uri15, apple_pie).
+serves(uri15, blue_corn_nachos).
+serves(uri15, meat_pizza).
+serves(uri15, veg_pizza).
+
+% French Restaurant
+restaurant(uri16).
+location(uri16, Moncton).
+name(uri16, "Frenchz").
+star_rating(uri16, 3).
+french(uri16).
+serves(uri16, chocolate_mousse).
+serves(uri16, vanilla_mousse).
+serves(uri16, breakfast_crepe).
+serves(uri16, quiche_lorraine).
+serves(uri16, veg_quiche).
+serves(uri16, soupe_oignon).
+serves(uri16, soupe_lentilles).
+serves(uri16, escargots_burgundy).
+
+% Indian Restaurant
+restaurant(uri15).
+location(uri17, Fredericton).
+location(uri17, Moncton).
+name(uri17, "Arusuvai Virundhu").
+star_rating(uri17, 4).
+indian(uri17).
+serves(uri17, allu_paratha).
+serves(uri17, shahi_paratha).
+serves(uri17, masala_gosht).
+serves(uri17, tomato_rasam).
+serves(uri17, chicken_sambhar).
+serves(uri17, mutton_masala_gosht).
+serves(uri17, gosht_e_akbari).
+serves(uri17, chicken_gosht_e_akbari).
+serves(uri17, yakhni_biryani).
+serves(uri17, meat_murgh_dum_biryani).
+serves(uri17, beaf_yakhni_biryani).
+serves(uri17, mattar_pulao).
+serves(uri17, pal_payasam).
+serves(uri17, semiya_payasam).
+serves(uri17, mango_kulfi).
+serves(uri17, almond_kulfi).
+
+% Asian Restaurant
+restaurant(uri18).
+location(uri18, Fredericton).
+name(uri18, "Asiano classica").
+star_rating(uri18, 4).
+asian(uri18).
+serves(uri18, allu_paratha).
+serves(uri18, veg_chow_mein).
+serves(uri18, shahi_paratha).
+serves(uri18, chicken_chow_mein).
+serves(uri18, masala_gosht).
+serves(uri18, pork_dumplings).
+serves(uri18, tomato_rasam).
+serves(uri18, veg_fried_rice).
+serves(uri18, chicken_sambhar).
+serves(uri18, chicken_fried_rice).
+serves(uri18, almond_kulfi).
+serves(uri18, veg_egg_roll).
+serves(uri18, mango_pudding).
+serves(uri18, custard_tart).
+
+
+
+% Italian restaurant:
+restaurant(uri19).
+location(uri19, Fredericton).
+name(uri19, "Olive Garden").
+star_rating(uri19, 4).
+italian(uri19).
+serves(uri19, olive_pizza).  
+serves(uri19, meat_pizza).
+serves(uri19, anchovey_pizza).
+serves(uri19, spinach_spaghetti).  
+serves(uri19, beef_lasagna).
+serves(uri19, three_cheese_lasagna). 
+serves(uri19, beef_ravioli).
+serves(uri19, garlic_bruschetta).
+serves(uri19, cheese_topped_minestrone).
+serves(uri19, strawberry_gelato).
+serves(uri19, cherry_cheesecake).
+
+%  American restaurant:
+restaurant(uri20).
+location(uri20, Miramachi).
+name(uri20, "The American Restaurant").
+star_rating(uri20, 3).
+american(uri20).
+serves(uri20, egg_salad_sandwich).
+serves(uri20, vegetable_sandwich).
+serves(uri20, burger_and_fries).
+serves(uri20, fish_sticks).
+serves(uri20, cheese_burger).
+serves(uri20, blueberry_muffin).
+serves(uri20, whole_wheat_waffles).
+serves(uri20, caramel_turtle_brownies).
+serves(uri20, flaming_steak_diane).
+serves(uri20, maine_lobster_stew).
+serves(uri20, blueberry_pie).
+serves(uri20, meat_pizza).
+serves(uri20, veg_pizza).
+
+% Mexican restaurant:
+restaurant(uri21).
+location(uri21, Fredericton).
+name(uri21, "El Torito").
+star_rating(uri21, 2).
+mexican(uri21).
+serves(uri21, tofu_tacos).
+serves(uri21, beef_tacos).
+serves(uri21, chicken_enchiladas).
+serves(uri21, breakfast_enchiladas).
+serves(uri21, bean_burrito).
+serves(uri21, chicken_quesadillas).
+serves(uri21, cheese_nachos).
+serves(uri21, chocolate_flan).% desert
+serves(uri21, apple_churros).
+
+%  French restaurant:                     
+restaurant(uri22).
+location(uri22, Moncton).
+name(uri22, "La Madeline").
+star_rating(uri22, 3).
+french(uri22).
+serves(uri22, chocolate_mousse).
+serves(uri22, vanilla_mousse).
+serves(uri22, breakfast_crepe).
+serves(uri22, veg_crepe).
+serves(uri22, baguette).
+serves(uri22, soupe_lentilles).
+serves(uri22, escargots_burgundy).
+
+% Chinese restaurant:
+restaurant(uri23).
+location(uri23, Fredericton).
+name(uri23, "Yet Wah Restaurant").
+star_rating(uri23, 4).
+chinese(uri23).
+serves(uri23, veg_chow_mein).
+serves(uri23, beef_lo_mein).
+serves(uri23, fried_squid).  %seafood
+serves(uri23, vegan_dumplings).
+serves(uri23, pork_dumplings).
+serves(uri23, chicken_fried_rice).
+serves(uri23, veg_fried_rice).
+serves(uri23, custard_tart).
+serves(uri23, coconut_pudding).
+serves(uri23, meat_egg_roll).
+
+% Indian Restaurant
+restaurant(uri24).
+location(uri24, Fredericton).
+name(uri24, "Khana Khazana").
+star_rating(uri24, 4).
+indian(uri24).
+serves(uri24, shahi_paratha).
+serves(uri24, gobi_naan).
+serves(uri24, mutton_masala_gosht).
+serves(uri24, chicken_gosht_e_akbari).
+serves(uri24, murgh_dum_biryani).
+serves(uri24, yakhni_biryani).
+serves(uri24, mattar_pulao).
+serves(uri24, panchrangi_pulao).
+serves(uri24, pepper_rasam).
+serves(uri24, kadamba_sambhar).
+serves(uri24, mango_kulfi).
+serves(uri24, jalebi).
+
+

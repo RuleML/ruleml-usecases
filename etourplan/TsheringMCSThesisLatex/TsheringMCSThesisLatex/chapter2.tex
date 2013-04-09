@@ -1,0 +1,153 @@
+%%----------Chapter2------------------------------------------------------------------------------------
+
+\chapter{Background}
+
+\hspace{0.3in} This chapter describes the general concepts of travel planning and Semantic Web techniques. In Section 2.1, we introduce tour planning and recommendation methodologies. This is followed, in Section 2.2, by a description of the applicability of the Semantic Web in the tourism domain. The FOAF vocabulary is discussed in Section 2.3, and the Harmonise ontology is presented in Section 2.4. Finally, Section 2.5 concludes this chapter with a description of a semantic eTourism prototype.  
+
+\section{Tour Planner and Recommender Systems}
+
+\hspace{0.3in} Travel planning is a complex and dynamic process because there are multiple factors that influence the destination choice. Destination choice is determined by the availability of travel facilities and by the user's preferences such as length of travel, mode of transportation, accommodation type, and activity theme\glossary{ name={theme},description={It categorizes the different tourist activities based on three main themes, defined in the BTRI}}. Therefore, it is necessary to combine planning and recommendation in order to give users a complete vacation package with maximum options.
+
+\hspace{0.3in}We have developed travel planning strategies in the domain of touristic travel. Planning a travel for a tourist can be done in any one of the cells of the 3*3 matrix shown in Table 2.1. In this thesis, we have implemented rule systems for all three columns (aspects) of the complete planning row (strategy), described in detail in Section 5.3 of Chapter 5. The partial and sequence planning strategies are only principally covered in route planning in Section 5.2.1 and are not entirely implemented in this thesis.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\begin{table} [tbph]
+\caption{Tourist travel planning matrix}
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+       &$~~$Attraction-Only &$~~~~~$Event-Only &$~~~~~~$Event-Centric\\
+       & $~~~~~~$Planning&$~~~~~~$ Planning&$~~~~~~~~$Planning\\
+\hline
+\rowcolor{yellow}
+Complete & Planning attractions   & Planning events  & Planning events with  \\
+
+\rowcolor{yellow}
+Planning & based on related & based on their   & additional attraction \\
+
+\rowcolor{yellow}
+         &locations & dates and locations        & recommendation\\
+       
+\hline
+Sequence& System orders the &  System orders the    & System orders both  \\
+Planning& user-specified attra- &user-specified events &events and attractions \\
+       &   ctions & & \\
+\hline 
+Partial& System orders and &  System orders and     & System orders and  \\
+Planning&adds to user-specified &adds to user's             &adds to user's \\
+        &attractions &specified events  &specified events and \\
+        &           &          &attractions  \\  
+                 
+\hline      
+\end{tabular}
+\end{table}
+
+\hspace{0.3in}The second and third aspects of complete planning can be integrated, and the system allows users to check the option of keeping it as ``event-only" or "event-centric" planning. The traveller wants to attend events while touring the country. This planning includes optional attraction recommendations along the routes between event locations.
+
+\hspace{0.3in} The literature shows that recommendation is a common service in the tourism subdomains of travel and accommodation. Recommender systems are now used on increasing numbers of e-Commerce sites. They make the tourism services more attractive for users. The two most successful recommender system technologies are Triplehop's TripMatcher, used by www.ski-europe.com and VacationCoach's expert advice platform, Me-Print, used by Travelocity.com \cite{FR:02}. However, neither of the two supports users in planning a user-defined trip package that includes a scheduled list of preferred locations along with accommodation and sightseeing recommendations according to their preferences.
+
+
+\hspace{0.3in}Manuela and Tobias \cite{BM:04} discussed the four basic filtering approaches for building a recommender system:
+
+\begin{itemize}
+\item Collaborative Filtering: Recommendation based on the behaviour of users from their profiles including their preferences. Also referred to as social filtering, where recommendations are made based on other users with similar preferences.
+
+\item Content-based Filtering: Filtering that is based either on information retrieval or attribute-based filtering systems. This approach focuses on the semantics and structure of the content and might lack interaction with the user.
+
+\item Knowledge-based Filtering: Filtering that encompass the explicit structured representation of knowledge using ontologies and rules. With its concise knowledge representation, deriving implicit facts from ontology-structured facts using rules is a good way of recommendation. It can make the recommendation as wide-ranging as its knowledge base \cite{RB:00}\cite{RB:02}.
+    
+\item Hybrid Systems: Hybrid systems can combine any of the above methods. NRC-IIT's RACOFI technology combines rules and collaborative filtering\cite{LemireCOLA2003}
+\end{itemize}
+
+\hspace{0.3in}Our literature research on designing recommender systems \cite{BM:04}\cite{RB:02}, which focused on comparisons of the various approaches, suggests that the collaborative and content-based approaches are not perfectly suited for decision making in tourism. For instance, a user who has travelled for the purpose of hiking might also like to go to a restaurant or theatre after a tiring day. So, making recommendations only with a content-based or collaborative recommender system in the tourism and travel domain is not flexible and intelligent enough to incorporate the various preferences of users. On the other hand, knowledge-based recommenders are not restricted to extracting preferences from the interaction history or ratings but can respond to the user's stated need. Researchers have pointed out the importance of recommender systems to support multiple decision styles \cite{FR:02}. 
+
+\hspace{0.3in}Most of the existing recommender systems are location-centric recommenders, which are concerned with users' activity schedules once users get to a destination rather than planning entire trips within timeframes according to users' preferences and constraints. 
+
+The DieToRecs \cite{DTR:06} and Entrée Restaurant Recommender \cite{RB:02} systems use the Case-based reasoning (CBR) approach in their planning. Case-based reasoning treats the object to be recommended as a case and employs CBR techniques to locate a similar case from the KB. From a survey and experiment described in \cite {RB:02}, Burke concluded that collaborative filtering does not improve the performance over the knowledge-based component acting alone.
+
+\hspace{0.3in}The literature study supports the need of providing more planning options to our users along with recommendations in the tourism domain. This would, along with time, distance, and event schedules, employ users' preferences in order to provide the best possible plan to fulfill end users' needs. The aim of our eTourPlan prototype is to function as an integrated system of search engine, recommender, and planner.
+
+ 
+\section{The Semantic Web}
+\hspace{0.3in} Search engines support human users with information available on the Web. The World Wide Web is a vast and growing source of information and services. Currently, the Web, which is read and understood by humans, rather than machines, is mostly designed in Hypertext Markup Language (HTML). This ``Visual Web" does not allow computers to automate information processing, integration, and interoperability \cite{JC:07}. The Semantic Web aims at making information understandable by machines, so that they can perform tedious work involving knowledge representation and data integration automatically. Such a representation would be desirable for structuring the vast information about tourist destinations.
+\\
+\\
+\hspace{0.3in} Hendler, Lassila, and Berners-Lee, the inventor of WWW, URIs, HTTP, and HTML, define the Semantic Web (as quoted in \cite{JSY:07}) as,
+\begin{quote}
+  ``an extension of the current Web that enables knowledge representation by using extensible markup language (XML), RDF (Resource Description Framework), and ontologies including rules to make inferences."
+\end{quote}
+
+\hspace{0.3in}The Semantic Web is an endeavour to advance the Web by enriching its content with semantic metadata that can be processed by inference-enabled Web applications. It provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries. It is a collaborative effort led by the W3C with participation from a large number of researchers and industrial partners. It focuses not only on display, but also on machine-understandable metadata. It is largely based on the Resource Description Framework, creating descriptions of information available on the World Wide Web. Ontologies and automated reasoning are key techniques in the Semantic Web initiative. Rules can be used to draw inferences, to express constraints, to specify policies, to react to events and changes, to transform data, etc. We introduce two important notions in the Semantic Web: metadata and the Resource Description Framework.
+
+\subsection{Metadata}
+
+\hspace{0.3in} Metadata is structured information that describes, explains, locates, or otherwise makes it
+easier to retrieve, use, or manage an information resource \cite{NISO:04}. In simple words, metadata is data about data. It ensures that resources will survive and continue to be accessible into the future. 
+
+\hspace{0.3in} According to the W3C, metadata is machine-readable information for the Web\footnote{\href{www.w3.org/Metadata}{\url{www.w3.org/Metadata}}}. Metadata can describe resources at any level of aggregation, and it enriches resource discovery, interoperability, archiving, and preservation. 
+
+
+\subsection{Resource Description Framework}
+
+\hspace{0.3in}The Resource Description Framework (RDF), a W3C Recommendation, is a framework for modelling information at a metadata level on the Web \cite{rdf:06}: RDF is designed for widespread and decentralised use \cite{DB:03}. RDF is therefore the formal data model for machine-understandable metadata used to provide standard descriptions of Web resources for facilitating data and system integration and interoperability.
+
+\hspace{0.3in}RDF/XML is its XML syntax, and is at the base of the Semantic Web, most other languages corresponding to higher layers are built on top of it. RDF uses a triple representation of metadata, consisting of subject, predicate, and object. The subject represents the resource, the predicate expresses a relationship between the subject and the object, while the object is the object (another resource or a literal) of this relationship. RDFS is a language for describing RDF vocabularies in RDF. It has mechanisms to describe RDF classes and properties, such as attributes of resources and relationships between them. RDFS provides a mechanism one of whose purposes is integrating multiple metadata schemas extracted from distributed
+information \cite{NISO:04}.
+
+\hspace{0.3in}RDF can be used for resource discovery in search engines, for cataloguing and describing content and content relationships by intelligent software agents to facilitate knowledge sharing and exchange\footnote{\href{http://www.w3.org/TR/1999}{\url{www.w3.org/TR/1999}}}. 
+
+\hspace{0.3in}The Semantic Web data model is connected with the model of relational databases. An RDF triple can be directly mapped to a record in a table in a relational database. Semantic Web has the ability to express inferences on the vast amount of relational database information on the Web. Another advantage of the Semantic Web is that it allows to add information integrating to different databases on the Web and to perform advanced operations across them\footnote{\href{www.w3.org/DesignIssues/RDFnot.html}{\url{www.w3.org/DesignIssues/RDFnot.html}}}. Using database technology would require to `normalize' knowledge objects. In \cite{acm:JD1}, Debenham describes how `objects' are  used to represent knowledge (i.e., complex structures and rules) and how it is stored as information (i.e., relations) after normalization. Furthermore in \cite{acm:JD2}, he stated a single principle of normalization that applies to objects irrespective of whether they represent data, information, or knowledge items.
+
+\section{Friend Of A Friend}
+
+\hspace{0.3in} The FOAF project was founded by Dan Brickley and Libby Miller. FOAF emerged in 1998, as an RDF description of Dan Brickley in his homepage. FOAF is an open community-led initiative which is tackling the wider Semantic Web goal of creating a machine processable web of data\footnote{\href{www.xml.com/pub/a/2004/02/04/foaf.html}{\url{www.xml.com/pub/a/2004/02/04/foaf.html}}}. FOAF enables Semantic Web methods to be applied for personal homepages, linking together FOAF profiles of different persons who publish data with well-defined semantics.
+
+\hspace{0.3in} FOAF is an application of the RDF Web and it provides the basic vocabulary for the RDF Web by defining useful RDF properties. The original FOAF vocabulary is specified via the namespace URI `http://xmlns.com/foaf/0.1/', and consists of two components: vocabulary about classes and vocabulary about properties. Vocabulary
+about classes is designed to express the type of an object (e.g., foaf:Person), while vocabulary about properties is used to express the type of a relationship or an attribute (e.g., foaf:knows and foaf:name, respectively). A similar approach can be used for linking together a Web of FOAF-like profiles for tourist entities \cite{deri:04}.
+ 
+\section{The Harmonise Ontology}
+
+\hspace{0.3in}Since it is important to have a common view of the tourism business domain that can be used as a reference point for application interoperability, we must at least have a common understanding of the relevant concepts and relationships, which can be represented by sharing a standard ontology.
+
+\hspace{0.3in} Harmonise\footnote{\href{www.harmonise.org}{\url{www.harmonet.org}}} is a network of cooperating actors working together in the tourism domain to achieve information interoperability as well as to provide tools for the tourism marketplace. The Harmonise ontology is defined as an overall solution for information exchange in travel and tourism \cite{AF:06}. Some key players in the Tourism Harmonisation Network are the Open Travel Alliance (OTA), the World Tourism Organisation (WTO), the Travel Technology Initiative (TTI), and the International Federation for IT, Travel and Tourism (IFITT) \cite{AJ:05}. 
+
+\hspace{0.3in} The Interoperable Minimum Harmonise Ontology (IMHO) defines the building of an ontology as a social phenomenon to represent a common, sharable view of the application domain.  IMHO has a set of concepts of the travel and tourism domain, which are used within different data formats, and in this way enables mapping between those formats.
+The Harmonise ontology is currently comprised of classifications of data items for events, attractions, accommodations, and restaurants. Harmonise considers events and attractions as two primary entities because they are highly relevant to the tourism domain. Second to the above two entities is accommodations as they are one of the main business domains for tourism on the net. Harmonise has undergone a market validation by 12 pilot organizations based across Europe through a project called Harmo-TEN [2004-2005] and the final phase of implementation called Harmo-NET has started in 2006 and is still ongoing \cite{AF:06}.
+
+\hspace{0.3in}The Harmonise service allows travel and tourism organisations using different message standards or data formats to exchange data in a cost-effective way by offering fully supported open software with assured reliability.
+
+
+\section{Semantic eTourism Prototype}
+
+\hspace{0.3in} Our eTourism prototype uses a locally stored Knowledge Base (KB) to generate a travel plan. The KB consists of object-centric facts, which are structured by ontologies. Ontologies provide a good basis for reasoning and classifying the various information in the tourism domain. They provide uniform definitions and therefore increase comprehension and knowledge sharing, remove semantic ambiguity, and are fundamental to automated knowledge extraction on the Web \cite{gruber93towards}. Based on a machine-readable representation of information in the form of ontologies, facts, and rules, eTourPlan is a knowledge-based prototype in which semantic rules are implemented on the ontology-structured fact base to deduce intelligent services such as travel planning and recommendations, and precise search facilities. We can proceed from the conventional method of syntactic search (i.e., keyword search) of Web resources to semantic search of knowledge by using Semantic Web techniques such as ontologies and rules. Having such a well-structured KB would also enable automated information extraction and processing in the Semantic Web \cite{YB1:08}.
+
+\hspace{0.3in} Ontologies are mainly used where there are multiple subdomains needed to structure a domain. We consider the definition of five main tourism subdomains \cite{JJ:03}:
+
+\begin{itemize}
+\item \textbf{Regions}: The concept of region is fundamental to geography, and is of particular value in gaining an understanding of the special nature of different places and areas. Having an organized manner of structuring regions helps us in locating tourist entities in the tourism domain.
+
+\item \textbf{Transportation}: For many destinations within regions, transportation plays a vital role in the development of a tourism infrastructure.
+
+\item \textbf{Accommodations}: Accommodation is a term used to encompass the provision of bedroom facilities on a commercial basis within the hospitality or tourism industry. Primarily, it is associated with the hotel, resort, guest house, and similar sectors.
+
+\item \textbf{Events}: Planned events are either one-time events, such as a special soccer match, or periodic events, such as yearly cultural celebrations. Art and entertainment, business and trade, as well as sports and education are event categories of particular interest in the context of the tourism domain.
+
+\item \textbf{Attractions}: Tourist attractions are places of interest open to the public, offering recreation, education, or historical interest. (e.g., theme parks, historic houses, museums, art galleries, zoos, temples, and leisure complexes).
+\end{itemize}
+
+\hspace{0.3in} In our prototype, the vocabularies and concepts of accommodations, events, and attractions are the three tourism subdomains  collected from the Harmonise ontology. We use the basic idea of FOAF profiles to create FOAF-like semantic profiles for all relevant tourist entities. We implemented rule subsystems for each of the subdomains, which are later integrated into the main travel planning rule system. A knowledge-based travel planner can infer specific plans and make location-centric recommendations for each of the destinations by applying decision rules to the KB. Our eTourPlan prototype can provide solutions to a wide range of queries for tourist information according to the users' need. % without redundancy and inaccuracy. We claim that knowledge-based reasoning is the simplest and easiest way to come up with a rule system that provides three key operations: searching, recommending, and planning without the use of powerful algorithms.
+
+\hspace{0.3in} eTourPlan uses a light-weight ontology that enriches the FOAF-like semantic profiles of provinces, events, attractions, and accommodations. We have based our KB on Bhutan tourism information. The administrative subdivision of a country is governed by partonomic rules, which are mainly used to either locate (and get the full address of) any specific tourist entity. All province-to-province routes and distance times, measured in hours, are precomputed and stored in our KB along with other facts. This precomputation frees the planner from computing these route at run time. We show the various operations of our eTourPlan prototype on the Bhutan KB in Chapters 5 and 6. The key operations selected to be implemented in our prototype are as follows:
+\begin{enumerate}
+\item Parametric search of tourist information: Users might want to get detailed information about any particular province, event, attraction, accommodation, or route. eTourPlan allows information search that fits a number of simultaneous criteria (the parameters to searches). It allows searches by various options such as name, type, theme, or location. Providing key information such as event dates and their URLs along with other, finer details, helps our users to choose the most suitable travel date. It is also time saving and more fun for our users to get the precise information on the first click instead of having to wander over many websites.
+
+\item Recommend touristic route: This is for users who have very little idea about their preferences, but wish to make a good travel with the system's recommendation. The recommender builds a touristic route along the attractive provinces linked together in our KB, providing relevant details of attractions, events, and accommodation facilities in each of the provinces. 
+
+\item Recommend activities for user-preferred provinces: Assuming the user has fixed travel destinations, the system provides the recommendation of activities and route details for each of the provinces. This is called location-centric recommendation.
+
+\item Plan an attraction or event-centric travel: Based on operations 1-3, eTourPlan can generate complete travel plans either for attraction-only or for event-centric with attraction recommendation. Event-centric planning is based on a temporal-geographic search criterion, and attraction-only planning is based on a purely geographic search of related attractions in our KB.
+\end{enumerate}
+
+
+

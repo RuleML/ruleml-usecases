@@ -1,0 +1,3243 @@
+%%---------------Appendices--------------------------------
+
+\chapter*{Appendix A: Main Planner and Recommender Rule Set}
+\addcontentsline{toc}{chapter}{Appendix A: Main Recommender and Planner Rule Sets}
+\section*{Recommendation Rule Subsystem}
+%\addcontentsline{toc}{chapter}{Appendix C.1: Partonomy Facts and Rules}
+
+\singlespacing
+\begin{verbatim}
+% eTourPlan offers two main options for location-centric recommendation
+% 1. Recommendations for user-Preferred Locations
+% 2. System's Recommendation of Touristic Locations
+\end{verbatim}
+\vspace{-0.2in}
+\footnotesize
+%\begin{small}
+\begin{verbatim}
+% location-centric Recommendation
+ locCentricRecommend(typeOfRecommend->UserPrefBased;
+                     userInputs->[startPoint->?P1;
+                                  userPref->?PrefList;
+                                  endPoint->?P2];
+                         [?Route, 
+                          ?Recommendations,
+                          ?TotalBusHours:Real]):-
+   userPrefLocCentricRecommend(startPoint->?P1;
+                               endPoint->?P2;
+                               userPref->?PrefList;
+                               route->?Route; 
+                               recommendations->?Recommendations;
+                               accumulateTime->0:Real;
+                               totalTime->?TotalBusHours:Real).
+                           
+% Workhorse predicate for location centric recommendation                        
+ userPrefLocCentricRecommend(startPoint->?P1;
+                             endPoint->?P1;
+                             userPref->[];
+                             route->[]; 
+                             recommendations->[];
+                             accumulateTime->0:Real;
+                             totalTime->0:Real).
+ 
+ userPrefLocCentricRecommend(startPoint->?P1;
+                             endPoint->?P2;
+                             userPref->[];
+                             route->[?Route, ?BusHours]; 
+                             recommendations->[];
+                             accumulateTime->?AccumulateTime:Real;
+                             totalTime->?NewBus:Real):-
+   shortestRoute(?P1, ?P2, [?Route,?BusHours]!?),
+   add(?NewBus, ?AccumulateTime:Real, ?BusHours:Real).
+
+    
+   userPrefLocCentricRecommend(startPoint->?P1;
+                               endPoint->?P2;
+                               userPref->[?Pref|?PrefRest];
+                               route->[?Route, ?BusHours|?RouteRest]; 
+                               recommendations->[[?Pref;
+                                    EventList->?Events;
+                                    AttractionList->?Attractions;
+                                    Accommodations->?AccommodationList]|
+                                    ?RestRecommendations];
+                               accumulateTime->?AccumulateTime:Real;
+                               totalTime->?TotalBusHours:Real):-
+    shortestRoute(?P1, ?Pref, [?Route,?BusHours]!?),
+    getAllAttractions(?Pref, ?Attractions, ?NumAttractions:Integer),
+    getAllEvents(?Pref,  ?Events, ?NumEvents:Integer),
+    getAccommList(?Pref, ?AccommodationList, [], 2:Integer),
+    add(?NewBus, ?AccumulateTime:Real, ?BusHours),
+    userPrefLocCentricRecommend(startPoint->?Pref;
+                                endPoint->?P2;
+                                userPref->?PrefRest;
+                                route->?RouteRest; 
+                                recommendations->?RestRecommendations;
+                                accumulateTime->?NewBus;
+                                totalTime->?TotalBusHours:Real).                    
+                                           
+% System's Recommendation of Locations
+ locCentricRecommend(typeOfRecommend->SystemRecommendation;
+                     userInputs->[startPoint->?Province; 
+                                  numProvinces->?NumProvinces:Integer];
+                         [?Routes, ?TouristInfo, ?TotalBusHours:Real]):-
+   systemLocRecommender(startPoint->?Province; 
+                        nextPoint->?Province2:Province; 
+                        route->?Routes;
+                        recommendations->?TouristInfo;
+                        starttime->0:Real;
+                        totalTime->?TotalBusHours:Real;
+                        numProvinces->?NumProvinces:Integer).                                      
+
+% Work horse predicate
+ systemLocRecommender(startPoint->?Province; 
+                      nextPoint->?Province2;  
+                      route->[]; 
+                      recommendations->[?Province;
+                                        WebLink->?Url;
+                                        TouristInfo-> [
+                                          NumAttractions->?NumAttractions;
+                                          NumEvents->?NumEvents;
+                                          NumAccommodations->?NumAccommodations]];
+                            starttime->?Starttime:Real;
+                            totalTime->?Starttime:Real;
+                            numProvinces->1:Integer):-
+       province(?Province^hs.url->?Url;
+                     et.numBlocks->?NumBlocks;
+                     et.numAttractions->?NumAttractions;
+                     et.numEvents->?NumEvents;
+                     et.numAccommodations->?NumAccommodations!?).
+
+ 
+  systemLocRecommender(startPoint->?Province1; 
+                       nextPoint->?Province2; 
+                       route->[[?Route,?BusHours]|?Rest];
+                       recommendations->[[?Province1;
+                                          WebLink->?Url;
+                                          TouristInfo->[
+                                            NumAttractions->?NumAttractions;
+                                            NumEvents->?NumEvents; 
+                                            NumAccommodations->?NumAccommodations]]
+                                            |?RestProvinces];                                                                                          
+                       starttime->?Starttime:Real;                                                         
+                       totalTime->?TotalBusHours:Real;
+                       numProvinces->?NumProvinces:Integer):-
+ 
+     greaterThan(?NumProvinces:Integer, 1:Integer),
+     province(?Province1^hs.url->?Url;
+                        et.numBlocks->?NumBlocks;
+                        et.numAttractions->?NumAttractions;
+                        et.numEvents->?NumEvents;
+                        et.numAccommodations->?NumAccommodations!?),
+      getProvinceToRecommendation(?Province1,?R1),
+      shortestRoute(?Province1, ?R1,  [?Route, ?BusHours]),
+      add(?NewBus:Real,?BusHours:Real,?Starttime:Real),
+      subtract(?RouteLeft:Integer,  ?NumProvinces:Integer, 1:Integer),
+      systemLocRecommender(startPoint->?R1; 
+                         nextPoint->?Province2; 
+                         route->?Rest;
+                         recommendations->?RestProvinces;
+                         starttime->?NewBus:Real;
+                         totalTime->?TotalBusHours:Real;
+                         numProvinces->?RouteLeft:Integer).                         
+\end{verbatim}
+%\end{small}                         
+                         
+\section*{Planning Rule Subsystem}   
+\singlespacing
+\begin{verbatim}
+% eTourPlan has two modes of travel planning operation:
+% 1. Attraction-only
+% 2. Event-centric(Optional attraction recommendation)
+\end{verbatim}
+\vspace{-0.25in}
+\footnotesize
+%\begin{small}   
+\begin{verbatim}
+% Attraction-Only mode of eTourPlan
+ eTourPlan(typeOfPlanning->AttractionOnly;
+           userInputs->[startPoint->?StartPoint;
+                        numAttractions->?NumAttractions:Integer;
+                        userTotalTravelTimeInDays->?UserTotalTravelTimeInDays:Real];
+                       [?AttractionList; 
+                        TotalActivityTimeInHours->?TotalActivityTimeInHours]):-
+						  
+  attractionPlanner(startPoint->?StartPoint; 
+                    numAttractions->?NumAttractions:Integer; 
+                    userTotalTravelTimeInDays->?UserTotalTravelTimeInDays:Real; 
+                    totalActivityTimeInHours->?TotalActivityTimeInHours:Real; 
+                    attractionList->?AttractionList).  
+												
+% Event-Only/Centric mode of eTourPlan
+  eTourPlan(typeOfPlanning->EventCentric;
+            userInputs->[userStartDate->?UserStartDate;  
+                         userEndDate->?UserEndDate;  
+                         maxBreak->?MaxBreak:Real; 
+                         minBreak->?MinBreak:Real;
+                         startPoint->?StartPoint;
+                         endPoint->?EndPoint;
+                         attractionRecommendation->?YesOrNo;
+                         eventNum->?NumOfEvents:Integer];
+                      [?EventDetails;
+                       ReturnRoute->[?ReturnRoute; Returntime->?ReturnBusHours]]):-
+
+   systemEventPlanner(hs.startDate->?UserStartDate;  
+                      hs.endDate->?UserEndDate;  
+                      maxBreak->?MaxBreak:Real; 
+                      minBreak->?MinBreak:Real;
+                      et.startPoint->?StartPoint;
+                      et.lastProvince->?LastProvince;
+                      et.endPoint->?EndPoint;
+                      attractionRecommendation->?YesOrNo;           
+                      eventDetails->?EventDetails;
+                      eventNum->?NumOfEvents:Integer),
+      shortestRoute(?LastProvince, ?EndPoint, [?ReturnRoute, ?ReturnBusHours]).
+
+%Attraction Planner predicate
+	
+ attractionPlanner(startPoint->?StartPoint; 
+                   numAttractions->?NumAttractions:Integer; 
+                   userTotalTravelTimeInDays->?UserTotalTravelTimeInDays:Real; 
+                   totalActivityTimeInHours->?TotalActivityTimeInHours:Real; 
+                   attractionList->?AttractionList):-
+   attraction(?Name^et.province->?StartPoint!?),
+  
+  %Computing user's total available time in hours
+   maxActivitySightSeeingHoursInADay(?MaxActivityHoursInADay:Real),
+   multiply(?UserTotalTravelTimeInHours:Real, ?UserTotalTravelTimeInDays:Real,     
+                  ?MaxActivityHoursInADay:Real),
+
+   systemAttractionPlanner(attraction->?Name;   
+                           attractionList->?AttractionList;  
+                           visited->[];  
+                           accummulateTime->0:Real; 
+                       userTotalTravelTimeInHours->?UserTotalTravelTimeInHours:Real;
+                           totalActivityTimeInHours->?TotalActivityTimeInHours:Real; 
+                           numAttractions->?NumAttractions:Integer).
+								  
+% Workhorse recursive predicate 
+ systemAttractionPlanner(attraction->?Name;   
+                         attractionList->[];  
+                         visited->?Visited; 
+                         accummulateTime->?AccummulateTime:Real;                        
+                         userTotalTravelTimeInHours->?UserTotalTimelnHours:Real;                                            
+                         totalActivityTimeInHours->?AccummulateTime:Real;                                                    
+                         numAttractions->0:Integer).
+								
+ systemAttractionPlanner(attraction->?Name;   
+                         attractionList->[Name->?Name; 
+                         AttractionDetails->[
+                           Description->?Description; 
+                           Url->?Url;
+                           OpenHours->?OpenHours;
+                           Theme->?Theme;
+                           Location->[?Subblock, ?Province]]];  
+                         visited->?Visited;  
+                         accummulateTime->?AccummulateTime:Real; 
+                         userTotalTravelTimeInHours->?UserTotalTimelnHours:Real; 
+                         totalActivityTimeInHours->?TotalActivityTimeInHours:Real;                                              
+                         numAttractions->1:Integer):-			   
+    attraction(?Name^  
+                hs.description->?Description; 
+                hs.url->?Url; 
+                et.open->?OpenHours;
+                et.theme->?Theme; 
+                et.subblock->?Subblock;  
+                et.province->?Province;  
+                hs.relatedTo->?RelatedTo!?),
+   getCapitalDistance(?Name, ?CapitalDistance),
+   add(?TotalRouteHours:Real, ?AccummulateTime:Real, ?CapitalDistance:Real),
+        
+  %Assuming the user spends maximum of 4 hours at each attraction site, 
+  %which is stored as a global constant in the KB
+   maxHoursAtAnAttractionSite(?MaxHoursAtAnAttractionSite:Real),
+   add(?TotalActivityTimeInHours, 
+       ?TotalRouteHours:Real, 
+       ?MaxHoursAtAnAttractionSite:Real).
+
+  systemAttractionPlanner(attraction->?Name;   
+                          attractionList->[[?Name; 
+                          AttractionDetails->[
+                            Description->?Description; 
+                            Url->?Url;
+                            OpenHours->?OpenHours;
+                            Theme->?Theme;
+                            Location->[?Subblock, ?Province]]; 
+                            Route->?Route]|?Rest]; 
+                         visited->?Visited;  
+                         accummulateTime->?AccummulateTime:Real;  
+                         userTotalTravelTimeInHours->?UserTotalTimelnHours:Real; 
+                         totalActivityTimeInHours->?TotalActivityTimeInHours:Real; 							   
+                         numAttractions->?NumAttractions:Integer):-
+
+   greaterThan(?NumAttractions:Integer, 1:Integer),
+   attraction(?Name^  
+               hs.description->?Description; 
+               hs.url->?Url; 
+               et.open->?OpenHours;
+               et.theme->?Theme; 
+               et.subblock->?Subblock;  
+               et.province->?Province;  
+               hs.relatedTo->?RelatedTo!?),
+   notMember(?Name, ?Visited),
+   
+  %To get the next related attraction from the current attraction 
+   getAttractionToRecommendation(?Name,?RelatedAttraction),
+   getProvince(?RelatedAttraction, ?Province1),
+   
+  %Route and distance computation and validation   
+   shortestRoute(?Province, ?Province1, [?Route,?BusHours]),
+   add(?NewBusHours, ?AccummulateTime:Real, ?BusHours:Real),
+   getCapitalDistance(?RelatedAttraction, ?CapitalDistance),
+   add(?TotalRouteHours, ?NewBusHours:Real, ?CapitalDistance:Real),
+   
+   maxHoursAtAnAttractionSite(?MaxHoursAtAnAttractionSite:Real),
+   add(?AccumulateActivityTimeInHours, 
+       ?TotalRouteHours:Real,
+       ?MaxHoursAtAnAttractionSite:Real),
+   lessThan(?AccumulateActivityTimeInHours, ?UserTotalTimelnHours),
+  
+   subtract(?AttractionLeft:Integer,  ?NumAttractions:Integer, 1:Integer),
+   systemAttractionPlanner(attraction->?RelatedAttraction;  
+                           attractionList->?Rest; 
+                           visited->[?Name|?Visited]; 
+                           accummulateTime->?AccumulateActivityTimeInHours;  
+                           totalActivityTimeInHours->?TotalActivityTimeInHours:Real; 
+                           userTotalTravelTimeInHours->?UserTotalTimelnHours:Real;  
+                           numAttractions->?AttractionLeft:Integer).
+ 
+  % Workhorse predicate for event-centric planning
+   systemEventPlanner(hs.startDate->?UserStartDate;
+                    hs.endDate->?UserEndDate;
+                    maxBreak->?MaxBreak:Real; 
+                    minBreak->?MinBreak:Real;
+                    et.startPoint->?StartPoint;
+                    et.lastProvince->?StartPoint;
+                    et.endPoint->?EndPoint;
+                    attractionRecommendation->?YesOrNo;
+                    eventDetails->[];
+                    eventNum->0:Integer).
+
+ systemEventPlanner(hs.startDate->?UserStartDate; 
+                    hs.endDate->?UserEndDate; 
+                    maxBreak->?MaxBreak:Real;
+                    minBreak->?MinBreak:Real; 
+                    et.startPoint->?StartPoint;
+                    et.lastProvince->?LastProvince;
+                    et.endPoint->?EndPoint;
+                    attractionRecommendation->?YesOrNo;
+                    eventDetails->[[EventName->?Name:Events; 
+                                    EventDates->[Startdate->?EventStartDate;
+                                                 Enddate->?EventEndDate];
+                                    Theme->?Theme; 
+                                    Location->[?Location, ?Subblock, ?Province];
+                                    EventDescription->?Description; 
+                                    RelatedEvents->?RelatedTo; 
+                                    RouteDetails->[?Route, ?Recommendations; 
+                                                   RouteBusHours->?BusHours]; 
+                                    RecommendedAttractions->?Attractions]
+                                    |?EventList];
+                    eventNum->?N:Integer) :-
+
+   greaterThan(?N:Integer,0:Integer),
+   event(?Name^ 
+         hs.startDate->?EventStartDate; 
+         hs.endDate->?EventEndDate;
+         hs.description->?Description;
+         hs.url->?Url;
+         et.theme->?Theme; 
+         hs.location->?Location; 
+         et.province->?Province; 
+         hs.relatedTo->?RelatedTo!?),
+   
+  % Date validation of the event with the user`s travel dates 
+    diff(?Difference, ?EventStartDate,?UserStartDate),
+    greaterThanOrEqual(?Difference:Real, ?MinBreak:Real),
+    lessThanOrEqual(?Difference:Real, ?MaxBreak:Real),
+    diff(?RemainingDays, ?UserEndDate, ?EventEndDate),
+    greaterThan(?RemainingDays, 0:Integer),
+ 
+  % Route and distance time computation and validation
+    shortestRoute(?StartPoint, ?Province, [?Route, ?BusHours]),
+    getCapitalDistance(?Location, ?CapitalDistance),
+    add(?RouteBusHours, ?BusHours:Real, ?CapitalDistance:Real),
+  
+ % The time difference between the event dates has to be greater than 
+ % the route bus hour from one event location to the next event location
+   maxTravelHoursInADay(?MaxTravelInHours),
+   multiply(?DifferenceInHours, ?Difference, ?MaxTravelInHours),
+   greaterThan(?DifferenceInHours, ?RouteBusHours),
+     
+ % Checking if there is enough remaining time to reach the user`s specified 
+ % endPoint from the current event location
+   multiply(?ReturntripTimeInHours:Real, ?RemainingDays, ?MaxTravelInHours),
+   shortestRoute(?Province, ?EndPoint, [?ReturnRoute, ?ReturnBusHours]),
+   greaterThan(?ReturntripTimeInHours:Real, ?ReturnBusHours:Real),
+ 
+ % Check if the route needs attraction recommendation
+   checkIfRecommend(?Difference, ?Route, ?Recommendations, ?YesOrNo),
+  
+ % The getAttraction subpredicate with a specified location would 
+ % also work for this purpose.
+ % getAttraction(?Location, ?Subblock),
+   siteOf(?Location, ?Subblock),
+   
+ % Getting all the attractions in the subblock of the event-location
+   getAllAttractions(?Subblock,  ?Attractions, ?Num:Integer),
+  
+  subtract(?Eventleft:Integer,?N:Integer, 1:Integer),
+  systemEventPlanner(hs.startDate->?EventEndDate; 
+                      hs.endDate->?UserEndDate; 
+                      maxBreak->?MaxBreak:Real;
+                      minBreak->?MinBreak:Real;
+                      et.startPoint->?Province;
+                      et.lastProvince->?LastProvince;
+                      et.endPoint->?EndPoint;   
+                      attractionRecommendation->?YesOrNo;                     
+                      eventDetails->?EventList;  
+                      eventNum->?Eventleft:Integer).
+\end{verbatim}  
+%\end{small} 
+
+%\newpage
+\footnotesize
+\chapter*{Appendix B: Profiles of Provinces and thier Tourist Entities}
+
+\addcontentsline{toc}{chapter}{Appendix B: Profiles of Tourist Entities}This
+appendix gives the province-centric touristic profiles of Bhutan, which includes 
+profiles of attractions, accommodations and events found in it.
+
+\singlespacing
+\begin{verbatim}
+% Fact profiles of Bumthang province and its Tourist Entities
+% The facts are collected from Tourism Resources Inventory
+% of Bhutan, 2005.
+\end{verbatim}
+\vspace{-0.25in}
+%\begin{small}
+\footnotesize
+\begin{verbatim}
+% FOAF-Profile of Attractions, Accommodations, and Events in Bumthang Province
+ province(Bumthang:Province^
+          hs.url->"www.bumthang.gov.bt";
+          et.capital->Chamkhar:Town;
+          et.area->"1,819 sq.km";
+          et.elevation->"1,300 to 7300 meters";
+          et.numBlocks->10:Integer;
+          et.numAttractions->16:Integer;
+          et.numEvents->13:Integer;
+          et.numAccommodations->10:Integer;
+          hs.languagesSpoken->"Dzongkha, Bumthap";
+          hs.contact->"admbumthang@druknet.bt";
+          hs.description->"Bumthang is one of the most attractive touristic 
+          province with several festivals throughout the year";
+          hs.relatedTo->Mongar:Province).
+                 
+ attraction(Bumthang_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Chamkhar:Town;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description-> "The Bumthang Dzong or the Dzong of the white 
+            bird. The interesting thing about the Dzong is,that there is a 
+            water tower four stairs down behind the Dzong.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Ugyen_Chholing_Museum:Local_museum).
+                         
+ attraction(Ugyen_Chholing_Museum:Local_museum^
+            hs.url->" ";
+            et.subblock->Chamkhar:Town;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->[Open[DaysOfWeek[Mon, Tue, Wed], Period[9:Real, 16:Real]],
+                           Open[DaysOfWeek[Fri], Period[9:Real, 14:Real]],
+                           Open[DaysOfWeek[Sun], Period[9:Real, 14:Real]]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"Located in upper Tang valley on a commanding spur of 
+            3000m. The museum was opened in May 2001. It will give visitors a his-
+            toric knowledge of bhutanese culture, religion & tradition.";
+            hs.contact->" ";
+            hs.schedule-> "12 months";
+            hs.relatedTo->Petseling_Gompa:Temple).
+                         
+ attraction(Petseling_Gompa:Temple^
+            hs.url->" ";
+            et.subblock->Chamkhar:Town;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed], Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description-> "It is situated about 3 to 4 hours walk uphill through 
+            pine forest from Chamkhar town.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Zugney:Textiles).
+                          
+attraction(Zugney:Textiles^
+           hs.url->" ";
+           et.subblock->Chamkhar:Town;
+           et.province->Bumthang:Province;
+           et.theme->Cultural_Religious_Heritage;
+           et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                         Period[10:Real, 18:Real]];
+           et.capitalDistance->0.5:Real;
+           hs.description-> "Two handicraft shops at Zugney, selling mostly the 
+           local woolen fabric Bumthang yathra.";
+           hs.contact->" ";
+           hs.schedule->"12 months";
+           hs.relatedTo->Kharchu_Monastery:Monastery).                                
+                              
+                          
+ attraction(Kharchu_Monastery:Monastery^
+            hs.url->" ";
+            et.subblock->Chamkhar:Town;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is a new monastery established by Lam Namkhai 
+            Nyingpo It has beautiful sight of Chamkhar town.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Kurje_Lhakhang:Temple).
+                             
+ attraction(Kurjey_Lhakhang:Temple^
+            hs.url->" ";
+            et.subblock->Kurjey:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is very important in the history of Bhutan 
+            associated with Guru Rimpoche conversion to buddhism of Bumthang.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Thrasephel_Lhakhang:Temple).
+						   
+ attraction(Jambay_Lhakhang:Temple^
+            hs.url->" ";
+            et.subblock->Kurjey:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is a very religious temple.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Thrasephel_Lhakhang:Temple).
+
+ attraction(Thrasephel_Lhakhang:Temple^
+            hs.url->" ";
+            et.subblock->Tharpeling:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"A small temple on a ridge & on the left of the road
+            leading to Chhokhortoe.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Tharpeling_Monastery:Monastery).   
+                         
+ attraction(Tharpaling_Monastery:Monastery^hs.name->Tharpaling_Monastery:Monastery;
+            hs.url->" ";
+            et.subblock->Tharpaling:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It was built by the great saint Lonchen Rabjam in the
+            14th century. It has beautiful paintings, monastic school above the 
+            main temple and it has fabulous view on Chumme valley.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Tangbi_Monastery:Monastery).
+
+ attraction(Tangbi_Monastery:Monastery^hs.name->Tangbi_Monastery:Monastery;
+            hs.url->" ";
+            et.subblock->Tangbi:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->[Open[DaysOfWeek[Mon, Tue, Wed], Period[9:Real, 16:Real]],
+                      Open[DaysOfWeek[Fri], Period[9:Real, 14:Real]],
+                      Open[DaysOfWeek[Sun], Period[9:Real, 14:Real]]];
+            et.capitalDistance->0.5:Real;
+            hs.description-> "Located in upper Tang  valley. ";
+            hs.contact->" ";
+            hs.schedule-> "12 months";
+            hs.relatedTo->Tamshing_Lhakhang:Temple).
+
+attraction(Tamshing_Lhakhang:Temple^hs.name->Tamshing_Lhakhang:Temple;
+           hs.url->" ";
+           et.subblock->Tamshing_Village:Village;
+           et.province->Bumthang:Province;
+           et.theme->Cultural_Religious_Heritage;
+           et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                         Period[8:Real, 15:Real]];
+           et.capitalDistance->0.5:Real;
+           hs.description->"Built by Pema Lingpa(A Treasure Revealer) in 1505.";
+           hs.contact->" ";
+           hs.schedule->"12 months";
+           hs.relatedTo->Koenchhogsum_Lhakhang:Temple).
+                             
+ attraction(Koenchhogsum_Lhakhang:Temple^
+            hs.url->" ";
+            et.subblock->Nimalung:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+            Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"This is a small temple housing a big bell, a unique 
+            historical testimony of the 8th century. A big boulder placed in front 
+            of the temple is beleived to be the lid covering the lake inside.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Ura_Lhakhang:Temple).
+
+
+ attraction(Ura_Lhakhang:Temple^
+            hs.url->" ";
+            et.subblock->Ura:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description-> "A big  temple situated in the middle of Ura village.
+            It has a statue of Guru Rimpochhe and beautiful paintings.";
+            hs.contact->" ";
+            hs.schedule-> "12 months";
+            hs.relatedTo->Trumshingla_Park:National_park).
+          
+
+ attraction(Trumshingla_Park:National_park^
+            hs.url->" ";
+            et.subblock->Ura:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->[Open[DaysOfWeek[Mon, Tue, Wed], Period[9:Real, 16:Real]],
+                           Open[DaysOfWeek[Sun], Period[9:Real, 14:Real]]];
+            et.capitalDistance->0.5:Real;
+            hs.description-> "Thrumshingla park is on the way to Mongar from Bum-
+            thang. It is a home to many animals expecially the Red Panda. The 
+            Bengal Tiger has been also sighted. The park has also different 
+            kinds of rhododendron flowers and a variety of bird species.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Gongkhar_Lhakhang:Temple).                                 
+      
+ attraction(Gongkhar_Lhakhang:Temple^
+            hs.url->" ";
+            et.subblock->Ura:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is a temple attributed to the Nun Gelongma Pemo and 
+            it takes half an hour walk uphill through pine wood.";
+            hs.contact->" ";
+            hs.schedule-> "12 months";
+            hs.relatedTo->Domkhar_Zimchu:Palace).
+      
+ attraction(Domkhar_Zimchu:Palace^
+            hs.url->" ";
+            et.subblock->Domkhar:Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Wed, Fri, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"The summer palace of the second king of Bhutan.
+            This has a good view of Chhume village.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Darphel_Dzong:Ruins).          
+
+ attraction(Darphel_Dzong:Ruins^
+            hs.url->" ";
+            et.subblock->Domkhar_Village;
+            et.province->Bumthang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[1:Real, 24:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description-> "The Dzong ruins of Chheokhor Deb(Leader) is about an 
+            hours walk from the road head at Zhabjethang.";
+            hs.contact->" ";
+            hs.schedule-> "12 months";
+            hs.relatedTo->Mongar_Dzong:Fortress).
+                          
+           
+ accommodation(Kaila:Guest_house^
+               hs.url->"www.kaila.bt/";
+               et.rating->2:Real;
+               et.minPrice->400:Real;
+               et.subblock-> Chamkhar:Town;
+               et.province->Bumthang:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631219;
+                  et.cell->97517682948];
+               hs.contact->"manager@kaila.bt";
+               hs.relatedTo->Yangphel:Guest_house).
+
+                  
+ accommodation(Wangdicholing_Lodge:Lodge^
+               hs.url->"www.wangdicholing.bt/";
+               et.rating->3:Real;
+               et.minPrice->800:Real;
+               et.subblock->Chamkhar:Town;
+               et.province->Bumthang:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@wangdicholing.bt";
+               hs.relatedTo->Yangphel:Guest_house).
+                  
+                  
+ accommodation(Yangphel:Guest_house^
+               hs.url->"www.yangphel.bt/";
+               et.rating->2:Real;
+               et.minPrice->500:Real;
+               et.subblock->Tamshing_Village:Village;
+               et.province->Bumthang:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@yangphelbum.bt";
+               hs.relatedTo->Wangdicholing_Lodge:Lodge).   
+
+ accommodation(Hotel_Home:Hotel^
+               hs.url->"www.hotelhome.bt/";
+               et.rating->2:Real;
+               et.minPrice->350:Real;
+               et.subblock->Samcholing:Village;
+               et.province->Bumthang:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@hotelhome.bt";
+               hs.relatedTo->Kaila:Guest_house).                  
+                  
+ accommodation(Swiss:Guest_house^
+               hs.url->"www.swissbumthang.bt/";
+               et.rating->3:Real;
+               et.minPrice->1300:Real;
+               et.subblock->Tharpaling:Village;
+               et.province->Bumthang:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@swissbumthang.bt";
+               hs.relatedTo->Aryazamlha:Guest_house).   
+          
+ accommodation(Aryazamlha:Guest_house^
+               hs.url->"www.Aryazamlha.com/";
+               et.rating->3:Real;
+               et.minPrice->1500:Real;
+               et.subblock->Ura_Village:Village;
+               et.province->Bumthang:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->97555252464;
+                  et.cell->97517682948];
+               hs.contact->"manager@Aryazamlha.bt";
+               hs.relatedTo->Swiss:Guest_house).     
+                  
+ event(Tamshingphala_Choepa:Traditional_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,10:Real,08:Real];
+       hs.endDate->date[2008:Real,10:Real,10:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Tamshing_Lhakhang:Temple;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->Tangbi_Mani:Traditional_festival).
+
+ event(Tangbi_Mani:Traditional_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,10:Real,13:Real];
+       hs.endDate->date[2008:Real,10:Real,15:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Tangbi_Monastery:Monastery;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->Wangdue_Tshechu:Annual_festival).
+
+
+ event(Jambay_Lhakhang_Drup:Annual_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,11:Real,12:Real];
+       hs.endDate->date[2008:Real,11:Real,16:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Jambay_Lhakhang:Temple;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->Mongar_Tshechu:Annual_festival).
+
+
+ event(Prakhar_Duchhoed:Annual_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,11:Real,13:Real];
+       hs.endDate->date[2008:Real,11:Real,15:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Prakar_Lhakhang:Temple;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->Mongar_Tshechu:Annual_festival).
+
+ event(Nalakhar_Tshechu:Annual_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,12:Real,12:Real];
+       hs.endDate->date[2008:Real,12:Real,14:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Nalakhar_Lhakhang:Temple;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->National_day:National_festival).
+
+
+ event(Ura_Yakchoe:Annual_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,04:Real,16:Real];
+       hs.endDate->date[2008:Real,04:Real,20:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Ura_Lhakhang:Temple;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->National_Film_Festival:Film_festival).
+
+   
+ event(Nimalung_Tshechu:Annual_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,07:Real,10:Real];
+       hs.endDate->date[2008:Real,07:Real,12:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Nimalung_Dratshang:Temple_fortress;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->Kurjey_Tshechu:Annual_festival).
+     
+           
+ event(Kurjey_Tshechu:Annual_festival^
+       hs.description->"One of the most amazing festivals in Bumthang";
+       hs.startDate->date[2008:Real,07:Real,12:Real];
+       hs.endDate->date[2008:Real,07:Real,13:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Kurjey_Lhakhang:Temple;
+       et.province->Bumthang:Province;
+       hs.url->" ";
+       hs.relatedTo->Yangphel_Archery_Tournament:Sport_archery).                     
+ 
+ 
+% FOAF-Profile of Attractions, Accommodations, and Events in Chukha Province
+ province(Chukha:Province^
+          hs.url->"www.chukha.gov.bt";
+          et.capital->Gedu:Town;
+          et.area->"1,819 sq.km";
+          et.elevation-> "1,300 to 7300 meters";
+          et.numBlocks->6:Integer;
+          et.numAttractions->1:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->4:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admchukha@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->Paro:Province).
+
+ attraction(Chukha_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Chukha_Town:Town;
+            et.province->Chukha:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is one of the most beautiful attractions in the 
+            Southern region";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Rinpung_Dzong:Fortress).
+
+ accommodation(Hotel_Druk_Phuentsholing:Hotel^
+               hs.url->"www.drukhotels.com/";
+               et.rating->4:Real;
+               et.minPrice->2700:Real;
+               et.subblock->Phuentsholing_Upper_Town:Town;
+               et.province->Chukha:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@hoteldruk.bt";
+               hs.relatedTo->Hotel_Namgay:Hotel).
+
+ accommodation(Hotel_Namgay:Hotel^
+               hs.url->"www.hotelNamgay.bt/";
+               et.rating->3:Real;
+               et.minPrice->1800:Real;
+               et.subblock->Phuentsholing_Upper_Town:Town;
+               et.province->Chukha:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+               et.cell->97517682948];
+               hs.contact->"manager@hoteldruk.bt";
+               hs.relatedTo->Central_Hotel:Hotel).
+                  
+ accommodation(Central_Hotel:Hotel^
+               hs.url->"www.CentralHotel.bt/";
+               et.rating->2:Real;
+               et.minPrice->800:Real;
+               et.subblock->Phuentsholing_Upper_Town:Town;
+               et.province->Chukha:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@hoteldruk.bt";
+               hs.relatedTo->Hotel_Namgay:Hotel).                 
+                  
+ accommodation(Blue_Dragon:Hotel^
+               hs.url->"www.hotelBlueDragon.bt/";
+               et.rating->1:Real;
+               et.minPrice->350:Real;
+               et.subblock->Phuentsholing_Upper_Town:Town;
+               et.province->Chukha:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@hoteldruk.bt";
+               hs.relatedTo->Central_Hotel:Hotel).
+                  
+ event(Chukha_Tshechu:Annual_festival^
+       hs.description->"One of the most amazing festivals in Chukha";
+       hs.startDate->date[2008:Real,03:Real,19:Real];
+       hs.endDate->date[2008:Real,03:Real,21:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Chukha_Dzong:Fortress;
+       et.province->Chukha:Province;
+       hs.url->" ";
+       hs.relatedTo->Ura_Yakchoe:Annual_festival).
+
+ event(Yangphel_Archery_Tournament:Sport_archery^
+       hs.description->"11TH Yangphel open archery tournament";
+       hs.startDate->date[2008:Real,08:Real,23:Real];
+       hs.endDate->date[2008:Real,10:Real,02:Real];
+       et.theme->Recreation;
+       hs.location->City_park:National_park;
+       et.province->Chukha:Province;
+       hs.url->"http://www.bhutanarchery.com/default.asp";
+       hs.relatedTo->"Thimphu_Drupchen:Annual_festival").
+                                 
+% FOAF-Profile of Attractions, Accommodations, and Events in Mongar Province
+ province(Mongar:Province^
+          hs.url->"www.mongar.gov.bt";
+          et.capital->Mongar_Town:Town;
+          et.area->"1,819 sq.km";
+          et.elevation-> "1,300 to 7300 meters";
+          et.numBlocks->5:Integer;
+          et.numAttractions->1:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->0:Integer;
+          hs.languagesSpoken->"Dzongkha,Sharchopa";
+          hs.contact->"admmongar@druknet.bt";
+          hs.description->"The largest province by size and popolution";
+          hs.relatedTo->Trashigang:Province).
+
+ attraction(Mongar_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Mongar_Town:Town;
+            et.province->Mongar:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is a beautiful fortress";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Trashigang_Dzong:Fortress).
+
+
+ event(Mongar_Tshechu:Annual_festival^
+       hs.description->"One of the most amazing festivals in Mongar";
+       hs.startDate->date[2008:Real,12:Real,04:Real];
+       hs.endDate->date[2008:Real,12:Real,07:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Mongar_Dzong:Fortress;
+       et.province->Mongar:Province;
+       hs.url->" ";
+       hs.relatedTo->Nalakhar_Tshechu:Annual_festival).
+             
+
+
+% FOAF-Profile of Attractions, Accommodations, and Events in Paro Province 
+ province(Paro:Province^
+          hs.url->"www.paro.gov.bt";
+          et.capital->Paro_Town:Town;
+          et.area->"1,819 sq.km";
+          et.elevation-> "1,300 to 7300 meters";
+          et.numBlocks->10:Integer;
+          et.numAttractions->3:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->3:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admparo@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->Thimphu:Province).
+
+ attraction(Rinpung_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Phatsana:Village;
+            et.province->Paro:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is a beautiful attraction in the Western region";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Taktshang:Monastery).
+
+ attraction(Taktshang:Monastery^
+            hs.url->" ";
+            et.subblock->Tshento_Shari:Village;
+            et.province->Paro:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[8:Real, 18:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"One of the seven wonders in the world";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Ta_Dzong:National_museum).
+
+ attraction(Ta_Dzong:National_museum^
+            hs.url->"www.nationalmuseum.gov.bt/";
+            et.subblock->Goepay:Village;
+            et.province->Paro:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[10:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is the biggest and the oldest museum in Bhutan";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Tashichoe_Dzong:Fortress).
+
+ accommodation(Aman:Resort^
+               hs.url->"www.amanresorts.com/amankora/home.aspx";
+               et.rating->5:Real;
+               et.minPrice->4500:Real;
+               et.subblock->Tsento_Shari:Village;
+               et.province->Paro:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9758211452;
+                  et.cell->97517682948];
+               hs.contact->"manager@AmanResort.bt";
+               hs.relatedTo->Tiger_Nest:Resort).   
+
+ accommodation(Tiger_Nest:Resort^
+               hs.url->"www.TigerNest.bt";
+               et.rating->3:Real;
+               et.minPrice->2500:Real;
+               et.subblock->Tsento_Shari:Village;
+               et.province->Paro:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9758211452;
+                  et.cell->97517682948];
+               hs.contact->"manager@AmanResort.bt";
+               hs.relatedTo->Kichu_Resort:Resort).   
+
+ accommodation(Rangen:Resort^
+               hs.url->"www.rangen.bt";
+               et.rating->2:Real;
+               et.minPrice->1000:Real;
+               et.subblock->Tsento_Shari:Village;
+               et.province->Paro:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9758211452;
+                  et.cell->97517682948];
+               hs.contact->"manager@rangen.bt";
+               hs.relatedTo->Holiday_Home:Hotel).                      
+
+ accommodation(KichuResort^
+               hs.url->"www.kichuResort.bt/";
+               et.rating->3:Real;
+               et.minPrice->2000:Real;
+               et.subblock->Lamgong:Village;
+               et.province->Paro:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9758211452;
+                  et.cell->97517682948];
+               hs.contact->"manager@kichuResort.bt";
+               hs.relatedTo->"http://www.TigerNest.bt").   
+                  
+          
+ accommodation(Holiday_Home:Hotel^
+               hs.url->"www.kichuResort.bt";
+               et.rating->3:Real;
+               et.minPrice->2000:Real;
+               et.subblock->Gaptey:Village;
+               et.province->Paro:Province;
+               hs.telecoms->Telecoms[
+               et.landline->9758211452;
+               et.cell->97517682948];
+               hs.contact->"manager@kichuResort.bt";
+               hs.relatedTo->Rangen:Resort).
+              
+    
+ event(Paro_Tshechu:Annual_festival^
+       hs.description->"Paro Tshechu (Festival) is one of most important festival
+       of Bhutan which is in the start of spring. The most magnificient
+       thing about it is the unraveling of a large Thanka (Thongdrol).";
+       hs.startDate->date[2008:Real,03:Real,17:Real];
+       hs.endDate->date[2008:Real,03:Real,21:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Rinpung_Dzong:Fortress;
+       et.province->Paro:Province;
+       hs.url->" ";
+       hs.relatedTo->"Ura_Yakchoe:Annual_festival").   
+
+% FOAF-Profile of Attractions, Accommodations, and Events in Thimphu Province
+ province(Thimphu:Province^
+          hs.url->"http://www.thimphu.gov.bt";
+          et.capital->Thimphu_City:City;
+          et.area->"1,819 sq.km";
+          et.elevation-> "1,300 to 7300 meters";
+          et.numBlocks->10:Integer;
+          et.numAttractions->3:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->3:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admthimphu@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->Punakha:Province).
+ 
+ attraction(Tashichoe_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Jongshina:Town;
+            et.province->Thimphu:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"One of the most beautiful attractions in Thimphu";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo-> "Memorial_Chorten:Temple").
+
+ attraction(Memorial_Chorten:Temple^
+            hs.url->" ";
+            et.subblock->Thimphu_City:City;
+            et.province->Thimphu:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"One of the most beautiful attractions in Thimphu";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->"Botanical_Garden:Garden").
+                          
+
+ attraction(Botanical_Garden:Garden^
+            hs.url->" ";
+            et.subblock->Barbesa:Town;
+            et.province->Thimphu:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"One of the most beautiful attractions in Thimphu";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->"Punakha_Dzong:Fortress").   
+
+ accommodation(River_View:Hotel^
+               hs.url->"www.riverview.bt";
+               et.rating->4:Real;
+               et.minPrice->4000:Real;
+               et.subblock->Thimphu_City:City;
+               et.province->Thimphu:Province;
+               hs.telecoms->Telecom[|
+                  et.landline->9758375133;
+                  et.cell->97517616363];
+               hs.contact->"manager@druknet.bt";
+               hs.relatedTo->Tandin:Hotel).
+
+ accommodation(Tandin:Hotel^
+               hs.url->"www.tandin.bt/";
+               et.rating->2:Real;
+               et.minPrice->1500:Real;
+               et.subblock->Thimphu_City:City;
+               et.province->Thimphu:Province;
+               hs.telecoms->Telecom[
+                  et.landline->9758375143;
+                  et.cell->97517663421];
+               hs.contact->"manager@druknet.bt";
+               hs.relatedTo->River_View:Hotel).   
+
+ accommodation(Hotel_Druk_Thimphu:Hotel^
+               hs.url->"www.drukhotels.com/";
+               et.rating->4:Real;
+               et.minPrice->2700:Real;
+               et.subblock->Thimphu_City:City;
+               et.province->Thimphu:Province;
+               hs.telecoms->Telecoms[
+                  et.landline->9753631452;
+                  et.cell->97517682948];
+               hs.contact->"manager@hoteldruk.bt";
+               hs.relatedTo->River_View:Hotel).                      
+                          
+ event(Thimphu_Drupchen:Annual_festival^
+       hs.description->"It is a popular festival in Thimphu";
+       hs.startDate->date[2008:Real,10:Real,04:Real];
+       hs.endDate->date[2008:Real,10:Real,08:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Tashichoe_Dzong:Fortress;
+       et.province->Thimphu:Province;
+       hs.url->" ";
+       hs.relatedTo->Thimphu_Tshechu:Annual_festival).
+
+ event(Thimphu_Tshechu:Annual_festival^
+       hs.description->"It is a popular festival in Thimphu";
+       hs.startDate->date[2008:Real,10:Real,09:Real];
+       hs.endDate->date[2008:Real,10:Real,11:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Tashichoe_Dzong:Fortress;
+       et.province->Thimphu:Province;
+       hs.url->" ";
+       hs.relatedTo->Tangbi_Mani:Traditional_festival).
+                      
+ event(GNH_Conference:Events^
+       hs.description->"It is the 4th International Conference on Gross 
+       National Happiness.";
+       hs.startDate->date[2008:Real,11:Real,24:Real];
+       hs.endDate->date[2008:Real,11:Real,26:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Tashichoe_Dzong:Fortress;
+       et.province->Thimphu:Province;
+       hs.url->"http://www.pc.gov.bt/gnh.asp";
+       hs.relatedTo->Mongar_Tshechu:Annual_festival).
+
+
+ event(National_Film_Festival:Film_festival^
+       hs.description->"Film festival held every year";
+       hs.startDate->date[2008:Real,05:Real,02:Real];
+       hs.endDate->date[2008:Real,05:Real,04:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location-> Clock_Tower_Square:Stadium;
+       et.province->Thimphu:Province;
+       hs.url->" ";
+       hs.relatedTo->Nimalung_Tshechu:Annual_festival).
+
+ event(Fifth_King_Birth_Anniversary:National_festival^
+       hs.description->"King Jigme Khesar Namgyel Wangchuck's birthday";
+       hs.startDate->date[2008:Real,02:Real,21:Real];
+       hs.endDate->date[2008:Real,02:Real,21:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Changlimithang_stadium:Stadium;
+       et.province->Thimphu:Province;
+       hs.url->" ";
+       hs.relatedTo->Paro_Tshechu:Annual_festival).
+
+ event(National_day:National_festival^
+       hs.description->"The first hereditary King (Gongsa Ugen Wangchuck) of 
+       Bhutan was installed on this day in 1907.";
+       hs.startDate->date[2008:Real,12:Real,17:Real];
+       hs.endDate->date[2008:Real,12:Real,17:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location-> Changlimithang_stadium:Theatre;
+       et.province->Thimphu:Province;
+       hs.url->" ";
+       hs.relatedTo->Fifth_King_Birth_Anniversary:National_festival).
+
+
+ event(Sunday_market:Market_weekly^
+       hs.description->"Sunday farmer's market for fresh organic fruits and 
+       vegetable shopping.";
+       hs.startDate->" ";
+       hs.endDate->" ";
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Farmers_market:Market_weekly;
+       et.province->Thimphu:Province;
+       hs.url->" ";
+       hs.relatedTo->Sunday_Market_handicraft:Market_handicraft).
+
+ 
+ event(Space_34:Nightlife_party^
+       hs.description->"It is a nice cozy place to hang out with friends.";
+       hs.startDate->" ";
+       hs.endDate->" ";
+       et.theme->Recreation;
+       hs.location->eWorld_Building:Modern_buildings;
+       et.province->Thimphu:Province;
+       hs.url->" ";
+       hs.relatedTo->Bhutan_National_Film_Festival:Film_festival).
+             
+% FOAF-Profile of Attractions, Accommodations, and Events in Punakha Province
+ province(Punakha:Province^
+          hs.url->"www.punakha.gov.bt";
+          et.capital->Paro_Town:Town;
+          et.area->"1,819 sq.km";
+          et.elevation-> "1,300 to 7300 meters";
+          et.numBlocks->6:Integer;
+          et.numAttractions->2:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->0:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admpunakha@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->WangduePhodrang:Province).
+   
+ attraction(Punakha_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Thangzona:Village;
+            et.province->Punakha:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is the head of the monastic body";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Chimi_Lhakhang:Temple).
+
+ attraction(Chimi_Lhakhang:Temple^
+            hs.url->" ";
+            et.subblock->Chimithang:Village;
+            et.province->Punakha:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is a beautiful temple";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Punakha_Dzong:Fortress).
+
+
+ event(Punakha_Dromche:Annual_festival^
+       hs.description->"Punakha Dromche take place in the first month of the 
+       lunar year and ends with 'Serda', a magnificent procession which re-enacts 
+       an episode of the war against the Tibetan in the 17th century.";
+       hs.startDate->date[2008:Real,02:Real,11:Real];
+       hs.endDate->date[2008:Real,02:Real,15:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Punakha_Dzong:Fortress;
+       et.province->Punakha:Province;
+       hs.url->" ";
+       hs.relatedTo->Wangdue_Dzong:Fortress).
+                                                
+                 
+% FOAF-Profile of Attractions, Accommodations, and Events in WangduePhodrang 
+ province(WangduePhodrang:Province^
+          hs.url->"www.wangduephodrang.gov.bt";
+          et.capital->Wangdue_Town:Town;
+          et.area->"1,819 sq.km";
+          et.elevation->"1,300 to 7300 meters";
+          et.numBlocks->8:Integer;
+          et.numAttractions->1:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->0:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admtrongsa@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->Trongsa:Province).
+
+ attraction(Wangdue_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Wangdue_Town:Town;
+            et.province->WangduePhodrang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is one of the most beautiful attractions";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Trongsa_Dzong:Fortress).
+
+ event(Wangdue_Tshechu:Annual_festival^
+       hs.description->"Very popular festival in western Bhutan";
+       hs.startDate->date[2008:Real, 10:Real, 20:Real];
+       hs.endDate->date[2008:Real, 10:Real, 29:Real];
+       et.theme->Cultural_Religious_Heritage;
+       hs.location->Wangdue_Dzong:Fortress;
+       et.province->WangduePhodrang:Province;
+       hs.url->" ";
+       hs.relatedTo->Jambay_Lhakhang_Drup:Annual_festival).
+                     
+% FOAF-Profile of Attractions, Accommodations, and Events in Trongsa Province
+ province(Trongsa:Province^
+          hs.url->"www.trongsa.gov.bt";
+          et.capital->Samcholing:Village;
+          et.area->"1,819 sq.km";
+          et.elevation->"1,300 to 7300 meters";
+          et.numBlocks->10:Integer;
+          et.numAttractions->2:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->0:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admtrongsa@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->Bumthang:Province).
+   
+ attraction(Trongsa_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Samcholing:Village;
+            et.province->Trongsa:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"The biggest fortress built by Zhabdrung Rimpochhe";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo-> Samchholing_Palace:Popular_architecture ).
+
+ attraction(Samchholing_Palace:Popular_architecture^
+            hs.url->" ";
+            et.subblock->Samcholing:Village;
+            et.province->Trongsa:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Wed, Fri, Sun],
+                          Period[8:Real, 15:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description-> "Samchholing was built by the Second King.
+            It is about to be in ruins,but still has a beautiful 
+            architecture.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Bumthang_Dzong:Fortress).
+          
+         
+                         
+% FOAF-Profile of Attractions and Events in Trashigang Province
+ province(Trashigang:Province^
+          hs.url->"www.trashigang.gov.bt";
+          et.capital->Pam_Town:Town;
+          et.area->"1,819 sq.km";
+          et.elevation-> "1,300 to 7300 meters";
+          et.numBlocks->10:Integer;
+          et.numAttractions->1:Integer;
+          et.numEvents->1:Integer;
+          et.numAccommodations->0:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admtrashigang@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->TrashiYangtse:Province).
+ 
+ attraction(Trashigang_Dzong:Fortress^
+            hs.url->" ";
+            et.subblock->Pam_Town:Town;
+            et.province->Tashigang:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is a beautiful fortress";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->ChortenKora:Temple).
+
+
+% FOAF-Profile of Attractions, Accommodations, and Events in TrashiYangtse Province
+ province(TrashiYangtse:Province^
+          hs.url->"www.trashiyangtse.gov.bt/";
+          et.capital->Gom_Kora:Town;
+          et.area->"1,819 sq.km";
+          et.elevation->"1,300 to 7300 meters";
+          et.numBlocks->8:Integer;
+          et.numAttractions->2:Integer;
+          et.numEvents->2:Integer;
+          et.numAccommodations->0:Integer;
+          hs.languagesSpoken->"Dzongkha";
+          hs.contact->"admtrashiyangtse@druknet.bt";
+          hs.description->"Thimphu is the capital of Bhutan";
+          hs.relatedTo->" ").
+   
+ attraction(ChortenKora:Temple^
+            hs.url->" ";
+            et.subblock->Gom_Kora:Town;
+            et.province->TrashiYangtse:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 16:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It is an attractive temple";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->Zorig_Chusum:Crafts_show).
+
+ attraction(Zorig_Chusum:Crafts_show^
+            hs.url->" ";
+            hs.subblock->Gom_Kora:Town;
+            et.province->TrashiYangtse:Province;
+            et.theme->Cultural_Religious_Heritage;
+            et.open->Open[DaysOfWeek[Mon, Tue, Wed, Thu, Fri, Sat, Sun],
+                          Period[9:Real, 18:Real]];
+            et.capitalDistance->0.5:Real;
+            hs.description->"It was established in 1997 as a Rigney School and has 
+            5 areas of studies: Painting, Trezo (Silversmith), Embroidery, 
+            Patra(sculptures), and Lacquering.";
+            hs.contact->" ";
+            hs.schedule->"12 months";
+            hs.relatedTo->" ").                                 
+
+ 	
+\end{verbatim}
+%\end{small}
+
+\chapter*{Appendix C: Partonomy and Distance Computation KB}
+\addcontentsline{toc}{chapter}{Appendix C: Partonomy and Distance Computation KB} 
+The locations of tourist entities and the predicates for route computation between 
+provinces are given below: 
+\subsection*{Partonomy Rules}
+%\addcontentsline{toc}{chapter}{Appendix C.1: Partonomy Facts and Rules}
+\singlespacing
+\begin{verbatim}
+% Partonomy rules to structure the subparts of a country.
+% Domain:Bhutan
+\end{verbatim}
+\vspace{-0.25in}
+%\begin{small}
+\footnotesize
+\begin{verbatim}
+% partOf(?Region, ?Country).
+
+ partOfCountry(Western:Region, Bhutan:Country).
+ partOfCountry(Central:Region, Bhutan:Country).
+ partOfCountry(Eastern:Region, Bhutan:Country).
+ partOfCountry(Southern:Region, Bhutan:Country).
+
+% partOf(?Province, ?Region).
+ partOfRegion(Trongsa:Province, Central:Region).
+ partOfRegion(Bumthang:Province, Central:Region).
+ partOfRegion(Zhemgang:Province, Central:Region).
+
+ partOfRegion(Lhuntse:Province, Eastern:Region).
+ partOfRegion(Mongar:Province, Eastern:Region).
+ partOfRegion(Trashigang:Province, Eastern:Region).
+ partOfRegion(PemaGatshel:Province, Eastern:Region).
+ partOfRegion(TrashiYangtse:Province, Eastern:Region).
+ partOfRegion(SamdrupJongkhar:Province, Eastern:Region).
+
+ partOfRegion(Thimphu:Province, Western:Region).
+ partOfRegion(Haa:Province, Western:Region).
+ partOfRegion(Gasa:Province, Western:Region).
+ partOfRegion(Paro:Province, Western:Region).
+ partOfRegion(Punakha:Province, Western:Region).
+ partOfRegion(Dagana:Province, Western:Region).
+ partOfRegion(WangduePhodrang:Province, Western:Region). 
+
+ partOfRegion(Samtse:Province, Southern:Region).
+ partOfRegion(Chukha:Province, Southern:Region).
+ partOfRegion(Sarpang:Province, Southern:Region).
+ partOfRegion(Gelephu:Province, Southern:Region).
+ partOfRegion(Damphu:Province, Southern:Region).
+
+% partOf(?Block, ?Province).
+ partOfProvince(Chhoekhor:Block, Bumthang:Province).
+ partOfProvince(Chhumme:Block, Bumthang:Province).
+ partOfProvince(Tang:Block, Bumthang:Province).
+ partOfProvince(Ura:Block, Bumthang:Province).
+
+ partOfProvince(Athang:Block, WangduePhodrang:Province).
+ partOfProvince(Daga:Block, WangduePhodrang:Province).
+ partOfProvince(Dangchu:Block, WangduePhodrang:Province).
+ partOfProvince(Gangtey:Block, WangduePhodrang:Province).
+ partOfProvince(Gasetshog_Gom:Block, WangduePhodrang:Province).
+ partOfProvince(Gasetshog_Wom:Block, WangduePhodrang:Province).
+ partOfProvince(Kazhi:Block, WangduePhodrang:Province).
+ partOfProvince(Nahi:Block, WangduePhodrang:Province).
+ partOfProvince(Nyisho:Block, WangduePhodrang:Province).
+ partOfProvince(Phangyul:Block, WangduePhodrang:Province).
+ partOfProvince(Phobjikha:Block, WangduePhodrang:Province).
+ partOfProvince(Rubeisa:Block, WangduePhodrang:Province). 
+ partOfProvince(Sephu:Block, WangduePhodrang:Province).
+ partOfProvince(Thedtsho:Block, WangduePhodrang:Province). 
+
+ partOfProvince(Baap:Block, Thimphu:Province).
+ partOfProvince(Chang:Block, Thimphu:Province).
+ partOfProvince(Dagala:Block, Thimphu:Province).
+ partOfProvince(Geney:Block, Thimphu:Province).
+ partOfProvince(Kawang:Block, Thimphu:Province).
+ partOfProvince(Lingzhi:Block, Thimphu:Province).
+ partOfProvince(Mewang:Block, Thimphu:Province).
+ partOfProvince(Naro:Block, Thimphu:Province).
+ partOfProvince(Soe:Block, Thimphu:Province).
+ partOfProvince(Toep:Block, Thimphu:Province).
+
+ partOfProvince(Dzomi:Block, Punakha:Province).
+ partOfProvince(Goenshari:Block, Punakha:Province).
+ partOfProvince(Guma:Block, Punakha:Province).
+ partOfProvince(Kabjisa:Block, Punakha:Province).
+ partOfProvince(Lingmukha:Block, Punakha:Province).
+ partOfProvince(Shengana:Block, Punakha:Province).
+ partOfProvince(Talo:Block, Punakha:Province).
+ partOfProvince(Toewang:Block, Punakha:Province).
+
+ partOfProvince(Dogar:Block, Paro:Province).
+ partOfProvince(Dopshari:Block, Paro:Province).
+ partOfProvince(Doteng:Block, Paro:Province).
+ partOfProvince(Hungrel:Block, Paro:Province).
+ partOfProvince(Lamgong:Block, Paro:Province).
+ partOfProvince(Lungnyi:Block, Paro:Province).
+ partOfProvince(Naja:Block, Paro:Province).
+ partOfProvince(Shaba:Block, Paro:Province).
+ partOfProvince(Tsento:Block, Paro:Province).
+ partOfProvince(Wangchang:Block, Paro:Province).
+
+ partOfProvince(Gelling:Block, Chukha:Province).
+ partOfProvince(Phuentsholing:Block, Chukha:Province).
+
+ partOfProvince(Mongar_Gewog:Block, Mongar:Province).
+ partOfProvince(Pam:Block, Trashigang:Province).
+ partOfProvince(Yangtse:Block,TrashiYangtse:Province).
+ partOfProvince(Samtengang:Block,Trongsa:Province).
+
+% partOf(?Subblock, ?Block).
+ partOfBlock(Buli:Village, Chhoekhor:Block).
+ partOfBlock(Tharpaling:Village, Chhoekhor:Block).
+ partOfBlock(Prakar:Village, Chhoekhor:Block).
+ partOfBlock(Nimalung:Village, Chhoekhor:Block).
+ partOfBlock(Domkhar:Village, Chhoekhor:Block).
+ partOfBlock(Chamkhar:Town, Chhoekhor:Block).
+ partOfBlock(Tangbi:Village, Chhoekhor:Block).
+ partOfBlock(Ura_Village:Village, Ura:Block).
+ partOfBlock(Tamshing_Village:Village, Chhumme:Block).
+ partOfBlock(Domkhar:Village, Chhumme:Block).
+ partOfBlock(Nalakhar:Village, Chhumme:Block).
+
+ partOfBlock(Hungrel:Village, Hungrel:Block).
+ partOfBlock(Goepay:Village, Hungrel:Block).
+ partOfBlock(Gaptey:Village, Wangchang:Block).
+ partOfBlock(Tsento_Shari:Village, Tsento:Block).
+ partOfBlock(Lamgong_Village:Village, Lamgong:Block).
+
+ partOfBlock(Chukha_Town:Town,Gelling:Block).
+ partOfBlock(Samcholing:Village,Samtengang:Block).
+
+ partOfBlock(Jongshina:Town, Kawang:Block).
+ partOfBlock(Thimphu_City:City, Chang:Block).
+ partOfBlock(Chubachu:Town, Chang:Block).
+ partOfBlock(Changlimithang:Town, Chang:Block).
+ partOfBlock(Barbesa:Town, Baap:Block).
+
+ partOfBlock(Thangzona:Village, Shengana:Block).
+ partOfBlock(Wangdue_Town:Town, Gasetshog_Gom:Block).
+ partOfBlock(Mongar_Town:Town, Mongar_Gewog:Block).
+ partOfBlock(Pam_Town:Town, Pam:Block).
+ partOfBlock(Gom_Kora:Town, Yangtse:Block).
+ partOfBlock(Phuentsholing_Upper_Town:Town, Phuentsholing:Block).
+
+% siteOf(?Attractions, ?Subblock).
+ siteOf(Bumthang_Dzong:Fortress, Chamkhar:Town).
+ siteOf(Zugney:Textiles, Chamkhar:Town).
+ siteOf(Ugyen_Chholing_Museum:Local_museum, Chamkhar:Town).
+ siteOf(Petseling_Gompa:Temple, Chamkhar:Town).
+ siteOf(Prakar_Lhakhang:Temple, Prakar:Village).
+ siteOf(Nimalung_Dratshang:Temple_fortress, Nimalung:Village).
+ siteOf(Tamshing_Lhakhang:Temple, Tamshing_Village:Village).
+ siteOf(Jambay_Lhakhang:Temple, Kurjey:Village).
+ siteOf(Kurjey_Lhakhang:Temple, Kurjey:Village).
+ siteOf(Tharpeling_Monastery:Monastery, Tharpeling:Village).
+ siteOf(Thrasephel_Lhakhang:Temple, Tharpeling:Village).
+ siteOf(Nalakhar_Lhakhang:Temple, Nalakhar:Village).
+ siteOf(Domkhar_Zimchu:Palace, Domkhar:Village).
+ siteOf(Darphel_Dzong:Ruins, Domkhar:Village).
+ siteOf(Tangbi_Monastery:Monastery, Tangbi:Village).
+ siteOf(Ura_Lhakhang:Temple, Ura_Village:Village).
+ siteOf(Trumshingla_Park:National_park, Ura_Village:Village).
+ siteOf(Chukha_Dzong:Fortress, Chukha_Town:Town).
+ siteOf(City_park:National_park, Phuentsholing_Upper_Town:Town).
+ siteOf(Rinpung_Dzong:Fortress, Hungrel:Village).
+ siteOf(Ta_Dzong:National_museum, Goepay:Village).
+ siteOf(Taktshang:Monastery, Tsento_Shari:Village).
+ siteOf(Punakha_Dzong:Fortress, Thangzona:Village).
+ siteOf(Dzongchu:Temple, Thangzona:Village).
+ siteOf(Chimi_Lhakhang:Temple, Chimithang:Village).
+ siteOf(Tashichoe_Dzong:Fortress, Jongshina:Town).
+ siteOf(Memorial_Chorten:Temple, Thimphu_City:City).
+ siteOf(Botanical_Garden:Garden, Barbesa:Town). 
+ siteOf(Trongsa_Dzong:Fortress, Samcholing:Village).
+ siteOf(Mongar_Dzong:Fortress, Mongar_Town:Town).
+ siteOf(Trashigang_Dzong:Fortress, Pam_Town:Town).
+ 
+ siteOf(ChortenKora:Temple, Gom_Kora:Town).
+ siteOf(Public_place:Theatre, Gom_Kora:Town).
+ siteOf(Zorig_Chusum:Crafts_show, Gom_Kora:Town).
+ siteOf(Wangdue_Dzong:Fortress, Wangdue_Town:Town).
+ 
+% Event Venues
+ siteOf(Yangtse_Theatre:Theatre, Gom_Kora:Town).
+ siteOf(Changlimithang_stadium:Stadium, Thimphu_City:City).
+ siteOf(Clock_Tower_Square:Stadium, Thimphu_City:City).
+ siteOf(eWorld_Building:Modern_buildings, Thimphu_City:City).
+ siteOf(Farmers_market:Market_weekly, Chubachu:Town).
+ 
+% Accommodations in the subblock
+ siteOf(Kaila:Guest_house, Chamkhar:Town).
+ siteOf(Wangdicholing:Lodge, Chamkhar:Town).
+ siteOf(Yangphel:Guest_house, Tamshing_Village:Village).
+ siteOf(Hotel_Home:Hotel, Samcholing:Village).
+ siteOf(Swiss:Guest_house, Tharpaling:Village).
+ siteOf(Aryazamlha:Guest_house, Ura_Village:Village).
+ siteOf(Hotel_Druk:Hotel, Phuentsholing_Upper_Town:Town).
+ siteOf(Hotel_Namgay:Hotel, Phuentsholing_Upper_Town:Town).
+ siteOf(Central_Hotel:Hotel, Phuentsholing_Upper_Town:Town).
+ siteOf(Blue_Dragon:Hotel, Phuentsholing_Upper_Town:Town).
+ siteOf(Aman:Resort, Tsento_Shari:Village).
+ siteOf(Tiger_Nest:Resort,Tsento_Shari:Village).
+ siteOf(Rangen:Resort, Tsento_Shari:Village).
+ siteOf(Kichu_Resort:Resort, Lamgong_Village:Village).
+ siteOf(Holiday_Home:Hotel, Gaptey:Village).
+ siteOf(Tandin:Hotel, Thimphu_City:City).
+ siteOf(Hotel_Druk_Thimphu:Hotel, Thimphu_City:City).
+ siteOf(River_View:Hotel, Thimphu_City:City).
+%------------------------------------------------------------%
+%Record of Tourist Entities in each Subblock.
+
+% consistsOf(?Subblock, ?NumAtractions, ?NumAccommodations).
+		   
+% Province Bumthang
+ consistsOf(Tamshing_Village:Village, 1:Integer, 1:Integer).
+ consistsOf(Tangbi:Village, 1:Integer, 0:Integer).
+ consistsOf(Kurkey:Village, 2:Integer, 1:Integer).
+ consistsOf(Prakar:Village, 1:Integer, 0:Integer).
+ consistsOf(Nalakhar:Village, 1:Integer, 0:Integer).
+ consistsOf(Ura_Village:Village,2:Integer, 1:Integer).
+ consistsOf(Nimalung:Village, 1:Integer, 0:Integer).
+ consistsOf(Chamkhar:Town, 4:Integer, 2:Integer).
+ consistsOf(Samcholing:Village, 1:Integer, 1:Integer).
+ consistsOf(Tharpeling:Village, 2:Integer, 1:Integer).
+ consistsOf(Domkhar:Village, 2:Integer, 0:Integer).
+
+% Province Mongar
+ consistsOf(Mongar_Town:Town, 1:Integer, 0:Integer).
+
+% Province Paro
+ consistsOf(Goepay:Village, 1:Integer, 0:Integer).
+ consistsOf(Hungrel:Village, 1:Integer, 0:Integer).
+ consistsOf(Tsento_Shari:Village, 1:Integer, 0:Integer).
+
+% Province Punakha
+ consistsOf(Thangzona:Village, 2:Integer, 0:Integer).
+ consistsOf(Chimithang:Village, 1:Integer, 0:Integer).
+
+% Province Chukha
+ consistsOf(Chukha_Town:Town, 1:Integer, 0:Integer).
+ consistsOf(Phuentsholing_Upper_Town:Town, 1:Integer, 0:Integer).
+
+% Province Thimphu
+ consistsOf(Jongshina:Town, 1:Integer, 0:Integer).
+ consistsOf(Chubachu:Town, 1:Integer, 0:Integer).
+ consistsOf(Thimphu_City:City,2:Integer, 3:Integer).
+ consistsOf(Barbesa:Town,1:Integer, 0:Integer).
+ 
+% Province Trashigang
+ consistsOf(Pam_Town:Town, 1:Integer, 0:Integer).
+
+% Province Tashiyangtse
+ consistsOf(Gom_Kora:Town,2:Integer, 0:Integer).
+
+% Province Wangduephodrang
+ consistsOf(Wangdue_Town:Town, 1:Integer, 0:Integer).
+ 
+% Additional facts to test the KB with ground fact instances of 
+% partOf by locating attractions at any part of a country.
+
+ partOfCountry(HopeWellRock:Nature, Canada:Country).
+ partOfProvince(Niagra_fall:Water_fall, Toronto:Province).
+ partOfProvince(National_Library:Popular_architecture, Thimphu:Province).
+\end{verbatim}
+%\end{small}
+
+\begin{verbatim}
+% Auxiliary predicates acting on the partonomy facts
+\end{verbatim}
+\vspace{-0.25in}
+%\begin{small}
+\footnotesize
+\begin{verbatim}
+getFullAddress( ?Location, [?Subblock, ?Block,?Province, ?Region, ?Country]):-
+  siteOf(?Location, ?Subblock),
+  partOfBlock(?Subblock, ?Block),
+  partOfProvince(?Block, ?Province),
+  partOfRegion(?Province, ?Region),
+  partOfCountry(?Region, ?Country).
+
+%To locate attractions at different sublevel of a country
+%-----at a subblock level-------------------------------%
+
+getAttraction(?Attraction:Attractions, ?Subblock:Subblock):-
+  siteOf(?Attraction:Attractions, ?Subblock:Subblock).
+ 
+%-----at a block level----------------------------------%
+
+getAttraction(?Attraction:Attractions, ?Block:Block):-
+  partOfBlock(?Attraction:Attractions, ?Block:Block).
+  
+getAttraction(?Attraction:Attractions, ?Block:Block):-
+   partOfBlock(?Subblock:Subblock, ?Block:Block),
+   getAttraction(?Attraction:Attractions, ?Subblock:Subblock).
+
+%-----at a province level----------------------------------%
+
+getAttraction(?Attraction:Attractions, ?Province:Province):-
+  partOfProvince(?Attraction:Attractions, ?Province:Province).
+  
+getAttraction(?Attraction:Attractions, ?Province:Province):-
+    partOfProvince(?Block:Block, ?Province:Province),
+    getAttraction(?Attraction:Attractions, ?Block:Block).
+
+%------at a region  level-----------------------------------%
+
+getAttraction(?Attraction:Attractions, ?Region:Region):-
+  partOfRegion(?Attraction:Attractions, ?Region:Region).
+    
+getAttraction(?Attraction:Attractions, ?Region:Region):-
+   partOfRegion(?Province:Province, ?Region:Region),
+   getAttraction(?Attraction:Attractions, ?Province:Province).
+  
+%------at a country level-------------------------------------%
+
+getAttraction(?Attraction:Attractions, ?Country:Country):-
+   partOfCountry(?Attraction:Attractions, ?Country:Country).
+
+getAttraction(?Attraction:Attractions, ?Country:Country):-
+    partOfCountry(?Region:Region, ?Country:Country),
+    getAttraction(?Attraction:Attractions, ?Region:Region).
+\end{verbatim}
+%\end{small}
+\onecolumn
+\subsection*{Distance Computation Facts and Rules}
+%\addcontentsline{toc}{chapter}{Appendix C.2: Distance Computation Facts and Rules}
+\singlespacing
+\scriptsize
+%\begin{small}
+\begin{verbatim}
+% Transitive closure facts describing all adjacent provinces of Bhutan
+
+distanceTime(Haa, Paro; hike->6:Real; bike->5:Real; bus->4:Real; cab->3:Real).
+distanceTime(Haa, Chuzom; hike->7.5:Real; bike->5:Real; bus->3.5:Real; cab->2.5:Real).
+distanceTime(Paro, Chuzom; hike->4:Real; bike->3:Real; bus->2:Real; cab->1.5:Real).
+distanceTime(Chuzom, Thimphu; hike->4.5:Real; bike->3.5:Real; bus->2.5:Real; cab->1.5:Real).
+distanceTime(Chuzom, Chukha; hike->7:Real; bike->6.5:Real; bus->4.5:Real; cab->4:Real).
+distanceTime(Chukha, Phuntsholing; hike->9:Real; bike->7.0:Real; bus->3.5:Real; cab->3:Real).
+distanceTime(Phuentsholing, Samtse; hike->9:Real; bike->7.0:Real; bus->4:Real; cab->3:Real).
+distanceTime(Thimphu, Lobesa; hike->9.5:Real; bike->5.0:Real; bus->3.5:Real; cab->3:Real).
+distanceTime(Lobesa, WangduePhodrang; hike->1.0:Real; bike->0.5:Real; bus->0.7:Real; cab->0.5:Real).
+distanceTime(Lobesa, Punakha; hike->1.0:Real; bike->0.5:Real; bus->0.7:Real; cab->0.5:Real).
+distanceTime(Punakha, Gasa; hike->5.5:Real; bike->5.5:Real; bus->4.5:Real; cab->4:Real).
+distanceTime(Punakha, WangduePhodrang; hike->1.5:Real; bike->1:Real; bus->0.7:Real; cab->0.5:Real).
+distanceTime(WangduePhodrang, Damphu; hike->22:Real; bike->20:Real; bus->8:Real; cab->6.5:Real).
+distanceTime(Damphu, Dagana; hike->14:Real; bike->11:Real; bus->8:Real; cab->6.5:Real).
+distanceTime(Damphu, Sarpang; hike->7:Real; bike->5.5:Real; bus->4:Real; cab->3:Real).
+distanceTime(Sarpang, Gelephu; hike->5.5:Real; bike->4:Real; bus->3:Real; cab->2.5:Real).
+distanceTime(Gelephu, Zhemgang; hike->7:Real; bike->5.5:Real; bus->4.5:Real; cab->3.5:Real).
+distanceTime(Zhemgang, Trongsa; hike->10:Real; bike->6.5:Real; bus->4:Real; cab->3.5:Real).
+distanceTime(WangduePhodrang, Trongsa; hike->9:Real; bike->5.5:Real; bus->3.5:Real; cab->3:Real).
+distanceTime(Trongsa, Bumthang; hike->6.5:Real; bike->5.5:Real; bus->4.5:Real; cab->3.5:Real).
+distanceTime(Bumthang, Mongar; hike->20:Real; bike->15:Real; bus->7:Real; cab->6:Real).
+distanceTime(Mongar, Lhuentse; hike->10:Real; bike->8.5:Real; bus->7.5:Real; cab->6.5:Real).
+distanceTime(Mongar, Trashigang; hike->9:Real; bike->8:Real; bus->7:Real; cab->5.5:Real).
+distanceTime(Trashigang, TrashiYangtse; hike->10:Real; bike->8.5:Real; bus->7.5:Real; cab->6.5:Real).
+distanceTime(Trashigang, PemaGatshel; hike->8.5:Real; bike->7.5:Real; bus->6.5:Real; cab->5.5:Real).
+distanceTime(Trashigang, SamdrupJongkhar; hike->10:Real; bike->8:Real; bus->7:Real; cab->5.5:Real).
+
+\end{verbatim}
+\footnotesize
+\begin{verbatim}	
+% Symmetric rule holds the birectionality betweem the adjacent nodes
+
+ distanceTimeSymmetric(?Province1,
+                       ?Province2; 
+                       hike->?Hike; 
+                       bike->?Bike; 
+                       bus->?Bus; 
+                       cab->?Cab):-
+   distanceTime(?Province1,
+                ?Province2; 
+                hike->?Hike; 
+                bike->?Bike; 
+                bus->?Bus; 
+                cab->?Cab).
+
+ distanceTimeSymmetric(?Province1,
+                       ?Province2; 
+                       hike->?Hike; 
+                       bike->?Bike; 
+                       bus->?Bus; 
+                       cab->?Cab):-
+   distanceTime(?Province2,
+               ?Province1; 
+               hike->?Hike; 
+               bike->?Bike; 
+               bus->?Bus; 
+               cab->?Cab).
+  
+% Interface predicate to enforce the distanceTimeRoute main predicate
+ 
+ dTR(startPoint->?Province1; 
+     endPoint->?Province2; 
+	   route->?Route; 
+	   totalTime->?TotalBusHours):-
+   distanceTimeRoute(startPoint->?Province1; 
+                     endPoint->?Province2; 
+                     [], 
+                     0:Real; 
+                     route->?Rest; 
+                     totalTime->?TotalBusHours).
+ 
+% Workhorse predicate to compute the routes and bushours 
+% for any two province on the road-map
+  
+ distanceTimeRoute(startPoint->?Province; 
+                   endPoint->?Province; 
+                   ?Visited, 
+                   ?AccumulateTime:Real; 
+                   route->[?Province];  
+                   totalTime->?AccumulateTime:Real).
+
+ distanceTimeRoute(startPoint->?Province1; 
+                   endPoint->?ProvinceX; 
+                   ?Visited, 
+                   ?AccumulateTime:Real; 
+                   route->[?Province1|?Rest];  
+                   totalTime->?TotalBusHours:Real):-  
+  distanceTimeSymmetric(?Province1, ?Province2; bus->?Bus!?),
+  notMember(?Province2, ?Visited),
+  add(?NewBus, ?Bus, ?AccumulateTime:Real),
+  distanceTimeRoute(startPoint->?Province2; 
+                    endPoint->?ProvinceX; 
+                    [?Province1,?Province2|?Visited], 
+                    ?NewBus; 
+                    route->?Rest; 
+                    totalTime->?TotalBusHours:Real).
+  
+%Query: dTR(startPoint->?Province1; 
+            endPoint->?Province2; 
+            route->?Rest; 
+            totalTime->?TotalBusHours:Real).
+
+% This dTR predicate is executed in OO jDREW FindAll Solution archtecture to 
+generate all the routes and bushours for every pair of provinces on the road-map. 
+\end{verbatim}
+%\end{small}
+
+%\begin{small}
+\footnotesize
+\begin{verbatim}
+% Predicate to compute the shortest route from the list of alternative routes
+% routeCount is generated along with dTR facts in the first level of computation
+ 
+%Query: dTRShortest(startPoint->A;  
+                    endPoint->D; 
+                    route->?Routes;  
+                    shortestRoute->?Minimum).
+
+% Interface predicate
+ dTRShortest(startPoint->?Province1;  
+            endPoint->?Province2; 
+            route->?Routes; 
+            shortestRoute->?ShortestRoute):-
+   routeCount(startPoint->?Province1; 
+             endPoint->?Province2;  
+             count->?Count:Integer),
+   dTRList(startPoint->?Province1;  
+          endPoint->?Province2;  
+          route->?Routes;  
+          visited->[];   
+          currentMinRoute->[R, 10000:Real];  
+          min->?ShortestRoute; 
+          count->?Count:Integer).
+
+% Workhorse predicate to compute the min from routes recursively
+
+ dTRList(startPoint->?Province1;  
+         endPoint->?Province2;  
+         route->[];  
+         visited->?Visited;   
+         currentMinRoute->?NewMinRoute;  
+         min->?NewMinRoute; 
+         count->0:Integer).
+ 
+ dTRList(startPoint->?Province1;  
+         endPoint->?Province2;  
+         route->[[?R1,?T1]|?Rest];  
+         visited->?Visited;   
+         currentMinRoute->[?RMin, ?TMin];  
+         min->?FinalMinRoute; 
+         count->?Count:Integer):-
+   dTR(startPoint->?Province1; 
+       endPoint->?Province2; 
+       route->?R1; 
+       totalTime->?T1),
+   notMemberList(?R1,?Visited),
+   minRoute([[?R1, ?T1], [?RMin, ?TMin]], ?NewMinRoute),
+   subtract(?newCount, ?Count:Integer,  1:Integer),
+   dTRList(startPoint->?Province1;  
+           endPoint->?Province2;  
+           route->?Rest; 
+           visited->[?R1|?Visited];   
+           currentMinRoute->?NewMinRoute; 
+           min->?FinalMinRoute; 
+           count->?newCount:Integer). 
+  
+% Customized version of min predicate to find the smallest route in a list:
+ minRoute([[?R1,?X]] , [?R1,?X]).
+ minRoute([[?R1,?A],[?R2,?B]|?T], ?M) :- lessThan(?B ,?A), 
+                                         minRoute([[?R2,?B]|?T], ?M).
+ minRoute([[?R1,?A],[?R2,?B]|?T], ?M) :- lessThan(?A ,?B), 
+                                         minRoute([[?R1,?A]|?T], ?M).
+ minRoute([[?R1,?A],[?R2,?B]|?T], ?M) :- equal(?A ,?B), minRoute([[?R1,?A]|?T], ?M).                                         
+
+
+%Simplified minRoute for list consisting of two elements
+ minRoute([[?R1,?A],[?R2,?B]], [?R1, ?A]) :- lessThan(?A ,?B).
+ minRoute([[?R1,?A],[?R2,?B]], [?R2, ?B]) :- lessThan(?B ,?A).
+\end{verbatim}
+%\end{small}
+
+\footnotesize
+%\begin{small}
+\begin{verbatim}
+% In order to have precomputed shortest route for every pair 
+% of provinces along with precomputed all routes. The dTRShortest 
+% predicate is partially (route accumulation) implemented 
+% in java in the OO jDREW engine.
+% The package consisting of three main parts is appendixed here
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+import jdrew.oo.util.ParseException;
+import jdrew.oo.util.SubException;
+import nu.xom.ParsingException;
+import nu.xom.ValidityException;
+import antlr.RecognitionException;
+import antlr.TokenStreamException;
+
+
+public class RouteAccumulation {
+
+ public static void main(String args[]){
+		
+ ArrayList<DTRObject> list = new ArrayList<DTRObject>();
+	ArrayList<VisitedNode> visited = new ArrayList<VisitedNode>();
+	try{
+		String out = "";
+		File f = new File("bhutandTRKB");
+		FileReader inFile = new FileReader(f);
+    BufferedReader in = new BufferedReader(inFile);
+    String read ="";
+    String contents="";
+         
+    while((read = in.readLine()) != null)
+     {
+       contents = contents + read + '\n';
+     }
+      in.close();    
+     StringTokenizer st = new StringTokenizer(contents, "\n");
+     while(st.hasMoreTokens()){ 	 
+       StringTokenizer part = new StringTokenizer(st.nextToken(), ";");
+       String start = part.nextToken();
+       start = start.substring(start.indexOf("->") + 2);
+       String end = part.nextToken();
+       end = end.substring(end.indexOf("->") + 2);
+       String route = part.nextToken();
+       route = route.substring(route.indexOf("->") + 2);
+        	 
+       String time = part.nextToken();
+       time = time.substring(time.indexOf("->") + 2);
+       StringTokenizer timeTokenizer = new StringTokenizer(time, ":");
+       String time2 = timeTokenizer.nextToken();
+       DTRObject dtr = new DTRObject(start, end, route, time2);
+        	
+       list.add(dtr);
+       } 
+       for(int i = 0; i < list.size(); i++){
+        DTRObject dtr = list.get(i);
+        String start = dtr.getStart();
+        String end = dtr.getEnd();
+        VisitedNode node = new VisitedNode(start,end);
+        boolean found = false;
+        for(int y = 0; y  < visited.size(); y++){
+        		         		 
+         VisitedNode previous = visited.get(y);
+        		  		  
+    if((previous.getStart().equalsIgnoreCase(start) && 
+        previous.getEnd().equalsIgnoreCase(end)) ||
+       (previous.getStart().equalsIgnoreCase(end) && 
+        previous.getEnd().equalsIgnoreCase(start))){
+        found = true;
+       }
+     }
+
+   if(!found){
+       visited.add(node);
+       ArrayList<DTRObject> same = new ArrayList<DTRObject>();
+               		 
+       for(int j = 0; j < list.size(); j++){
+       DTRObject dtr2 = list.get(j);
+
+       if((start.equalsIgnoreCase(dtr2.getStart()) && 
+           end.equalsIgnoreCase(dtr2.getEnd()))) 
+         {// ||same.add(dtr2);        				 
+         }		 
+        }
+        		
+   	out = "dTRList(startPoint->" + same.get(0).getStart() + 
+   	      ":Province; endPoint->" + same.get(0)
+          .getEnd() + ":Province; routeList->[";
+            	 
+        	for(int q = 0; q < same.size(); q++){
+       		    out = out + "[" + same.get(q).getPath()+ ",
+       		    "+ same.get(q).getTime() + ":Real" + "]";
+       		if(!(same.size()-1 == q)){
+        			 out = out + ",";
+      		 }
+       	 }
+       	 out = out + "]; count->" + same.size() + ":Integer).";
+      	 System.out.println(out);
+      	 }      	      	 
+       }        
+         
+		}catch(Exception e){
+			System.out.println(e.toString());
+		}
+	}
+}
+
+\end{verbatim}
+%\end{small}
+
+\footnotesize
+%\begin{small}
+\begin{verbatim}
+public class DTRObject {
+
+	private String start;
+	private String end;
+	private String time;
+	private String path;
+	
+	DTRObject(String start, String end, String path, String time){
+		this.start = start;
+		this.end = end;
+		this.time = time;
+		this.path = path;
+	}
+	String getStart(){
+		return start;
+	}
+	String getEnd(){
+		return end;
+	}
+	String getTime(){
+		return time;
+	}
+	String getPath(){
+		return path;
+	}
+}
+public class BindingPair {
+
+	private String variable;
+	private String value;
+	
+	BindingPair(String variable, String value){
+		this.variable = variable;
+		this.value = value;
+	}
+	public String getVariable(){
+		return variable;
+	}
+	public String getValue(){
+		return value;
+	}
+}
+
+public class VisitedNode {
+
+	String start;
+	String end;
+	VisitedNode(String start, String end){
+		this.start = start;
+		this.end = end;
+	}
+	String getStart(){
+		return start;
+	}
+	String getEnd(){
+		return end;
+	}
+}
+
+% This java code accummulate each of routes connecting a specific
+% pair of nodes into a list from the dTR facts
+
+% A sample dTRList fact is shown here
+ dTRList(startPoint->Punakha:Province; 
+         endPoint->WangduePhodrang:Province; 
+         routeList->[[[Punakha, WangduePhodrang],0.7:Real],
+                     [[Punakha, Lobesa, WangduePhodrang],1.4:Real]]; 
+         count->2:Integer).
+\end{verbatim}
+%\end{small}
+\footnotesize
+%\begin{small}
+\begin{verbatim}
+% Route Search between any two provinces
+ getRouteDetails(startPoint->?ProvinceA;  
+                 endPoint->?ProvinceB;  
+                 ?Routes;  
+                 ?ShortestRoute):- 
+    dTRShortest(startPoint->?ProvinceA; 
+                endPoint->?ProvinceB; 
+                routeList->?Routes; 
+                shortest->?ShortestRoute).
+                
+% Route and Distance Computation Rule subsystem                                              
+% Symmetric is maintained by having  two modes of same predicate
+
+shortestRoute(?P1, ?P2, ?ShortestRoute):-
+ dTRShortest(startPoint->?P1; 
+             endPoint->?P2;  
+             shortest->?ShortestRoute!?).
+
+shortestRoute(?P2, ?P1, ?ReverseRoute):-
+  dTRShortest(startPoint->?P1; endPoint->?P2;  shortest->?ShortestRoute!?),
+  reverse(?ShortestRoute, ?ReverseRoute).
+                             					 
+% subpredicate to append an element to a list
+ append([], ?List, ?List).                    
+ append([?H|?Tail1], ?List2, [?H|?Tail3]) :-     
+   append(?Tail1, ?List2, ?Tail3) . 
+
+% subpredicate to reverse a list		 
+ reverse([], []).             
+ reverse([?H|?T], ?R) :- reverse(?T, ?R1), append(?R1, [?H], ?R).
+            
+%dTRShortest are newly generated facts from the TopDownFindAll Solution, 
+% after applying the minRoute supredicate on each dTRList facts generated
+% by the java code.
+
+% 277 dTRShortest facts are generated, which connects 24 provinces
+% A sample fact is shown here
+                             
+dTRShortest(startPoint->Punakha:Province; 
+            endPoint->WangduePhodrang:Province; 
+            routeList->[[[Punakha, WangduePhodrang], 0.7:Real],
+                        [[Punakha, Lobesa, WangduePhodrang], 1.4:Real]]; 
+            shortest->[[Punakha, WangduePhodrang], 0.7:Real]).
+            
+% Route Planner has two options:
+% i)UserPrefBased
+% ii)SystemBased
+
+% Route planner for a list of provinces selected by the user
+ routePlanner(typeOfPlan->UserPrefBased;
+              startPoint->?Province1;  
+              endPoint->?Province2;  
+              userPref->?PrefList; 
+              routeDetails->[Route->?Route;   
+                             TotalTime->?TotalBusHours]):-
+  userPrefRoutePlanner(startPoint->?Province1; 
+                       endPoint->?Province2; 
+                       userPref->?PrefList; 
+                       route->?Routes;
+                       accumulateTime->0:Real; 
+                       totalTime->?TotalBusHours).
+% System Route planner                        
+ routePlanner(typeOfPlan->SystemRecommend;
+              startPoint->?Province1;  
+              endPoint->?ProvinceN;  
+              routeDetails->[RecommendedRoute->?Route;   
+                             TotalTime->?TotalBusHours; 
+                             ReturnRoute->?ReturnRoute];
+             numofProvinces->?Num:Integer):-
+  systemRoutePlanner(startPoint->?Province1; 
+                     nextPoint->?Province2;  
+                     toRoute->?Route; 
+                     starttime->0:Real; 
+                     totalTime->?TotalBusHours:Real; 
+                     numofProvinces->?Num:Integer ),
+  shortestRoute(?Province2, ?ProvinceN, ?ReturnRoute).
+  
+% Workhorse predicate for option one
+ userPrefRoutePlanner(startPoint->?P1; 
+                      endPoint->?P1; 
+                      userPref->[]; 
+                      route->[]; 
+                      accumulateTime->0:Real; 
+                      totalTime->0:Real).
+
+ userPrefRoutePlanner(startPoint->?P1; 
+                      endPoint->?P2; 
+                      userPref->[]; 
+                      route->[?Route, ?BusHours]; 
+                      accumulateTime->?AccumulateTime:Real; 
+                      totalTime->?NewBus:Real):-
+   shortestRoute(?P1, ?P2, [?Route, ?BusHours]),
+   add(?NewBus, ?AccumulateTime, ?BusHours).
+
+  userPrefRoutePlanner(startPoint->?P1; 
+                       endPoint->?P2; 
+                       userPref->[?Pref|?PrefRest]; 
+                       route->[[?Route, ?BusHours]|?RouteRest]; 
+                       accumulateTime->?AccumulateTime:Real; 
+                       totalTime->?TotalBusHours:Real):-
+                       shortestRoute(?P1, ?Pref, [?Route, ?BusHours]),
+                       add(?NewBus, ?AccumulateTime:Real, ?BusHours),
+                       userPrefRoutePlanner(startPoint->?Pref; 
+                                            endPoint->?P2; 
+                                            userPref->?PrefRest; 
+                                            route->?RouteRest; 
+                                            accumulateTime->?NewBus; 
+                                            totalTime->?TotalBusHours:Real).
+ 
+% System Route planner
+ systemRoutePlanner(startPoint->?Province;  
+                   nextPoint->?Province;  
+                   toRoute->[]; 
+                   starttime->?Starttime:Real; 
+                   totalTime->?Starttime:Real; 
+                   numofProvinces->1:Integer).
+      
+ systemRoutePlanner(startPoint->?Province1;  
+                    nextPoint->?Province2;  
+                    toRoute->[[?Route,?BusHours]|?Rest]; 
+                    starttime->?Starttime:Real;
+                    totalTime->?TotalBusHours:Real; 
+                    numofProvinces->?NumOfProvinces:Integer):-
+  
+   greaterThan(?NumOfProvinces:Integer, 1:Integer),
+   getProvinceToRecommendation(?Province1,?R1),
+   shortestRoute(?Province1, ?R1, [?Route, ?BusHours]),
+   add(?NewBus:Real,?BusHours:Real,?Starttime:Real),
+   subtract(?RouteLeft:Integer,  ?NumOfProvinces, 1:Integer),
+   systemRoutePlanner(startPoint->?R1; 
+                      nextPoint->?Province2;   
+                      toRoute->?Rest; 
+                      starttime->?NewBus:Real; 
+                      totalTime->?TotalBusHours:Real; 
+                      numofProvinces->?RouteLeft:Integer ).                                                   
+\end{verbatim}
+%\end{small}
+
+\chapter*{Appendix D: Auxiliary Rule Sets}
+\addcontentsline{toc}{chapter}{Appendix D: Auxiliary Rule Sets} The
+Global constants, Date Validation, Duplicate checking and other search 
+subpredicates are given below:
+
+\singlespacing
+\begin{verbatim}
+% Global constants
+\end{verbatim}
+\vspace{-0.25in}
+%\begin{small}
+\footnotesize
+\begin{verbatim}
+% Maximum travel hours in a day
+  maxTravelHoursInADay(8:Real).
+   
+% Maximum hours of sightseeing in a day
+  maxActivitySightSeeingHoursInADay(12:Real).
+
+% Maximum hours at each attraction site
+  maxHoursAtAnAttractionSite(4:Real).
+ 
+% Maximum days between two events inorder to check for attraction 
+% recommendation on the route
+  maxTimeGapBetweenEvents(5:Real).
+
+% Provinces that have attractions  
+  hasAttractions(Chukha). 
+  hasAttractions(Paro). 
+  hasAttractions(Thimphu). 
+  hasAttractions(Punakha). 
+  hasAttractions(WangduePhodrang). 
+  hasAttractions(Trongsa). 
+  hasAttractions(Bumthang). 
+  hasAttractions(Mongar). 
+  hasAttractions(Trashigang). 
+  hasAttractions(TrashiYangtse).  
+
+%Date Validation Rules
+%later(?Date2, ?Date1) if ?Date2 is after ?Date1:
+
+later(date[?Y:Real, ?M:Real, ?Day2:Real], 
+      date[?Y:Real, ?M:Real, ?Day1:Real]) :-
+  greaterThan(?Day2:Real, ?Day1:Real).
+	
+later(date[?Y:Real, ?Month2:Real, ?], 
+      date[?Y:Real, ?Month1:Real, ?]) :-
+  greaterThan(?Month2:Real, ?Month1:Real).	
+	
+later(date[?Year2:Real, ?, ?], date[?Year1:Real, ?, ?]) :-
+  greaterThan(?Year2:Real, ?Year1:Real).
+
+%?Difference = ?Date2 - ?Date2 (In days)
+
+diff(?Difference, date[?Y:Real, ?M:Real, ?Day2:Real], 
+                  date[?Y:Real, ?M:Real, ?Day1:Real]) :-
+	subtract(?Difference, ?Day2:Real, ?Day1:Real).
+
+diff(?Difference, date[?Y:Real, ?Month2:Real, ?Day2:Real], 
+                  date[?Y:Real, ?Month1:Real, ?Day1:Real]) :-
+  subtract(?DiffMonth, ?Month2, ?Month1),
+  multiply(?DiffInDays, ?DiffMonth, 30:Real),
+  subtract(?TempDaysLeft, ?DiffInDays, ?Day1),
+  add(?Difference, ?TempDaysLeft, ?Day2).
+
+% Auxiliary rules to avoid duplicates in a list
+
+% notMember predicate is used to avoid duplicates in a list
+ notMember(?X, []).
+ notMember(?X, [?H|?T]) :- notEqual(?X, ?H), notMember(?X, ?T).
+
+% notMemberList predicate is used to avoid duplicate list in a nested list
+ notMemberList( ?X, []).
+ notMemberList( ?X, [?H]) :- naf(equalList(?X, ?H)).
+ notMemberList( ?X,[?H|?T]) :-  naf(equalList(?X, ?H)), notMemberList(?X,?T).
+ 
+% equalList predicate checks if two list are equal
+  equalList(?L, ?L).
+
+% Selecting leaf values from a the tourist entity profiles
+ getCapitalDistance(?Name,?CapitalDistance):-
+   attraction(?Name^et.capitalDistance->?CapitalDistance:Real!?).
+
+ getTheme(?Name,?Theme):-
+   attraction(?Name^et.theme->?Theme!?).  
+
+ getProvince(?Name,?Province):-
+   attraction(?Name^et.province->?Province!?).
+  
+ % Symmetric relation between related Provinces 
+
+ getProvinceToRecommendation(?Province,?RelatedProvince):-
+   province(?Province^hs.relatedTo->?RelatedProvince!?).
+  
+ getProvinceToRecommendation(?Province,?RelatedProvince):-
+   province(?RelatedProvince^hs.relatedTo->?Province!?).
+
+ %Symmetry between related attractions
+
+ getAttractionToRecommendation(?Attraction,?RelatedAttraction):-
+   attraction(?RelatedAttraction^hs.relatedTo->?Attraction!?).
+
+ getAttractionToRecommendation(?Attraction,?RelatedAttraction):-
+   attraction(?Attraction^hs.relatedTo->?RelatedAttraction!?).
+   
+ %Activity subsumes both attraction and event profiles
+ activity(?Name^hs.startDate->?StartDate;
+                hs.endDate->?EndDate; 
+	              hs.description->?Description; 
+	              hs.url->?Url; 
+		            et.theme->?Theme;  
+		            hs.location->?Location;  
+		            et.province->?Province;  
+		            hs.relatedTo->?RelatedTo):-
+   event(?Name^hs.startDate->?StartDate;  
+	             hs.endDate->?EndDate; 
+		           hs.description->?Description; 
+	             hs.url->?Url; 
+	             et.theme->?Theme;  
+	             hs.location->?Location;  
+		           et.province->?Province;  
+	             hs.relatedTo->?RelatedTo!?).
+
+ activity(?Name^hs.description->?Description; 
+	              hs.url->?Url; 
+	              et.theme->?Theme;  
+                et.open->?OpenHours;
+                et.subblock->?Subblock;  
+                et.province->?Province;  
+                hs.relatedTo->?RelatedTo):-
+   attraction(?Name^hs.description->?Description; 
+                    hs.url->?Url; 
+                    et.open->?OpenHours;
+	                  et.theme->?Theme; 
+                    et.subblock->?Subblock;  
+	                  et.province->?Province;  
+	                  hs.relatedTo->?RelatedTo!?).
+\end{verbatim}
+%\end{small}
+
+\section*{Search Rule Subsystem}
+\singlespacing
+\footnotesize
+%\begin{small}
+\begin{verbatim}
+% Subpredicate to retrieve province details within a specific region
+
+  getProvinceDetails(region->?Region; 
+                     name->?Name;
+                   [WebLink->?Url;
+                    Description->?Description;
+                    Capital->?Capital;
+                    Geography->[Area->?Area;
+                                Elevation->?Elevation];
+                    TouristInfo->[NumAttractions->?NumAttractions;
+                                  NumEvents->?NumEvents;
+                                  NumAccommodations->?NumAccommodations];
+                   Contact->?Contact]):-
+			  
+  partOfRegion(?Name, ?Region),
+  province(?Name^hs.url->?Url;
+                et.capital->?Capital;
+                et.area->?Area;
+                et.elevation-> ?Elevation;
+                et.numBlocks->?NumBlocks;
+                et.numAttractions->?NumAttractions;
+                et.numEvents->?NumEvents;
+                et.numAccommodations->?NumAccommodations;
+                hs.languagesSpoken->?Language;
+                hs.contact->?Contact;
+                hs.description->?Description;
+                hs.relatedTo->?RelatedTo!?).
+                
+ % Subpredicate for parametric search of activities 
+ 
+ getActivityDetails(actName->?Name;
+                    theme->?Theme; 
+                    address->[?Subblock, ?Block,?Province, ?Region, ?Country];
+                   [Name->?Name; 
+                    WebLink->?Url; 
+                    Address->[?Subblock, ?Block,?Province, ?Region, ?Country];
+                    Description->?Description;    
+                    RelatedTo->?RelatedTo]):-
+    attraction(?Name^hs.url->?Url; 
+                     hs.description->?Description; 
+                     et.open->?OpenHours;
+                     et.theme->?Theme; 
+                     et.subblock->?Subblock; 
+                     et.province->?Province;  
+                     hs.relatedTo->?RelatedTo!?),
+    getFullAddress( ?Name, [?Subblock, ?Block,?Province, ?Region, ?Country]).
+ 
+getActivityDetails(actName->?Name;
+                   theme->?Theme; 
+                   address->[?Subblock, ?Block,?Province, ?Region, ?Country];
+                  [ActName->?Name;
+                   WebLink->?Url; 
+                   Address->[?Subblock, ?Block,?Province, ?Region, ?Country];
+                   Theme->?Theme;
+                   EventDates->[StartDate->?StartDate; 
+                                EndDate->?EndDate];
+                   Description->?Description;    
+                   RelatedTo->?RelatedTo]):-
+
+    event(?Name^hs.startDate->?StartDate;  
+                hs.endDate->?EndDate; 
+                hs.description->?Description; 
+                hs.url->?Url; 
+                et.theme->?Theme;  
+                hs.location->?Venue;  
+                et.province->?Province;  
+                hs.relatedTo->?RelatedTo!?),
+    getFullAddress( ?Venue, [?Subblock,?Block, ?Province, ?Region, ?Country]).
+
+ % Subpredicate for parametric search of accommodations 
+   					
+ getAccommodationDetails(accName->?Name; 
+                         address->[?Subblock, 
+                                   ?Block, 
+                                   ?Province, 
+                                   ?Region, 
+                                   ?Country];
+                         setMaxPrice->[?YesOrNo, ?UserMaxPrice:Real];
+                        [Name->?Name; 
+                         WebLink->?Url;
+                         Address->[?Subblock, 
+                                   ?Block, 
+                                   ?Province, 
+                                   ?Region, 
+                                   ?Country];
+                         Standard->[StarRating->?Rating; 
+                                    MinPrice->?AccommMinPrice];
+                         ContactDetails->[Telecoms->[LandLine->?LandLine; 
+                                                     CellLine->?CellLine]; 
+                                                     Email->?ContactInfo];
+                         RelatedTo->?Recommendation]):-
+   accommodation(?Name^ 
+                 hs.url->?Url;
+                 et.rating->?Rating;
+                 et.minPrice->?AccommMinPrice;
+                 et.subblock->?Subblock;
+                 et.province->?Province;
+                 hs.telecoms->Telecoms[ 
+                    et.landline->?LandLine;
+                    et.cell->?CellLine];
+                 hs.contact->?ContactInfo;
+                 hs.relatedTo->?Recommendation!?),
+                 validateAccommPrice(?YesOrNo, 
+                                    ?AccommMinPrice:Real, 
+                                    ?UserMaxPrice:Real),
+                 getFullAddress(?AccName,  [?Subblock, 
+                                            ?Block,
+                                            ?Province, 
+                                            ?Region, 
+                                            ?Country]).
+		 
+% Auxiliary predicate for price validation of an accommodation(Optional)
+  
+   validateAccommPrice(Yes, ?AccommMinPrice:Real, ?UserMaxPrice:Real):-
+      lessThanOrEqual(?AccommMinPrice:Real, ?UserMaxPrice:Real).
+									
+    validateAccommPrice(No, ?AccommMinPrice:Real, ?UserMaxPrice:Real).
+	   
+
+% Subpredicate to accumulate all the attractions located in the specified province
+
+ getAllAttractions(?Province,  ?Attractions, ?NumAttractions:Integer):-
+   province(?Province^et.numAttractions->?NumAttractions!?),
+   getAttractionList(?Province,  ?Attractions, [], ?NumAttractions:Integer).
+
+ getAttractionList(?Province, [], ?Visited, 0:Integer).
+ 
+ getAttractionList(?Province,  [[AttractionName->?Name; 
+                                 Weblink->?Url; 
+                                 Theme->?Theme;  
+                                 Address->?Address;
+                                 Description->?Description]|?Rest], 
+                   ?Visited, 
+                   ?NumAttractions:Integer):-
+   greaterThan(?NumAttractions:Integer, 0:Integer),
+   attraction(?Name^
+           hs.description->?Description;
+           hs.url->?Url;
+           et.theme->?Theme;
+           hs.relatedTo->?RelatedTo;
+           et.province->?Province!?),
+    notMember(?Name, ?Visited),
+    getFullAddress(?Name, ?Address),
+    subtract(?Numtleft, ?NumAttractions:Integer,  1:Integer),
+    getAttractionList(?Province,  ?Rest,  [?Name|?Visited], ?Numtleft). 
+
+% Subpredicate to accumulate all the events located in the specified province
+
+%Interface Predicate    
+ getAllEvents(?Province, ?Events, ?NumEvents:Integer):-
+   province(?Province^et.numEvents->?NumEvents!?),
+   getEventList(?Province,?Events, [], ?NumEvents:Integer).	
+
+% Workhorse subpredicate 
+ getEventList(?Province, [], ?Visited, 0:Integer).
+ 
+ getEventList(?Province,  
+             [[EventName->?Name; 
+               EventDates->[StartDate->?StartDate; 
+                            EndDate->?EndDate]; 
+               Address->?Address;  
+               Description->?Description]|?Rest],
+             ?Visited, 
+             ?NumEvents:Integer):-
+   greaterThan(?NumEvents:Integer, 0:Integer),
+   event(?Name^
+           hs.startDate->?StartDate;  
+           hs.endDate->?EndDate; 
+           hs.description->?Description;
+           hs.url->?Url;
+           et.theme->?Theme;
+           hs.location->?Venue; 		   
+           hs.relatedTo->?RelatedTo;
+           et.province->?Province!?),
+   notMember(?Name, ?Visited),
+   getFullAddress(?Venue, ?Address),
+   subtract(?Numtleft, ?NumEvents:Integer,  1:Integer),
+   getEventList(?Province,  ?Rest,  [?Name|?Visited], ?Numtleft).  
+ 
+% Subpredicate to accumulate all the accommodations located in a specified province
+
+ getAllAccomm(?Province,  ?Attractions, ?NumAccommodations:Integer):-
+   province(?Province^et.numAccommodations->?NumAccommodations!?),
+   getAccommList(?Province, ?Attractions, [], ?NumAccommodations:Integer).
+
+ getAccommList(?Province, [], ?Visited, 0:Integer).
+ 
+ getAccommList(?Province, [[?Name; 
+                            Weblink->?Url; 
+                            Rating->?Rating; 
+                            MinPrice->?MinPrice]|?Rest],
+               ?Visited,  
+               ?NumAccommodations:Integer):-
+    greaterThan(?NumAccommodations, 0:Integer),
+    accommodation(?Name^hs.url->?Url;
+	                    et.rating->?Rating;
+	                    et.minPrice->?MinPrice;
+                        et.province->?Province!?),
+    notMember(?Name, ?Visited),
+    subtract(?Numtleft, ?NumAccommodations:Integer,  1:Integer),
+    getAccommList(?Province,  ?Rest,  [?Name|?Visited], ?Numtleft).  
+ 
+% Auxiliary "getAttraction subpredicate to get an attraction at each province 
+ getAttraction(?Province,  [AttractionName->?Name; 
+                            Theme->?Theme;  
+                            Subblock->?Subblock; 
+                            RelatedTo->?RelatedTo]):-
+   attraction(?Name^
+              et.subblock->?Subblock;
+              et.theme->?Theme;
+              hs.relatedTo->?RelatedTo;
+              et.province->?Province!?).   
+   
+% To check of a stop on the route is a province or not 
+ checkIfAttractions(?P, ?Attractions, ?NumAttractions:Integer):-
+   hasAttractions(?P),
+   getAttraction(?P,  ?Attractions).
+
+ checkIfAttractions(?P, [], ?Num:Integer):-
+   naf(hasAttractions(?P)).     
+   
+% Subpredicate to check if the route between two events require 
+% attraction recommendations provided the users selects the option. 
+ checkIfRecommend(?TimeGap, ?Route, [], No).
+  
+ checkIfRecommend(?TimeGap, ?Route, ?Recommendations, Yes):-
+   maxTimeGapBetweenEvents(?MaxTimeGapBetweenEvents),
+   greaterThanOrEqual(?TimeGap, ?MaxTimeGapBetweenEvents),
+   routeLocCentric( route->?Route; recommendations->?Recommendations).
+    
+% Subpredicate that accumulates some attractions for a specific route
+ routeLocCentric( route->[]; recommendations->[]).
+
+ routeLocCentric(route->[?R1|?Rest];   
+                 recommendations->[[?R1; Attraction->?Attractions]
+                                  |?RestRecommendations]):-
+   checkIfAttractions(?R1, ?Attractions, 1:Integer),
+   routeLocCentric(route->?Rest; recommendations->?RestRecommendations).
+\end{verbatim}
+
+\chapter*{Appendix E: RDFS Type Definitions}
+\addcontentsline{toc}{chapter}{Appendix E: RDFS Type Definitions}
+\footnotesize
+\hspace{0.3in}This appendix gives the RDFS type definition of the tourism subdomains, 
+a light-weight ontology collected from the Harmonise ontology. It consists of the 
+classification of events, attractions, accommodations, and geographic divisions of a 
+country.
+
+\singlespacing
+\begin{verbatim}
+Events RDFS Type Hierarchy 
+\end{verbatim}
+%\vspace{-0.25in}
+\begin{verbatim}
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/Ontology1164049376.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.owl-ontologies.com/Ontology1164049376.owl">
+
+<rdfs:Class rdf:ID="Events"/>
+ 
+ <rdfs:Class rdf:about="Adventure">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Bird_watching">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Cattle_driving">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Rock_climbing">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>
+	
+  <rdfs:Class rdf:about="Caving">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>	
+  
+  <rdfs:Class rdf:about="Trekking">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>	
+       		
+  <rdfs:Class rdf:about="Agriculture">
+    <rdfs:subClassOf rdf:resource="Adventure"/>
+  </rdfs:Class>	
+			
+  <rdfs:Class rdf:about="Arts">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Architecture">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Decorative">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Design">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>	
+
+  <rdfs:Class rdf:about="Exhibition">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Fashion">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Painting">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Photography">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Sculpture">
+    <rdfs:subClassOf rdf:resource="Arts"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Festival">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Annual_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+ 
+  <rdfs:Class rdf:about="Dance_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+  			
+  <rdfs:Class rdf:about="Film_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>		
+  
+  <rdfs:Class rdf:about="Gastronomic_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="International_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Music_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="National_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Seasonal_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Traditional_festival">
+    <rdfs:subClassOf rdf:resource="Festival"/>
+  </rdfs:Class>
+			
+  <rdfs:Class rdf:about="Market">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_daily">
+    <rdfs:subClassOf rdf:resource="Market"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_fair">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_flea">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_handicraft">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class> 
+  
+   <rdfs:Class rdf:about="Market_street">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Market_weekly">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+ 			
+  <rdfs:Class rdf:about="Nature">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nature_animals">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Nature_parks">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nature_plants">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nature_zoos">
+    <rdfs:subClassOf rdf:resource="Nature"/>
+  </rdfs:Class>			
+  
+  <rdfs:Class rdf:about="Night_Life">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nightlife_balls">
+    <rdfs:subClassOf rdf:resource="Night_Life"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Nightlife_food">
+    <rdfs:subClassOf rdf:resource="Night_Life"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Nightlife_party">
+    <rdfs:subClassOf rdf:resource="Night_Life"/>
+  </rdfs:Class>
+  			 
+  <rdfs:Class rdf:about="Religion">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Religion_parade">
+    <rdfs:subClassOf rdf:resource="Religion"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Religion_pilgrimage">
+    <rdfs:subClassOf rdf:resource="Religion"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Religion_service">
+    <rdfs:subClassOf rdf:resource="Religion"/>
+  </rdfs:Class>						
+				  
+  <rdfs:Class rdf:about="Sport">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Sport_cycling">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Sport_tennis">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_archery">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_football">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_basketball">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_golf">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_hiking">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Sport_biking">
+    <rdfs:subClassOf rdf:resource="Sport"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Trade">
+    <rdfs:subClassOf rdf:resource="Events"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Trade_fair_agriculture">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class>
+  
+ <rdfs:Class rdf:about="Trade_fair_expo">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Trade_fair_thematic">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Trade_fair_tourism">
+    <rdfs:subClassOf rdf:resource="Trade"/>
+  </rdfs:Class> 
+\end{verbatim}
+%\end{small}
+\vspace{-0.25in}
+\footnotesize
+\begin{verbatim}
+Attractions RDFS Type Hierarchy 
+\end{verbatim}
+\vspace{-0.25in}
+%\begin{small}
+\begin{verbatim}
+<rdfs:Class rdf:ID="Attractions"/>
+ 
+ <rdfs:Class rdf:about="Archaeological_site">
+    <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Culture">
+    <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Entertainment">
+      <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Buildings">
+      <rdfs:subClassOf rdf:resource="Attractions"/>
+  </rdfs:Class>
+   
+  <rdfs:Class rdf:ID="Cave">
+    <rdfs:subClassOf rdf:resource="Archaeological_site"/>
+  </rdfs:Class>
+   
+   <rdfs:Class rdf:ID="Prehistoric_shelter">
+    <rdfs:subClassOf rdf:resource="Archaeological_site"/>
+  </rdfs:Class>
+        
+  <rdfs:Class rdf:about="Ruins">
+      <rdfs:subClassOf rdf:resource="Archaeological_site"/>
+  </rdfs:Class> 
+  
+  <rdfs:Class rdf:ID="Crafts_show">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+       
+  <rdfs:Class rdf:ID="Popular_architecture">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Farm_house">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+     
+  <rdfs:Class rdf:ID="Place_of_pilgrimage">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+     
+  <rdfs:Class rdf:ID="Series_of_sculptures">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Textiles">
+    <rdfs:subClassOf rdf:resource="Culture"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="CityOrTown_excavations">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Boat_trips">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Garden">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="National_park">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Stadium">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+   
+  <rdfs:Class rdf:ID="Outings_and_daytrips">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:ID="Scenic_drive">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Theatre">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Water_fall">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Zoo">
+    <rdfs:subClassOf rdf:resource="Entertainment"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Historical_buildings">
+      <rdfs:subClassOf rdf:resource="Buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Modern_buildings">
+      <rdfs:subClassOf rdf:resource="Buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Castle">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+ <rdfs:Class rdf:about="Fortress">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class> 
+
+ <rdfs:Class rdf:about="Museums">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>  
+  
+   <rdfs:Class rdf:about="Local_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="National_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Regional_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Private_museum">
+      <rdfs:subClassOf rdf:resource="Museums"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="Monastery">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+ <rdfs:Class rdf:about="Monument">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Palace">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Temple">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Temple_fortress">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:about="National_library">
+      <rdfs:subClassOf rdf:resource="Historical_buildings"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Industrial_buildings">
+      <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Office_buildings">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Modern_palace">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="Power_station">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  
+   <rdfs:Class rdf:ID="University">
+    <rdfs:subClassOf rdf:resource="Modern_buildings"/>
+  </rdfs:Class>
+  \end{verbatim}
+%\end{small}
+\vspace{-0.25in}
+
+\begin{verbatim}
+Accommodation RDFS Type Hierarchy
+\end{verbatim}
+
+\vspace{-0.25in}
+%\begin{small}
+
+\begin{verbatim}
+<rdfs:Class rdf:ID="Accommodation"/>
+ 
+ <rdfs:Class rdf:about="Guest_house">
+    <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Hotel">
+    <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Apartment">
+      <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Lodge">
+      <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+   
+  <rdfs:Class rdf:ID="Resort">
+    <rdfs:subClassOf rdf:resource="Accommodation"/>
+  </rdfs:Class>
+ 
+\end{verbatim}
+%\end{small}
+
+\begin{verbatim}
+Region RDFS Type Hierarchy 
+\end{verbatim}
+
+\vspace{-0.2in}
+%\begin{small}
+\footnotesize
+\begin{verbatim}
+<rdfs:Class rdf:ID="Country"/>
+<rdfs:Class rdf:ID="Region"/>
+<rdfs:Class rdf:ID="Province"/>
+<rdfs:Class rdf:ID="Block"/>
+<rdfs:Class rdf:ID="Subblock"/>
+ 
+ <rdfs:Class rdf:about="City">
+   <rdfs:subClassOf rdf:resource="Subblock"/>
+ </rdfs:Class>
+
+ <rdfs:Class rdf:about="Town">
+    <rdfs:subClassOf rdf:resource="Subblock"/>
+ </rdfs:Class>
+  
+  <rdfs:Class rdf:about="Village">
+     <rdfs:subClassOf rdf:resource="Subblock"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="Place">
+    <rdfs:subClassOf rdf:resource="Subblock"/>
+  </rdfs:Class>
+ </rdf:RDF>     
+ \end{verbatim}
+
+     

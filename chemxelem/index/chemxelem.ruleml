@@ -1,0 +1,4090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Assert>
+	<And mapClosure="universal">
+		<Atom>
+			<Rel>last-atm</Rel>
+			<Ind type="Real">107</Ind>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">1</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">h</Ind>
+				<Ind type="String">hydrogen</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">0</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">1.00794</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">-1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">2</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">he</Ind>
+				<Ind type="String">helium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">0</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">4.0020604</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">3</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">li</Ind>
+				<Ind type="String">lithium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">6.941</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">4</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">be</Ind>
+				<Ind type="String">beryllium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">9.012182</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">5</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">b</Ind>
+				<Ind type="String">boron</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">10.811</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">6</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">c</Ind>
+				<Ind type="String">carbon</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">12.011</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">-4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">7</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">n</Ind>
+				<Ind type="String">nitrogen</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">14.00674</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">-1</Ind>
+					<Ind type="Real">-2</Ind>
+					<Ind type="Real">-3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">8</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">o</Ind>
+				<Ind type="String">oxygen</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">6</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">15.9994</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">-2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">9</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">f</Ind>
+				<Ind type="String">fluorine</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">7</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">18.998404</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">-1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">10</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ne</Ind>
+				<Ind type="String">neon</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">20.1797</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">11</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">na</Ind>
+				<Ind type="String">sodium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">22.989767</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">12</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">mg</Ind>
+				<Ind type="String">magnesium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">24.305</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">13</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">al</Ind>
+				<Ind type="String">aluminium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+				<Ind type="Real">26.981539</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">14</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">si</Ind>
+				<Ind type="String">silicon</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+				<Ind type="Real">28.0855</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">-4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">15</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">p</Ind>
+				<Ind type="String">phosphorus</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+				<Ind type="Real">30.97362</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">-3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">16</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">s</Ind>
+				<Ind type="String">sulfur</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+				<Ind type="Real">32.066</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">6</Ind>
+					<Ind type="Real">-2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">17</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">cl</Ind>
+				<Ind type="String">chlorine</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">7</Ind>
+				</Cterm>
+				<Ind type="Real">35.4527</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">7</Ind>
+					<Ind type="Real">-1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">18</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ar</Ind>
+				<Ind type="String">argon</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">8</Ind>
+				</Cterm>
+				<Ind type="Real">39.948</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">19</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">k</Ind>
+				<Ind type="String">potassium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">39.0983</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">20</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ca</Ind>
+				<Ind type="String">calcium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">40.078</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">21</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">sc</Ind>
+				<Ind type="String">scandium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">44.9559</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">22</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ti</Ind>
+				<Ind type="String">titanium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">10</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">47.88</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">23</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">v</Ind>
+				<Ind type="String">vanadium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">11</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">50.9415</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">24</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">cr</Ind>
+				<Ind type="String">chronium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">13</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">51.9961</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">25</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">mn</Ind>
+				<Ind type="String">manganese</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">13</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">54.93085</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">7</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">26</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">fe</Ind>
+				<Ind type="String">ferrum</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">14</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">55.847</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">27</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">co</Ind>
+				<Ind type="String">cobalt</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">15</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">58.9332</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">28</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ni</Ind>
+				<Ind type="String">nickel</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">16</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">58.69</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">29</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">cu</Ind>
+				<Ind type="String">copper</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">63.546</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">30</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">zn</Ind>
+				<Ind type="String">zinc</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">65.39</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">31</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ga</Ind>
+				<Ind type="String">galium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+				<Ind type="Real">69.723</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">32</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ge</Ind>
+				<Ind type="String">germanium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+				<Ind type="Real">72.61</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">33</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">as</Ind>
+				<Ind type="String">arsenic</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sm</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+				<Ind type="Real">74.92159</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">-3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">34</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">se</Ind>
+				<Ind type="String">selenium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+				<Ind type="Real">78.96</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">6</Ind>
+					<Ind type="Real">-2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">35</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">br</Ind>
+				<Ind type="String">bromine</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">7</Ind>
+				</Cterm>
+				<Ind type="Real">79.904</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">-1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">36</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">kr</Ind>
+				<Ind type="String">krypton</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+				</Cterm>
+				<Ind type="Real">83.8</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">37</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">rb</Ind>
+				<Ind type="String">rubidium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">85.4678</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">38</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">sr</Ind>
+				<Ind type="String">strontium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">87.62</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">39</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">y</Ind>
+				<Ind type="String">yttrium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">88.90585</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">40</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">zr</Ind>
+				<Ind type="String">zirconium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">10</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">91.224</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">41</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">nb</Ind>
+				<Ind type="String">niobium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">12</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">92.90638</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">42</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">mo</Ind>
+				<Ind type="String">molybdenum</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">13</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">95.94</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">43</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">tc</Ind>
+				<Ind type="String">technetium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">13</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">98</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">6</Ind>
+					<Ind type="Real">7</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">44</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ru</Ind>
+				<Ind type="String">ruthenium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">15</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">101.07</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">45</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">rh</Ind>
+				<Ind type="String">rhodium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">16</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">102.9055</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">46</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">pd</Ind>
+				<Ind type="String">palladium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+				<Ind type="Real">106.42</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">47</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ag</Ind>
+				<Ind type="String">silver</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">107.8682</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">48</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">cd</Ind>
+				<Ind type="String">cadmium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">112.411</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">49</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">in</Ind>
+				<Ind type="String">indium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+				<Ind type="Real">114.82</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">50</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">sn</Ind>
+				<Ind type="String">tin</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+				<Ind type="Real">118.71</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">51</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">sb</Ind>
+				<Ind type="String">antimony</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sm</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+				<Ind type="Real">121.75</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">-3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">52</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">te</Ind>
+				<Ind type="String">tellurium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+				<Ind type="Real">127.6</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">6</Ind>
+					<Ind type="Real">-2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">53</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">i</Ind>
+				<Ind type="String">iodine</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sc</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">7</Ind>
+				</Cterm>
+				<Ind type="Real">126.90447</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">7</Ind>
+					<Ind type="Real">-1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">54</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">xe</Ind>
+				<Ind type="String">xenon</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+				</Cterm>
+				<Ind type="Real">131.29</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">55</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">cs</Ind>
+				<Ind type="String">caesium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">132.90543</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">56</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ba</Ind>
+				<Ind type="String">barium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">137.327</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">57</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">la</Ind>
+				<Ind type="String">lanthanum</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">138.9055</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">58</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ce</Ind>
+				<Ind type="String">cerium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">20</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">140.115</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">59</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">pr</Ind>
+				<Ind type="String">praseodymium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">21</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">140.90765</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">60</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">nd</Ind>
+				<Ind type="String">nitrogen</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">22</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">144.24</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">61</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">pm</Ind>
+				<Ind type="String">promethium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">23</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">145</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">62</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">sm</Ind>
+				<Ind type="String">samarium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">24</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">150.36</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">63</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">eu</Ind>
+				<Ind type="String">europium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">25</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">151.965</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">64</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">gd</Ind>
+				<Ind type="String">gadolinium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">25</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">157.25</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">65</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">tb</Ind>
+				<Ind type="String">terbium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">27</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">158.92534</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">66</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">dy</Ind>
+				<Ind type="String">dysprosium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">28</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">162.5</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">67</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ho</Ind>
+				<Ind type="String">holmium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">29</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">164.93031</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">68</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">er</Ind>
+				<Ind type="String">erbium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">30</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">167.26</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">69</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">tm</Ind>
+				<Ind type="String">thullium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">31</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">168.9342</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">70</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">yb</Ind>
+				<Ind type="String">ytterbium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">173.04</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">71</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">lu</Ind>
+				<Ind type="String">lutetium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">174.967</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">72</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">hf</Ind>
+				<Ind type="String">hafnium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">10</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">178.49</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">73</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ta</Ind>
+				<Ind type="String">tantalum</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">11</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">180.9479</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">74</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">w</Ind>
+				<Ind type="String">tungsten</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">nyd</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">12</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">183.85</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">75</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">re</Ind>
+				<Ind type="String">rhenium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">13</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">186.207</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">6</Ind>
+					<Ind type="Real">7</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">76</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">os</Ind>
+				<Ind type="String">osmium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">14</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">190.2</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">77</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ir</Ind>
+				<Ind type="String">iridium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">15</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">192.22</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">78</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">pt</Ind>
+				<Ind type="String">platinum</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">16</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">195.08</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">79</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">au</Ind>
+				<Ind type="String">gold</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">196.96654</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">80</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">hg</Ind>
+				<Ind type="String">mercury</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">200.59</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">81</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">tl</Ind>
+				<Ind type="String">thallium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+				<Ind type="Real">204.3833</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">82</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">pb</Ind>
+				<Ind type="String">lead</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+				<Ind type="Real">207.2</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">83</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">bi</Ind>
+				<Ind type="String">bismuth</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">sm</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+				<Ind type="Real">208.98038</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">5</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">84</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">po</Ind>
+				<Ind type="String">polonium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+				<Ind type="Real">209</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">85</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">at</Ind>
+				<Ind type="String">astatine</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">7</Ind>
+				</Cterm>
+				<Ind type="Real">210</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">86</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">rn</Ind>
+				<Ind type="String">radon</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">g</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+				</Cterm>
+				<Ind type="Real">222</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">0</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">87</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">fr</Ind>
+				<Ind type="String">francium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+				<Ind type="Real">223</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">1</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">88</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ra</Ind>
+				<Ind type="String">radium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">226.025</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">89</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">ac</Ind>
+				<Ind type="String">actinium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">227.028</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">90</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">th</Ind>
+				<Ind type="String">thorium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">18</Ind>
+					<Ind type="Real">10</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">232.0381</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">91</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">pa</Ind>
+				<Ind type="String">protoactinium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">20</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">231.03587</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">92</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">u</Ind>
+				<Ind type="String">uranium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">21</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">238.0289</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">93</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">np</Ind>
+				<Ind type="String">neptunium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">22</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">237.048</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">94</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">pu</Ind>
+				<Ind type="String">plutonium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">24</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">244</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">95</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">am</Ind>
+				<Ind type="String">americium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">25</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">243</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+					<Ind type="Real">5</Ind>
+					<Ind type="Real">6</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">96</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">cm</Ind>
+				<Ind type="String">curium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">25</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">247</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">97</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">bk</Ind>
+				<Ind type="String">berkelium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">27</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">247</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">98</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">cf</Ind>
+				<Ind type="String">californium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">28</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">251</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">99</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">es</Ind>
+				<Ind type="String">einsteinium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">29</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">252</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">100</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">fm</Ind>
+				<Ind type="String">fermium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">30</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">257</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">101</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">md</Ind>
+				<Ind type="String">mendelevium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">31</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">258</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">102</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">no</Ind>
+				<Ind type="String">nobelium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">8</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">259</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">2</Ind>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">103</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">lr</Ind>
+				<Ind type="String">lawrencium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">m</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">9</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">260</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">3</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">104</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">unq</Ind>
+				<Ind type="String">unnilquadium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">nyd</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">10</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">261</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+					<Ind type="Real">4</Ind>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">105</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">unp</Ind>
+				<Ind type="String">unnilpentium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">nyd</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">11</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">262</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">106</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">unh</Ind>
+				<Ind type="String">unnihexium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">nyd</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">12</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">263</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Atom>
+			<Rel>atm</Rel>
+			<Ind type="Real">107</Ind>
+			<Cterm>
+				<Ctor>name</Ctor>
+				<Ind type="String">uns</Ind>
+				<Ind type="String">unnilseptium</Ind>
+			</Cterm>
+			<Cterm>
+				<Ctor>prop</Ctor>
+				<Ind type="String">nyd</Ind>
+				<Cterm>
+					<Ctor>eco</Ctor>
+					<Ind type="Real">32</Ind>
+					<Ind type="Real">13</Ind>
+					<Ind type="Real">2</Ind>
+				</Cterm>
+				<Ind type="Real">262</Ind>
+				<Cterm>
+					<Ctor>oxi</Ctor>
+				</Cterm>
+			</Cterm>
+		</Atom>
+		<Implies>
+			<Atom>
+				<Rel>atm</Rel>
+				<Var>eno</Var>
+				<Var />
+				<Var />
+			</Atom>
+			<Atom>
+				<Rel>element</Rel>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>atm</Rel>
+				<Var>eno</Var>
+				<Cterm>
+					<Ctor>name</Ctor>
+					<Var>abbr</Var>
+					<Var>full</Var>
+				</Cterm>
+				<Cterm>
+					<Ctor>prop</Ctor>
+					<Ind type="String">m</Ind>
+					<Var>eco</Var>
+					<Var>weight</Var>
+					<Var>oxi</Var>
+				</Cterm>
+			</Atom>
+			<Atom>
+				<Rel>metal</Rel>
+				<Plex>
+					<Var>eno</Var>
+					<Var>abbr</Var>
+					<Var>full</Var>
+				</Plex>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>atm</Rel>
+				<Var>n</Var>
+				<Cterm>
+					<Ctor>name</Ctor>
+					<Var />
+					<Var>engl</Var>
+				</Cterm>
+				<Var />
+			</Atom>
+			<Atom>
+				<Rel>englno</Rel>
+				<Var>n</Var>
+				<Var>engl</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>atm</Rel>
+				<Var>eno</Var>
+				<Cterm>
+					<Ctor>name</Ctor>
+					<Var>symb</Var>
+					<Var />
+				</Cterm>
+				<Var />
+			</Atom>
+			<Atom>
+				<Rel>symbno</Rel>
+				<Var>eno</Var>
+				<Var>symb</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>atm</Rel>
+				<Var>eno</Var>
+				<Cterm>
+					<Ctor>name</Ctor>
+					<Var>symb</Var>
+					<Var />
+				</Cterm>
+				<Var />
+			</Atom>
+			<Atom>
+				<Rel>nosymb</Rel>
+				<Var>symb</Var>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>symbno</Rel>
+					<Var>1</Var>
+					<Var>symb</Var>
+				</Atom>
+				<Atom>
+					<Rel>newgroup-num</Rel>
+					<Var>2</Var>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>newgroup-sym</Rel>
+				<Var>2</Var>
+				<Var>symb</Var>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">1</Ind>
+			<Ind type="Real">1</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">1</Ind>
+			<Ind type="Real">3</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">1</Ind>
+			<Ind type="Real">11</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">18</Ind>
+			<Ind type="Real">2</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">2</Ind>
+			<Ind type="Real">4</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">2</Ind>
+			<Ind type="Real">12</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">13</Ind>
+			<Ind type="Real">5</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">14</Ind>
+			<Ind type="Real">6</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">15</Ind>
+			<Ind type="Real">7</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">16</Ind>
+			<Ind type="Real">8</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">17</Ind>
+			<Ind type="Real">9</Ind>
+		</Atom>
+		<Atom>
+			<Rel>newgroup-num</Rel>
+			<Ind type="Real">18</Ind>
+			<Ind type="Real">10</Ind>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>element</Rel>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">13</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">57</Ind>
+				</Atom>
+				<Atom>
+					<Rel>subtract</Rel>
+					<Var>2</Var>
+					<Var>eno</Var>
+					<Ind type="Real">1</Ind>
+				</Atom>
+				<Atom>
+					<Rel>modulo</Rel>
+					<Var>1</Var>
+					<Var>2</Var>
+					<Ind type="Real">18</Ind>
+				</Atom>
+				<Atom>
+					<Rel>add</Rel>
+					<Var>3</Var>
+					<Ind type="Real">1</Ind>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>newgroup-num</Rel>
+				<Var>3</Var>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>element</Rel>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">72</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">89</Ind>
+				</Atom>
+				<Atom>
+					<Rel>subtract</Rel>
+					<Var>2</Var>
+					<Var>eno</Var>
+					<Ind type="Real">69</Ind>
+				</Atom>
+				<Atom>
+					<Rel>modulo</Rel>
+					<Var>1</Var>
+					<Var>2</Var>
+					<Ind type="Real">18</Ind>
+				</Atom>
+				<Atom>
+					<Rel>add</Rel>
+					<Var>3</Var>
+					<Ind type="Real">1</Ind>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>newgroup-num</Rel>
+				<Var>3</Var>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>element</Rel>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">104</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">107</Ind>
+				</Atom>
+				<Atom>
+					<Rel>subtract</Rel>
+					<Var>1</Var>
+					<Var>eno</Var>
+					<Ind type="Real">100</Ind>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>newgroup-num</Rel>
+				<Var>1</Var>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>newgroup-num</Rel>
+					<Var>g</Var>
+					<Var>n</Var>
+				</Atom>
+				<Atom>
+					<Rel>englno</Rel>
+					<Var>n</Var>
+					<Var>e</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>newgroup-elements</Rel>
+				<Var>e</Var>
+				<Var>g</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>symbno</Rel>
+					<Var>2</Var>
+					<Var>symb</Var>
+				</Atom>
+				<Atom>
+					<Rel>newgroup-num</Rel>
+					<Var>1</Var>
+					<Var>2</Var>
+				</Atom>
+				<Atom>
+					<Rel>new2old</Rel>
+					<Var>3</Var>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>oldgroup-sym</Rel>
+				<Var>3</Var>
+				<Var>symb</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>symbno</Rel>
+					<Var>eno</Var>
+					<Var>symb</Var>
+				</Atom>
+				<Atom>
+					<Rel>greaterthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">58</Ind>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">71</Ind>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>oldgroup-sym</Rel>
+				<Ind type="String">lanthanide</Ind>
+				<Var>symb</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>symbno</Rel>
+					<Var>eno</Var>
+					<Var>symb</Var>
+				</Atom>
+				<Atom>
+					<Rel>greaterthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">90</Ind>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">103</Ind>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>oldgroup-sym</Rel>
+				<Ind type="String">actinide</Ind>
+				<Var>symb</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>symbno</Rel>
+					<Var>eno</Var>
+					<Var>symb</Var>
+				</Atom>
+				<Atom>
+					<Rel>oldgroup-sym</Rel>
+					<Var>1</Var>
+					<Var>symb</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>oldgroup-num</Rel>
+				<Var>1</Var>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">i</Ind>
+			</Cterm>
+			<Ind type="Real">1</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">ii</Ind>
+			</Cterm>
+			<Ind type="Real">2</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">iii</Ind>
+			</Cterm>
+			<Ind type="Real">3</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">iv</Ind>
+			</Cterm>
+			<Ind type="Real">4</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">v</Ind>
+			</Cterm>
+			<Ind type="Real">5</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">vi</Ind>
+			</Cterm>
+			<Ind type="Real">6</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">vii</Ind>
+			</Cterm>
+			<Ind type="Real">7</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">viii</Ind>
+			</Cterm>
+			<Ind type="Real">8</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">viii</Ind>
+			</Cterm>
+			<Ind type="Real">9</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">viii</Ind>
+			</Cterm>
+			<Ind type="Real">10</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">i</Ind>
+			</Cterm>
+			<Ind type="Real">11</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Ind type="String">ii</Ind>
+			</Cterm>
+			<Ind type="Real">12</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">iii</Ind>
+			</Cterm>
+			<Ind type="Real">13</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">iv</Ind>
+			</Cterm>
+			<Ind type="Real">14</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">v</Ind>
+			</Cterm>
+			<Ind type="Real">15</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">vi</Ind>
+			</Cterm>
+			<Ind type="Real">16</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">vii</Ind>
+			</Cterm>
+			<Ind type="Real">17</Ind>
+		</Atom>
+		<Atom>
+			<Rel>new2old</Rel>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Ind type="String">viii</Ind>
+			</Cterm>
+			<Ind type="Real">18</Ind>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>notequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">1</Ind>
+				</Atom>
+				<Atom>
+					<Rel>newgroup-num</Rel>
+					<Ind type="Real">1</Ind>
+					<Var>eno</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>light-metal</Rel>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>notequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">88</Ind>
+				</Atom>
+				<Atom>
+					<Rel>newgroup-num</Rel>
+					<Ind type="Real">2</Ind>
+					<Var>eno</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>light-metal</Rel>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>light-metal</Rel>
+			<Ind type="Real">13</Ind>
+		</Atom>
+		<Atom>
+			<Rel>light-metal</Rel>
+			<Ind type="Real">39</Ind>
+		</Atom>
+		<Atom>
+			<Rel>light-metal</Rel>
+			<Ind type="Real">21</Ind>
+		</Atom>
+		<Atom>
+			<Rel>light-metal</Rel>
+			<Ind type="Real">22</Ind>
+		</Atom>
+		<Atom>
+			<Rel>insert-new</Rel>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Plex>
+						<Var>name</Var>
+					</Plex>
+				</Cterm>
+			</Plex>
+			<Var>group</Var>
+			<Var>name</Var>
+			<Plex />
+		</Atom>
+		<Atom>
+			<Rel>insert-new</Rel>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Plex>
+						<Var>name</Var>
+						<repo>
+							<Var>elmts</Var>
+						</repo>
+					</Plex>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+			<Var>group</Var>
+			<Var>name</Var>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Var>elmts</Var>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>greaterthan</Rel>
+					<Var>group</Var>
+					<Var>gr</Var>
+				</Atom>
+				<Atom>
+					<Rel>insert-new</Rel>
+					<Var>1</Var>
+					<Var>group</Var>
+					<Var>name</Var>
+					<Var>r</Var>
+				</Atom>
+				<Atom>
+					<Rel>plex</Rel>
+					<Var>2</Var>
+					<Cterm>
+						<Ctor>group</Ctor>
+						<Var>gr</Var>
+						<Var>elmts</Var>
+					</Cterm>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>insert-new</Rel>
+				<Var>2</Var>
+				<Var>group</Var>
+				<Var>name</Var>
+				<Plex>
+					<Cterm>
+						<Ctor>group</Ctor>
+						<Var>gr</Var>
+						<Var>elmts</Var>
+					</Cterm>
+					<repo>
+						<Var>r</Var>
+					</repo>
+				</Plex>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>insert-new</Rel>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Plex>
+						<Var>name</Var>
+					</Plex>
+				</Cterm>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>gr</Var>
+					<Var>elmts</Var>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+			<Var>group</Var>
+			<Var>name</Var>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>gr</Var>
+					<Var>elmts</Var>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+		</Atom>
+		<Atom>
+			<Rel>insert-old</Rel>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Plex>
+						<Var>name</Var>
+					</Plex>
+				</Cterm>
+			</Plex>
+			<Var>group</Var>
+			<Var>name</Var>
+			<Plex />
+		</Atom>
+		<Atom>
+			<Rel>insert-old</Rel>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Plex>
+						<Var>name</Var>
+						<repo>
+							<Var>elmts</Var>
+						</repo>
+					</Plex>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+			<Var>group</Var>
+			<Var>name</Var>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Var>elmts</Var>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>old-greaterthan</Rel>
+					<Var>group</Var>
+					<Var>gr</Var>
+				</Atom>
+				<Atom>
+					<Rel>insert-old</Rel>
+					<Var>1</Var>
+					<Var>group</Var>
+					<Var>name</Var>
+					<Var>r</Var>
+				</Atom>
+				<Atom>
+					<Rel>plex</Rel>
+					<Var>2</Var>
+					<Cterm>
+						<Ctor>group</Ctor>
+						<Var>gr</Var>
+						<Var>elmts</Var>
+					</Cterm>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>insert-old</Rel>
+				<Var>2</Var>
+				<Var>group</Var>
+				<Var>name</Var>
+				<Plex>
+					<Cterm>
+						<Ctor>group</Ctor>
+						<Var>gr</Var>
+						<Var>elmts</Var>
+					</Cterm>
+					<repo>
+						<Var>r</Var>
+					</repo>
+				</Plex>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>insert-old</Rel>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>group</Var>
+					<Plex>
+						<Var>name</Var>
+					</Plex>
+				</Cterm>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>gr</Var>
+					<Var>elmts</Var>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+			<Var>group</Var>
+			<Var>name</Var>
+			<Plex>
+				<Cterm>
+					<Ctor>group</Ctor>
+					<Var>gr</Var>
+					<Var>elmts</Var>
+				</Cterm>
+				<repo>
+					<Var>r</Var>
+				</repo>
+			</Plex>
+		</Atom>
+		<Atom>
+			<Rel>old-greaterthan</Rel>
+			<Cterm>
+				<Ctor>auxiliary</Ctor>
+				<Var>oldno</Var>
+			</Cterm>
+			<Cterm>
+				<Ctor>main</Ctor>
+				<Var>oldno</Var>
+			</Cterm>
+		</Atom>
+		<Implies>
+			<Atom>
+				<Rel>string-greaterthan</Rel>
+				<Var>oldnof</Var>
+				<Var>oldnos</Var>
+			</Atom>
+			<Atom>
+				<Rel>old-greaterthan</Rel>
+				<Cterm>
+					<Ctor>main</Ctor>
+					<Var>oldnof</Var>
+				</Cterm>
+				<Cterm>
+					<Ctor>main</Ctor>
+					<Var>oldnos</Var>
+				</Cterm>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>string-greaterthan</Rel>
+				<Var>oldnof</Var>
+				<Var>oldnos</Var>
+			</Atom>
+			<Atom>
+				<Rel>old-greaterthan</Rel>
+				<Cterm>
+					<Ctor>main</Ctor>
+					<Var>oldnof</Var>
+				</Cterm>
+				<Cterm>
+					<Ctor>auxiliary</Ctor>
+					<Var>oldnos</Var>
+				</Cterm>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>string-greaterthan</Rel>
+				<Var>oldnof</Var>
+				<Var>oldnos</Var>
+			</Atom>
+			<Atom>
+				<Rel>old-greaterthan</Rel>
+				<Cterm>
+					<Ctor>auxiliary</Ctor>
+					<Var>oldnof</Var>
+				</Cterm>
+				<Cterm>
+					<Ctor>main</Ctor>
+					<Var>oldnos</Var>
+				</Cterm>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>string-greaterthan</Rel>
+				<Var>oldnof</Var>
+				<Var>oldnos</Var>
+			</Atom>
+			<Atom>
+				<Rel>old-greaterthan</Rel>
+				<Cterm>
+					<Ctor>auxiliary</Ctor>
+					<Var>oldnof</Var>
+				</Cterm>
+				<Cterm>
+					<Ctor>auxiliary</Ctor>
+					<Var>oldnos</Var>
+				</Cterm>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>eleconf-num</Rel>
+					<Var>1</Var>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>sum</Rel>
+					<Var>eno</Var>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>check-eleconf-num</Rel>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>symbno</Rel>
+					<Var>1</Var>
+					<Var>symb</Var>
+				</Atom>
+				<Atom>
+					<Rel>check-eleconf-num</Rel>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>check-eleconf-sym</Rel>
+				<Var>symb</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>eleconf-num</Rel>
+					<Var>2</Var>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>sum</Rel>
+					<Var>1</Var>
+					<Var>2</Var>
+				</Atom>
+				<Atom>
+					<Rel>notequal</Rel>
+					<Var>eno</Var>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>corrupt-eleconf</Rel>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>element</Rel>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>corrupt-eleconf</Rel>
+					<Var>eno</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>check-all-eleconfs</Rel>
+				<Cterm>
+					<Ctor>inconsistent</Ctor>
+					<Var>eno</Var>
+				</Cterm>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>check-all-eleconfs</Rel>
+			<Cterm>
+				<Ctor>consistent</Ctor>
+			</Cterm>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>atm</Rel>
+					<Var>eno</Var>
+					<Cterm>
+						<Ctor>name</Ctor>
+						<Var>symb</Var>
+						<Var />
+					</Cterm>
+					<Cterm>
+						<Ctor>prop</Ctor>
+						<Var />
+						<Cterm>
+							<Ctor>eco</Ctor>
+							<Var>l1</Var>
+							<Var>l2</Var>
+							<Var>l3</Var>
+						</Cterm>
+						<Var />
+						<Var />
+					</Cterm>
+				</Atom>
+				<Atom>
+					<Rel>inner-shells</Rel>
+					<Var>1</Var>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>inner-shell-fill</Rel>
+					<Var>2</Var>
+					<Plex>
+						<Var>l1</Var>
+						<Var>l2</Var>
+						<Var>l3</Var>
+					</Plex>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>eleconf-sym</Rel>
+				<Var>2</Var>
+				<Var>symb</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>atm</Rel>
+					<Var>eno</Var>
+					<Var />
+					<Cterm>
+						<Ctor>prop</Ctor>
+						<Var />
+						<Cterm>
+							<Ctor>eco</Ctor>
+							<Var>l1</Var>
+							<Var>l2</Var>
+							<Var>l3</Var>
+						</Cterm>
+						<Var />
+						<Var />
+					</Cterm>
+				</Atom>
+				<Atom>
+					<Rel>inner-shells</Rel>
+					<Var>1</Var>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>inner-shell-fill</Rel>
+					<Var>2</Var>
+					<Plex>
+						<Var>l1</Var>
+						<Var>l2</Var>
+						<Var>l3</Var>
+					</Plex>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>eleconf-num</Rel>
+				<Var>2</Var>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>inner-shell-fill</Rel>
+			<Var>l</Var>
+			<Var>l</Var>
+			<Ind type="Real">0</Ind>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>lessthan</Rel>
+					<Ind type="Real">0</Ind>
+					<Var>s</Var>
+				</Atom>
+				<Atom>
+					<Rel>maxelec</Rel>
+					<Var>3</Var>
+					<Var>s</Var>
+				</Atom>
+				<Atom>
+					<Rel>plex</Rel>
+					<Var>1</Var>
+					<Var>3</Var>
+					<Var>l</Var>
+				</Atom>
+				<Atom>
+					<Rel>subtract</Rel>
+					<Var>2</Var>
+					<Var>s</Var>
+					<Ind type="Real">1</Ind>
+				</Atom>
+				<Atom>
+					<Rel>inner-shell-fill</Rel>
+					<Var>4</Var>
+					<Var>1</Var>
+					<Var>2</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>inner-shell-fill</Rel>
+				<Var>4</Var>
+				<Var>l</Var>
+				<Var>s</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">1</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">18</Ind>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>inner-shells</Rel>
+				<Ind type="Real">0</Ind>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">19</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">36</Ind>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>inner-shells</Rel>
+				<Ind type="Real">1</Ind>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">37</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">54</Ind>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>inner-shells</Rel>
+				<Ind type="Real">2</Ind>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">55</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Ind type="Real">86</Ind>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>inner-shells</Rel>
+				<Ind type="Real">3</Ind>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Ind type="Real">87</Ind>
+					<Var>eno</Var>
+				</Atom>
+				<Atom>
+					<Rel>last-atm</Rel>
+					<Var>1</Var>
+				</Atom>
+				<Atom>
+					<Rel>lessthanorequal</Rel>
+					<Var>eno</Var>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>inner-shells</Rel>
+				<Ind type="Real">4</Ind>
+				<Var>eno</Var>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>maxelec</Rel>
+			<Ind type="Real">2</Ind>
+			<Ind type="Real">1</Ind>
+		</Atom>
+		<Atom>
+			<Rel>maxelec</Rel>
+			<Ind type="Real">8</Ind>
+			<Ind type="Real">2</Ind>
+		</Atom>
+		<Atom>
+			<Rel>maxelec</Rel>
+			<Ind type="Real">18</Ind>
+			<Ind type="Real">3</Ind>
+		</Atom>
+		<Atom>
+			<Rel>maxelec</Rel>
+			<Ind type="Real">32</Ind>
+			<Ind type="Real">4</Ind>
+		</Atom>
+		<Atom>
+			<Rel>maxelec</Rel>
+			<Ind type="Real">32</Ind>
+			<Ind type="Real">5</Ind>
+		</Atom>
+		<Atom>
+			<Rel>missint</Rel>
+			<Plex />
+			<Plex />
+		</Atom>
+		<Atom>
+			<Rel>missint</Rel>
+			<Plex />
+			<Plex>
+				<Var>e</Var>
+			</Plex>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>add</Rel>
+					<Var>s</Var>
+					<Var>f</Var>
+					<Ind type="Real">1</Ind>
+				</Atom>
+				<Atom>
+					<Rel>missint</Rel>
+					<Var>1</Var>
+					<Plex>
+						<Var>s</Var>
+						<repo>
+							<Var>r</Var>
+						</repo>
+					</Plex>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>missint</Rel>
+				<Var>1</Var>
+				<Plex>
+					<Var>f</Var>
+					<Var>s</Var>
+					<repo>
+						<Var>r</Var>
+					</repo>
+				</Plex>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>add</Rel>
+					<Var>1</Var>
+					<Var>f</Var>
+					<Ind type="Real">1</Ind>
+				</Atom>
+				<Atom>
+					<Rel>add</Rel>
+					<Var>4</Var>
+					<Var>f</Var>
+					<Ind type="Real">1</Ind>
+				</Atom>
+				<Atom>
+					<Rel>plex</Rel>
+					<Var>3</Var>
+					<Var>4</Var>
+					<Var>s</Var>
+					<Var>r</Var>
+				</Atom>
+				<Atom>
+					<Rel>missint</Rel>
+					<Var>2</Var>
+					<Var>3</Var>
+				</Atom>
+				<Atom>
+					<Rel>plex</Rel>
+					<Var>5</Var>
+					<Var>1</Var>
+					<Var>2</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>missint</Rel>
+				<Var>5</Var>
+				<Plex>
+					<Var>f</Var>
+					<Var>s</Var>
+					<repo>
+						<Var>r</Var>
+					</repo>
+				</Plex>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>sum</Rel>
+			<Ind type="Real">0</Ind>
+			<Plex />
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>sum</Rel>
+					<Var>1</Var>
+					<Var>t</Var>
+				</Atom>
+				<Atom>
+					<Rel>add</Rel>
+					<Var>2</Var>
+					<Var>h</Var>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>sum</Rel>
+				<Var>2</Var>
+				<Plex>
+					<Var>h</Var>
+					<repo>
+						<Var>t</Var>
+					</repo>
+				</Plex>
+			</Atom>
+		</Implies>
+		<Implies>
+			<Atom>
+				<Rel>lessthan</Rel>
+				<Var>x</Var>
+				<Var>y</Var>
+			</Atom>
+			<Atom>
+				<Rel>modulo</Rel>
+				<Var>x</Var>
+				<Var>x</Var>
+				<Var>y</Var>
+			</Atom>
+		</Implies>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>greaterthanorequal</Rel>
+					<Var>x</Var>
+					<Var>y</Var>
+				</Atom>
+				<Atom>
+					<Rel>subtract</Rel>
+					<Var>1</Var>
+					<Var>x</Var>
+					<Var>y</Var>
+				</Atom>
+				<Atom>
+					<Rel>modulo</Rel>
+					<Var>2</Var>
+					<Var>1</Var>
+					<Var>y</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>modulo</Rel>
+				<Var>2</Var>
+				<Var>x</Var>
+				<Var>y</Var>
+			</Atom>
+		</Implies>
+		<Atom>
+			<Rel>appfun</Rel>
+			<Var>l</Var>
+			<Plex />
+			<Var>l</Var>
+		</Atom>
+		<Implies>
+			<And>
+				<Atom>
+					<Rel>appfun</Rel>
+					<Var>1</Var>
+					<Var>r</Var>
+					<Var>l</Var>
+				</Atom>
+				<Atom>
+					<Rel>plex</Rel>
+					<Var>2</Var>
+					<Var>h</Var>
+					<Var>1</Var>
+				</Atom>
+			</And>
+			<Atom>
+				<Rel>appfun</Rel>
+				<Var>2</Var>
+				<Plex>
+					<Var>h</Var>
+					<repo>
+						<Var>r</Var>
+					</repo>
+				</Plex>
+				<Var>l</Var>
+			</Atom>
+		</Implies>
+	</And>
+</Assert>

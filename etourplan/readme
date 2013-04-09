@@ -1,0 +1,10 @@
+README file 
+
+Steps to get eTourPlan running.
+
+1. Load the RDFS Type definitions into the RDFS Type Tab
+2. Load eTourPlan KnowledgeBase
+3. Load any specific query from the test queries
+4. Test the various functionalities of eTourPlan.
+
+You can find test queries in testQueries.txt

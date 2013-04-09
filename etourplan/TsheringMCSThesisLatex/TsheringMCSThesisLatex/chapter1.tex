@@ -1,0 +1,59 @@
+%%-----------Chapters start-------------------------------------
+%%-----------Chapter 1------------------------------------------
+\chapter{Introduction}
+ 
+\hspace{0.3in}
+Tourism is the world's largest and fastest growing industry \cite{BS:01}. The World Tourism Organization predicts that one billion international tourists will travel by the year 2010 \cite{acm:04}. Tourism has become a highly competitive business for tourism destinations all over the world. There are many conventional tourism service providers which are competitively trying to provide the best travel plans and recommendations to their customers based on each customer's interests. eTourPlan is a knowledge-based route and activity planner for eTourism. To accommodate a tourist's requests based on his or her preferences, it offers various options for retrieving accurate information about tourist destinations. The interoperability and integration of the available information on the Web is enhanced by using Semantic Web techniques \cite{AS:02}\cite{YB2:08}. 
+
+\hspace{0.3in}In Section 1.1, we give an overview of eTourism and how Semantic Web technology can be used for improving information retrieval and interpretation for users by semantically connecting the various tourism subdomains\glossary{ name={subdomains},description={The subdomain of an ontology is that part of the real world which the ontology models. The subdomains to be modeled are agreed by the Ontology Task Force}}. Next, we present the thesis objectives, followed by the thesis organization in Section 1.2.
+
+
+\section{Overview}
+\hspace{0.3in} Every trip starts with a plan. Most of the prevalent travel recommenders \cite{FR:02}\cite{DBLP:08}\cite{AJ:05} are location-centric and therefore do not function as complete trip planners. This is a problem since, e.g., the time necessary to visit a number of places at a destination can be more than a traveller's available time. Automated planners should consider the preferences and requirements of tourists for activities, accommodations, and route planning. 
+
+\hspace{0.3in}Currently, tourist consultants and travellers must visit multiple independent websites for various information such as accommodation and activity facilities to plan a trip tailored to given preferences. Outside the realm of travel packages in mass tourism, it is difficult and time-consuming to find the right products or services for more `holistic' travel planning. This lack of standards in the tourism domain brings up the necessity of integration of heterogenous information sources. (Individualized) eTourism is a good application area for Semantic Web technologies, since meaningful information gathering, integration, distribution, and exchange are the backbone of the travel industry. In this thesis, we aim to bring semantics and structure to bear on tourist information on the Web. The two main characteristics of the tourism domain that make it suitable for Semantic Web technologies are the heterogeneity of the market and the distributed nature of the high volume of information on the Web \cite{deri:04}. A knowledge-based system should start with a tourist's preference specification, search for implicit facts, ignore irrelevant information, combine several Web resources of the tourism subdomains, and generate a coherent travel plan.
+ 
+\hspace{0.3in}An ontology is a formal conceptualization of a particular domain that is shared by a group of people \cite{gruber93towards}. The Harmonise ontology \cite{MM:02} is a standard ontology for eTourism. Ontologies are used in knowledge-based systems as conceptual frameworks for providing, accessing, and structuring information in a comprehensive manner \cite{AS:02}. Rules can then be applied on the ontology-structured facts to derive more knowledge from the KB. The implementation of an integrated system of search, recommendation and planning would be tedious to implement if it was solely ontology-based.
+
+\hspace{0.3in}The main focus of this thesis, the eTourPlan prototype, is a travel planner which, according to user preferences and constraints, aids in the selection and scheduling of various aspects of a tour such as events\glossary{ name={events},description={The planned activities, either one-time or periodic, such as cultural celebrations, art and entertainment, business and trade, sports and education}}, attractions,\glossary{ name={attractions},description={Tourist attractions are places of interest, open to the public, offering recreation, education or historical interest}} and routes. The planner can also function independently as a location-centric recommender of the aforementioned tourist entities. In addition to these two primary operations, it can function as a search engine for relevant tourist information.
+
+\hspace{0.3in}Another focus of this thesis is the use of the FOAF \cite{DB:05} concept in the tourism domain. The FOAF vocabulary has been used  mainly to create semantic profiles of persons and organizations. One of the applications of FOAF vocabularies is Expert Finding \cite{JieL:06}. In this thesis, we extend FOAF profiles for persons or organisations to FOAF-like profiles for tourist entities, covering part of the country of Bhutan as a case study. A similar application of FOAF to eTourism has been explored for the Tyrol region \cite{deri:04}. We created FOAF-like profiles for selected provinces of Bhutan and their touristic information about attractions and events.
+
+\hspace{0.3in}Our eTourPlan prototype explores the reasoning potentials of rules on structured facts stored in a KB. The key functionalities of the eTourPlan prototype tested on the Bhutan KB are discussed later in this thesis. In this work, we have represented the profiles of tourist entities in RuleML/POSL syntax. The fact base could also be stored in a database. The task of exploring reasoning potentials of rules on a complete KB of a multi-dimensioned domain (i.e. the tourism domain) is pursued in this thesis. Our executable specification of the knowledge-based tourist route and activity planner eTourPlan can later be integrated with a (relational) database or translated to a self-contained database application. 
+ 
+\doublespacing
+\section{Thesis Objectives and Methodology}
+
+The objectives of this thesis are to design, implement, and evaluate an eTourism prototype for Bhutan:
+\begin{itemize}
+\item To design a light-weight ontology using the Resource Description Framework Schema (RDFS) to capture all the touristic subdomains [aligned with the Harmonise standard].
+
+\item To build a Bhutan fact base, structured by this ontology, using the Object-Oriented Rule Markup Language (OO RuleML) in its presentation syntax of the Positional-Slotted Language (POSL). Tourist entities are to be described using FOAF-like profile facts.
+
+\item To implement rule subsystems needed for generating a travel plan containing tour recommendations:
+\begin{itemize}
+\item Partonomy rules for the subdivision of regions
+\item Derivation rules to deduce transitive closure facts about distances etc
+\item Inference rules for various planning and recommendation modes
+\item Query rules to perform semantic searches
+\end{itemize}
+
+\item To evaluate the KB by systematically testing each of the rule subsystems with varying user preferences.
+
+\item To evaluate the overall operation of the eTourPlan prototype as run in the OO jDREW reasoning engine by generating results for varied travel scenarios.
+
+\end{itemize}
+
+
+\section{Thesis Organization}
+
+\hspace{0.3in}The organization of the thesis is as follows.  A background study of travel planner and recommender systems for tourism, along with brief introductions to other basic concepts, is presented in Chapter 2. In Chapter 3, we describe the rule languages and rule engines used for our work. Then, in Chapter 4, we present the design of an ontology using RDFS, aligned with the Harmonise ontology, and the descriptions of province-centric FOAF-like profiles of tourist entities for the Bhutan tourist information in OO RuleML/POSL syntax.  In Chapter 5, we discuss the implementation details of the rule subsystems for each of the tourism subdomains defined in our fact base. We start with partonomy rules for the administrative structuring of a country such as Bhutan in Section 5.1.1, followed by distance and route computation in Section 5.1.2. The rule system for route planning is discussed in Section 5.2.1, followed by discussions on the search rule system and the rule system for location-centric travel recommendation in Sections 5.2.2 and 5.2.3. In Section 5.2.4, the main eTourPlan rule system is discussed. Chapter 6 shows the application of the various rule subsystems for the eTourPlan prototype on the Bhutan tourism KB. It also demonstrates the experimental results of the key operations. Finally, in Chapter 7, we conclude the thesis with a summary of our contributions and a discussion of possible future work.
+
+
+%\{Concluding Remarks}
+%\hspace{0.3in}In this Section, we have introduced the current stage
+%of the development of web-based social networking, followed by
+%concept of the Semantic Web and then the thesis objective. We have
+%also presented how this thesis is organized. In the next chapter, we
+%are going to provide the basic concepts of social networking related
+%to this thesis.

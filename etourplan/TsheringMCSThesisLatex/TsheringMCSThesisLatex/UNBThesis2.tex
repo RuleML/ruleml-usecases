@@ -1,0 +1,107 @@
+\documentclass[12pt]{unbthesis}
+% \usepackage[left=4cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+
+\usepackage{graphicx}
+\usepackage{epsfig}
+\graphicspath{{Figures/}}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{colortbl}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{footmisc}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{glossary} 
+\usepackage[left=4cm,top=2.5cm,bottom=2cm,right=2.2cm,head=2.5cm,foot=5.5mm]{geometry}
+\title{eTourPlan: A Knowledge-Based\\ Tourist Route and Activity Planner}
+\author{\textbf{Tshering Dema}}
+
+\predegree{Bachelor of Computer Science,
+\\Kanglung College, University of Delhi, 2004} 
+
+\degree{Master of Computer Science} 
+\gau{Computer Science}
+\supervisor{Harold Boley, Ph.D., Computer Science\\
+&Przemyslaw Rafal Pochec, Ph.D., Computer Science\\
+&}\\
+
+
+
+\examboard{Gerhard Dueck, Ph.D, Computer Science, Chair\\
+& Bruce Spencer, Ph.D, Computer Science\\
+& Yevgen Biletskiy, Ph. D, Electrical and Computer Engineering\\
+}
+
+%\externalexam{}
+
+\copyrightyear{2008} \setlength\parindent{0pt}
+\date{September 2008}
+\begin{verbatim}
+
+\end{verbatim}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{notation}{Notation}[section]
+
+
+\makeglossary
+
+\begin{document}
+
+\unbtitlepage
+
+\doublespacing 
+\setcounter{secnumdepth}{3} \setcounter{tocdepth}{3}
+\pagenumbering{roman} \setcounter{page}{1}
+
+\include{dedication}
+\include{abstract}
+\include{acknowledgments}
+
+%%-----------Table of Contents------------------
+\renewcommand{\contentsname}{Table of Contents}
+\tableofcontents{}
+\addcontentsline{toc}{chapter}{Table of Contents}
+\vspace{.5cm}
+{\bf Vita}
+%%------------List of Tables----------------------
+\listoftables{}
+\addcontentsline{toc}{chapter}{List of Tables}
+%%------------List of Figures----------------------
+
+\listoffigures{}
+\addcontentsline{toc}{chapter}{List of Figures}
+\include{Acronyms}
+\printglossary
+%\include{glossary}
+%\include{abbreviations}
+%%-------------change single space to double space--------
+\pagenumbering{arabic} \setcounter{page}{1}
+
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+\include{chapter6}
+\include{chapter7}
+\singlespacing
+
+\renewcommand{\bibname}{References}
+\bibliography{reference}
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{amsplain}
+\nocite{*}
+
+\doublespacing
+%\addcontentsline{toc}{chapter}{References}
+\include{appendices}
+%\pagestyle{empty}
+\include{vita}
+\end{document}

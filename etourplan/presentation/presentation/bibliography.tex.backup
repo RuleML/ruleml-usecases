@@ -1,0 +1,127 @@
+%%----------------Bibliography--------------------------------
+\begin{thebibliography}{99}
+
+
+\bibitem{Apache} \newblock Apache HTTP Server Project, http://httpd.apache.org/, Last Accessed June 12, 2006.
+
+\bibitem{chillispot} 
+\newblock ChilliSpot-Open Source Wireless LAN Access Point controller, http://www.chillispot.org/,  Last Accessed April 21, 2006.
+
+\bibitem{cisco-callTransfer}
+\newblock Configuring SIP Call-Transfer Features, http://www.cisco.com/univercd/cc/td/doc/product/
+software/ios123/123cgcr/vvfax\_c/callc\_c/sip\_c/sipc1\_c/chapter3.htm, Last Accessed April 3, 2006.
+
+\bibitem{iptables}
+\newblock Coulson, David. Network Security: iptables, http://www.davidcoulson.net/writing/lxf/38/iptables.pdf, year 2003, pages 4, Last Accessed March 3, 2003.
+
+\bibitem{ekiga}
+\newblock Ekiga.org, http://ekiga.org/, Last Accessed April 21, 2007.
+
+\bibitem{Fred-eZone}
+\newblock Fred-eZone, http://www.fred-ezone.com/bb, Last Accessed December 2, 2005.
+
+\bibitem{firewall}
+\newblock Firewall (networking), http://en.wikipedia.org/wiki/Firewall, Last Accessed June 3, 2007.
+
+
+\bibitem{BT-phones}
+\newblock GrandStream Phones, http://www.grandstream.com/bt200.html, Last Accessed April 3, 2007.
+
+\bibitem{RFC4566}
+Handley, M. and Jacobson, V. and Perkins, C. ``RFC4566: Session Description Protocol'', Session Initiation Protocol (SIP)-Specific Event Notification, year 2006, pages 46.
+
+\bibitem{Meetings}
+\newblock Meetings with supervisors, Discussion of the thesis topic, Prof. Kurz and Sonan-Wangmo, Discussion with Prof. Kurz and Prof. DeDourek on the problem and the approach, meeting with the Fred-eZone committe to discuss about their wi-fi hotspot.
+
+\bibitem{modssl}
+\newblock modssl. http://www.modssl.org/, Last Accessed April 4, 2006.
+
+\bibitem{troy}
+\newblock Nelson, William Troy, Mobile 3G-WLAN Hotspot, Masters in Computer Science thesis report, year 2006, pages 82.
+
+\bibitem{nintendo}
+\newblock Nintendo and Wayport Join Forces to Bring Free Wi-Fi Access To Nintendo DS Users, http://www.nintendo.com/newsarticle?articleid=ZRzLtQZgFZiOvHfsAvXKUDxYUloypXJv\&page=newsmain, Last Accessed May 14, 2007.
+
+\bibitem{NoCatNet}
+\newblock NoCat.net-NoCat's goal is to bring you Infinite Bandwidth Everywhere for Free, http://nocat.net//, Last Accessed June 1, 2006.
+
+\bibitem{openssl}
+\newblock OpenSSL, http://www.openssl.org/, Last Accessed April 4, 2007.
+
+\bibitem{perl}
+\newblock Oualline, Steve, Perl for C Programmers, New Riders, Pearson Education, year 2004, pages 412.
+
+\bibitem{ComputerNetworks}
+Peterson, Larry L. and Davie, Bruce S. ``Computer Networks: A Systems Appoarch'', 3rd edition, Morgan Kaufmann Publishers, year 2003, pages 814.
+
+\bibitem{ZoneCD}
+\newblock PublicIP - Free WiFi Solutions for Free WiFi Access, http://www.publicip.net/, Last Accessed June 1, 2006.
+
+
+\bibitem{Fred-eZone-WhitePaper}
+\newblock Richard, Mike. A City of Fredericton Free Wi-Fi Zone, http://www.fred-ezone.com/documents/BroadBandWirelessArticle.pdf, Last Accessed June 22, 2004.
+
+\bibitem{RFC3265}
+Roach, B. ``RFC4566: SDP: Session Description Protocol'', http://www.ietf.org/rfc/rfc3265.txt, Network Working Group, year 2007, pages 38.
+
+\bibitem{RFC3261}
+Rosenberg, J. and Schulzrinne, H. and Camarillo, G. and Johnston, A. and Peterson, J. and Sparks, R. and Handley, M. and Schooler, E. ``RFC3261: Session Initiation Protocol'', Network Working Group:Internet Engineering Task Force Multiparty Multimedia Session Control (mmusic), year 2002, pages 269.
+
+
+\bibitem{gomed}
+\newblock Saini, Gomed S.
+\newblock Personal and session mobility management in IP networks
+\newblock Masters in Computer Science thesis report
+\newblock year 2006, pages 99
+.
+\bibitem{Wayport-Ninetendo}
+\newblock Shields, Amy.
+\newblock ``Nintendo launches Nintendo Wi-Fi connection with Wayport's high-speed wireless service at Nintendo world store''
+\newblock {\sl http://www.wayport.net/press/214}, 
+\newblock     journal "GCI Group", year 2005, pages 1, Last Accessed May 2, 2007.
+
+
+\bibitem{ser}
+\newblock SIP Express Router
+\newblock {\sl http://www.iptel.org/ser}, Last Accessed April 4, 2006.
+
+\bibitem{simple}
+\newblock SIP for Instant Messaging and Presence Leveraging Extensions (SIMPLE)
+ \newblock {\sl http://www.ietf.org/html.charters/simple-charter.html}, Last Accessed April 14, 2006.
+
+
+\bibitem{gnupg}
+\newblock  The GNU Privacy Guard
+\newblock {\sl http://www.gnupg.org/}, Last Accessed May 4, 2006.
+
+\bibitem{PTP}
+\newblock The Personal Telco Project
+\newblock {\sl http://wiki.personaltelco.net}, Last Accessed April 4, 2006.
+
+\bibitem{freeRADIUS}
+\newblock The FreeRADIUS Project
+\newblock {\sl http://www.freeradius.org/}, Last Accessed April 2, 2007.
+
+\bibitem{PTP-captivePortalDef}
+\newblock The Personal Telco Project: Feature Requirements
+\newblock {\sl http://wiki.personaltelco.net/index.cgi/CaptivePortalDefinition}, Last Accessed April 4, 2006.
+
+\bibitem{wififreespot}
+\newblock The Wi-Fi-FreeSpot Directory
+\newblock {\sl http://www.wififreespot.com/}, Last Accessed April 13, 2006.
+
+\bibitem{MediaAwareness}
+\newblock Web awareness for teachers
+\newblock {\sl http://www.media-awareness.ca/english/teachers/wa\_teachers/index.cfm}, Last Accessed August 4, 2006.
+
+\bibitem{wireshark}
+\newblock Wireshark : software protocol analyzer
+\newblock {\sl http://www.wireshark.org/}, Last Accessed April 21, 2007.
+
+
+\bibitem{x-lite}
+\newblock x-lite
+\newblock {\sl http://www.counterpath.com/}, Last Accessed April 21, 2007.
+
+
+\end{thebibliography}

@@ -1,0 +1,28 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Tourist travel planning matrix}}{7}{table.2.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Queries of different input/output modes for Province search}}{85}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Province search result of Query 1}}{86}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Query mode(input/output) for Route search}}{87}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Route search result for Query 1}}{87}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Queries of different input/output modes for Activity search}}{88}{table.6.5}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Activity search result of Query 4}}{89}{table.6.6}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Queries of different input/output modes for Accommodation search}}{91}{table.6.7}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Accommodation search result of Query 4}}{93}{table.6.8}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Queries of different input/output modes for Recommendation)}}{95}{table.6.9}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Location-centric recommendation by the system}}{96}{table.6.10}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Location-centric recommendation for user-preferred Provinces}}{97}{table.6.11}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Queries of different input/output modes for Travel Planning}}{99}{table.6.12}
+\contentsline {table}{\numberline {6.13}{\ignorespaces Attraction-only travel result}}{101}{table.6.13}
+\contentsline {table}{\numberline {6.14}{\ignorespaces Execution times for Attraction-only Planning}}{101}{table.6.14}
+\contentsline {table}{\numberline {6.15}{\ignorespaces Event-Centric travel results}}{104}{table.6.15}
+\contentsline {table}{\numberline {6.16}{\ignorespaces Evaluation of event-centric travel results}}{105}{table.6.16}
+\contentsline {table}{\numberline {6.17}{\ignorespaces Evaluation of event-centric travel results}}{105}{table.6.17}
+\contentsline {table}{\numberline {6.18}{\ignorespaces Evaluation of event-centric travel results}}{109}{table.6.18}
+\contentsline {table}{\numberline {6.19}{\ignorespaces Execution times for Event-centric Planning}}{109}{table.6.19}
+\addvspace {10\p@ }

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="http://www.ruleml.org/homepage.xsl" type="text/xsl"?>
+
+<!-- Written by Harold Boley -->
+
+<homepage>
+
+	<title>RestaurantFinderKB</title>
+
+	<opening>
+		<center>
+			<br/>
+<!--			<a href="http://www.ruleml.org"><img src="http://www.ruleml.org/logo/rulemllogo2_transparent.gif" border="none" alt="RuleML"/></a>
+-->
+			<br/>
+			<h1>RestaurantFinderKB:<br/>Modeling Semantic Search in OO jDREW with an International-Cuisine Taxonomy</h1>
+			<h2>Atteeka Rashid, William Ross, Girish Ranganathan, Bhanu Petchetti</h2>
+			<h4>Version History, 2006-01-16: Version 0.5
+			</h4><br/>
+			<h2>Version History, 2006-01-16: Version 0.5
+			</h2>
+		</center>
+		<br/>
+		
+		<p>This is a POSL use case of taxonomic and instance knowledge
+		 describing numerous food items and 24 fictitious restaurants.
+		 It has been developed using the OO jDREW rule engine.</p>
+	</opening>
+	
+	
+	<section>
+		<header>Overview</header>
+		<p>The goal of our project is to demonstrate how semantic searching might be accomplished.
+		To this end, we have created a mini-web scenario of numerous food items and 24 fictitious restaurants,
+		where each URI relates to one fictitious restaurant's homepage.
+		Furthermore, we have simulated some features of RDF and RDFS using the <a href="http://www.ruleml.org/submission/ruleml-shortation.html">POSL</a> logic programming representation,
+		and we have developed an international-cuisine taxonomy that we use to classify both restaurants and food dishes.
+		We use the information from our fictitious mini-web, stored as facts in our knowledge base, along with facts and rules
+		inferred by our taxonomy to model the semantic searching of restaurants and food dishes in <a href="http://www.jdrew.org/oojdrew/">OO jDREW</a>.
+		Our hope was to gain some experience with tools used in Semantic Web development
+		and to gain some knowledge regarding semantic searching, which we feel is an integral part of the Semantic Web.
+		The project is fully described in a report
+		(<a href="RestaurantFinderReport.pdf">RestaurantFinderReport.pdf</a>, <a href="RestaurantFinderReport.doc">RestaurantFinderReport.doc</a>)</p>
+	</section>
+	
+	<section>
+		<header>RestaurantFinderKB in POSL Syntax</header>
+                <p>The POSL source file: <a href="RestaurantFinderKB.posl">RestaurantFinderKB.posl</a></p>
+	</section>
+	
+		
+	<closing>
+		<p>
+		Site Contact:
+		<a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>.
+		Page Version: 2006-01-16
+		
+		<br/>
+		<br/>
+		<br/>
+		<a name="Practice-Preach"/>
+		<small>"Practice what you preach": XML source of this homepage at <a href="index.xml">index.xml</a>;
+	      <br/>
+	      transformed to HTML via the adaptation of <a href="http://www.dfki.uni-kl.de/~sintek/">Michael Sintek</a>'s SliML <a href="http://www.w3.org/TR/xslt">XSLT</a> stylesheet at <a href="http://www.dfki.uni-kl.de/~boley/xslt/homepage.xsl">homepage.xsl</a> (View | Page Source)
+	   </small>
+		</p>
+	</closing>
+	
+</homepage>

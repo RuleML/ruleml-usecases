@@ -1,0 +1,2210 @@
+
+<?xml version="1.0" encoding="UTF-8"?><Assert xmlns="http://www.ruleml.org/1.0/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ruleml.org/1.0/xsd http://www.ruleml.org/1.0/xsd/datalog.xsd"> 
+         
+<!--
+	wine facts. based on: http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/data/wine_data.tgz?root=rulebench&view=log (wine_data.tgz)
+--><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>pulignymontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>formanchardonnay</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>foxencheninblanc</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>chianticlassico</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>cortonmontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>corbansprivatebinsauvignonblanc</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>congressspringssemillon</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mariettapetitesyrah</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>corbanssauvignonblanc</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>petermccoychardonnay</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>selaksicewine</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>bancroftchardonnay</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>elysezinfandel</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mountadampinotnoir</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mariettacabernetsauvignon</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>schlossrothermeltrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>garyfarrellmerlot</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>cotturizinfandel</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mariettaoldvinesred</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>longridgemerlot</Ind></arg><arg index="2"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>kalincellarssemillon</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>pagemillwinerycabernetsauvignon</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>seanthackreysiriuspetitesyrah</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>whitehalllaneprimavera</Ind></arg><arg index="2"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>santacruzmountainvineyardcabernetsauvignon</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>lanetannerpinotnoir</Ind></arg><arg index="2"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>corbansdrywhiteriesling</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mountadamchardonnay</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mountadamriesling</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mariettazinfandel</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>kathrynkennedylateral</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mountedenvineyardestatepinotnoir</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>whitehalllanecabernetfranc</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>ventanacheninblanc</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>formancabernetsauvignon</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>schlossvolradtrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>mountedenvineyardednavalleychardonnay</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>stonleighsauvignonblanc</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasbody_aux</Rel></op><arg index="1"><Ind>selakssauvignonblanc</Ind></arg><arg index="2"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hascolor_aux</Rel></op><arg index="1"><Ind>selaksicewine</Ind></arg><arg index="2"><Ind>white</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>pulignymontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>formanchardonnay</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>stgenevievetexaswhite</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>foxencheninblanc</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>cortonmontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>corbansprivatebinsauvignonblanc</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>congressspringssemillon</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mariettapetitesyrah</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>corbanssauvignonblanc</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>petermccoychardonnay</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>selaksicewine</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>bancroftchardonnay</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>elysezinfandel</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mountadampinotnoir</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>chateaudychemsauterne</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mariettacabernetsauvignon</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>schlossrothermeltrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>garyfarrellmerlot</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>cotturizinfandel</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mariettaoldvinesred</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>longridgemerlot</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>kalincellarssemillon</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>pagemillwinerycabernetsauvignon</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>seanthackreysiriuspetitesyrah</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>chateaudemeursaultmeursault</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>whitehalllaneprimavera</Ind></arg><arg index="2"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>santacruzmountainvineyardcabernetsauvignon</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>lanetannerpinotnoir</Ind></arg><arg index="2"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>corbansdrywhiteriesling</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mountadamchardonnay</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mountadamriesling</Ind></arg><arg index="2"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mariettazinfandel</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>kathrynkennedylateral</Ind></arg><arg index="2"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mountedenvineyardestatepinotnoir</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>whitehalllanecabernetfranc</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>ventanacheninblanc</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>formancabernetsauvignon</Ind></arg><arg index="2"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>schlossvolradtrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>mountedenvineyardednavalleychardonnay</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>stonleighsauvignonblanc</Ind></arg><arg index="2"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasflavor_aux</Rel></op><arg index="1"><Ind>selakssauvignonblanc</Ind></arg><arg index="2"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>pulignymontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>pulignymontrachet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>chateaulafiterothschildpauillac</Ind></arg><arg index="2"><Ind>chateaulafiterothschild</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>formanchardonnay</Ind></arg><arg index="2"><Ind>forman</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>stgenevievetexaswhite</Ind></arg><arg index="2"><Ind>stgenevieve</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>foxencheninblanc</Ind></arg><arg index="2"><Ind>foxen</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>chianticlassico</Ind></arg><arg index="2"><Ind>mcguinnesso</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>cortonmontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>cortonmontrachet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>corbansprivatebinsauvignonblanc</Ind></arg><arg index="2"><Ind>corbans</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>congressspringssemillon</Ind></arg><arg index="2"><Ind>congresssprings</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mariettapetitesyrah</Ind></arg><arg index="2"><Ind>marietta</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>corbanssauvignonblanc</Ind></arg><arg index="2"><Ind>corbans</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>petermccoychardonnay</Ind></arg><arg index="2"><Ind>petermccoy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>selaksicewine</Ind></arg><arg index="2"><Ind>selaks</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>bancroftchardonnay</Ind></arg><arg index="2"><Ind>bancroft</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>chateauchevalblancstemilion</Ind></arg><arg index="2"><Ind>chateauchevalblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>chateaumorgonbeaujolais</Ind></arg><arg index="2"><Ind>chateaumorgon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>elysezinfandel</Ind></arg><arg index="2"><Ind>elyse</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mountadampinotnoir</Ind></arg><arg index="2"><Ind>mountadam</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>taylorport</Ind></arg><arg index="2"><Ind>taylor</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>chateaudychemsauterne</Ind></arg><arg index="2"><Ind>chateaudychem</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mariettacabernetsauvignon</Ind></arg><arg index="2"><Ind>marietta</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>schlossrothermeltrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>schlossrothermel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>garyfarrellmerlot</Ind></arg><arg index="2"><Ind>garyfarrell</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>closdevougeotcotesdor</Ind></arg><arg index="2"><Ind>closdevougeot</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>cotturizinfandel</Ind></arg><arg index="2"><Ind>cotturi</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>closdelapoussiesancerre</Ind></arg><arg index="2"><Ind>closdelapoussie</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mariettaoldvinesred</Ind></arg><arg index="2"><Ind>marietta</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>longridgemerlot</Ind></arg><arg index="2"><Ind>longridge</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>kalincellarssemillon</Ind></arg><arg index="2"><Ind>kalincellars</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>pagemillwinerycabernetsauvignon</Ind></arg><arg index="2"><Ind>pagemillwinery</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>seanthackreysiriuspetitesyrah</Ind></arg><arg index="2"><Ind>seanthackrey</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg><arg index="2"><Ind>saucelitocanyon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>chateaudemeursaultmeursault</Ind></arg><arg index="2"><Ind>chateaudemeursault</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>santacruzmountainvineyardcabernetsauvignon</Ind></arg><arg index="2"><Ind>santacruzmountainvineyard</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>lanetannerpinotnoir</Ind></arg><arg index="2"><Ind>lanetanner</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>corbansdrywhiteriesling</Ind></arg><arg index="2"><Ind>corbans</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>rosedanjou</Ind></arg><arg index="2"><Ind>danjou</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mountadamchardonnay</Ind></arg><arg index="2"><Ind>mountadam</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mountadamriesling</Ind></arg><arg index="2"><Ind>mountadam</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mariettazinfandel</Ind></arg><arg index="2"><Ind>marietta</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>chateaumargaux</Ind></arg><arg index="2"><Ind>chateaumargauxwinery</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>kathrynkennedylateral</Ind></arg><arg index="2"><Ind>kathrynkennedy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mountedenvineyardestatepinotnoir</Ind></arg><arg index="2"><Ind>mountedenvineyard</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>whitehalllanecabernetfranc</Ind></arg><arg index="2"><Ind>whitehalllane</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>ventanacheninblanc</Ind></arg><arg index="2"><Ind>ventana</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel</Ind></arg><arg index="2"><Ind>saucelitocanyon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>formancabernetsauvignon</Ind></arg><arg index="2"><Ind>forman</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>schlossvolradtrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>schlossvolrad</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>mountedenvineyardednavalleychardonnay</Ind></arg><arg index="2"><Ind>mountedenvineyard</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>stonleighsauvignonblanc</Ind></arg><arg index="2"><Ind>stonleigh</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>selakssauvignonblanc</Ind></arg><arg index="2"><Ind>selaks</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasmaker_aux</Rel></op><arg index="1"><Ind>sevreetmainemuscadet</Ind></arg><arg index="2"><Ind>sevreetmaine</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>pulignymontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>formanchardonnay</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>stgenevievetexaswhite</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>foxencheninblanc</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>cortonmontrachetwhiteburgundy</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>corbansprivatebinsauvignonblanc</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>congressspringssemillon</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mariettapetitesyrah</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>corbanssauvignonblanc</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>petermccoychardonnay</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>bancroftchardonnay</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>elysezinfandel</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mountadampinotnoir</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mariettacabernetsauvignon</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>schlossrothermeltrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>garyfarrellmerlot</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>cotturizinfandel</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mariettaoldvinesred</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>longridgemerlot</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>kalincellarssemillon</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>pagemillwinerycabernetsauvignon</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>seanthackreysiriuspetitesyrah</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>whitehalllaneprimavera</Ind></arg><arg index="2"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>santacruzmountainvineyardcabernetsauvignon</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>lanetannerpinotnoir</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>corbansdrywhiteriesling</Ind></arg><arg index="2"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mountadamchardonnay</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mountadamriesling</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mariettazinfandel</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>kathrynkennedylateral</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mountedenvineyardestatepinotnoir</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>whitehalllanecabernetfranc</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>ventanacheninblanc</Ind></arg><arg index="2"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>formancabernetsauvignon</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>schlossvolradtrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>mountedenvineyardednavalleychardonnay</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>stonleighsauvignonblanc</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hassugar_aux</Rel></op><arg index="1"><Ind>selakssauvignonblanc</Ind></arg><arg index="2"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>californiaregion</Ind></arg><arg index="2"><Ind>usregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>sancerreregion</Ind></arg><arg index="2"><Ind>loireregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>formanchardonnay</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>stgenevievetexaswhite</Ind></arg><arg index="2"><Ind>centraltexasregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>foxencheninblanc</Ind></arg><arg index="2"><Ind>santabarbararegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>loireregion</Ind></arg><arg index="2"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>corbansprivatebinsauvignonblanc</Ind></arg><arg index="2"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mariettapetitesyrah</Ind></arg><arg index="2"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>corbanssauvignonblanc</Ind></arg><arg index="2"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>petermccoychardonnay</Ind></arg><arg index="2"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>selaksicewine</Ind></arg><arg index="2"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>bancroftchardonnay</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>elysezinfandel</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>naparegion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mountadampinotnoir</Ind></arg><arg index="2"><Ind>southaustraliaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>chiantiregion</Ind></arg><arg index="2"><Ind>italianregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mariettacabernetsauvignon</Ind></arg><arg index="2"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>sauterneregion</Ind></arg><arg index="2"><Ind>bordeauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>pauillacregion</Ind></arg><arg index="2"><Ind>medocregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>centraltexasregion</Ind></arg><arg index="2"><Ind>texasregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>schlossrothermeltrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>germanyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>garyfarrellmerlot</Ind></arg><arg index="2"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>bordeauxregion</Ind></arg><arg index="2"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>cotturizinfandel</Ind></arg><arg index="2"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>anjouregion</Ind></arg><arg index="2"><Ind>loireregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>centralcoastregion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mariettaoldvinesred</Ind></arg><arg index="2"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>longridgemerlot</Ind></arg><arg index="2"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>sonomaregion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>santabarbararegion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>pagemillwinerycabernetsauvignon</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>seanthackreysiriuspetitesyrah</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg><arg index="2"><Ind>arroyogranderegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>medocregion</Ind></arg><arg index="2"><Ind>bordeauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>southaustraliaregion</Ind></arg><arg index="2"><Ind>australianregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>whitehalllaneprimavera</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>santacruzmountainvineyardcabernetsauvignon</Ind></arg><arg index="2"><Ind>santacruzmountainsregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>lanetannerpinotnoir</Ind></arg><arg index="2"><Ind>santabarbararegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mendocinoregion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>santacruzmountainsregion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>corbansdrywhiteriesling</Ind></arg><arg index="2"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>margauxregion</Ind></arg><arg index="2"><Ind>medocregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>texasregion</Ind></arg><arg index="2"><Ind>usregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>muscadetregion</Ind></arg><arg index="2"><Ind>loireregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mountadamchardonnay</Ind></arg><arg index="2"><Ind>southaustraliaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>alsaceregion</Ind></arg><arg index="2"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mountadamriesling</Ind></arg><arg index="2"><Ind>southaustraliaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>stemilionregion</Ind></arg><arg index="2"><Ind>bordeauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>bourgogneregion</Ind></arg><arg index="2"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mariettazinfandel</Ind></arg><arg index="2"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>toursregion</Ind></arg><arg index="2"><Ind>loireregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>cotesdorregion</Ind></arg><arg index="2"><Ind>bourgogneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mountedenvineyardestatepinotnoir</Ind></arg><arg index="2"><Ind>ednavalleyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>whitehalllanecabernetfranc</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>ventanacheninblanc</Ind></arg><arg index="2"><Ind>centralcoastregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel</Ind></arg><arg index="2"><Ind>arroyogranderegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>formancabernetsauvignon</Ind></arg><arg index="2"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>schlossvolradtrochenbierenausleseriesling</Ind></arg><arg index="2"><Ind>germanyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>beaujolaisregion</Ind></arg><arg index="2"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>mountedenvineyardednavalleychardonnay</Ind></arg><arg index="2"><Ind>ednavalleyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>meursaultregion</Ind></arg><arg index="2"><Ind>bourgogneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>ednavalleyregion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>stonleighsauvignonblanc</Ind></arg><arg index="2"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>arroyogranderegion</Ind></arg><arg index="2"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>locatedin_aux</Rel></op><arg index="1"><Ind>selakssauvignonblanc</Ind></arg><arg index="2"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>madefromgrape_aux</Rel></op><arg index="1"><Ind>chateaudychemsauterne</Ind></arg><arg index="2"><Ind>semillongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>madefromgrape_aux</Rel></op><arg index="1"><Ind>chateaudychemsauterne</Ind></arg><arg index="2"><Ind>sauvignonblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom1_aux</Rel></op><arg index="1"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom10_aux</Rel></op><arg index="1"><Ind>texasregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom11_aux</Rel></op><arg index="1"><Ind>sauvignonblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom12_aux</Rel></op><arg index="1"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom13_aux</Rel></op><arg index="1"><Ind>alsaceregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom14_aux</Rel></op><arg index="1"><Ind>anjouregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom15_aux</Rel></op><arg index="1"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom16_aux</Rel></op><arg index="1"><Ind>muscadetregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom17_aux</Rel></op><arg index="1"><Ind>germanyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom18_aux</Rel></op><arg index="1"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom18_aux</Rel></op><arg index="1"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom18_aux</Rel></op><arg index="1"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom19_aux</Rel></op><arg index="1"><Ind>loireregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom2_aux</Rel></op><arg index="1"><Ind>medocregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom20_aux</Rel></op><arg index="1"><Ind>zinfandelgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom21_aux</Rel></op><arg index="1"><Ind>pinotblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom22_aux</Rel></op><arg index="1"><Ind>margauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom23_aux</Rel></op><arg index="1"><Ind>bordeauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom24_aux</Rel></op><arg index="1"><Ind>chardonnaygrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom25_aux</Rel></op><arg index="1"><Ind>petitesyrahgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom26_aux</Rel></op><arg index="1"><Ind>beaujolaisregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom27_aux</Rel></op><arg index="1"><Ind>semillongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom28_aux</Rel></op><arg index="1"><Ind>red</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom29_aux</Rel></op><arg index="1"><Ind>cabernetsauvignongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom3_aux</Rel></op><arg index="1"><Ind>cabernetfrancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom30_aux</Rel></op><arg index="1"><Ind>sancerreregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom31_aux</Rel></op><arg index="1"><Ind>meursaultregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom32_aux</Rel></op><arg index="1"><Ind>rose</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom33_aux</Rel></op><arg index="1"><Ind>gamaygrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom34_aux</Rel></op><arg index="1"><Ind>cheninblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom35_aux</Rel></op><arg index="1"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom35_aux</Rel></op><arg index="1"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom35_aux</Rel></op><arg index="1"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom36_aux</Rel></op><arg index="1"><Ind>stemilionregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom37_aux</Rel></op><arg index="1"><Ind>rieslinggrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom38_aux</Rel></op><arg index="1"><Ind>usregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom39_aux</Rel></op><arg index="1"><Ind>pinotnoirgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom4_aux</Rel></op><arg index="1"><Ind>toursregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom40_aux</Rel></op><arg index="1"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom40_aux</Rel></op><arg index="1"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom40_aux</Rel></op><arg index="1"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom41_aux</Rel></op><arg index="1"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom42_aux</Rel></op><arg index="1"><Ind>cotesdorregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom43_aux</Rel></op><arg index="1"><Ind>merlotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom44_aux</Rel></op><arg index="1"><Ind>bourgogneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom45_aux</Rel></op><arg index="1"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom46_aux</Rel></op><arg index="1"><Ind>pauillacregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom47_aux</Rel></op><arg index="1"><Ind>italianregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom48_aux</Rel></op><arg index="1"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom49_aux</Rel></op><arg index="1"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom5_aux</Rel></op><arg index="1"><Ind>white</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom50_aux</Rel></op><arg index="1"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom50_aux</Rel></op><arg index="1"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom51_aux</Rel></op><arg index="1"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom51_aux</Rel></op><arg index="1"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom52_aux</Rel></op><arg index="1"><Ind>sauterneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom53_aux</Rel></op><arg index="1"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom53_aux</Rel></op><arg index="1"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom54_aux</Rel></op><arg index="1"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom55_aux</Rel></op><arg index="1"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom56_aux</Rel></op><arg index="1"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom57_aux</Rel></op><arg index="1"><Ind>portugalregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom58_aux</Rel></op><arg index="1"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom59_aux</Rel></op><arg index="1"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom59_aux</Rel></op><arg index="1"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom6_aux</Rel></op><arg index="1"><Ind>semillongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom6_aux</Rel></op><arg index="1"><Ind>sauvignonblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom60_aux</Rel></op><arg index="1"><Ind>sangiovesegrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom61_aux</Rel></op><arg index="1"><Ind>chiantiregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom62_aux</Rel></op><arg index="1"><Ind>cabernetsauvignongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom62_aux</Rel></op><arg index="1"><Ind>merlotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom63_aux</Rel></op><arg index="1"><Ind>pinotblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom63_aux</Rel></op><arg index="1"><Ind>sauvignonblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom63_aux</Rel></op><arg index="1"><Ind>cheninblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom64_aux</Rel></op><arg index="1"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom64_aux</Rel></op><arg index="1"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom7_aux</Rel></op><arg index="1"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom7_aux</Rel></op><arg index="1"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom8_aux</Rel></op><arg index="1"><Ind>cabernetfrancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom8_aux</Rel></op><arg index="1"><Ind>petiteverdotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom8_aux</Rel></op><arg index="1"><Ind>cabernetsauvignongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom8_aux</Rel></op><arg index="1"><Ind>malbecgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom8_aux</Rel></op><arg index="1"><Ind>merlotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom9_aux</Rel></op><arg index="1"><Ind>white</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom9_aux</Rel></op><arg index="1"><Ind>rose</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>ot____nom9_aux</Rel></op><arg index="1"><Ind>red</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>wineflavor_aux</Rel></op><arg index="1"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>wineflavor_aux</Rel></op><arg index="1"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>wineflavor_aux</Rel></op><arg index="1"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>petitesyrahgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>zinfandelgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>sangiovesegrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>cabernetfrancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>semillongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>rieslinggrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>pinotblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>gamaygrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>petiteverdotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>chardonnaygrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>pinotnoirgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>cabernetsauvignongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>sauvignonblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>cheninblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>malbecgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winegrape_aux</Rel></op><arg index="1"><Ind>merlotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winesugar_aux</Rel></op><arg index="1"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winesugar_aux</Rel></op><arg index="1"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winesugar_aux</Rel></op><arg index="1"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>seanthackrey</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>marietta</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>petermccoy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>danjou</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>stonleigh</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>schlossvolrad</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>selaks</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>cortonmontrachet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>forman</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>chateaulafiterothschild</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>elyse</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>garyfarrell</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>closdelapoussie</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>santacruzmountainvineyard</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>closdevougeot</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>ventana</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>schlossrothermel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>longridge</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>mcguinnesso</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>beringer</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>sevreetmaine</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>bancroft</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>whitehalllane</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>lanetanner</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>saucelitocanyon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>mountedenvineyard</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>taylor</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>stgenevieve</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>corbans</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>kalincellars</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>chateaudychem</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>kathrynkennedy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>cotturi</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>chateaumargauxwinery</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>congresssprings</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>chateaudemeursault</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>chateauchevalblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>mountadam</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>chateaumorgon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>pagemillwinery</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>handley</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>pulignymontrachet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winery_aux</Rel></op><arg index="1"><Ind>foxen</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>zinfandel_aux</Rel></op><arg index="1"><Ind>elysezinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>zinfandel_aux</Rel></op><arg index="1"><Ind>cotturizinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>zinfandel_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>zinfandel_aux</Rel></op><arg index="1"><Ind>mariettazinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>zinfandel_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winebody_aux</Rel></op><arg index="1"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winebody_aux</Rel></op><arg index="1"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winebody_aux</Rel></op><arg index="1"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winecolor_aux</Rel></op><arg index="1"><Ind>white</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winecolor_aux</Rel></op><arg index="1"><Ind>rose</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>winecolor_aux</Rel></op><arg index="1"><Ind>red</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>whiteburgundy_aux</Rel></op><arg index="1"><Ind>pulignymontrachetwhiteburgundy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>whiteburgundy_aux</Rel></op><arg index="1"><Ind>cortonmontrachetwhiteburgundy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>whitewine_aux</Rel></op><arg index="1"><Ind>stgenevievetexaswhite</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>muscadet_aux</Rel></op><arg index="1"><Ind>sevreetmainemuscadet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>meursault_aux</Rel></op><arg index="1"><Ind>chateaudemeursaultmeursault</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>meritage_aux</Rel></op><arg index="1"><Ind>kathrynkennedylateral</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>margaux_aux</Rel></op><arg index="1"><Ind>chateaumargaux</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>icewine_aux</Rel></op><arg index="1"><Ind>selaksicewine</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>dryriesling_aux</Rel></op><arg index="1"><Ind>mountadamriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>dessertwine_aux</Rel></op><arg index="1"><Ind>whitehalllaneprimavera</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cabernetsauvignon_aux</Rel></op><arg index="1"><Ind>mariettacabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cabernetsauvignon_aux</Rel></op><arg index="1"><Ind>pagemillwinerycabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cabernetsauvignon_aux</Rel></op><arg index="1"><Ind>santacruzmountainvineyardcabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cabernetsauvignon_aux</Rel></op><arg index="1"><Ind>formancabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cabernetfranc_aux</Rel></op><arg index="1"><Ind>whitehalllanecabernetfranc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>beaujolais_aux</Rel></op><arg index="1"><Ind>chateaumorgonbeaujolais</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>anjou_aux</Rel></op><arg index="1"><Ind>rosedanjou</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>chardonnay_aux</Rel></op><arg index="1"><Ind>formanchardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>chardonnay_aux</Rel></op><arg index="1"><Ind>petermccoychardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>chardonnay_aux</Rel></op><arg index="1"><Ind>bancroftchardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>chardonnay_aux</Rel></op><arg index="1"><Ind>mountadamchardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>chardonnay_aux</Rel></op><arg index="1"><Ind>mountedenvineyardednavalleychardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cheninblanc_aux</Rel></op><arg index="1"><Ind>foxencheninblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cheninblanc_aux</Rel></op><arg index="1"><Ind>ventanacheninblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>chianti_aux</Rel></op><arg index="1"><Ind>chianticlassico</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>cotesdor_aux</Rel></op><arg index="1"><Ind>closdevougeotcotesdor</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>merlot_aux</Rel></op><arg index="1"><Ind>garyfarrellmerlot</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>merlot_aux</Rel></op><arg index="1"><Ind>longridgemerlot</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>pauillac_aux</Rel></op><arg index="1"><Ind>chateaulafiterothschildpauillac</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>petitesyrah_aux</Rel></op><arg index="1"><Ind>mariettapetitesyrah</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>petitesyrah_aux</Rel></op><arg index="1"><Ind>seanthackreysiriuspetitesyrah</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>pinotnoir_aux</Rel></op><arg index="1"><Ind>mountadampinotnoir</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>pinotnoir_aux</Rel></op><arg index="1"><Ind>lanetannerpinotnoir</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>pinotnoir_aux</Rel></op><arg index="1"><Ind>mountedenvineyardestatepinotnoir</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>port_aux</Rel></op><arg index="1"><Ind>taylorport</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>redtablewine_aux</Rel></op><arg index="1"><Ind>mariettaoldvinesred</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>sancerreregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>loireregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>usregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>chiantiregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>sauterneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>germanyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>pauillacregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>centraltexasregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>bordeauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>portugalregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>anjouregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>centralcoastregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>santabarbararegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>medocregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>australianregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>southaustraliaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>mendocinoregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>santacruzmountainsregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>italianregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>margauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>texasregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>muscadetregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>alsaceregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>stemilionregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>bourgogneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>toursregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>cotesdorregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>beaujolaisregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>meursaultregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>ednavalleyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>region_aux</Rel></op><arg index="1"><Ind>arroyogranderegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>riesling_aux</Rel></op><arg index="1"><Ind>corbansdrywhiteriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sancerre_aux</Rel></op><arg index="1"><Ind>closdelapoussiesancerre</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sauternes_aux</Rel></op><arg index="1"><Ind>chateaudychemsauterne</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sauvignonblanc_aux</Rel></op><arg index="1"><Ind>corbansprivatebinsauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sauvignonblanc_aux</Rel></op><arg index="1"><Ind>corbanssauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sauvignonblanc_aux</Rel></op><arg index="1"><Ind>stonleighsauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sauvignonblanc_aux</Rel></op><arg index="1"><Ind>selakssauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>semillon_aux</Rel></op><arg index="1"><Ind>congressspringssemillon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>semillon_aux</Rel></op><arg index="1"><Ind>kalincellarssemillon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>stemilion_aux</Rel></op><arg index="1"><Ind>chateauchevalblancstemilion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sweetriesling_aux</Rel></op><arg index="1"><Ind>schlossrothermeltrochenbierenausleseriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>sweetriesling_aux</Rel></op><arg index="1"><Ind>schlossvolradtrochenbierenausleseriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaudemeursault</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>seanthackrey</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>formancabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>texasregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sonomaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>corbansdrywhiteriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cheninblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>delicate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>petermccoy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>forman</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>taylorport</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>pagemillwinerycabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateauchevalblancstemilion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>foxencheninblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>santacruzmountainvineyardcabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>selaksicewine</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chardonnaygrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sauvignonblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cabernetsauvignongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mountadampinotnoir</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>pinotblancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>year1998</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cotturizinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>whitehalllaneprimavera</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>longridge</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>bancroft</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mountedenvineyardednavalleychardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>moderate</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>alsaceregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>corbanssauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>full</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>taylor</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>malbecgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>closdevougeot</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>corbans</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>stonleighsauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>loireregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>corbansprivatebinsauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cortonmontrachet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaudychem</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>australianregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>beringer</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>formanchardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaudemeursaultmeursault</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>merlotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>garyfarrellmerlot</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>santacruzmountainvineyard</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>portugalregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>margauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>frenchregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>strong</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>schlossvolradtrochenbierenausleseriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cabernetfrancgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>medium</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>medocregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sangiovesegrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>toursregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaumargauxwinery</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>closdelapoussiesancerre</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>ednavalleyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>schlossvolrad</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>marietta</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sweet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>arroyogranderegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>elyse</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>whitehalllanecabernetfranc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>anjouregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>beaujolaisregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>petermccoychardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>pagemillwinery</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>stgenevievetexaswhite</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>congresssprings</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>germanyregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>muscadetregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>garyfarrell</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>light</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>rieslinggrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>pauillacregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>santabarbararegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>lanetanner</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mcguinnesso</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mendocinoregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaumorgonbeaujolais</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>santacruzmountainsregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>californiaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sancerreregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>selakssauvignonblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaulafiterothschildpauillac</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cortonmontrachetwhiteburgundy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>lanetannerpinotnoir</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>ventana</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cotturi</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mariettaoldvinesred</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>rosedanjou</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaulafiterothschild</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaumorgon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>saucelitocanyon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>ventanacheninblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateauchevalblanc</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mountadamriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mariettacabernetsauvignon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sevreetmaine</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>seanthackreysiriuspetitesyrah</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>stonleigh</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>schlossrothermeltrochenbierenausleseriesling</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mariettazinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>kathrynkennedylateral</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mountadamchardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>foxen</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>stgenevieve</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>offdry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>whitehalllane</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chianticlassico</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>pulignymontrachet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>meursaultregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mountedenvineyardestatepinotnoir</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>kalincellars</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>petiteverdotgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaumargaux</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>kathrynkennedy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sauterneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>bordeauxregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>white</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mariettapetitesyrah</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>handley</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>naparegion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chiantiregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>chateaudychemsauterne</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>elysezinfandel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>pulignymontrachetwhiteburgundy</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>kalincellarssemillon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>closdevougeotcotesdor</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>schlossrothermel</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>bancroftchardonnay</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>southaustraliaregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>semillongrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>danjou</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>gamaygrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>zinfandelgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>longridgemerlot</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mountedenvineyard</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>bourgogneregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>usregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>centraltexasregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>congressspringssemillon</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>selaks</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>dry</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>newzealandregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>red</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>closdelapoussie</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>cotesdorregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>rose</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>mountadam</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>sevreetmainemuscadet</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>pinotnoirgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>stemilionregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>italianregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>centralcoastregion</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>kaon2namedobjects</Rel></op><arg index="1"><Ind>petitesyrahgrape</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+      <op><Rel>vintageyear_aux</Rel></op><arg index="1"><Ind>year1998</Ind></arg></Atom></formula><formula><Atom closure="universal"> 
+         
+         
+         
+      <op><Rel>hasvintageyear_aux</Rel></op><arg index="1"><Ind>saucelitocanyonzinfandel1998</Ind></arg><arg index="2"><Ind>year1998</Ind></arg></Atom></formula></Assert>
