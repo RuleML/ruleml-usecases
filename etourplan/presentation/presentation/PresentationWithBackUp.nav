@@ -1,0 +1,196 @@
+\beamer@endinputifotherversion {3.07pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\sectionentry {1}{1. Introduction}{4}{1. Introduction}{0}}
+\headcommand {\beamer@sectionpages {1}{3}}
+\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{1.1 Overview}}\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{1.1 Overview}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{1.2 Motivation}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {1}{2}{1}{5/8}{1.2 Motivation}{0}}
+\headcommand {\beamer@framepages {5}{8}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{9}{1.2 Motivation}}\headcommand {\beamer@subsectionpages {5}{8}}
+\headcommand {\slideentry {1}{3}{1}{9/9}{1.2 Motivation}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{10}{1.3 Objectives}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {1}{4}{1}{10/14}{1.3 Objectives}{0}}
+\headcommand {\beamer@framepages {10}{14}}
+\headcommand {\slideentry {1}{4}{2}{15/15}{1.3 Objectives}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\sectionentry {2}{2. Background}{16}{2. Background}{0}}
+\headcommand {\beamer@sectionpages {4}{15}}
+\headcommand {\beamer@subsectionpages {10}{15}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{16}{2.1 Tour Planner and Recommender Systems}}\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\slideentry {2}{1}{1}{16/16}{2.1 Tour Planner and Recommender Systems}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {2}{1}{2}{17/17}{2.1 Tour Planner and Recommender Systems}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{18}{2.2 The Semantic Web}}\headcommand {\beamer@subsectionpages {16}{17}}
+\headcommand {\slideentry {2}{2}{1}{18/18}{2.2 The Semantic Web}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{19}{2.3 FOAF: Friend Of A Friend}}\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {2}{3}{1}{19/19}{2.3 FOAF: Friend Of A Friend}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{20}{2.4 The Harmonise Ontology}}\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\slideentry {2}{4}{1}{20/20}{2.4 The Harmonise Ontology}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{21}{2.5 Semantic eTourism Prototype}}\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\slideentry {2}{5}{1}{21/21}{2.5 Semantic eTourism Prototype}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\sectionentry {3}{3. KB Design: Ontology and Facts}{22}{3. KB Design: Ontology and Facts}{0}}
+\headcommand {\beamer@sectionpages {16}{21}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{22}{3.1 The eTourPlan Architecture}}\headcommand {\beamer@subsectionpages {22}{21}}
+\headcommand {\slideentry {3}{1}{1}{22/22}{3.1 The eTourPlan Architecture}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{23}{3.2 Ontology Design}}\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\slideentry {3}{2}{1}{23/23}{3.2 Ontology Design}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{24}{3.3 Ontology and FOAF-like Profile Descriptions of eTourPlan}}\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\slideentry {3}{3}{1}{24/24}{3.3 Ontology and FOAF-like Profile Descriptions of eTourPlan}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {3}{3}{2}{25/25}{3.3 Ontology and FOAF-like Profile Descriptions of eTourPlan}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {3}{3}{3}{26/26}{3.3 Ontology and FOAF-like Profile Descriptions of eTourPlan}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {3}{3}{4}{27/27}{3.3 Ontology and FOAF-like Profile Descriptions of eTourPlan}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {3}{3}{5}{28/28}{3.3 Ontology and FOAF-like Profile Descriptions of eTourPlan}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\sectionentry {4}{4. KB Design: Rules}{29}{4. KB Design: Rules}{0}}
+\headcommand {\beamer@sectionpages {22}{28}}
+\headcommand {\beamer@subsectionpages {24}{28}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{29}{4.1 eTourPlan Rule Subsystems}}\headcommand {\beamer@subsectionpages {29}{28}}
+\headcommand {\slideentry {4}{1}{1}{29/31}{4.1 eTourPlan Rule Subsystems}{0}}
+\headcommand {\beamer@framepages {29}{31}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{32}{4.2 Auxiliary Rules}}\headcommand {\beamer@subsectionpages {29}{31}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{1}{32}{4.2.1 Auxiliary Rules}}
+\headcommand {\slideentry {4}{2}{1}{32/32}{4.2 Auxiliary Rules}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {4}{2}{2}{33/33}{4.2 Auxiliary Rules}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {4}{2}{3}{34/34}{4.2 Auxiliary Rules}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {4}{2}{4}{35/35}{4.2 Auxiliary Rules}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {4}{2}{5}{36/36}{4.2 Auxiliary Rules}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\slideentry {4}{2}{6}{37/37}{4.2 Auxiliary Rules}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{38}{4.2.2 Distance Computation}}\headcommand {\beamer@subsectionpages {32}{37}}
+\headcommand {\slideentry {4}{3}{1}{38/38}{4.2.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {4}{3}{2}{39/39}{4.2.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{40}{4.3.1 Rule System for eTourPlan Attraction-only Travel Planner}}\headcommand {\beamer@subsectionpages {38}{39}}
+\headcommand {\slideentry {4}{4}{1}{40/43}{4.3.1 Rule System for eTourPlan Attraction-only Travel Planner}{0}}
+\headcommand {\beamer@framepages {40}{43}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{44}{4.3.2 Rule System for eTourPlan Travel Planner}}\headcommand {\beamer@subsectionpages {40}{43}}
+\headcommand {\slideentry {4}{5}{1}{44/49}{4.3.2 Rule System for eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {44}{49}}
+\headcommand {\sectionentry {5}{5. Experimental Results}{50}{5. Experimental Results}{0}}
+\headcommand {\beamer@sectionpages {29}{49}}
+\headcommand {\beamer@subsectionpages {44}{49}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{50}{5.1 Parametric Search Operations}}\headcommand {\beamer@subsectionpages {50}{49}}
+\headcommand {\slideentry {5}{1}{1}{50/54}{5.1 Parametric Search Operations}{0}}
+\headcommand {\beamer@framepages {50}{54}}
+\headcommand {\slideentry {5}{1}{2}{55/56}{5.1 Parametric Search Operations}{0}}
+\headcommand {\beamer@framepages {55}{56}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{57}{5.2. Location-centric Recommender}}\headcommand {\beamer@subsectionpages {50}{56}}
+\headcommand {\slideentry {5}{2}{1}{57/57}{5.2. Location-centric Recommender}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\slideentry {5}{2}{2}{58/58}{5.2. Location-centric Recommender}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {5}{2}{3}{59/59}{5.2. Location-centric Recommender}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{60}{5.3. eTourPlan Travel Planner}}\headcommand {\beamer@subsectionpages {57}{59}}
+\headcommand {\slideentry {5}{3}{1}{60/60}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {5}{3}{2}{61/61}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {5}{3}{3}{62/62}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {5}{3}{4}{63/63}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {5}{3}{5}{64/64}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\slideentry {5}{3}{6}{65/65}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {5}{3}{7}{66/66}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\slideentry {5}{3}{8}{67/67}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {5}{3}{9}{68/68}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {5}{3}{10}{69/69}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {5}{3}{11}{70/70}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\slideentry {5}{3}{12}{71/71}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {5}{3}{13}{72/72}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\slideentry {5}{3}{14}{73/73}{5.3. eTourPlan Travel Planner}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\sectionentry {6}{6. Conclusion and Future Work}{74}{6. Conclusion and Future Work}{0}}
+\headcommand {\beamer@sectionpages {50}{73}}
+\headcommand {\beamer@subsectionpages {60}{73}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{74}{6.1 Contributions}}\headcommand {\beamer@subsectionpages {74}{73}}
+\headcommand {\slideentry {6}{1}{1}{74/79}{6.1 Contributions}{0}}
+\headcommand {\beamer@framepages {74}{79}}
+\headcommand {\slideentry {6}{1}{2}{80/80}{6.1 Contributions}{0}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\slideentry {6}{1}{3}{81/81}{6.1 Contributions}{0}}
+\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\slideentry {6}{1}{4}{82/82}{6.1 Contributions}{0}}
+\headcommand {\beamer@framepages {82}{82}}
+\headcommand {\sectionentry {7}{more slides}{83}{more slides}{0}}
+\headcommand {\beamer@sectionpages {74}{82}}
+\headcommand {\beamer@subsectionpages {74}{82}}
+\headcommand {\slideentry {7}{0}{5}{83/83}{}{0}}
+\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\slideentry {7}{0}{6}{84/84}{}{0}}
+\headcommand {\beamer@framepages {84}{84}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{85}{4.3.2 Distance Computation}}\headcommand {\beamer@subsectionpages {83}{84}}
+\headcommand {\slideentry {7}{1}{1}{85/85}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {85}{85}}
+\headcommand {\slideentry {7}{1}{2}{86/86}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {86}{86}}
+\headcommand {\slideentry {7}{1}{3}{87/87}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {87}{87}}
+\headcommand {\slideentry {7}{1}{4}{88/88}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {88}{88}}
+\headcommand {\slideentry {7}{1}{5}{89/89}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {89}{89}}
+\headcommand {\slideentry {7}{1}{6}{90/91}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {90}{91}}
+\headcommand {\slideentry {7}{1}{7}{92/93}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {92}{93}}
+\headcommand {\slideentry {7}{1}{8}{94/94}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {94}{94}}
+\headcommand {\slideentry {7}{1}{9}{95/95}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {95}{95}}
+\headcommand {\slideentry {7}{1}{10}{96/96}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {96}{96}}
+\headcommand {\slideentry {7}{1}{11}{97/97}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {97}{97}}
+\headcommand {\slideentry {7}{1}{12}{98/98}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\slideentry {7}{1}{13}{99/99}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\slideentry {7}{1}{14}{100/100}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {100}{100}}
+\headcommand {\slideentry {7}{1}{15}{101/101}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {101}{101}}
+\headcommand {\slideentry {7}{1}{16}{102/102}{4.3.2 Distance Computation}{0}}
+\headcommand {\beamer@framepages {102}{102}}
+\headcommand {\beamer@partpages {1}{102}}
+\headcommand {\beamer@subsectionpages {85}{102}}
+\headcommand {\beamer@sectionpages {83}{102}}
+\headcommand {\beamer@documentpages {102}}
+\headcommand {\def \inserttotalframenumber {73}}

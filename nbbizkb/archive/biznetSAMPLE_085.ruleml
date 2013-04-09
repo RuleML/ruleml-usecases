@@ -1,0 +1,3669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rulebase
+xmlns="http://www.ruleml.org/0.85/xsd"
+xsi:schemaLocation="http://www.ruleml.org/0.85/xsd http://www.ruleml.org/0.85/xsd/hornlog.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>357</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Improtec</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1994</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>CHAL</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>323119</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 548-8934</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>548-3449</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Michael</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Wilson</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>PO Box 205</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>CP 205</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Bathurst</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E2A 3Z2</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>595 Main St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>595, rue Main</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Bathurst</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>3</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>3</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>1904</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Poissonnerie des Iles</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>311710</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 344-5911</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>344-8518</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Eril</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Chiasson</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Owner/President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Propriétaire/président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>313 Pêcheur du Nord St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>313, rue Pêcheur du Nord</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8T 1K9</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>313 Pêcheur du Nord St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>313, rue Pêcheur du Nord</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>10</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>5</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>2012</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>J.P. Boat Builder Ltée/Ltd.</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>336612</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 395-5035</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>395-0913</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Jean-Paul</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Rouselle</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Owner</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Propriétaire</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>5883 Route 11</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>5883, route 11</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Riviere-du-Portage</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E9H 1W7</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>5883 Route 11</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>5883, route 11</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Riviere-du-Portage</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Northumberland</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>3</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>3</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>2175</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Atlantic Press 2000</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1982</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>CHAR</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>323119</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 832-5218</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>832-3818</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Gerry</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>O'Keefe</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Owner/President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Propriétaire/président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>605 Main St., Unit A-1</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>605, rue Main, unité A-1</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Hampton</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E5N 6C2</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>605 Main St., Unit A-1</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>605, rue Main, unité A-1</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Hampton</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Kings</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>4</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>4</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>5732</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Impression Printing</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1991</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>CHAL</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>323119</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 546-1707</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>546-8588</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.impressionprinting.com</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Roger</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Thériault</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Production Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant de production</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>PO Box 1182</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>CP 1182</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Bathurst</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E2A 2H9</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>615 Main St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>615, rue Main</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Bathurst</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>9</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>6</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>8696</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Computer Training Institute (The)</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1986</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>SJEC</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>611420</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 632-1604</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>632-1607</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.cti.fundy.net</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mrs.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Terry</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Brooks</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>120 McDonald St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>120, rue McDonald</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Saint John</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E2J 1M5</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>120 McDonald St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>120, rue McDonald</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Saint John</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Saint John</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>12</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>8</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>11083</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Quantum Training &amp; Development Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1995</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>FRED</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>611420</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 460-1280</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>460-1289</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.qtrain.net</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Shawn</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Perry</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>415 King st.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>415, rue King</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Fredericton</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E3B 1E5</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>415 King st.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>415, rue King</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Fredericton</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>York</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>17</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>17</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>72</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Sabian Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1981</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>CARL</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>339990</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 272-2019</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>272-2040</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.sabian.com/</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Daniel</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Barker</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>219 Main St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>219, rue Main</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Meductic</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E6H 2L5</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>200 Main St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>200, rue Main</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Meductic</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>York</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>120</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>110</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>78</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Veneer Products of N.B. (1981) Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1981</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>FRED</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321211</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 367-2574</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>367-2622</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Dean</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Christie</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Operations Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant des opérations</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>527 Beaverbrook Ct., Suite 407</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>527, cour Beaverbrook, suite 407</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Fredericton</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E3B 1X6</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>12 Alpha St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>12, rue Alpha</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Napadogan</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>York</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>58</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>53</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>83</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Marwood Ltd. (Atlantic Pressure Treating)</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1972</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>FRED</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321114</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 459-7777</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>444-7136</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.marwoodltd.com</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Michael</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>O'Donnell</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Project Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Responsable de projet</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>PO Box 338, Sta. A</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>CP 338, succ. A</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Fredericton</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E3B 4Z9</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>3307 Route 101</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>3307, route 107</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Tracyville</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Sunbury</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>285</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>150</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>88</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Brownlane Lumber Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1969</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>FRED</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321111</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 366-5606</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>366-5358</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Stephen</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Brown</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Proprietor</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Propriétaire</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>200 Murray Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>200, ch. Murray</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Harvey York Co.</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E6K 1T8</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>200 Murray Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>200, ch. Murray</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Harvey York Co.</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>York</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>7</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>2</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>91</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Nackawic Mechanical Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1973</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>FRED</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>333920</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 575-2218</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>575-2766</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.sdi-aviation.com</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>David</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Young</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>55 Pinder Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>55, ch. Pinder</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Nackawic</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E6G 1W4</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>56 Pinder Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>56, ch. Pinder</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Nackawic</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>York</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>50</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>30</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>259</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>N.B. Coal Ltd.</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>CENT</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>324190</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 327-2200</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>327-2100</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Andrew</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Cormier</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>12 Tower Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>12 ch. Tower</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Minto</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E4B 3V1</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>12 Tower Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>12 ch. Tower</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Minto</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Queens</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>80</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>5</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>261</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Appleby's Bindery Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1976</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>FRED</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>323120</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 488-2086</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>488-2086</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>John</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Appleby</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>1303 Route 102</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>1303, route 102</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Upper Gagetown</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E5M 1R5</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>1303 Route 102</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>1303, route 102</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Upper Gagetown</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Queens</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>8</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>5</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>265</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Frobisher Industries Limited</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1967</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>FRED</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321920</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 362-2198</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>362-9090</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>George</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Staples</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>35856 Hwy 2</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>35856, route 2</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Waterborough</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E4C 2Y4</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>35856 Hwy 2</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>35856, route 2</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Waterborough</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Queens</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>26</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>26</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>269</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Kedgwick Lumber Co. Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1973</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>REST</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321112</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 284-2744</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>284-3111</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.klc.ca</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Jean-Paul</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>St-Pierre</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>7365 Route 17</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>7365, route 17</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Kedgwick</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8B 1W4</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>7365 Route 17</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>7365, route 17</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Kedgwick</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Restigouche</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>35</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>28</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>72</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Sabian Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1981</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>CARL</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>339990</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 272-2019</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>272-2040</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.sabian.com/</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Daniel</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Barker</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>219 Main St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>219, rue Main</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Meductic</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E6H 2L5</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>200 Main St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>200, rue Main</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Meductic</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>York</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>120</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>110</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>275</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>North American Forest Products Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1973</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>REST</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321111</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 235-2873</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>235-1923</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Jérôme</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Roy</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Controller</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Contrôleur</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>40 Labrie Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>40, ch. Labrie</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Saint-Quentin</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8A 2E1</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>40 Labrie Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>40, ch. Labrie</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Saint-Quentin</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Restigouche</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>350</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>150</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>279</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Jacob Fisheries Ltée</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1981</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>SEEC</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>311710</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 577-6513</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>577-6285</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Philip</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Jacob</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>11 Andree Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>11, allée Andre</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Petit-Cap</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E4N 2E1</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>11 Andree Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>11, allée Andre</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Petit-Cap</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Westmorland</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>18</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>15</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>287</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Blue Cove Group (1993) Inc. (A division of the Barry Group Inc.)</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1949</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>311710</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 732-2200</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>732-2220</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Brice</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Hornbrook</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>General Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant général</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>12 Frigault Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>12, allée Frigault</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Blue Cove</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8N 2J2</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>12 Frigault Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>12, allée. Frigault</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Blue Cove</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>1200</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>100</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>290</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Produits Plastiques de L'Ile Ltée (Les)</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1969</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>326198</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 344-2464</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>344-5209</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Bruno</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Haché</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>75 du Pêcheur North St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>75, rue du Pêcheur nord</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8T 1K5</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>75 du Pêcheur North St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>75, rue du Pêcheur nord</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>12</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>8</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>292</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Sun Gro Horticulture Canada Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1949</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>212397</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 336-2229</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>336-9095</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.sungro.com</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Renald</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Boudreau</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Regional Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant régional</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>4492 Route 113</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>4492, route 113</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8T 3L3</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>4492 Route 113</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>4492, route 113</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>85</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>40</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>317</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Hachey Impression Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1965</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>REST</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>323119</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 789-7766</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>789-6669</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Roger</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Plourde</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>77 Water St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>77, rue Water</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Campbellton</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E3N 1A9</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>77 Water St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>77, rue Water</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Campbellton</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Restigouche</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>7</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>6</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>275</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>North American Forest Products Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1973</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>REST</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321111</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 235-2873</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>235-1923</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Jérôme</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Roy</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Controller</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Contrôleur</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>40 Labrie Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>40, ch. Labrie</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Saint-Quentin</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8A 2E1</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>40 Labrie Rd.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>40, ch. Labrie</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Saint-Quentin</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Restigouche</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>350</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>150</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>277</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Maritime Press</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1913</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>MONC</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>323119</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 857-8790</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>857-4277</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Terry</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Goguen</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>General Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant général</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>111 St. George St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>111, rue St. George</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Moncton</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E1C 1T7</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>111 St. George St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>111, rue St. George</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Moncton</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Westmorland</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>12</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>12</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>279</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Jacob Fisheries Ltée</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1981</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>SEEC</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>311710</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 577-6513</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>577-6285</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Philip</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Jacob</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>11 Andree Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>11, allée Andre</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Petit-Cap</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E4N 2E1</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>11 Andree Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>11, allée Andre</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Petit-Cap</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Westmorland</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>18</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>15</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>287</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Blue Cove Group (1993) Inc. (A division of the Barry Group Inc.)</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1949</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>311710</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 732-2200</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>732-2220</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Brice</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Hornbrook</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>General Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant général</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>12 Frigault Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>12, allée Frigault</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Blue Cove</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8N 2J2</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>12 Frigault Lane</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>12, allée. Frigault</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Blue Cove</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>1200</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>100</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>290</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Produits Plastiques de L'Ile Ltée (Les)</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1969</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>326198</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 344-2464</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>344-5209</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Bruno</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Haché</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>75 du Pêcheur North St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>75, rue du Pêcheur nord</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8T 1K5</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>75 du Pêcheur North St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>75, rue du Pêcheur nord</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>12</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>8</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>292</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Sun Gro Horticulture Canada Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1949</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>212397</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 336-2229</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>336-9095</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.sungro.com</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Renald</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Boudreau</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Regional Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant régional</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>4492 Route 113</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>4492, route 113</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8T 3L3</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>4492 Route 113</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>4492, route 113</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>85</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>40</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>293</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Association Coopérative des Pêcheurs de L'Ile Ltée</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1942</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>311710</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 344-2204</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>344-0413</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.fisherman-corp.com</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Réginald</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Larocque</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>General Director</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Directeur général</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>90 Principale St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>90, rue Principale</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8T 1M8</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>90 Principale St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>90, rue Principale</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>550</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>14</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>294</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Mousse Acadienne (1979) Ltée (La) - Acadian Peat Moss (1979)</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1965</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>212397</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 344-2225</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>344-5237</ind>
+						</_slot>
+						<_slot name="WEB_SITE">
+							<ind>http://www.Acadianpeat.com</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Gilles</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Haché</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Gérant</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>PO Box 2002</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>CP 2002</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E8T 3N3</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>1571 Route 310</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>1571, route 310</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Lamèque</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>FREN</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>50</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>15</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>297</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>St. Laurent Gulf Prod Ltd, Produits du Gulf St. Laurent Ltée</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1965</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>PENI</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>311710</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 727-5465</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>727-4255</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Julien</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Albert</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President/Manager</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président/gérant</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>PO Box 5607</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>CP 5607</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Caraquet</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E1W 1B7</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>2260 du Quai St., Bas-Caraquet</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>2260, rue du Quai, Bas-Caraquet</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Bas-Caraquet</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>11</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>4</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>299</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Knowles, Herbert M. Enterprises Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1973</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>CHAL</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>Y</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>321111</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 546-4056</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Herbert</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Knowles</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>120 Route 340</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>120, route 340</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Janeville</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E2A 5C6</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>725 Route 340</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>725, route 340</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Janeville</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Gloucester</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>18</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>7</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>BIZNET_ENT</rel>
+				</_opr>
+				<_slot name="NUMBER">
+					<ind>317</ind>
+				</_slot>
+				<_slot name="NAME">
+					<ind>Hachey Impression Ltd.</ind>
+				</_slot>
+				<_slot name="ESTABLISHED">
+					<ind>1965</ind>
+				</_slot>
+				<_slot name="INDUSTRIAL_REGION">
+					<ind>REST</ind>
+				</_slot>
+				<_slot name="EXPORT">
+					<ind>N</ind>
+				</_slot>
+				<_slot name="NAICS_INDUSTRY_SECTOR">
+					<ind>323119</ind>
+				</_slot>
+				<_slot name="CONTACT">
+					<plex>
+						<_slot name="PHONE">
+							<ind>(506) 789-7766</ind>
+						</_slot>
+						<_slot name="FAX">
+							<ind>789-6669</ind>
+						</_slot>
+						<_slot name="CONTACT_PERSON">
+							<plex>
+								<_slot name="PERSON_TITLE">
+									<ind>Mr.</ind>
+								</_slot>
+								<_slot name="FIRSTNAME">
+									<ind>Roger</ind>
+								</_slot>
+								<_slot name="LASTNAME">
+									<ind>Plourde</ind>
+								</_slot>
+								<_slot name="POSITION_ENG">
+									<ind>President</ind>
+								</_slot>
+								<_slot name="POSITION_FR">
+									<ind>Président</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="MAILING_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>77 Water St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>77, rue Water</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Campbellton</ind>
+								</_slot>
+								<_slot name="PROVINCE">
+									<ind>NB</ind>
+								</_slot>
+								<_slot name="POSTAL_CODE">
+									<ind>E3N 1A9</ind>
+								</_slot>
+							</plex>
+						</_slot>
+						<_slot name="PLANT_ADDRESS">
+							<plex>
+								<_slot name="ADDRESS_LINE1_ENG">
+									<ind>77 Water St.</ind>
+								</_slot>
+								<_slot name="ADDRESS_LINE1_FR">
+									<ind>77, rue Water</ind>
+								</_slot>
+								<_slot name="CITY">
+									<ind>Campbellton</ind>
+								</_slot>
+								<_slot name="COUNTY">
+									<ind>Restigouche</ind>
+								</_slot>
+							</plex>
+						</_slot>
+					</plex>
+				</_slot>
+				<_slot name="LANGUAGE_SPOK">
+					<ind>BILI</ind>
+				</_slot>
+				<_slot name="LANGUAGE_WRIT">
+					<ind>ENGL</ind>
+				</_slot>
+				<_slot name="CURRENT_EMPLOYMENT">
+					<plex>
+						<_slot name="MAX">
+							<ind>7</ind>
+						</_slot>
+						<_slot name="MIN">
+							<ind>6</ind>
+						</_slot>
+					</plex>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+</rulebase>

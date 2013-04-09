@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="http://www.ruleml.org/homepage.xsl" type="text/xsl"?>
+<!-- Written by Jie Li -->
+<homepage>
+	<title>RuleML FOAF</title>
+	<opening>
+		<center>
+			<br/>
+			<!--			<a href="http://www.ruleml.org"><img src="http://www.ruleml.org/logo/rulemllogo2_transparent.gif" border="none" alt="RuleML"/></a>
+-->
+			<br/>
+			<h1>RuleML FOAF<br/>
+				<i>A Use Case for Web-based Social Networking</i>
+			</h1>
+			<h2>Jie Li, Harold Boley, Virendrakumar C. Bhavsar, David Hirtle, Jing Mei
+			</h2>
+			<h4>Version History, 2005-12-04: Version 0.1
+			</h4>
+			<br/>
+			<h4>Version History, 2006-01-17: Version 0.2
+			</h4>
+			<br/>
+			<h2>Version History, 2006-03-31: Version 0.3
+			</h2>
+		</center>
+		<br/>
+		<p>Web-based social networking is emerging as a major application area for Semantic Web metadata. Recently, a number of portals have become popular in this area, among which the <a href="http://foaf-project.org/">FOAF (Friend-Of-A-Friend  project)</a> addresses. The RDF-based  FOAF, originated by Dan Brickley and Libby Miller, allows expression of personal information and relationships, and permits machine-readable homepages for grouping, categorization and linking of persons.</p>
+		<p>However, the FOAF vocabulary does not currently capture rule knowledge but only facts. Therefore, we aim at enhancing FOAF by applying a Web Rule Language such as <a href="http://www.ruleml.org/">RuleML (Rule Markup Language)</a>.</p>
+	</opening>
+	<section>
+		<header>Overview</header>
+		<p>RuleML FOAF is currently being developed. We will mainly propose a rule vocabulary specification augmenting the current fact-only FOAF vocabulary. For an introduction see Jie Li's <a href="http://v5o5jotqkgfu3btr91t7w5fhzedjaoaz8igl.unbf.ca/~i63sz/RuleML_FOAF.pdf">RuleML FOAF</a> (<a href="http://v5o5jotqkgfu3btr91t7w5fhzedjaoaz8igl.unbf.ca/~i63sz/RuleML_FOAF.ppt">PPT</a>), or our <a href="http://www.ruleml.org/usecases/foaf/RIF_RuleML_FOAF.pdf">RIF RuleML FOAF</a> (<a href="http://www.ruleml.org/usecases/foaf/RIF_RuleML_FOAF.ppt">PPT</a>), or our short version of <a href="http://www.ruleml.org/usecases/foaf/RIF_RuleML_FOAF_Short.pdf">RIF RuleML FOAF</a> (<a href="http://www.ruleml.org/usecases/foaf/RIF_RuleML_FOAF_Short.ppt">PPT</a>).
+		</p>
+		<!--<p>RuleML FOAF has been applied in an early study on finding an expert with FOAF facts and rules as well as a domain taxonomy. For more details see our paper, namely <a href="http://www.ruleml.org/papers/FindXpRT.pdf">Expert Finding for eCollaboration Using FOAF with RuleML Rules</a>, in Montreal Conference on eTechnologies (MCeTech), 2006.</p>-->
+		<p>RuleML FOAF has been applied in an early study on finding an expert with FOAF facts and rules as well as a domain taxonomy. For more details see our paper entitled <a href="http://www.ruleml.org/papers/FindXpRT.pdf">Expert Finding for eCollaboration Using FOAF with RuleML Rules</a> or the corresponding talk (<a href="http://www.ruleml.org/usecases/foaf/Expert-Finding.ppt">PPT</a>) for the Montreal Conference on eTechnologies (MCeTech), 2006.</p>
+	</section>
+	<section>
+		<header>Our Objectives</header>
+		<p>Our main objectives of the RuleML FOAF project are as follows:</p>
+		<itemize>
+			<item>Develop the current RDF FOAF vocabulary for both elementary and rule-derivable facts</item>
+			<item>Enrich such descriptive facts by OO RuleML rules deriving new descriptions</item>
+			<item>Develop a general RuleML FOAF vocabulary for rules</item>
+			<item>Build rulebases for the FOAF community to exchange and share information</item>
+			<item>Implement both FNF (Fact Normal Form) and RNF (Rule Normal Form) to benefit both the current FOAF community and the development of FOAF projects by extending them inferential with more new features.</item>
+		</itemize>
+	</section>
+	<section>
+		<header>Highlights of Our Two Normal Forms</header>
+		<p>Two normal forms for RuleML FOAF rulebases are proposed for our system: a rule-oriented normal form (RNF)
+and a fact-oriented normal form (FNF). While the RNF is more compact, the FNF directly corresponds to RDF
+FOAF facts.</p>
+		<itemize>
+			<item>Rule-oriented Normal Form (RNF): The RNF includes rules as well as the (elementary) facts that are needed by the
+premises of the rules. Those facts that are derivable from the rules by a bottom-up engine such as <a href="http://www.jdrew.org/oojdrew/">OO jDREW</a>
+BU are removed from the rulebase. (Complementarily, corresponding queries could be posed to a top-down
+engine such as OO jDREW TD.)</item>
+			<item>The FNF includes elementary facts and derived facts. Rules are removed from
+the published rulebase after all possible facts are derived by running a bottom-up engine such as OO jDREW
+BU. (When new elementary facts are asserted, the rules need to be re-applied to them.)</item>
+		</itemize>
+	</section>
+	<section>
+		<header>Our Proposed Work</header>
+		<p>We propose to apply the RuleML language to metadata constituting FOAF profiles so that FOAF rules can enrich FOAF facts. The realization of this proposed work can be divided into the following steps.</p>
+		<itemize>
+			<item>FOAF Vocabularies in OO RuleML (via <a href="http://www.ruleml.org/posl/poslintweb-talk.pdf">POSL</a>)</item>
+			<item>XSLT Translation of OO RuleML Facts to RDF</item>
+			<item>Designing a FOAF Rule Vocabulary</item>
+			<item>Computing Derived FOAF Properties in Social Networks</item>
+			<item>Use Cases for FOAF RuleML</item>
+		</itemize>
+	</section>
+	<closing>
+		<p>
+		Site Contact:
+		<a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>.
+		Page Version: 2006-05-17
+		
+		<br/>
+			<br/>
+			<br/>
+			<a name="Practice-Preach"/>
+			<small>"Practice what you preach": XML source of this homepage at <a href="index.xml">index.xml</a>;
+	      <br/>
+	      transformed to HTML via the adaptation of <a href="http://www.dfki.uni-kl.de/~sintek/">Michael Sintek</a>'s SliML <a href="http://www.w3.org/TR/xslt">XSLT</a> stylesheet at <a href="http://www.dfki.uni-kl.de/~boley/xslt/homepage.xsl">homepage.xsl</a> (View | Page Source)
+	   </small>
+		</p>
+	</closing>
+</homepage>

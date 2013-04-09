@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ 
+<RuleML xmlns="http://www.ruleml.org/1.0/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ruleml.org/1.0/xsd http://www.ruleml.org/1.0/xsd/hornlog.xsd"> 
+   <Assert mapClosure="universal"> 
+      <Implies> 
+         <And> 
+            <Atom> 
+               <Rel>premium</Rel> 
+               <Var>customer</Var> 
+            </Atom> 
+            <Atom> 
+               <Rel>regular</Rel> 
+               <Var>product</Var> 
+            </Atom> 
+         </And> 
+         <Atom> 
+            <Rel>discount</Rel> 
+            <Var>customer</Var> 
+            <Var>product</Var> 
+            <Expr> 
+               <Fun>percent</Fun> 
+               <Data>5</Data> 
+            </Expr> 
+         </Atom> 
+      </Implies> 
+      <Implies> 
+         <And> 
+            <Atom> 
+               <Rel>premium</Rel> 
+               <Var>customer</Var> 
+            </Atom> 
+            <Atom> 
+               <Rel>luxury</Rel> 
+               <Var>product</Var> 
+            </Atom> 
+         </And> 
+         <Atom> 
+            <Rel>discount</Rel> 
+            <Var>customer</Var> 
+            <Var>product</Var> 
+            <Expr> 
+               <Fun>percent</Fun> 
+               <Data>10</Data> 
+            </Expr> 
+         </Atom> 
+      </Implies> 
+   </Assert> 
+</RuleML>

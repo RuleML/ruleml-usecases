@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rulebase
+xmlns="http://www.ruleml.org/0.85/xsd"
+xsi:schemaLocation="http://www.ruleml.org/0.85/xsd http://www.ruleml.org/0.85/xsd/datalog.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>A-TEC Personal Computers &amp; Training Sales &amp; Service</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 375-4073</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 375-6319</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>79 Somerville Road</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Somerville</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E7P 2S1</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Computers Dealers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Computer Training Institute (The)</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 632-1604</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 632-1607</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>120 McDonald Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Saint John</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2J 1M5</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Computers Training Instruction</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Quantum Training &amp; Development Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 460-1280</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 460-1289</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>1149 Smythe Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Fredericton</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3B 3H4</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Computers Training Instruction</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Impression Printing</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 546-1707</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 546-8588</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>129 Main Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Bathurst</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2A 1A6</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Printers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Improtec</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 548-8934</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 548-3449</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>595 Main Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Bathurst</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2A 1B1</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Printers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Grove Printing</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 696-5421</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>Golden Grove Road</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Saint John</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2L 3T5</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Printers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Academy Of Learning</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 622-8973</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>208 McCallum Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Miramichi</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E1V 2A1</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Computers Training Instruction</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Atlantic Press Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 832-5218</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 832-3353</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>605 Main Street 1</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Hampton</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E5N 6C2</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Printers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Atlantic Business College Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 450-1408</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 450-8388</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>130 Carleton Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Fredericton</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3B 3T4</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Computers Training Instruction</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Forest Protection Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 446-6930</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 446-6934</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>2502 Route 102 Highway</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Lincoln</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3B 7E6</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Aircraft Charter Rental Leasing Service</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Heritage Court Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 853-1918</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 853-0510</ind>
+				</_slot>
+				<_slot name="TOLL_FREE">
+					<ind>(800) 670-5757</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>95 Foundry Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Moncton</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E1C 5H7</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Aircraft Charter Rental Leasing Service</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>A Plus Auto Glass</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 454-5277</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>1719 Route 640 Highway</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Hanwell</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3C 2B9</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Crafts &amp; Upholstery Den</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 738-3440</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>733 River Valley Drive 2</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Grand Bay-Westfield</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E5K 1B6</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Currie's Upholstery</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 363-2568</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>225 Route 616</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Keswick Ridge</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E6L 1R9</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Cusack V Blanche Upholstering Services</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 832-3381</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>242 Main Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Hampton</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E5N 6B8</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>D &amp; E Upholstery &amp; Furniture Repair</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 357-3555</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 357-5295</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>339 Macdonald Avenue</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Oromocto</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2V 1A8</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Falkjar &amp; Son</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 633-0016</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 633-0016</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>309 Lowell Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Saint John</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2M 2H6</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Fredericton Upholstery</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 444-8085</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>1249 Route 105</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Douglas</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3A 7L5</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Gorham General Flooring</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 459-4994</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 457-2573</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>1035 Route 620 Highway</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Estey'S Bridge</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3A 6M4</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Grand Falls Custom Upholstery</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 473-5919</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>226 Main Rue</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Grand-Sault/Grand Falls</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3Z 2W3</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Hawksley Judy</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 278-5438</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>649 Greenfield Road</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Greenfield</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E7L 3E5</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Heritage Upholstery</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 849-8008</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>18 Country Crescent</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Quispamsis</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2E 1T1</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Hub Upholstgery</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 382-6242</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>50 Fergus Street</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Moncton</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E1C 2W4</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Le-Chau's Upholstery</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 456-2244</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>210 Deadmans Harbour Road</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Blacks Harbour</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E5H 1J3</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Lemont's Upholstery Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 363-2503</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>24 Route 104</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Keswick</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E6L 2A2</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Leo's Upholstery</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 450-9443</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>141 Hurlett Road</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Royal Road</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E3A 6B4</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Upholsterers</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Marque Construction Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 634-1144</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 632-1108</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>398 Chesley Drive</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Saint John</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2L 4S1</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Mechanical Contractors</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Master Mechanical Contractors Inc.</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 633-8001</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 633-8004</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>519 Westmorland Road</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Saint John</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E2J 3W9</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Mechanical Contractors</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+	<fact>
+		<_head>
+			<atom>
+				<_opr>
+					<rel>YAHOO_ENT</rel>
+				</_opr>
+				<_slot name="OPER_NAME">
+					<ind>Nackawic Mechanical Ltd</ind>
+				</_slot>
+				<_slot name="PHONE">
+					<ind>(506) 575-2218</ind>
+				</_slot>
+				<_slot name="FAX">
+					<ind>(506) 575-2766</ind>
+				</_slot>
+				<_slot name="MAIL_ENG">
+					<ind>56 Pinder Road</ind>
+				</_slot>
+				<_slot name="MAIL_PLACE">
+					<ind>Nackawic</ind>
+				</_slot>
+				<_slot name="MAIL_PROV">
+					<ind>NB</ind>
+				</_slot>
+				<_slot name="MAIL_POST">
+					<ind>E6G 1W3</ind>
+				</_slot>
+				<_slot name="CATEGORY">
+					<ind>Mechanical Contractors</ind>
+				</_slot>
+				<_slot name="WEB_SITE">
+					<ind>none</ind>
+				</_slot>
+			</atom>
+		</_head>
+	</fact>
+</rulebase>

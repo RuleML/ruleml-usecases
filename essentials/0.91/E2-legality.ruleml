@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleML
+xmlns="http://www.ruleml.org/0.91/xsd"
+xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation=
+"http://www.ruleml.org/0.91/xsd
+http://www.ruleml.org/0.91/xsd/folog.xsd"
+>
+   <Assert mapClosure="universal">
+      <Implies>
+         <And>
+            <Atom>
+               <Rel>payment</Rel>
+               <Var>customer</Var>
+               <Var>product2</Var>
+               <Var>amount</Var>
+               <Var>method</Var>
+               <Var>time</Var>
+            </Atom>
+            <Atom>
+               <Rel>fraudulent</Rel>
+               <Var>customer</Var>
+               <Var>method</Var>
+               <Var>time</Var>
+            </Atom>
+         </And>
+         <Neg>
+            <Atom>
+               <Rel>discount</Rel>
+               <Var>customer</Var>
+               <Var>product1</Var>
+               <Var>percent</Var>
+            </Atom>
+         </Neg>
+      </Implies>
+      <Implies>
+         <And>
+            <Atom>
+               <Rel>delivery</Rel>
+               <Var>customer</Var>
+               <Var>product2</Var>
+               <Var>amount</Var>
+               <Expr>
+                  <Fun>date</Fun>
+                  <Var>y1</Var>
+                  <Var>m1</Var>
+                  <Var>d1</Var>
+               </Expr>
+            </Atom>
+            <Atom>
+               <Rel>payment</Rel>
+               <Var>customer</Var>
+               <Var>product2</Var>
+               <Var>amount</Var>
+               <Var>method</Var>
+               <Expr>
+                  <Fun>date</Fun>
+                  <Var>y2</Var>
+                  <Var>m2</Var>
+                  <Var>d2</Var>
+               </Expr>
+            </Atom>
+            <Atom>
+               <Rel>datediff</Rel>
+               <Expr>
+                  <Fun>days</Fun>
+                  <Var>delta</Var>
+               </Expr>
+               <Expr>
+                  <Fun>date</Fun>
+                  <Var>y2</Var>
+                  <Var>m2</Var>
+                  <Var>d2</Var>
+               </Expr>
+               <Expr>
+                  <Fun>date</Fun>
+                  <Var>y1</Var>
+                  <Var>m1</Var>
+                  <Var>d1</Var>
+               </Expr>
+            </Atom>
+            <Atom>
+               <Rel>greaterThan</Rel>
+               <Var>delta</Var>
+               <Data>45</Data>
+            </Atom>
+         </And>
+         <Neg>
+            <Atom>
+               <Rel>discount</Rel>
+               <Var>customer</Var>
+               <Var>product1</Var>
+               <Var>percent</Var>
+            </Atom>
+         </Neg>
+      </Implies>
+   </Assert>
+</RuleML>

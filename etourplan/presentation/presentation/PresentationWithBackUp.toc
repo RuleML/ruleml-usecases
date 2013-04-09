@@ -1,0 +1,32 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{1. Introduction}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{1.1 Overview}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{1.2 Motivation}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{1.2 Motivation}{9}{0}{1}
+\beamer@subsectionintoc {1}{4}{1.3 Objectives}{10}{0}{1}
+\beamer@sectionintoc {2}{2. Background}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{2.1 Tour Planner and Recommender Systems}{16}{0}{2}
+\beamer@subsectionintoc {2}{2}{2.2 The Semantic Web}{18}{0}{2}
+\beamer@subsectionintoc {2}{3}{2.3 FOAF: Friend Of A Friend}{19}{0}{2}
+\beamer@subsectionintoc {2}{4}{2.4 The Harmonise Ontology}{20}{0}{2}
+\beamer@subsectionintoc {2}{5}{2.5 Semantic eTourism Prototype}{21}{0}{2}
+\beamer@sectionintoc {3}{3. KB Design: Ontology and Facts}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{3.1 The eTourPlan Architecture}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{3.2 Ontology Design}{23}{0}{3}
+\beamer@subsectionintoc {3}{3}{3.3 Ontology and FOAF-like Profile Descriptions of eTourPlan}{24}{0}{3}
+\beamer@sectionintoc {4}{4. KB Design: Rules}{29}{0}{4}
+\beamer@subsectionintoc {4}{1}{4.1 eTourPlan Rule Subsystems}{29}{0}{4}
+\beamer@subsectionintoc {4}{2}{4.2 Auxiliary Rules}{32}{0}{4}
+\beamer@subsubsectionintoc {0}{4}{2}{1}{32}{4}{4.2.1 Auxiliary Rules}
+\beamer@subsectionintoc {4}{3}{4.2.2 Distance Computation}{38}{0}{4}
+\beamer@subsectionintoc {4}{4}{4.3.1 Rule System for eTourPlan Attraction-only Travel Planner}{40}{0}{4}
+\beamer@subsectionintoc {4}{5}{4.3.2 Rule System for eTourPlan Travel Planner}{44}{0}{4}
+\beamer@sectionintoc {5}{5. Experimental Results}{50}{0}{5}
+\beamer@subsectionintoc {5}{1}{5.1 Parametric Search Operations}{50}{0}{5}
+\beamer@subsectionintoc {5}{2}{5.2. Location-centric Recommender}{57}{0}{5}
+\beamer@subsectionintoc {5}{3}{5.3. eTourPlan Travel Planner}{60}{0}{5}
+\beamer@sectionintoc {6}{6. Conclusion and Future Work}{74}{0}{6}
+\beamer@subsectionintoc {6}{1}{6.1 Contributions}{74}{0}{6}
+\beamer@sectionintoc {7}{more slides}{83}{0}{7}
+\beamer@subsectionintoc {7}{1}{4.3.2 Distance Computation}{85}{0}{7}

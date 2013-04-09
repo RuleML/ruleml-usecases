@@ -1,0 +1,344 @@
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.7 Beta 1) (preloaded format=pdflatex 2008.1.8)  16 JAN 2008 14:32
+entering extended mode
+**C:/Users/Tshering/Desktop/TsheringMCSThesisLatex/glossary.tex
+(C:/Users/Tshering/Desktop/TsheringMCSThesisLatex/glossary.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8g> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, loaded.
+! Undefined control sequence.
+l.2 \chapter
+            *{Glossary}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \chapter*
+             {Glossary}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--4
+[]
+ []
+
+
+! LaTeX Error: Environment small undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \begin{small}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{verbatim}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--6
+[] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 activity:[] 
+ []
+
+
+Overfull \hbox (367.4968pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 Any kind of tourist actions. It subsumes both events and a
+ttractions[] 
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 activityList:[] 
+ []
+
+
+Overfull \hbox (257.24776pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 The list of activities selected from a province[] 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 bike:[] 
+ []
+
+
+Overfull \hbox (356.99689pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 The biking distance time in hours between two connected pr
+ovinces.[] 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 bus:[] 
+ []
+
+
+Overfull \hbox (367.4968pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 The distamce time in hours by a bus between two connected 
+provinces.[] 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 cab:[] 
+ []
+
+
+Overfull \hbox (367.4968pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 The distance time in hours by a light vehicle between two 
+provinces.[] 
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 capital:[] 
+ []
+
+
+Overfull \hbox (204.74821pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It is the capital city of a province.[] 
+ []
+
+
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 capitalDistance:[] 
+ []
+
+
+Overfull \hbox (419.99634pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It is the distance of an event location from the capital c
+ity of the province.[] 
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 endDate:[] 
+ []
+
+Missing character: There is no ’ in font cmtt10!
+
+Overfull \hbox (283.49753pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It refers to the end date of users trip or an event.[] 
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 getActivityList[] 
+ []
+
+
+Overfull \hbox (461.99597pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 Subpredicate that retrieves a specified number of activiti
+es for a specified location.[] 
+ []
+
+
+Overfull \hbox (146.99872pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 getProvinceToRecommendation[] 
+ []
+
+
+Overfull \hbox (414.74638pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 Subpredicate to get the next recommended province from the
+ a province profile[] 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 hike:[] 
+ []
+
+
+Overfull \hbox (304.49734pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 The hiking distance time in hours between two provinces.[]
+ 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 neighbourOf:[] 
+ []
+
+
+Overfull \hbox (330.74712pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It gives the web link of the neighboring tourist attractio
+ns.[] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 location:[] 
+ []
+
+
+Overfull \hbox (220.49808pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It describes a particular event location[] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 province:[] 
+ []
+
+
+Overfull \hbox (335.99707pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It describes the state territory which is under a jurisdic
+tion[] 
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 Regions:[] 
+ []
+
+
+Overfull \hbox (608.99469pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It is the super class of the different geographic subdivis
+ions of an area in the ontology. It has four subclasses,[] 
+ []
+
+
+Overfull \hbox (356.99689pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 Eastern_regions, Southern_regions, Central_Bhutan, Western
+_Bhutan.[] 
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 route:[] 
+ []
+
+
+Overfull \hbox (215.24812pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It is the route generated by the system[] 
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 routePLanner:[] 
+ []
+
+
+Overfull \hbox (635.24446pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It is the toplevel predicate that is a conjoins the toRout
+ePlanner and the distanceTimeRoute predicate,which is used to[] 
+ []
+
+
+Overfull \hbox (131.24886pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 compute the return trip[] 
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 startDate:[] 
+ []
+
+Missing character: There is no ’ in font cmtt10!
+
+Overfull \hbox (293.99744pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It refers to the start date of users trip or an event.[] 
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 theme:[] 
+ []
+
+
+Overfull \hbox (656.24428pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It categorizes the different tourist activities based on t
+hree main themes, cultural_Religious_Heritage, Nature, Recreation[] 
+ []
+
+
+Overfull \hbox (131.24886pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 as defined in the BTRI.[] 
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 toRouteplanner:[] 
+ []
+
+
+Overfull \hbox (587.99487pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 Predicate to compute the system recommended route and the 
+activity list at each of the provinces on the route.[] 
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 53--53
+[] \OT1/cmtt/m/n/10 visited:[] 
+ []
+
+
+Overfull \hbox (425.24629pt too wide) in paragraph at lines 53--53
+[]  \OT1/cmtt/m/n/10 It is used to keep a record of visited provinces in the sy
+stem generated route.[] 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{small}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \end{small}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ...Desktop/TsheringMCSThesisLatex/glossary.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 11 strings out of 95351
+ 268 string characters out of 1184474
+ 48885 words of memory out of 1500000
+ 3293 multiletter control sequences out of 60000
+ 3808 words of font info for 15 fonts, out of 1200000 for 2000
+ 14 hyphenation exceptions out of 8191
+ 18i,1n,14p,191b,160s stack positions out of 5000i,500n,10000p,200000b,5000s
+!  ==> Fatal error occurred, no output PDF file produced!

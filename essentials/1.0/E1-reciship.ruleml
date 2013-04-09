@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ 
+<RuleML xmlns="http://www.ruleml.org/1.0/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ruleml.org/1.0/xsd http://www.ruleml.org/1.0/xsd/datalog.xsd"> 
+   <Assert mapClosure="universal"> 
+      <Implies> 
+         <And> 
+            <Atom> 
+               <Rel>shipment</Rel> 
+               <slot> 
+                  <Ind>cargo</Ind> 
+                  <Var/> 
+               </slot> 
+               <slot> 
+                  <Ind>price</Ind> 
+                  <Var>cost1</Var> 
+               </slot> 
+               <slot> 
+                  <Ind>source</Ind> 
+                  <Var>A</Var> 
+               </slot> 
+               <slot> 
+                  <Ind>dest</Ind> 
+                  <Var>B</Var> 
+               </slot> 
+            </Atom> 
+            <Atom> 
+               <Rel>shipment</Rel> 
+               <slot> 
+                  <Ind>cargo</Ind> 
+                  <Var/> 
+               </slot> 
+               <slot> 
+                  <Ind>price</Ind> 
+                  <Var>cost2</Var> 
+               </slot> 
+               <slot> 
+                  <Ind>source</Ind> 
+                  <Var>B</Var> 
+               </slot> 
+               <slot> 
+                  <Ind>dest</Ind> 
+                  <Var>A</Var> 
+               </slot> 
+            </Atom> 
+            <Atom> 
+               <Rel>add</Rel> 
+               <Var>cost</Var> 
+               <Var>cost1</Var> 
+               <Var>cost2</Var> 
+            </Atom> 
+         </And> 
+         <Atom> 
+            <Rel>reciship</Rel> 
+            <Var>cost</Var> 
+            <Var>A</Var> 
+            <Var>B</Var> 
+         </Atom> 
+      </Implies> 
+   </Assert> 
+</RuleML>

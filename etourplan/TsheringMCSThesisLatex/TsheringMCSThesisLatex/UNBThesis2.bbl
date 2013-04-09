@@ -1,0 +1,286 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{Tech:06}
+\emph{Technology reports: Rule markup language (ruleml)},
+  \texttt{\url{http://xml.coverpages.org/ruleML.html}}, 2002.
+
+\bibitem{md:05}
+\emph{Mandarax},
+  \texttt{\url{http://java-source.net/open-source/rule-engines/mandarax}},
+  September 2005.
+
+\bibitem{sr:05}
+\emph{{SweetRules}},
+  \texttt{\url{http://sweetrules.projects.semwebcentral.org/}}, September 2005.
+
+\bibitem{io:04}
+Shin Adachi, Masahiro Hamasaki, Kosuke Numa, Ikki Ohmukai1, and Hideaki Takeda,
+  \emph{Metadata-driven personal knowledge publishing}, ISWC 2004, LNCS 3298,
+  Springer-Verlag, Berlin, 2004, pp.~591--604.
+
+\bibitem{LemireCOLA2003}
+Michelle Anderson, Marcel Ball, Harold Boley, Stephen Greene, Nancy Howse,
+  Daniel Lemire, and Sean McGrath, \emph{Racofi: A rule-applying collaborative
+  filtering system}, Proceedings of COLA'03, IEEE/WIC, October 2003.
+
+\bibitem{DBLP:08}
+Juan~D. Arias, Eva Armengol, Daniel Borrajo, Luis~A. Castillo, Susana
+  Fern{\'a}ndez, Jes{\'u}s Gonz{\'a}lez-Boticario, Eva Onaindia, Antonio
+  Rodr\'{\i}guez, and Laura Sebastia, \emph{samap: An user-oriented adaptive
+  system for planning tourist visits}, Expert Syst. Appl. \textbf{34} (2008),
+  no.~2, 1318--1332.
+
+\bibitem{deri:04}
+Daniel Bachlechner and Katharina Siorpaes, \emph{{Applying Semantic Web
+  Technologies in the Tourism Industry}}, DERI Innsbruck, University of
+  Innsbruck, Austria, 2004.
+
+\bibitem{MA:05}
+Marcel Ball, \emph{Oo jdrew}, http://www.jdrew.org/oojdrew/, September 2005.
+
+\bibitem{oojdrew:05}
+Marcel Ball, Harold Boley, David Hirtle, Jing Mei, and Bruce Spencer,
+  \emph{{The OO jDREW Reference Implementation of RuleML}}, Proc. Rules and
+  Rule Markup Languages for the Semantic Web (RuleML-2005), LNCS 3791,
+  Springer-Verlag, November 2005, pp.~218--223.
+
+\bibitem{BM:04}
+T.~Berka and M.~Plößnig, \emph{Designing recommender systems for tourism.}, The
+  Eleventh International Conference on Information Technology in Travel \&
+  Tourism, ENTER, Cairo, Egypt, 2004.
+
+\bibitem{TB:2000}
+Tim Berners-Lee, \emph{{Semantic Web - XML2000}},
+  http://\-www.w3.org/\-2000/Talks/\-1206-xml2k-tbl.
+
+\bibitem{YB2:08}
+Yevgen Biletskiy, Harold Boley, and Girish~R Ranganathan, \emph{Ruleml-based
+  learning object interoperability on the semantic web}, Interactive
+  Technologies and SMART Education, Emerald, volume 5 issue 1, 2008,
+  pp.~39--58.
+
+\bibitem{YB1:08}
+Yevgen Biletskiy, J~Anthony Brown, and Girish~R Ranganathan, \emph{Information
+  extraction from syllabi for e-advising, expert systems with applications},
+  Elsevier (in press), 2008.
+
+\bibitem{HB:01}
+Harold Boley, \emph{{RuleML for the Semantic Web}},
+  http://www.dfki.uni-kl.de/\~boley/\-RuleML-RDF-OntoWeb/\-sld001.htm, June
+  2001.
+
+\bibitem{Boley01b}
+Harold Boley, \emph{{The Rule Markup Language: RDF-XML Data Model, XML Schema
+  Hierarchy, and XSL Transformations}}, Proc. 14th International Conference on
+  Applications of Prolog (INAP2001), The University of Tokyo, LNAI 2543,
+  Springer-Verlag, October 2002.
+
+\bibitem{HB:05}
+Harold Boley, \emph{Integrating positional and slotted knowledge on the
+  semantic web}, \texttt{\url{http://www.ruleml.org/posl/poslintweb-talk.pdf}},
+  March 2005.
+
+\bibitem{ly:05}
+Harold Boley, Virendrakumar~C. Bhavsar, Marcel Ball, and Lu~Yang,
+  \emph{{Weighted Partonomy-Taxonomy Trees with Local Similarity Measures for
+  Semantic Buyer-Seller Match-Making}}, Business Agents and the Semantic Web
+  (BASeWEB) Workshop, 2005.
+
+\bibitem{JieL:06}
+Harold Boley, Virendrakumar~C. Bhavsar, Jie Li, and Jing Mei, \emph{{Expert
+  Finding in eCollaboration Using FOAF with RuleML Rules}}, Montreal Conference
+  of eTechnologies 2006, 2006, pp.~53--65.
+
+\bibitem{Boley:08:RBL}
+Harold Boley and Michael Kifer, \emph{{RIF Basic Logic Dialect}}, {W3C} working
+  draft, W3C, July 2008, http://www.w3.org/TR/2008/WD-rif-bld-20080730/.
+
+\bibitem{DB:03}
+Dan Brickley, \emph{{RDFWeb and Friend of a Friend (FOAF)-- Getting started
+  with FOAF}},
+  \texttt{\url{http://rdfweb.org/mt/foaflog/archives/000051.html}}, 2003.
+
+\bibitem{DB:05}
+Dan Brickley, \emph{The friend of a friend (foaf) project},
+  http://www.foaf-project.org/, November 2005.
+
+\bibitem{RB:00}
+R.~Burke, \emph{Encyclopedia of library and information systems, vol.69},
+  ch.~Knowledge-Based Recommender Systems, A.Kent, ed., Marcel Dekker.
+
+\bibitem{RB:02}
+R.~Burke, \emph{Encyclopedia of library and information systems, vol.69},
+  ch.~Hybrid Recommender Systems: Survey and Experiments., A.Kent, ed., Marcel
+  Dekker, 2002.
+
+\bibitem{JC2:05}
+Jorge Cardoso, \emph{E-tourism: Creating dynamic packages using semantic web
+  processes}, http://www.w3.org/, April 2005.
+
+\bibitem{JC:07}
+Jorge Cardoso, \emph{Semantic web services, theory, tools, and applications},
+  ch.~1: The Syntactic and the Semantic Web, Information Science Reference,
+  2007.
+
+\bibitem{CM:04}
+William~F. Clocksin and Christopher~S. Mellish, \emph{{Programming in PROLOG}},
+  Springer Verlag, New York Inc., 2004.
+
+\bibitem{US:06}
+R.~Scott Cost, Tim Finin, Anupam Joshi, James Mayfield, and Urvi Shah,
+  \emph{{Information Retrieval On The Semantic Web}}, Proceedings of the
+  eleventh international conference on Information and knowledge management,
+  ACM Press, 2002, pp.~461--468.
+
+\bibitem{TF:06}
+R.~Scott Cost, Clay Fink, Tim Finin, Anupam Joshi, and James Mayfield,
+  \emph{{Information Retrieval and the Semantic Web}}, Proceedings of the 38th
+  International Conference on System Sciences, 2005.
+
+\bibitem{acm:JD1}
+John Debenham, \emph{Integrating knowledge base and database}, ACM Press, 2007,
+  pp.~28--32.
+
+\bibitem{acm:JD2}
+John Debenham, \emph{Normalising knowledge objects}, ACM Press, 2007,
+  pp.~335--343.
+
+\bibitem{yd:02}
+Ying Ding, Dieter Fensel, Michel Klein, and Borys Omelayenko, \emph{{The
+  semantic web: yet another hip?}}, Elsevier Science, 2002.
+
+\bibitem{LD:04}
+Leigh Dodds, \emph{{An Introduction to FOAF}},
+  http://www.xml.com/\-pub/\-a/2004/\-02/04/\-foaf.html, 2004.
+
+\bibitem{Ld:03}
+Oren Etzioni, Steven~D. Gribble, Alon Halevy, Henry Levy, Luke McDowell,
+  William Pentney, Deepak Verma, and Stani Vlasseva, \emph{Evolving the
+  semantic web with mangrove}, Tech. Report UWCSE030201, Department of Computer
+  Science and Engineering, University of Washington, Seattle, WA, February
+  2003.
+
+\bibitem{AG:07}
+Alexander Felfernig and Gerhard Friedrich, \emph{Recommender systems}, IEEE
+  Computer Society, 2007, pp.~18--20.
+
+\bibitem{DTR:06}
+D.R. Fesenmaier, N.~Mirzadeh, F.~Ricci, H.~Rumetshofer, E.~Schaumlechner,
+  A.~Venturini, K.W. Wöber, and A.H. Zins, \emph{Dietorecs: A case-based travel
+  advisory system, destination recommendation systems: Behavioral foundations
+  and applications}, CAB International, London, 2006, pp.~227--239.
+
+\bibitem{ls:06}
+Farshad Fotouhi, Ming Dong, and Shiyong Lu, \emph{{The Semantic Web:
+  opportunities and challenges for next-generation Web applications}},
+  Information Research 7(4), 2002.
+
+\bibitem{AF:06}
+Antonella Fresa, \emph{Harmo-ten: A cost effective solution for information
+  exchange}, http://www.harmo-ten.info, the 13th International conference on
+  Communication Technologies in Tourism, 2006.
+
+\bibitem{gruber93towards}
+T.~R. Gruber, \emph{{Towards Principles for the Design of Ontologies Used for
+  Knowledge Sharing}}, {Formal Ontology in Conceptual Analysis and Knowledge
+  Representation} (Deventer, The Netherlands) (N.~Guarino and R.~Poli, eds.),
+  Kluwer Academic Publishers, 1993.
+
+\bibitem{ERH:01}
+Elliotte~Rusty Harold, \emph{The xml bible, 2nd edition}, ch.~17: XSL
+  Transformations, John Wiley \& Sons, 2001.
+
+\bibitem{MT:06}
+Orit Hazzan and Mariana Teif, \emph{Partonomy and taxonomy in object-oriented
+  thinking: junior high school students' perceptions of object-oriented basic
+  concepts}, ACM SIGCSE Bulletin, 2006, pp.~55--60.
+
+\bibitem{JJ:03}
+Jafar Jafari, \emph{{Encyclopedia of Tourism}}, Routledge Taylor \& Francis
+  Group, 2003.
+
+\bibitem{AJ:05}
+Anja Jentzsch, \emph{{Tourism Standards}}, XML Clearinghouse Report 12, Freie
+  Universität Berlin, 2005.
+
+\bibitem{JSY:07}
+Yongil Jeong, Jaehun Joo, and Sang~M. Lee, \emph{Semantic web technologies and
+  e-business}, ch.~12: Applications of Semantic Web Based on the
+  Domain-Specific Ontology for Global KM, IGP, Idea Group Publishing, 2007.
+
+\bibitem{MK:95}
+Michael Kifer, George Lausen, and James Wu, \emph{{Logic Foundations of Object
+  Oriented and Frame Based Languages}}, Journal of the Association for
+  Computing Machinary, 1995.
+
+\bibitem{jl:06}
+Jie Li, \emph{Rule-based social networking for expert finding}, Master thesis,
+  University of New Brunswick, September 2006.
+
+\bibitem{MaclachlanBoley05}
+Anna Maclachlan and Harold Boley, \emph{Semantic web rules for business
+  information}, Proc. International Conference on Web Technologies,
+  Applications, and Services (WTAS 2005), Calgary, Canada, IASTED, 2005.
+
+\bibitem{AS:02}
+Alexander Maedche and Steffen Staab, \emph{{Applying Semantic Web Technologies
+  for Tourism Information Systems}}, Proceedings of the International
+  Conference on Information and Communication Technologies in Tourism, Research
+  Center for Information Technologies at the University of Karlsruhe, Research
+  Group Knowledge Management( WIM ), January 2002, pp.~218--223.
+
+\bibitem{MM:02}
+Michele Missikoff, \emph{{Harmonise: An Ontology-Based Approach for Semantic
+  Interoperability}}, http://www.harmonise.org, July 2002.
+
+\bibitem{NISO:04}
+National Information~Standards Organization, \emph{Understanding metadata},
+  NISO Press, 2004.
+
+\bibitem{SBP:06}
+Sean~B. Palmer, \emph{{The Semantic Web: An Introduction}},
+  \texttt{\url{http://infomesh.net/2001/swintro/}}, 2001.
+
+\bibitem{rdf:06}
+W3C Recommendation, \emph{{RDF Vocabulary Description Language 1.0: RDF
+  Schema}}, http://www.w3.org/TR/rdf-schema/, February 2004.
+
+\bibitem{FR:02}
+Francesco Ricci, \emph{Travel recommender systems}, IEEE Intelligent Systems,
+  2002, pp.~55--57.
+
+\bibitem{acm:04}
+Francesco Ricci and Hannes Werthner, \emph{E-commerce and tourism}, Commun. ACM
+  Press, 2004, pp.~101--105.
+
+\bibitem{JD:05}
+Bruce Spencer, \emph{{jDREW}}, http://www.jdrew.org/jDREWebsite/jDREW.html,
+  October 2005.
+
+\bibitem{DBLP:conf/w3c/TabetWSVJMPFD05}
+Said Tabet, Gerd Wagner, Silvie Spreeuwenberg, Paul~D. Vincent, Gonzaques
+  Jacques, Christian de~Sainte~Marie, Jon Pellant, Jim Frank, and Jacques
+  Durand, \emph{Omg production rule representation - context and current
+  status}, Rule Languages for Interoperability, 2005.
+
+\bibitem{BS:01}
+C~Tisdell, \emph{{Tourism Economics, the Environment and Development}}, EDWARD
+  ELGAR, INC, 2001.
+
+\bibitem{TB:90}
+B.~Tversky, \emph{Where partonomies and taxonomies meet: Meanings and
+  prototypes: Studies on linguistic categorization}, Routledge,London, 1990,
+  pp.~334--344.
+
+\bibitem{MZ:05}
+Martin Zeppezauer, \emph{{Sustainable Tourism Development Strategy}},
+  Department of Tourism, Bhutan Media Services, Oct 2005.
+
+\end{thebibliography}
