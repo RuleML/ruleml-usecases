@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Assert
-xmlns="http://www.ruleml.org/1.0/xsd"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.ruleml.org/1.0/xsd http://www.ruleml.org/1.0/xsd/datalog.xsd">
+<RuleML xmlns="http://ruleml.org/spec">
+<Assert xmlns="http://ruleml.org/spec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ruleml.org/spec http://ruleml.org/1.0/xsd/datalog.xsd">
+
 
 <!--
 	wine ontology. based on: http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/xsb/wine.P?root=rulebench&view=markup
 -->
+
 
      <Implies closure="universal">
          <Atom>
@@ -13348,3 +13348,4 @@ xsi:schemaLocation="http://www.ruleml.org/1.0/xsd http://www.ruleml.org/1.0/xsd/
       </Implies>
    
 </Assert>
+</RuleML>

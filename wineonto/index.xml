@@ -141,7 +141,7 @@ These files can be accessed from pages of OpenRuleBench, the site of the open be
 <section>
   <header>Step 3: RuleML 0.91 - RuleML 1.0 Conversion</header>
   <p>The conversion from RuleML 0.91 to RuleML 1.0 was done by using the
-    <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a>. The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:</p>
+    <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a> and inserting the root element &lt;RuleML&gt; manually. The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:</p>
     
   <p>Input Documents:</p>
   <itemize>
