@@ -29,7 +29,7 @@
   
   <p> The Wine Ontology (WineOnto) use case is the result of generating RuleML 1.0 from data stored in Prolog files. These files can be accessed from pages of <a href="http://projects.semwebcentral.org/">SemWebCentral</a>, a portal with open source tools for the Semantic Web. These files are also linked from <a href="http://rulebench.projects.semwebcentral.org/">OpenRuleBench</a> web page. The Wine Ontology data is stored in two main files, one containing data/facts (can be found <a href="http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/data/wine_data.tgz?root=rulebench">here</a>), and the other containing rules (can be found <a href="http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/xsb/wine.P?root=rulebench">here</a>).</p>
   
-  <p>WineOnto is realized in four steps, where the last step is optional. Firstly, the Prolog source is converted into POSL format, by using the <a href="http://ruleml.org/posl/PrologPOSLConverterDoc.html">Prolog-POSL Converter</a>. Next, the POSL version is converted into RuleML 0.91 format, in one of the two alternative ways. One way is converting from POSL to RuleML 0.89 format by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator.jnlp">POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>), and then manually modifying the resulting RuleML 0.89 file to make it valid against RuleML 0.91 schema. The other, shorter way, is converting the POSL files straight to RuleML 0.91 format, by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>). As a next step, the ontology data is converted from RuleML 0.91 to RuleML 1.0 format by using the <a href="http://ruleml.org/1.0/#XSLT-Based%20Upgrader">XSLT-based RuleML 0.91-1.0 Upgrader</a>. Finally, the RuleML 1.0 files can be normalized, by using the <a href="http://ruleml.org/1.0/#XSLT-Based%20Normalizer">XSLT-based RuleML 1.0 Normalizer</a>.</p>
+  <p>WineOnto is realized in four steps, where the last step is optional. Firstly, the Prolog source is converted into POSL format, by using the <a href="http://ruleml.org/posl/PrologPOSLConverterDoc.html">Prolog-POSL Converter</a>. Next, the POSL version is converted into RuleML 0.91 format, in one of the two alternative ways. One way is converting from POSL to RuleML 0.89 format by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator.jnlp">POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>), and then manually modifying the resulting RuleML 0.89 file to make it valid against RuleML 0.91 schema. The other, shorter way, is converting the POSL files straight to RuleML 0.91 format, by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>). As a next step, the ontology data is converted from RuleML 0.91 to RuleML 1.0 format by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-based RuleML 0.91-1.0 Upgrader</a>. Finally, the RuleML 1.0 files can be normalized, by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Normalizer">XSLT-based RuleML 1.0 Normalizer</a>.</p>
   
 <p>Once more direct tools are available, the above desribed migration path of the Wine Ontology could be simplified and shortened even more. For example, data stored in POSL format could be translated straight to RuleML 1.0 format. Also upgrading from RuleML 0.89 to RuleML 0.91 could be done automatically, once a XSLT-based 0.89-0.91 Upgrader is available.</p>
   
@@ -141,7 +141,7 @@ These files can be accessed from pages of OpenRuleBench, the site of the open be
 <section>
   <header>Step 3: RuleML 0.91 - RuleML 1.0 Conversion</header>
   <p>The conversion from RuleML 0.91 to RuleML 1.0 was done by using the
-    <a href="http://ruleml.org/1.0/#XSLT-Based%20Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a>. The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:</p>
+    <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a> and inserting the root element &lt;RuleML&gt; manually. The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:</p>
     
   <p>Input Documents:</p>
   <itemize>
@@ -158,9 +158,8 @@ These files can be accessed from pages of OpenRuleBench, the site of the open be
       <a href="http://ruleml.org/usecases/wineonto/wine_ontology_100.ruleml">wine_ontology_100.ruleml</a></item></itemize></section>
       
 <section>
-  <header>Step 4: Stripe-Skipped - Fully-Striped RuleML 1.0 Normalization (Optional)</header>
-  <p>The last, optional step, consists of normalizing the RuleML 1.0 files. The normalized version has all skipped role tags reconstructed to a fully-expanded, normal form. This conversion was be performed using the  
-    <a href="http://ruleml.org/1.0/#XSLT-Based%20Normalizer">XSLT-Based RuleML 1.0 Normalizer</a>. The original, stripe-skipped RuleML 1.0 files and their corresponding normalized RuleML 1.0 files are presented below:</p>
+  <header>Step 4: RuleML 1.0 - RuleML 1.01 Conversion</header>
+  <p>RuleML 1.01 is backward compatible with Version 1.0. Therefore, no upgrade is actually needed. However, a <a href="http://ruleml.org/usecases/wineonto/implicit-closure-free.xslt">utility XSLT convertor</a> specifically composed for this use case is applied to obtain the implicit-closure-free form (the schema location for Version 1.0 is also removed by this utility tool). The result RuleML 1.01 documents without <a href="http://wiki.ruleml.org/index.php/Default_or_Absent_Attributes#Closure">the closure attribute</a> can then be tranlated into the <a href="http://www.tptp.org/">TPTP</a> language by using the <a href="https://github.com/RuleML/RuleML2TPTP">RuleML2TPTP</a> translator. The RuleML 1.0, RuleML 1.01 and their corresponding TPTP files are presented below:</p>
     
   <p>Input Documents:</p>
   <itemize>
@@ -169,12 +168,37 @@ These files can be accessed from pages of OpenRuleBench, the site of the open be
     <item>
       <a href="http://ruleml.org/usecases/wineonto/wine_ontology_100.ruleml">wine_ontology_100.ruleml</a></item>
     </itemize>
+  <p>Converted Documents:</p>
+  <itemize>
+    <item>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_101.ruleml">wine_data_stripped_101.ruleml</a></item>
+    <item>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_101.ruleml">wine_ontology_101.ruleml</a></item></itemize></section>
+  <p>TPTP Documents:</p>
+  <itemize>
+    <item>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data.tptp">wine_data.tptp</a></item>
+    <item>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology.tptp">wine_ontology.tptp</a></item></itemize></section>
+      
+<section>
+  <header>Step 5: Stripe-Skipped - Fully-Striped RuleML 1.01 Normalization (Optional)</header>
+  <p>The last, optional step, consists of normalizing the RuleML 1.01 files. The normalized version has all skipped role tags reconstructed to a fully-expanded, normal form. This conversion was performed using the  
+    <a href="http://wiki.ruleml.org/index.php/Specification_of_Deliberation_RuleML_1.01#XSLT-Based_Normalizer">XSLT-Based RuleML 1.01 Normalizer</a>. The original, stripe-skipped RuleML 1.01 files and their corresponding normalized RuleML 1.01 files are presented below:</p>
+    
+  <p>Input Documents:</p>
+  <itemize>
+    <item>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_101.ruleml">wine_data_stripped_101.ruleml</a></item>
+    <item>
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_101.ruleml">wine_ontology_101.ruleml</a></item>
+    </itemize>
   <p>Final Documents:</p>
   <itemize>
     <item>
-      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_100_normal.ruleml">wine_data_stripped_100_normal.ruleml</a></item>
+      <a href="http://ruleml.org/usecases/wineonto/wine_data_stripped_101_normal.ruleml">wine_data_stripped_101_normal.ruleml</a></item>
     <item>
-      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_100_normal.ruleml">wine_ontology_100_normal.ruleml</a></item></itemize></section>      
+      <a href="http://ruleml.org/usecases/wineonto/wine_ontology_101_normal.ruleml">wine_ontology_101_normal.ruleml</a></item></itemize></section>      
       
 <section>
   <header>OO jDREW Query Examples</header>

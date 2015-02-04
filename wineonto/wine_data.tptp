@@ -1,0 +1,1960 @@
+% wine facts. based on: http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/data/wine_data.tgz?root=rulebench&view=log (wine_data.tgz)
+fof(act1_formula1,axiom,(
+    hasbody_aux(pulignymontrachetwhiteburgundy,medium) )).
+
+fof(act1_formula2,axiom,(
+    hasbody_aux(formanchardonnay,full) )).
+
+fof(act1_formula3,axiom,(
+    hasbody_aux(foxencheninblanc,full) )).
+
+fof(act1_formula4,axiom,(
+    hasbody_aux(chianticlassico,medium) )).
+
+fof(act1_formula5,axiom,(
+    hasbody_aux(cortonmontrachetwhiteburgundy,full) )).
+
+fof(act1_formula6,axiom,(
+    hasbody_aux(corbansprivatebinsauvignonblanc,full) )).
+
+fof(act1_formula7,axiom,(
+    hasbody_aux(congressspringssemillon,medium) )).
+
+fof(act1_formula8,axiom,(
+    hasbody_aux(mariettapetitesyrah,medium) )).
+
+fof(act1_formula9,axiom,(
+    hasbody_aux(corbanssauvignonblanc,medium) )).
+
+fof(act1_formula10,axiom,(
+    hasbody_aux(petermccoychardonnay,medium) )).
+
+fof(act1_formula11,axiom,(
+    hasbody_aux(selaksicewine,medium) )).
+
+fof(act1_formula12,axiom,(
+    hasbody_aux(bancroftchardonnay,medium) )).
+
+fof(act1_formula13,axiom,(
+    hasbody_aux(elysezinfandel,full) )).
+
+fof(act1_formula14,axiom,(
+    hasbody_aux(mountadampinotnoir,medium) )).
+
+fof(act1_formula15,axiom,(
+    hasbody_aux(mariettacabernetsauvignon,medium) )).
+
+fof(act1_formula16,axiom,(
+    hasbody_aux(schlossrothermeltrochenbierenausleseriesling,full) )).
+
+fof(act1_formula17,axiom,(
+    hasbody_aux(garyfarrellmerlot,medium) )).
+
+fof(act1_formula18,axiom,(
+    hasbody_aux(cotturizinfandel,full) )).
+
+fof(act1_formula19,axiom,(
+    hasbody_aux(mariettaoldvinesred,medium) )).
+
+fof(act1_formula20,axiom,(
+    hasbody_aux(longridgemerlot,light) )).
+
+fof(act1_formula21,axiom,(
+    hasbody_aux(kalincellarssemillon,full) )).
+
+fof(act1_formula22,axiom,(
+    hasbody_aux(pagemillwinerycabernetsauvignon,medium) )).
+
+fof(act1_formula23,axiom,(
+    hasbody_aux(seanthackreysiriuspetitesyrah,full) )).
+
+fof(act1_formula24,axiom,(
+    hasbody_aux(saucelitocanyonzinfandel1998,medium) )).
+
+fof(act1_formula25,axiom,(
+    hasbody_aux(whitehalllaneprimavera,light) )).
+
+fof(act1_formula26,axiom,(
+    hasbody_aux(santacruzmountainvineyardcabernetsauvignon,full) )).
+
+fof(act1_formula27,axiom,(
+    hasbody_aux(lanetannerpinotnoir,light) )).
+
+fof(act1_formula28,axiom,(
+    hasbody_aux(corbansdrywhiteriesling,medium) )).
+
+fof(act1_formula29,axiom,(
+    hasbody_aux(mountadamchardonnay,full) )).
+
+fof(act1_formula30,axiom,(
+    hasbody_aux(mountadamriesling,medium) )).
+
+fof(act1_formula31,axiom,(
+    hasbody_aux(mariettazinfandel,medium) )).
+
+fof(act1_formula32,axiom,(
+    hasbody_aux(kathrynkennedylateral,medium) )).
+
+fof(act1_formula33,axiom,(
+    hasbody_aux(mountedenvineyardestatepinotnoir,full) )).
+
+fof(act1_formula34,axiom,(
+    hasbody_aux(whitehalllanecabernetfranc,medium) )).
+
+fof(act1_formula35,axiom,(
+    hasbody_aux(ventanacheninblanc,medium) )).
+
+fof(act1_formula36,axiom,(
+    hasbody_aux(saucelitocanyonzinfandel,medium) )).
+
+fof(act1_formula37,axiom,(
+    hasbody_aux(formancabernetsauvignon,medium) )).
+
+fof(act1_formula38,axiom,(
+    hasbody_aux(schlossvolradtrochenbierenausleseriesling,full) )).
+
+fof(act1_formula39,axiom,(
+    hasbody_aux(mountedenvineyardednavalleychardonnay,medium) )).
+
+fof(act1_formula40,axiom,(
+    hasbody_aux(stonleighsauvignonblanc,medium) )).
+
+fof(act1_formula41,axiom,(
+    hasbody_aux(selakssauvignonblanc,medium) )).
+
+fof(act1_formula42,axiom,(
+    hascolor_aux(selaksicewine,white) )).
+
+fof(act1_formula43,axiom,(
+    hasflavor_aux(pulignymontrachetwhiteburgundy,moderate) )).
+
+fof(act1_formula44,axiom,(
+    hasflavor_aux(formanchardonnay,moderate) )).
+
+fof(act1_formula45,axiom,(
+    hasflavor_aux(stgenevievetexaswhite,moderate) )).
+
+fof(act1_formula46,axiom,(
+    hasflavor_aux(foxencheninblanc,moderate) )).
+
+fof(act1_formula47,axiom,(
+    hasflavor_aux(cortonmontrachetwhiteburgundy,strong) )).
+
+fof(act1_formula48,axiom,(
+    hasflavor_aux(corbansprivatebinsauvignonblanc,strong) )).
+
+fof(act1_formula49,axiom,(
+    hasflavor_aux(congressspringssemillon,moderate) )).
+
+fof(act1_formula50,axiom,(
+    hasflavor_aux(mariettapetitesyrah,moderate) )).
+
+fof(act1_formula51,axiom,(
+    hasflavor_aux(corbanssauvignonblanc,strong) )).
+
+fof(act1_formula52,axiom,(
+    hasflavor_aux(petermccoychardonnay,moderate) )).
+
+fof(act1_formula53,axiom,(
+    hasflavor_aux(selaksicewine,moderate) )).
+
+fof(act1_formula54,axiom,(
+    hasflavor_aux(bancroftchardonnay,moderate) )).
+
+fof(act1_formula55,axiom,(
+    hasflavor_aux(elysezinfandel,moderate) )).
+
+fof(act1_formula56,axiom,(
+    hasflavor_aux(mountadampinotnoir,moderate) )).
+
+fof(act1_formula57,axiom,(
+    hasflavor_aux(chateaudychemsauterne,strong) )).
+
+fof(act1_formula58,axiom,(
+    hasflavor_aux(mariettacabernetsauvignon,moderate) )).
+
+fof(act1_formula59,axiom,(
+    hasflavor_aux(schlossrothermeltrochenbierenausleseriesling,strong) )).
+
+fof(act1_formula60,axiom,(
+    hasflavor_aux(garyfarrellmerlot,moderate) )).
+
+fof(act1_formula61,axiom,(
+    hasflavor_aux(cotturizinfandel,strong) )).
+
+fof(act1_formula62,axiom,(
+    hasflavor_aux(mariettaoldvinesred,moderate) )).
+
+fof(act1_formula63,axiom,(
+    hasflavor_aux(longridgemerlot,moderate) )).
+
+fof(act1_formula64,axiom,(
+    hasflavor_aux(kalincellarssemillon,strong) )).
+
+fof(act1_formula65,axiom,(
+    hasflavor_aux(pagemillwinerycabernetsauvignon,moderate) )).
+
+fof(act1_formula66,axiom,(
+    hasflavor_aux(seanthackreysiriuspetitesyrah,strong) )).
+
+fof(act1_formula67,axiom,(
+    hasflavor_aux(saucelitocanyonzinfandel1998,moderate) )).
+
+fof(act1_formula68,axiom,(
+    hasflavor_aux(chateaudemeursaultmeursault,moderate) )).
+
+fof(act1_formula69,axiom,(
+    hasflavor_aux(whitehalllaneprimavera,delicate) )).
+
+fof(act1_formula70,axiom,(
+    hasflavor_aux(santacruzmountainvineyardcabernetsauvignon,strong) )).
+
+fof(act1_formula71,axiom,(
+    hasflavor_aux(lanetannerpinotnoir,delicate) )).
+
+fof(act1_formula72,axiom,(
+    hasflavor_aux(corbansdrywhiteriesling,moderate) )).
+
+fof(act1_formula73,axiom,(
+    hasflavor_aux(mountadamchardonnay,strong) )).
+
+fof(act1_formula74,axiom,(
+    hasflavor_aux(mountadamriesling,delicate) )).
+
+fof(act1_formula75,axiom,(
+    hasflavor_aux(mariettazinfandel,moderate) )).
+
+fof(act1_formula76,axiom,(
+    hasflavor_aux(kathrynkennedylateral,delicate) )).
+
+fof(act1_formula77,axiom,(
+    hasflavor_aux(mountedenvineyardestatepinotnoir,strong) )).
+
+fof(act1_formula78,axiom,(
+    hasflavor_aux(whitehalllanecabernetfranc,moderate) )).
+
+fof(act1_formula79,axiom,(
+    hasflavor_aux(ventanacheninblanc,moderate) )).
+
+fof(act1_formula80,axiom,(
+    hasflavor_aux(saucelitocanyonzinfandel,moderate) )).
+
+fof(act1_formula81,axiom,(
+    hasflavor_aux(formancabernetsauvignon,strong) )).
+
+fof(act1_formula82,axiom,(
+    hasflavor_aux(schlossvolradtrochenbierenausleseriesling,moderate) )).
+
+fof(act1_formula83,axiom,(
+    hasflavor_aux(mountedenvineyardednavalleychardonnay,moderate) )).
+
+fof(act1_formula84,axiom,(
+    hasflavor_aux(stonleighsauvignonblanc,delicate) )).
+
+fof(act1_formula85,axiom,(
+    hasflavor_aux(selakssauvignonblanc,moderate) )).
+
+fof(act1_formula86,axiom,(
+    hasmaker_aux(pulignymontrachetwhiteburgundy,pulignymontrachet) )).
+
+fof(act1_formula87,axiom,(
+    hasmaker_aux(chateaulafiterothschildpauillac,chateaulafiterothschild) )).
+
+fof(act1_formula88,axiom,(
+    hasmaker_aux(formanchardonnay,forman) )).
+
+fof(act1_formula89,axiom,(
+    hasmaker_aux(stgenevievetexaswhite,stgenevieve) )).
+
+fof(act1_formula90,axiom,(
+    hasmaker_aux(foxencheninblanc,foxen) )).
+
+fof(act1_formula91,axiom,(
+    hasmaker_aux(chianticlassico,mcguinnesso) )).
+
+fof(act1_formula92,axiom,(
+    hasmaker_aux(cortonmontrachetwhiteburgundy,cortonmontrachet) )).
+
+fof(act1_formula93,axiom,(
+    hasmaker_aux(corbansprivatebinsauvignonblanc,corbans) )).
+
+fof(act1_formula94,axiom,(
+    hasmaker_aux(congressspringssemillon,congresssprings) )).
+
+fof(act1_formula95,axiom,(
+    hasmaker_aux(mariettapetitesyrah,marietta) )).
+
+fof(act1_formula96,axiom,(
+    hasmaker_aux(corbanssauvignonblanc,corbans) )).
+
+fof(act1_formula97,axiom,(
+    hasmaker_aux(petermccoychardonnay,petermccoy) )).
+
+fof(act1_formula98,axiom,(
+    hasmaker_aux(selaksicewine,selaks) )).
+
+fof(act1_formula99,axiom,(
+    hasmaker_aux(bancroftchardonnay,bancroft) )).
+
+fof(act1_formula100,axiom,(
+    hasmaker_aux(chateauchevalblancstemilion,chateauchevalblanc) )).
+
+fof(act1_formula101,axiom,(
+    hasmaker_aux(chateaumorgonbeaujolais,chateaumorgon) )).
+
+fof(act1_formula102,axiom,(
+    hasmaker_aux(elysezinfandel,elyse) )).
+
+fof(act1_formula103,axiom,(
+    hasmaker_aux(mountadampinotnoir,mountadam) )).
+
+fof(act1_formula104,axiom,(
+    hasmaker_aux(taylorport,taylor) )).
+
+fof(act1_formula105,axiom,(
+    hasmaker_aux(chateaudychemsauterne,chateaudychem) )).
+
+fof(act1_formula106,axiom,(
+    hasmaker_aux(mariettacabernetsauvignon,marietta) )).
+
+fof(act1_formula107,axiom,(
+    hasmaker_aux(schlossrothermeltrochenbierenausleseriesling,schlossrothermel) )).
+
+fof(act1_formula108,axiom,(
+    hasmaker_aux(garyfarrellmerlot,garyfarrell) )).
+
+fof(act1_formula109,axiom,(
+    hasmaker_aux(closdevougeotcotesdor,closdevougeot) )).
+
+fof(act1_formula110,axiom,(
+    hasmaker_aux(cotturizinfandel,cotturi) )).
+
+fof(act1_formula111,axiom,(
+    hasmaker_aux(closdelapoussiesancerre,closdelapoussie) )).
+
+fof(act1_formula112,axiom,(
+    hasmaker_aux(mariettaoldvinesred,marietta) )).
+
+fof(act1_formula113,axiom,(
+    hasmaker_aux(longridgemerlot,longridge) )).
+
+fof(act1_formula114,axiom,(
+    hasmaker_aux(kalincellarssemillon,kalincellars) )).
+
+fof(act1_formula115,axiom,(
+    hasmaker_aux(pagemillwinerycabernetsauvignon,pagemillwinery) )).
+
+fof(act1_formula116,axiom,(
+    hasmaker_aux(seanthackreysiriuspetitesyrah,seanthackrey) )).
+
+fof(act1_formula117,axiom,(
+    hasmaker_aux(saucelitocanyonzinfandel1998,saucelitocanyon) )).
+
+fof(act1_formula118,axiom,(
+    hasmaker_aux(chateaudemeursaultmeursault,chateaudemeursault) )).
+
+fof(act1_formula119,axiom,(
+    hasmaker_aux(santacruzmountainvineyardcabernetsauvignon,santacruzmountainvineyard) )).
+
+fof(act1_formula120,axiom,(
+    hasmaker_aux(lanetannerpinotnoir,lanetanner) )).
+
+fof(act1_formula121,axiom,(
+    hasmaker_aux(corbansdrywhiteriesling,corbans) )).
+
+fof(act1_formula122,axiom,(
+    hasmaker_aux(rosedanjou,danjou) )).
+
+fof(act1_formula123,axiom,(
+    hasmaker_aux(mountadamchardonnay,mountadam) )).
+
+fof(act1_formula124,axiom,(
+    hasmaker_aux(mountadamriesling,mountadam) )).
+
+fof(act1_formula125,axiom,(
+    hasmaker_aux(mariettazinfandel,marietta) )).
+
+fof(act1_formula126,axiom,(
+    hasmaker_aux(chateaumargaux,chateaumargauxwinery) )).
+
+fof(act1_formula127,axiom,(
+    hasmaker_aux(kathrynkennedylateral,kathrynkennedy) )).
+
+fof(act1_formula128,axiom,(
+    hasmaker_aux(mountedenvineyardestatepinotnoir,mountedenvineyard) )).
+
+fof(act1_formula129,axiom,(
+    hasmaker_aux(whitehalllanecabernetfranc,whitehalllane) )).
+
+fof(act1_formula130,axiom,(
+    hasmaker_aux(ventanacheninblanc,ventana) )).
+
+fof(act1_formula131,axiom,(
+    hasmaker_aux(saucelitocanyonzinfandel,saucelitocanyon) )).
+
+fof(act1_formula132,axiom,(
+    hasmaker_aux(formancabernetsauvignon,forman) )).
+
+fof(act1_formula133,axiom,(
+    hasmaker_aux(schlossvolradtrochenbierenausleseriesling,schlossvolrad) )).
+
+fof(act1_formula134,axiom,(
+    hasmaker_aux(mountedenvineyardednavalleychardonnay,mountedenvineyard) )).
+
+fof(act1_formula135,axiom,(
+    hasmaker_aux(stonleighsauvignonblanc,stonleigh) )).
+
+fof(act1_formula136,axiom,(
+    hasmaker_aux(selakssauvignonblanc,selaks) )).
+
+fof(act1_formula137,axiom,(
+    hasmaker_aux(sevreetmainemuscadet,sevreetmaine) )).
+
+fof(act1_formula138,axiom,(
+    hassugar_aux(pulignymontrachetwhiteburgundy,dry) )).
+
+fof(act1_formula139,axiom,(
+    hassugar_aux(formanchardonnay,dry) )).
+
+fof(act1_formula140,axiom,(
+    hassugar_aux(stgenevievetexaswhite,dry) )).
+
+fof(act1_formula141,axiom,(
+    hassugar_aux(foxencheninblanc,dry) )).
+
+fof(act1_formula142,axiom,(
+    hassugar_aux(cortonmontrachetwhiteburgundy,dry) )).
+
+fof(act1_formula143,axiom,(
+    hassugar_aux(corbansprivatebinsauvignonblanc,dry) )).
+
+fof(act1_formula144,axiom,(
+    hassugar_aux(congressspringssemillon,dry) )).
+
+fof(act1_formula145,axiom,(
+    hassugar_aux(mariettapetitesyrah,dry) )).
+
+fof(act1_formula146,axiom,(
+    hassugar_aux(corbanssauvignonblanc,dry) )).
+
+fof(act1_formula147,axiom,(
+    hassugar_aux(petermccoychardonnay,dry) )).
+
+fof(act1_formula148,axiom,(
+    hassugar_aux(bancroftchardonnay,dry) )).
+
+fof(act1_formula149,axiom,(
+    hassugar_aux(elysezinfandel,dry) )).
+
+fof(act1_formula150,axiom,(
+    hassugar_aux(mountadampinotnoir,dry) )).
+
+fof(act1_formula151,axiom,(
+    hassugar_aux(mariettacabernetsauvignon,dry) )).
+
+fof(act1_formula152,axiom,(
+    hassugar_aux(schlossrothermeltrochenbierenausleseriesling,sweet) )).
+
+fof(act1_formula153,axiom,(
+    hassugar_aux(garyfarrellmerlot,dry) )).
+
+fof(act1_formula154,axiom,(
+    hassugar_aux(cotturizinfandel,dry) )).
+
+fof(act1_formula155,axiom,(
+    hassugar_aux(mariettaoldvinesred,dry) )).
+
+fof(act1_formula156,axiom,(
+    hassugar_aux(longridgemerlot,dry) )).
+
+fof(act1_formula157,axiom,(
+    hassugar_aux(kalincellarssemillon,dry) )).
+
+fof(act1_formula158,axiom,(
+    hassugar_aux(pagemillwinerycabernetsauvignon,dry) )).
+
+fof(act1_formula159,axiom,(
+    hassugar_aux(seanthackreysiriuspetitesyrah,dry) )).
+
+fof(act1_formula160,axiom,(
+    hassugar_aux(saucelitocanyonzinfandel1998,dry) )).
+
+fof(act1_formula161,axiom,(
+    hassugar_aux(whitehalllaneprimavera,sweet) )).
+
+fof(act1_formula162,axiom,(
+    hassugar_aux(santacruzmountainvineyardcabernetsauvignon,dry) )).
+
+fof(act1_formula163,axiom,(
+    hassugar_aux(lanetannerpinotnoir,dry) )).
+
+fof(act1_formula164,axiom,(
+    hassugar_aux(corbansdrywhiteriesling,offdry) )).
+
+fof(act1_formula165,axiom,(
+    hassugar_aux(mountadamchardonnay,dry) )).
+
+fof(act1_formula166,axiom,(
+    hassugar_aux(mountadamriesling,dry) )).
+
+fof(act1_formula167,axiom,(
+    hassugar_aux(mariettazinfandel,dry) )).
+
+fof(act1_formula168,axiom,(
+    hassugar_aux(kathrynkennedylateral,dry) )).
+
+fof(act1_formula169,axiom,(
+    hassugar_aux(mountedenvineyardestatepinotnoir,dry) )).
+
+fof(act1_formula170,axiom,(
+    hassugar_aux(whitehalllanecabernetfranc,dry) )).
+
+fof(act1_formula171,axiom,(
+    hassugar_aux(ventanacheninblanc,offdry) )).
+
+fof(act1_formula172,axiom,(
+    hassugar_aux(saucelitocanyonzinfandel,dry) )).
+
+fof(act1_formula173,axiom,(
+    hassugar_aux(formancabernetsauvignon,dry) )).
+
+fof(act1_formula174,axiom,(
+    hassugar_aux(schlossvolradtrochenbierenausleseriesling,sweet) )).
+
+fof(act1_formula175,axiom,(
+    hassugar_aux(mountedenvineyardednavalleychardonnay,dry) )).
+
+fof(act1_formula176,axiom,(
+    hassugar_aux(stonleighsauvignonblanc,dry) )).
+
+fof(act1_formula177,axiom,(
+    hassugar_aux(selakssauvignonblanc,dry) )).
+
+fof(act1_formula178,axiom,(
+    locatedin_aux(californiaregion,usregion) )).
+
+fof(act1_formula179,axiom,(
+    locatedin_aux(sancerreregion,loireregion) )).
+
+fof(act1_formula180,axiom,(
+    locatedin_aux(formanchardonnay,naparegion) )).
+
+fof(act1_formula181,axiom,(
+    locatedin_aux(stgenevievetexaswhite,centraltexasregion) )).
+
+fof(act1_formula182,axiom,(
+    locatedin_aux(foxencheninblanc,santabarbararegion) )).
+
+fof(act1_formula183,axiom,(
+    locatedin_aux(loireregion,frenchregion) )).
+
+fof(act1_formula184,axiom,(
+    locatedin_aux(corbansprivatebinsauvignonblanc,newzealandregion) )).
+
+fof(act1_formula185,axiom,(
+    locatedin_aux(mariettapetitesyrah,sonomaregion) )).
+
+fof(act1_formula186,axiom,(
+    locatedin_aux(corbanssauvignonblanc,newzealandregion) )).
+
+fof(act1_formula187,axiom,(
+    locatedin_aux(petermccoychardonnay,sonomaregion) )).
+
+fof(act1_formula188,axiom,(
+    locatedin_aux(selaksicewine,newzealandregion) )).
+
+fof(act1_formula189,axiom,(
+    locatedin_aux(bancroftchardonnay,naparegion) )).
+
+fof(act1_formula190,axiom,(
+    locatedin_aux(elysezinfandel,naparegion) )).
+
+fof(act1_formula191,axiom,(
+    locatedin_aux(naparegion,californiaregion) )).
+
+fof(act1_formula192,axiom,(
+    locatedin_aux(mountadampinotnoir,southaustraliaregion) )).
+
+fof(act1_formula193,axiom,(
+    locatedin_aux(chiantiregion,italianregion) )).
+
+fof(act1_formula194,axiom,(
+    locatedin_aux(mariettacabernetsauvignon,sonomaregion) )).
+
+fof(act1_formula195,axiom,(
+    locatedin_aux(sauterneregion,bordeauxregion) )).
+
+fof(act1_formula196,axiom,(
+    locatedin_aux(pauillacregion,medocregion) )).
+
+fof(act1_formula197,axiom,(
+    locatedin_aux(centraltexasregion,texasregion) )).
+
+fof(act1_formula198,axiom,(
+    locatedin_aux(schlossrothermeltrochenbierenausleseriesling,germanyregion) )).
+
+fof(act1_formula199,axiom,(
+    locatedin_aux(garyfarrellmerlot,sonomaregion) )).
+
+fof(act1_formula200,axiom,(
+    locatedin_aux(bordeauxregion,frenchregion) )).
+
+fof(act1_formula201,axiom,(
+    locatedin_aux(cotturizinfandel,sonomaregion) )).
+
+fof(act1_formula202,axiom,(
+    locatedin_aux(anjouregion,loireregion) )).
+
+fof(act1_formula203,axiom,(
+    locatedin_aux(centralcoastregion,californiaregion) )).
+
+fof(act1_formula204,axiom,(
+    locatedin_aux(mariettaoldvinesred,sonomaregion) )).
+
+fof(act1_formula205,axiom,(
+    locatedin_aux(longridgemerlot,newzealandregion) )).
+
+fof(act1_formula206,axiom,(
+    locatedin_aux(sonomaregion,californiaregion) )).
+
+fof(act1_formula207,axiom,(
+    locatedin_aux(santabarbararegion,californiaregion) )).
+
+fof(act1_formula208,axiom,(
+    locatedin_aux(pagemillwinerycabernetsauvignon,naparegion) )).
+
+fof(act1_formula209,axiom,(
+    locatedin_aux(seanthackreysiriuspetitesyrah,naparegion) )).
+
+fof(act1_formula210,axiom,(
+    locatedin_aux(saucelitocanyonzinfandel1998,arroyogranderegion) )).
+
+fof(act1_formula211,axiom,(
+    locatedin_aux(medocregion,bordeauxregion) )).
+
+fof(act1_formula212,axiom,(
+    locatedin_aux(southaustraliaregion,australianregion) )).
+
+fof(act1_formula213,axiom,(
+    locatedin_aux(whitehalllaneprimavera,naparegion) )).
+
+fof(act1_formula214,axiom,(
+    locatedin_aux(santacruzmountainvineyardcabernetsauvignon,santacruzmountainsregion) )).
+
+fof(act1_formula215,axiom,(
+    locatedin_aux(lanetannerpinotnoir,santabarbararegion) )).
+
+fof(act1_formula216,axiom,(
+    locatedin_aux(mendocinoregion,californiaregion) )).
+
+fof(act1_formula217,axiom,(
+    locatedin_aux(santacruzmountainsregion,californiaregion) )).
+
+fof(act1_formula218,axiom,(
+    locatedin_aux(corbansdrywhiteriesling,newzealandregion) )).
+
+fof(act1_formula219,axiom,(
+    locatedin_aux(margauxregion,medocregion) )).
+
+fof(act1_formula220,axiom,(
+    locatedin_aux(texasregion,usregion) )).
+
+fof(act1_formula221,axiom,(
+    locatedin_aux(muscadetregion,loireregion) )).
+
+fof(act1_formula222,axiom,(
+    locatedin_aux(mountadamchardonnay,southaustraliaregion) )).
+
+fof(act1_formula223,axiom,(
+    locatedin_aux(alsaceregion,frenchregion) )).
+
+fof(act1_formula224,axiom,(
+    locatedin_aux(mountadamriesling,southaustraliaregion) )).
+
+fof(act1_formula225,axiom,(
+    locatedin_aux(stemilionregion,bordeauxregion) )).
+
+fof(act1_formula226,axiom,(
+    locatedin_aux(bourgogneregion,frenchregion) )).
+
+fof(act1_formula227,axiom,(
+    locatedin_aux(mariettazinfandel,sonomaregion) )).
+
+fof(act1_formula228,axiom,(
+    locatedin_aux(toursregion,loireregion) )).
+
+fof(act1_formula229,axiom,(
+    locatedin_aux(cotesdorregion,bourgogneregion) )).
+
+fof(act1_formula230,axiom,(
+    locatedin_aux(mountedenvineyardestatepinotnoir,ednavalleyregion) )).
+
+fof(act1_formula231,axiom,(
+    locatedin_aux(whitehalllanecabernetfranc,naparegion) )).
+
+fof(act1_formula232,axiom,(
+    locatedin_aux(ventanacheninblanc,centralcoastregion) )).
+
+fof(act1_formula233,axiom,(
+    locatedin_aux(saucelitocanyonzinfandel,arroyogranderegion) )).
+
+fof(act1_formula234,axiom,(
+    locatedin_aux(formancabernetsauvignon,naparegion) )).
+
+fof(act1_formula235,axiom,(
+    locatedin_aux(schlossvolradtrochenbierenausleseriesling,germanyregion) )).
+
+fof(act1_formula236,axiom,(
+    locatedin_aux(beaujolaisregion,frenchregion) )).
+
+fof(act1_formula237,axiom,(
+    locatedin_aux(mountedenvineyardednavalleychardonnay,ednavalleyregion) )).
+
+fof(act1_formula238,axiom,(
+    locatedin_aux(meursaultregion,bourgogneregion) )).
+
+fof(act1_formula239,axiom,(
+    locatedin_aux(ednavalleyregion,californiaregion) )).
+
+fof(act1_formula240,axiom,(
+    locatedin_aux(stonleighsauvignonblanc,newzealandregion) )).
+
+fof(act1_formula241,axiom,(
+    locatedin_aux(arroyogranderegion,californiaregion) )).
+
+fof(act1_formula242,axiom,(
+    locatedin_aux(selakssauvignonblanc,newzealandregion) )).
+
+fof(act1_formula243,axiom,(
+    madefromgrape_aux(chateaudychemsauterne,semillongrape) )).
+
+fof(act1_formula244,axiom,(
+    madefromgrape_aux(chateaudychemsauterne,sauvignonblancgrape) )).
+
+fof(act1_formula245,axiom,(
+    ot____nom1_aux(sweet) )).
+
+fof(act1_formula246,axiom,(
+    ot____nom10_aux(texasregion) )).
+
+fof(act1_formula247,axiom,(
+    ot____nom11_aux(sauvignonblancgrape) )).
+
+fof(act1_formula248,axiom,(
+    ot____nom12_aux(dry) )).
+
+fof(act1_formula249,axiom,(
+    ot____nom13_aux(alsaceregion) )).
+
+fof(act1_formula250,axiom,(
+    ot____nom14_aux(anjouregion) )).
+
+fof(act1_formula251,axiom,(
+    ot____nom15_aux(californiaregion) )).
+
+fof(act1_formula252,axiom,(
+    ot____nom16_aux(muscadetregion) )).
+
+fof(act1_formula253,axiom,(
+    ot____nom17_aux(germanyregion) )).
+
+fof(act1_formula254,axiom,(
+    ot____nom18_aux(sweet) )).
+
+fof(act1_formula255,axiom,(
+    ot____nom18_aux(dry) )).
+
+fof(act1_formula256,axiom,(
+    ot____nom18_aux(offdry) )).
+
+fof(act1_formula257,axiom,(
+    ot____nom19_aux(loireregion) )).
+
+fof(act1_formula258,axiom,(
+    ot____nom2_aux(medocregion) )).
+
+fof(act1_formula259,axiom,(
+    ot____nom20_aux(zinfandelgrape) )).
+
+fof(act1_formula260,axiom,(
+    ot____nom21_aux(pinotblancgrape) )).
+
+fof(act1_formula261,axiom,(
+    ot____nom22_aux(margauxregion) )).
+
+fof(act1_formula262,axiom,(
+    ot____nom23_aux(bordeauxregion) )).
+
+fof(act1_formula263,axiom,(
+    ot____nom24_aux(chardonnaygrape) )).
+
+fof(act1_formula264,axiom,(
+    ot____nom25_aux(petitesyrahgrape) )).
+
+fof(act1_formula265,axiom,(
+    ot____nom26_aux(beaujolaisregion) )).
+
+fof(act1_formula266,axiom,(
+    ot____nom27_aux(semillongrape) )).
+
+fof(act1_formula267,axiom,(
+    ot____nom28_aux(red) )).
+
+fof(act1_formula268,axiom,(
+    ot____nom29_aux(cabernetsauvignongrape) )).
+
+fof(act1_formula269,axiom,(
+    ot____nom3_aux(cabernetfrancgrape) )).
+
+fof(act1_formula270,axiom,(
+    ot____nom30_aux(sancerreregion) )).
+
+fof(act1_formula271,axiom,(
+    ot____nom31_aux(meursaultregion) )).
+
+fof(act1_formula272,axiom,(
+    ot____nom32_aux(rose) )).
+
+fof(act1_formula273,axiom,(
+    ot____nom33_aux(gamaygrape) )).
+
+fof(act1_formula274,axiom,(
+    ot____nom34_aux(cheninblancgrape) )).
+
+fof(act1_formula275,axiom,(
+    ot____nom35_aux(delicate) )).
+
+fof(act1_formula276,axiom,(
+    ot____nom35_aux(strong) )).
+
+fof(act1_formula277,axiom,(
+    ot____nom35_aux(moderate) )).
+
+fof(act1_formula278,axiom,(
+    ot____nom36_aux(stemilionregion) )).
+
+fof(act1_formula279,axiom,(
+    ot____nom37_aux(rieslinggrape) )).
+
+fof(act1_formula280,axiom,(
+    ot____nom38_aux(usregion) )).
+
+fof(act1_formula281,axiom,(
+    ot____nom39_aux(pinotnoirgrape) )).
+
+fof(act1_formula282,axiom,(
+    ot____nom4_aux(toursregion) )).
+
+fof(act1_formula283,axiom,(
+    ot____nom40_aux(light) )).
+
+fof(act1_formula284,axiom,(
+    ot____nom40_aux(full) )).
+
+fof(act1_formula285,axiom,(
+    ot____nom40_aux(medium) )).
+
+fof(act1_formula286,axiom,(
+    ot____nom41_aux(frenchregion) )).
+
+fof(act1_formula287,axiom,(
+    ot____nom42_aux(cotesdorregion) )).
+
+fof(act1_formula288,axiom,(
+    ot____nom43_aux(merlotgrape) )).
+
+fof(act1_formula289,axiom,(
+    ot____nom44_aux(bourgogneregion) )).
+
+fof(act1_formula290,axiom,(
+    ot____nom45_aux(full) )).
+
+fof(act1_formula291,axiom,(
+    ot____nom46_aux(pauillacregion) )).
+
+fof(act1_formula292,axiom,(
+    ot____nom47_aux(italianregion) )).
+
+fof(act1_formula293,axiom,(
+    ot____nom48_aux(moderate) )).
+
+fof(act1_formula294,axiom,(
+    ot____nom49_aux(medium) )).
+
+fof(act1_formula295,axiom,(
+    ot____nom5_aux(white) )).
+
+fof(act1_formula296,axiom,(
+    ot____nom50_aux(strong) )).
+
+fof(act1_formula297,axiom,(
+    ot____nom50_aux(moderate) )).
+
+fof(act1_formula298,axiom,(
+    ot____nom51_aux(full) )).
+
+fof(act1_formula299,axiom,(
+    ot____nom51_aux(medium) )).
+
+fof(act1_formula300,axiom,(
+    ot____nom52_aux(sauterneregion) )).
+
+fof(act1_formula301,axiom,(
+    ot____nom53_aux(sweet) )).
+
+fof(act1_formula302,axiom,(
+    ot____nom53_aux(offdry) )).
+
+fof(act1_formula303,axiom,(
+    ot____nom54_aux(offdry) )).
+
+fof(act1_formula304,axiom,(
+    ot____nom55_aux(delicate) )).
+
+fof(act1_formula305,axiom,(
+    ot____nom56_aux(light) )).
+
+fof(act1_formula306,axiom,(
+    ot____nom57_aux(portugalregion) )).
+
+fof(act1_formula307,axiom,(
+    ot____nom58_aux(strong) )).
+
+fof(act1_formula308,axiom,(
+    ot____nom59_aux(light) )).
+
+fof(act1_formula309,axiom,(
+    ot____nom59_aux(medium) )).
+
+fof(act1_formula310,axiom,(
+    ot____nom6_aux(semillongrape) )).
+
+fof(act1_formula311,axiom,(
+    ot____nom6_aux(sauvignonblancgrape) )).
+
+fof(act1_formula312,axiom,(
+    ot____nom60_aux(sangiovesegrape) )).
+
+fof(act1_formula313,axiom,(
+    ot____nom61_aux(chiantiregion) )).
+
+fof(act1_formula314,axiom,(
+    ot____nom62_aux(cabernetsauvignongrape) )).
+
+fof(act1_formula315,axiom,(
+    ot____nom62_aux(merlotgrape) )).
+
+fof(act1_formula316,axiom,(
+    ot____nom63_aux(pinotblancgrape) )).
+
+fof(act1_formula317,axiom,(
+    ot____nom63_aux(sauvignonblancgrape) )).
+
+fof(act1_formula318,axiom,(
+    ot____nom63_aux(cheninblancgrape) )).
+
+fof(act1_formula319,axiom,(
+    ot____nom64_aux(delicate) )).
+
+fof(act1_formula320,axiom,(
+    ot____nom64_aux(moderate) )).
+
+fof(act1_formula321,axiom,(
+    ot____nom7_aux(dry) )).
+
+fof(act1_formula322,axiom,(
+    ot____nom7_aux(offdry) )).
+
+fof(act1_formula323,axiom,(
+    ot____nom8_aux(cabernetfrancgrape) )).
+
+fof(act1_formula324,axiom,(
+    ot____nom8_aux(petiteverdotgrape) )).
+
+fof(act1_formula325,axiom,(
+    ot____nom8_aux(cabernetsauvignongrape) )).
+
+fof(act1_formula326,axiom,(
+    ot____nom8_aux(malbecgrape) )).
+
+fof(act1_formula327,axiom,(
+    ot____nom8_aux(merlotgrape) )).
+
+fof(act1_formula328,axiom,(
+    ot____nom9_aux(white) )).
+
+fof(act1_formula329,axiom,(
+    ot____nom9_aux(rose) )).
+
+fof(act1_formula330,axiom,(
+    ot____nom9_aux(red) )).
+
+fof(act1_formula331,axiom,(
+    wineflavor_aux(delicate) )).
+
+fof(act1_formula332,axiom,(
+    wineflavor_aux(strong) )).
+
+fof(act1_formula333,axiom,(
+    wineflavor_aux(moderate) )).
+
+fof(act1_formula334,axiom,(
+    winegrape_aux(petitesyrahgrape) )).
+
+fof(act1_formula335,axiom,(
+    winegrape_aux(zinfandelgrape) )).
+
+fof(act1_formula336,axiom,(
+    winegrape_aux(sangiovesegrape) )).
+
+fof(act1_formula337,axiom,(
+    winegrape_aux(cabernetfrancgrape) )).
+
+fof(act1_formula338,axiom,(
+    winegrape_aux(semillongrape) )).
+
+fof(act1_formula339,axiom,(
+    winegrape_aux(rieslinggrape) )).
+
+fof(act1_formula340,axiom,(
+    winegrape_aux(pinotblancgrape) )).
+
+fof(act1_formula341,axiom,(
+    winegrape_aux(gamaygrape) )).
+
+fof(act1_formula342,axiom,(
+    winegrape_aux(petiteverdotgrape) )).
+
+fof(act1_formula343,axiom,(
+    winegrape_aux(chardonnaygrape) )).
+
+fof(act1_formula344,axiom,(
+    winegrape_aux(pinotnoirgrape) )).
+
+fof(act1_formula345,axiom,(
+    winegrape_aux(cabernetsauvignongrape) )).
+
+fof(act1_formula346,axiom,(
+    winegrape_aux(sauvignonblancgrape) )).
+
+fof(act1_formula347,axiom,(
+    winegrape_aux(cheninblancgrape) )).
+
+fof(act1_formula348,axiom,(
+    winegrape_aux(malbecgrape) )).
+
+fof(act1_formula349,axiom,(
+    winegrape_aux(merlotgrape) )).
+
+fof(act1_formula350,axiom,(
+    winesugar_aux(sweet) )).
+
+fof(act1_formula351,axiom,(
+    winesugar_aux(dry) )).
+
+fof(act1_formula352,axiom,(
+    winesugar_aux(offdry) )).
+
+fof(act1_formula353,axiom,(
+    winery_aux(seanthackrey) )).
+
+fof(act1_formula354,axiom,(
+    winery_aux(marietta) )).
+
+fof(act1_formula355,axiom,(
+    winery_aux(petermccoy) )).
+
+fof(act1_formula356,axiom,(
+    winery_aux(danjou) )).
+
+fof(act1_formula357,axiom,(
+    winery_aux(stonleigh) )).
+
+fof(act1_formula358,axiom,(
+    winery_aux(schlossvolrad) )).
+
+fof(act1_formula359,axiom,(
+    winery_aux(selaks) )).
+
+fof(act1_formula360,axiom,(
+    winery_aux(cortonmontrachet) )).
+
+fof(act1_formula361,axiom,(
+    winery_aux(forman) )).
+
+fof(act1_formula362,axiom,(
+    winery_aux(chateaulafiterothschild) )).
+
+fof(act1_formula363,axiom,(
+    winery_aux(elyse) )).
+
+fof(act1_formula364,axiom,(
+    winery_aux(garyfarrell) )).
+
+fof(act1_formula365,axiom,(
+    winery_aux(closdelapoussie) )).
+
+fof(act1_formula366,axiom,(
+    winery_aux(santacruzmountainvineyard) )).
+
+fof(act1_formula367,axiom,(
+    winery_aux(closdevougeot) )).
+
+fof(act1_formula368,axiom,(
+    winery_aux(ventana) )).
+
+fof(act1_formula369,axiom,(
+    winery_aux(schlossrothermel) )).
+
+fof(act1_formula370,axiom,(
+    winery_aux(longridge) )).
+
+fof(act1_formula371,axiom,(
+    winery_aux(mcguinnesso) )).
+
+fof(act1_formula372,axiom,(
+    winery_aux(beringer) )).
+
+fof(act1_formula373,axiom,(
+    winery_aux(sevreetmaine) )).
+
+fof(act1_formula374,axiom,(
+    winery_aux(bancroft) )).
+
+fof(act1_formula375,axiom,(
+    winery_aux(whitehalllane) )).
+
+fof(act1_formula376,axiom,(
+    winery_aux(lanetanner) )).
+
+fof(act1_formula377,axiom,(
+    winery_aux(saucelitocanyon) )).
+
+fof(act1_formula378,axiom,(
+    winery_aux(mountedenvineyard) )).
+
+fof(act1_formula379,axiom,(
+    winery_aux(taylor) )).
+
+fof(act1_formula380,axiom,(
+    winery_aux(stgenevieve) )).
+
+fof(act1_formula381,axiom,(
+    winery_aux(corbans) )).
+
+fof(act1_formula382,axiom,(
+    winery_aux(kalincellars) )).
+
+fof(act1_formula383,axiom,(
+    winery_aux(chateaudychem) )).
+
+fof(act1_formula384,axiom,(
+    winery_aux(kathrynkennedy) )).
+
+fof(act1_formula385,axiom,(
+    winery_aux(cotturi) )).
+
+fof(act1_formula386,axiom,(
+    winery_aux(chateaumargauxwinery) )).
+
+fof(act1_formula387,axiom,(
+    winery_aux(congresssprings) )).
+
+fof(act1_formula388,axiom,(
+    winery_aux(chateaudemeursault) )).
+
+fof(act1_formula389,axiom,(
+    winery_aux(chateauchevalblanc) )).
+
+fof(act1_formula390,axiom,(
+    winery_aux(mountadam) )).
+
+fof(act1_formula391,axiom,(
+    winery_aux(chateaumorgon) )).
+
+fof(act1_formula392,axiom,(
+    winery_aux(pagemillwinery) )).
+
+fof(act1_formula393,axiom,(
+    winery_aux(handley) )).
+
+fof(act1_formula394,axiom,(
+    winery_aux(pulignymontrachet) )).
+
+fof(act1_formula395,axiom,(
+    winery_aux(foxen) )).
+
+fof(act1_formula396,axiom,(
+    zinfandel_aux(elysezinfandel) )).
+
+fof(act1_formula397,axiom,(
+    zinfandel_aux(cotturizinfandel) )).
+
+fof(act1_formula398,axiom,(
+    zinfandel_aux(saucelitocanyonzinfandel1998) )).
+
+fof(act1_formula399,axiom,(
+    zinfandel_aux(mariettazinfandel) )).
+
+fof(act1_formula400,axiom,(
+    zinfandel_aux(saucelitocanyonzinfandel) )).
+
+fof(act1_formula401,axiom,(
+    winebody_aux(light) )).
+
+fof(act1_formula402,axiom,(
+    winebody_aux(full) )).
+
+fof(act1_formula403,axiom,(
+    winebody_aux(medium) )).
+
+fof(act1_formula404,axiom,(
+    winecolor_aux(white) )).
+
+fof(act1_formula405,axiom,(
+    winecolor_aux(rose) )).
+
+fof(act1_formula406,axiom,(
+    winecolor_aux(red) )).
+
+fof(act1_formula407,axiom,(
+    whiteburgundy_aux(pulignymontrachetwhiteburgundy) )).
+
+fof(act1_formula408,axiom,(
+    whiteburgundy_aux(cortonmontrachetwhiteburgundy) )).
+
+fof(act1_formula409,axiom,(
+    whitewine_aux(stgenevievetexaswhite) )).
+
+fof(act1_formula410,axiom,(
+    muscadet_aux(sevreetmainemuscadet) )).
+
+fof(act1_formula411,axiom,(
+    meursault_aux(chateaudemeursaultmeursault) )).
+
+fof(act1_formula412,axiom,(
+    meritage_aux(kathrynkennedylateral) )).
+
+fof(act1_formula413,axiom,(
+    margaux_aux(chateaumargaux) )).
+
+fof(act1_formula414,axiom,(
+    icewine_aux(selaksicewine) )).
+
+fof(act1_formula415,axiom,(
+    dryriesling_aux(mountadamriesling) )).
+
+fof(act1_formula416,axiom,(
+    dessertwine_aux(whitehalllaneprimavera) )).
+
+fof(act1_formula417,axiom,(
+    cabernetsauvignon_aux(mariettacabernetsauvignon) )).
+
+fof(act1_formula418,axiom,(
+    cabernetsauvignon_aux(pagemillwinerycabernetsauvignon) )).
+
+fof(act1_formula419,axiom,(
+    cabernetsauvignon_aux(santacruzmountainvineyardcabernetsauvignon) )).
+
+fof(act1_formula420,axiom,(
+    cabernetsauvignon_aux(formancabernetsauvignon) )).
+
+fof(act1_formula421,axiom,(
+    cabernetfranc_aux(whitehalllanecabernetfranc) )).
+
+fof(act1_formula422,axiom,(
+    beaujolais_aux(chateaumorgonbeaujolais) )).
+
+fof(act1_formula423,axiom,(
+    anjou_aux(rosedanjou) )).
+
+fof(act1_formula424,axiom,(
+    chardonnay_aux(formanchardonnay) )).
+
+fof(act1_formula425,axiom,(
+    chardonnay_aux(petermccoychardonnay) )).
+
+fof(act1_formula426,axiom,(
+    chardonnay_aux(bancroftchardonnay) )).
+
+fof(act1_formula427,axiom,(
+    chardonnay_aux(mountadamchardonnay) )).
+
+fof(act1_formula428,axiom,(
+    chardonnay_aux(mountedenvineyardednavalleychardonnay) )).
+
+fof(act1_formula429,axiom,(
+    cheninblanc_aux(foxencheninblanc) )).
+
+fof(act1_formula430,axiom,(
+    cheninblanc_aux(ventanacheninblanc) )).
+
+fof(act1_formula431,axiom,(
+    chianti_aux(chianticlassico) )).
+
+fof(act1_formula432,axiom,(
+    cotesdor_aux(closdevougeotcotesdor) )).
+
+fof(act1_formula433,axiom,(
+    merlot_aux(garyfarrellmerlot) )).
+
+fof(act1_formula434,axiom,(
+    merlot_aux(longridgemerlot) )).
+
+fof(act1_formula435,axiom,(
+    pauillac_aux(chateaulafiterothschildpauillac) )).
+
+fof(act1_formula436,axiom,(
+    petitesyrah_aux(mariettapetitesyrah) )).
+
+fof(act1_formula437,axiom,(
+    petitesyrah_aux(seanthackreysiriuspetitesyrah) )).
+
+fof(act1_formula438,axiom,(
+    pinotnoir_aux(mountadampinotnoir) )).
+
+fof(act1_formula439,axiom,(
+    pinotnoir_aux(lanetannerpinotnoir) )).
+
+fof(act1_formula440,axiom,(
+    pinotnoir_aux(mountedenvineyardestatepinotnoir) )).
+
+fof(act1_formula441,axiom,(
+    port_aux(taylorport) )).
+
+fof(act1_formula442,axiom,(
+    redtablewine_aux(mariettaoldvinesred) )).
+
+fof(act1_formula443,axiom,(
+    region_aux(californiaregion) )).
+
+fof(act1_formula444,axiom,(
+    region_aux(sancerreregion) )).
+
+fof(act1_formula445,axiom,(
+    region_aux(loireregion) )).
+
+fof(act1_formula446,axiom,(
+    region_aux(usregion) )).
+
+fof(act1_formula447,axiom,(
+    region_aux(naparegion) )).
+
+fof(act1_formula448,axiom,(
+    region_aux(newzealandregion) )).
+
+fof(act1_formula449,axiom,(
+    region_aux(chiantiregion) )).
+
+fof(act1_formula450,axiom,(
+    region_aux(sauterneregion) )).
+
+fof(act1_formula451,axiom,(
+    region_aux(germanyregion) )).
+
+fof(act1_formula452,axiom,(
+    region_aux(pauillacregion) )).
+
+fof(act1_formula453,axiom,(
+    region_aux(centraltexasregion) )).
+
+fof(act1_formula454,axiom,(
+    region_aux(bordeauxregion) )).
+
+fof(act1_formula455,axiom,(
+    region_aux(portugalregion) )).
+
+fof(act1_formula456,axiom,(
+    region_aux(anjouregion) )).
+
+fof(act1_formula457,axiom,(
+    region_aux(centralcoastregion) )).
+
+fof(act1_formula458,axiom,(
+    region_aux(sonomaregion) )).
+
+fof(act1_formula459,axiom,(
+    region_aux(santabarbararegion) )).
+
+fof(act1_formula460,axiom,(
+    region_aux(medocregion) )).
+
+fof(act1_formula461,axiom,(
+    region_aux(australianregion) )).
+
+fof(act1_formula462,axiom,(
+    region_aux(southaustraliaregion) )).
+
+fof(act1_formula463,axiom,(
+    region_aux(mendocinoregion) )).
+
+fof(act1_formula464,axiom,(
+    region_aux(santacruzmountainsregion) )).
+
+fof(act1_formula465,axiom,(
+    region_aux(italianregion) )).
+
+fof(act1_formula466,axiom,(
+    region_aux(margauxregion) )).
+
+fof(act1_formula467,axiom,(
+    region_aux(texasregion) )).
+
+fof(act1_formula468,axiom,(
+    region_aux(muscadetregion) )).
+
+fof(act1_formula469,axiom,(
+    region_aux(alsaceregion) )).
+
+fof(act1_formula470,axiom,(
+    region_aux(stemilionregion) )).
+
+fof(act1_formula471,axiom,(
+    region_aux(bourgogneregion) )).
+
+fof(act1_formula472,axiom,(
+    region_aux(toursregion) )).
+
+fof(act1_formula473,axiom,(
+    region_aux(frenchregion) )).
+
+fof(act1_formula474,axiom,(
+    region_aux(cotesdorregion) )).
+
+fof(act1_formula475,axiom,(
+    region_aux(beaujolaisregion) )).
+
+fof(act1_formula476,axiom,(
+    region_aux(meursaultregion) )).
+
+fof(act1_formula477,axiom,(
+    region_aux(ednavalleyregion) )).
+
+fof(act1_formula478,axiom,(
+    region_aux(arroyogranderegion) )).
+
+fof(act1_formula479,axiom,(
+    riesling_aux(corbansdrywhiteriesling) )).
+
+fof(act1_formula480,axiom,(
+    sancerre_aux(closdelapoussiesancerre) )).
+
+fof(act1_formula481,axiom,(
+    sauternes_aux(chateaudychemsauterne) )).
+
+fof(act1_formula482,axiom,(
+    sauvignonblanc_aux(corbansprivatebinsauvignonblanc) )).
+
+fof(act1_formula483,axiom,(
+    sauvignonblanc_aux(corbanssauvignonblanc) )).
+
+fof(act1_formula484,axiom,(
+    sauvignonblanc_aux(stonleighsauvignonblanc) )).
+
+fof(act1_formula485,axiom,(
+    sauvignonblanc_aux(selakssauvignonblanc) )).
+
+fof(act1_formula486,axiom,(
+    semillon_aux(congressspringssemillon) )).
+
+fof(act1_formula487,axiom,(
+    semillon_aux(kalincellarssemillon) )).
+
+fof(act1_formula488,axiom,(
+    stemilion_aux(chateauchevalblancstemilion) )).
+
+fof(act1_formula489,axiom,(
+    sweetriesling_aux(schlossrothermeltrochenbierenausleseriesling) )).
+
+fof(act1_formula490,axiom,(
+    sweetriesling_aux(schlossvolradtrochenbierenausleseriesling) )).
+
+fof(act1_formula491,axiom,(
+    kaon2namedobjects(chateaudemeursault) )).
+
+fof(act1_formula492,axiom,(
+    kaon2namedobjects(seanthackrey) )).
+
+fof(act1_formula493,axiom,(
+    kaon2namedobjects(formancabernetsauvignon) )).
+
+fof(act1_formula494,axiom,(
+    kaon2namedobjects(texasregion) )).
+
+fof(act1_formula495,axiom,(
+    kaon2namedobjects(sonomaregion) )).
+
+fof(act1_formula496,axiom,(
+    kaon2namedobjects(corbansdrywhiteriesling) )).
+
+fof(act1_formula497,axiom,(
+    kaon2namedobjects(cheninblancgrape) )).
+
+fof(act1_formula498,axiom,(
+    kaon2namedobjects(delicate) )).
+
+fof(act1_formula499,axiom,(
+    kaon2namedobjects(petermccoy) )).
+
+fof(act1_formula500,axiom,(
+    kaon2namedobjects(forman) )).
+
+fof(act1_formula501,axiom,(
+    kaon2namedobjects(taylorport) )).
+
+fof(act1_formula502,axiom,(
+    kaon2namedobjects(pagemillwinerycabernetsauvignon) )).
+
+fof(act1_formula503,axiom,(
+    kaon2namedobjects(chateauchevalblancstemilion) )).
+
+fof(act1_formula504,axiom,(
+    kaon2namedobjects(foxencheninblanc) )).
+
+fof(act1_formula505,axiom,(
+    kaon2namedobjects(santacruzmountainvineyardcabernetsauvignon) )).
+
+fof(act1_formula506,axiom,(
+    kaon2namedobjects(selaksicewine) )).
+
+fof(act1_formula507,axiom,(
+    kaon2namedobjects(chardonnaygrape) )).
+
+fof(act1_formula508,axiom,(
+    kaon2namedobjects(sauvignonblancgrape) )).
+
+fof(act1_formula509,axiom,(
+    kaon2namedobjects(cabernetsauvignongrape) )).
+
+fof(act1_formula510,axiom,(
+    kaon2namedobjects(mountadampinotnoir) )).
+
+fof(act1_formula511,axiom,(
+    kaon2namedobjects(pinotblancgrape) )).
+
+fof(act1_formula512,axiom,(
+    kaon2namedobjects(year1998) )).
+
+fof(act1_formula513,axiom,(
+    kaon2namedobjects(cotturizinfandel) )).
+
+fof(act1_formula514,axiom,(
+    kaon2namedobjects(whitehalllaneprimavera) )).
+
+fof(act1_formula515,axiom,(
+    kaon2namedobjects(longridge) )).
+
+fof(act1_formula516,axiom,(
+    kaon2namedobjects(bancroft) )).
+
+fof(act1_formula517,axiom,(
+    kaon2namedobjects(mountedenvineyardednavalleychardonnay) )).
+
+fof(act1_formula518,axiom,(
+    kaon2namedobjects(moderate) )).
+
+fof(act1_formula519,axiom,(
+    kaon2namedobjects(alsaceregion) )).
+
+fof(act1_formula520,axiom,(
+    kaon2namedobjects(saucelitocanyonzinfandel1998) )).
+
+fof(act1_formula521,axiom,(
+    kaon2namedobjects(corbanssauvignonblanc) )).
+
+fof(act1_formula522,axiom,(
+    kaon2namedobjects(full) )).
+
+fof(act1_formula523,axiom,(
+    kaon2namedobjects(taylor) )).
+
+fof(act1_formula524,axiom,(
+    kaon2namedobjects(malbecgrape) )).
+
+fof(act1_formula525,axiom,(
+    kaon2namedobjects(closdevougeot) )).
+
+fof(act1_formula526,axiom,(
+    kaon2namedobjects(corbans) )).
+
+fof(act1_formula527,axiom,(
+    kaon2namedobjects(stonleighsauvignonblanc) )).
+
+fof(act1_formula528,axiom,(
+    kaon2namedobjects(loireregion) )).
+
+fof(act1_formula529,axiom,(
+    kaon2namedobjects(corbansprivatebinsauvignonblanc) )).
+
+fof(act1_formula530,axiom,(
+    kaon2namedobjects(cortonmontrachet) )).
+
+fof(act1_formula531,axiom,(
+    kaon2namedobjects(chateaudychem) )).
+
+fof(act1_formula532,axiom,(
+    kaon2namedobjects(australianregion) )).
+
+fof(act1_formula533,axiom,(
+    kaon2namedobjects(beringer) )).
+
+fof(act1_formula534,axiom,(
+    kaon2namedobjects(formanchardonnay) )).
+
+fof(act1_formula535,axiom,(
+    kaon2namedobjects(chateaudemeursaultmeursault) )).
+
+fof(act1_formula536,axiom,(
+    kaon2namedobjects(merlotgrape) )).
+
+fof(act1_formula537,axiom,(
+    kaon2namedobjects(garyfarrellmerlot) )).
+
+fof(act1_formula538,axiom,(
+    kaon2namedobjects(santacruzmountainvineyard) )).
+
+fof(act1_formula539,axiom,(
+    kaon2namedobjects(portugalregion) )).
+
+fof(act1_formula540,axiom,(
+    kaon2namedobjects(margauxregion) )).
+
+fof(act1_formula541,axiom,(
+    kaon2namedobjects(frenchregion) )).
+
+fof(act1_formula542,axiom,(
+    kaon2namedobjects(strong) )).
+
+fof(act1_formula543,axiom,(
+    kaon2namedobjects(schlossvolradtrochenbierenausleseriesling) )).
+
+fof(act1_formula544,axiom,(
+    kaon2namedobjects(cabernetfrancgrape) )).
+
+fof(act1_formula545,axiom,(
+    kaon2namedobjects(medium) )).
+
+fof(act1_formula546,axiom,(
+    kaon2namedobjects(medocregion) )).
+
+fof(act1_formula547,axiom,(
+    kaon2namedobjects(sangiovesegrape) )).
+
+fof(act1_formula548,axiom,(
+    kaon2namedobjects(toursregion) )).
+
+fof(act1_formula549,axiom,(
+    kaon2namedobjects(chateaumargauxwinery) )).
+
+fof(act1_formula550,axiom,(
+    kaon2namedobjects(closdelapoussiesancerre) )).
+
+fof(act1_formula551,axiom,(
+    kaon2namedobjects(ednavalleyregion) )).
+
+fof(act1_formula552,axiom,(
+    kaon2namedobjects(schlossvolrad) )).
+
+fof(act1_formula553,axiom,(
+    kaon2namedobjects(marietta) )).
+
+fof(act1_formula554,axiom,(
+    kaon2namedobjects(sweet) )).
+
+fof(act1_formula555,axiom,(
+    kaon2namedobjects(arroyogranderegion) )).
+
+fof(act1_formula556,axiom,(
+    kaon2namedobjects(elyse) )).
+
+fof(act1_formula557,axiom,(
+    kaon2namedobjects(whitehalllanecabernetfranc) )).
+
+fof(act1_formula558,axiom,(
+    kaon2namedobjects(anjouregion) )).
+
+fof(act1_formula559,axiom,(
+    kaon2namedobjects(beaujolaisregion) )).
+
+fof(act1_formula560,axiom,(
+    kaon2namedobjects(petermccoychardonnay) )).
+
+fof(act1_formula561,axiom,(
+    kaon2namedobjects(pagemillwinery) )).
+
+fof(act1_formula562,axiom,(
+    kaon2namedobjects(stgenevievetexaswhite) )).
+
+fof(act1_formula563,axiom,(
+    kaon2namedobjects(congresssprings) )).
+
+fof(act1_formula564,axiom,(
+    kaon2namedobjects(germanyregion) )).
+
+fof(act1_formula565,axiom,(
+    kaon2namedobjects(muscadetregion) )).
+
+fof(act1_formula566,axiom,(
+    kaon2namedobjects(garyfarrell) )).
+
+fof(act1_formula567,axiom,(
+    kaon2namedobjects(light) )).
+
+fof(act1_formula568,axiom,(
+    kaon2namedobjects(rieslinggrape) )).
+
+fof(act1_formula569,axiom,(
+    kaon2namedobjects(pauillacregion) )).
+
+fof(act1_formula570,axiom,(
+    kaon2namedobjects(santabarbararegion) )).
+
+fof(act1_formula571,axiom,(
+    kaon2namedobjects(lanetanner) )).
+
+fof(act1_formula572,axiom,(
+    kaon2namedobjects(mcguinnesso) )).
+
+fof(act1_formula573,axiom,(
+    kaon2namedobjects(mendocinoregion) )).
+
+fof(act1_formula574,axiom,(
+    kaon2namedobjects(chateaumorgonbeaujolais) )).
+
+fof(act1_formula575,axiom,(
+    kaon2namedobjects(santacruzmountainsregion) )).
+
+fof(act1_formula576,axiom,(
+    kaon2namedobjects(californiaregion) )).
+
+fof(act1_formula577,axiom,(
+    kaon2namedobjects(sancerreregion) )).
+
+fof(act1_formula578,axiom,(
+    kaon2namedobjects(selakssauvignonblanc) )).
+
+fof(act1_formula579,axiom,(
+    kaon2namedobjects(chateaulafiterothschildpauillac) )).
+
+fof(act1_formula580,axiom,(
+    kaon2namedobjects(cortonmontrachetwhiteburgundy) )).
+
+fof(act1_formula581,axiom,(
+    kaon2namedobjects(lanetannerpinotnoir) )).
+
+fof(act1_formula582,axiom,(
+    kaon2namedobjects(ventana) )).
+
+fof(act1_formula583,axiom,(
+    kaon2namedobjects(cotturi) )).
+
+fof(act1_formula584,axiom,(
+    kaon2namedobjects(mariettaoldvinesred) )).
+
+fof(act1_formula585,axiom,(
+    kaon2namedobjects(rosedanjou) )).
+
+fof(act1_formula586,axiom,(
+    kaon2namedobjects(chateaulafiterothschild) )).
+
+fof(act1_formula587,axiom,(
+    kaon2namedobjects(chateaumorgon) )).
+
+fof(act1_formula588,axiom,(
+    kaon2namedobjects(saucelitocanyon) )).
+
+fof(act1_formula589,axiom,(
+    kaon2namedobjects(ventanacheninblanc) )).
+
+fof(act1_formula590,axiom,(
+    kaon2namedobjects(chateauchevalblanc) )).
+
+fof(act1_formula591,axiom,(
+    kaon2namedobjects(mountadamriesling) )).
+
+fof(act1_formula592,axiom,(
+    kaon2namedobjects(mariettacabernetsauvignon) )).
+
+fof(act1_formula593,axiom,(
+    kaon2namedobjects(sevreetmaine) )).
+
+fof(act1_formula594,axiom,(
+    kaon2namedobjects(saucelitocanyonzinfandel) )).
+
+fof(act1_formula595,axiom,(
+    kaon2namedobjects(seanthackreysiriuspetitesyrah) )).
+
+fof(act1_formula596,axiom,(
+    kaon2namedobjects(stonleigh) )).
+
+fof(act1_formula597,axiom,(
+    kaon2namedobjects(schlossrothermeltrochenbierenausleseriesling) )).
+
+fof(act1_formula598,axiom,(
+    kaon2namedobjects(mariettazinfandel) )).
+
+fof(act1_formula599,axiom,(
+    kaon2namedobjects(kathrynkennedylateral) )).
+
+fof(act1_formula600,axiom,(
+    kaon2namedobjects(mountadamchardonnay) )).
+
+fof(act1_formula601,axiom,(
+    kaon2namedobjects(foxen) )).
+
+fof(act1_formula602,axiom,(
+    kaon2namedobjects(stgenevieve) )).
+
+fof(act1_formula603,axiom,(
+    kaon2namedobjects(offdry) )).
+
+fof(act1_formula604,axiom,(
+    kaon2namedobjects(whitehalllane) )).
+
+fof(act1_formula605,axiom,(
+    kaon2namedobjects(chianticlassico) )).
+
+fof(act1_formula606,axiom,(
+    kaon2namedobjects(pulignymontrachet) )).
+
+fof(act1_formula607,axiom,(
+    kaon2namedobjects(meursaultregion) )).
+
+fof(act1_formula608,axiom,(
+    kaon2namedobjects(mountedenvineyardestatepinotnoir) )).
+
+fof(act1_formula609,axiom,(
+    kaon2namedobjects(kalincellars) )).
+
+fof(act1_formula610,axiom,(
+    kaon2namedobjects(petiteverdotgrape) )).
+
+fof(act1_formula611,axiom,(
+    kaon2namedobjects(chateaumargaux) )).
+
+fof(act1_formula612,axiom,(
+    kaon2namedobjects(kathrynkennedy) )).
+
+fof(act1_formula613,axiom,(
+    kaon2namedobjects(sauterneregion) )).
+
+fof(act1_formula614,axiom,(
+    kaon2namedobjects(bordeauxregion) )).
+
+fof(act1_formula615,axiom,(
+    kaon2namedobjects(white) )).
+
+fof(act1_formula616,axiom,(
+    kaon2namedobjects(mariettapetitesyrah) )).
+
+fof(act1_formula617,axiom,(
+    kaon2namedobjects(handley) )).
+
+fof(act1_formula618,axiom,(
+    kaon2namedobjects(naparegion) )).
+
+fof(act1_formula619,axiom,(
+    kaon2namedobjects(chiantiregion) )).
+
+fof(act1_formula620,axiom,(
+    kaon2namedobjects(chateaudychemsauterne) )).
+
+fof(act1_formula621,axiom,(
+    kaon2namedobjects(elysezinfandel) )).
+
+fof(act1_formula622,axiom,(
+    kaon2namedobjects(pulignymontrachetwhiteburgundy) )).
+
+fof(act1_formula623,axiom,(
+    kaon2namedobjects(kalincellarssemillon) )).
+
+fof(act1_formula624,axiom,(
+    kaon2namedobjects(closdevougeotcotesdor) )).
+
+fof(act1_formula625,axiom,(
+    kaon2namedobjects(schlossrothermel) )).
+
+fof(act1_formula626,axiom,(
+    kaon2namedobjects(bancroftchardonnay) )).
+
+fof(act1_formula627,axiom,(
+    kaon2namedobjects(southaustraliaregion) )).
+
+fof(act1_formula628,axiom,(
+    kaon2namedobjects(semillongrape) )).
+
+fof(act1_formula629,axiom,(
+    kaon2namedobjects(danjou) )).
+
+fof(act1_formula630,axiom,(
+    kaon2namedobjects(gamaygrape) )).
+
+fof(act1_formula631,axiom,(
+    kaon2namedobjects(zinfandelgrape) )).
+
+fof(act1_formula632,axiom,(
+    kaon2namedobjects(longridgemerlot) )).
+
+fof(act1_formula633,axiom,(
+    kaon2namedobjects(mountedenvineyard) )).
+
+fof(act1_formula634,axiom,(
+    kaon2namedobjects(bourgogneregion) )).
+
+fof(act1_formula635,axiom,(
+    kaon2namedobjects(usregion) )).
+
+fof(act1_formula636,axiom,(
+    kaon2namedobjects(centraltexasregion) )).
+
+fof(act1_formula637,axiom,(
+    kaon2namedobjects(congressspringssemillon) )).
+
+fof(act1_formula638,axiom,(
+    kaon2namedobjects(selaks) )).
+
+fof(act1_formula639,axiom,(
+    kaon2namedobjects(dry) )).
+
+fof(act1_formula640,axiom,(
+    kaon2namedobjects(newzealandregion) )).
+
+fof(act1_formula641,axiom,(
+    kaon2namedobjects(red) )).
+
+fof(act1_formula642,axiom,(
+    kaon2namedobjects(closdelapoussie) )).
+
+fof(act1_formula643,axiom,(
+    kaon2namedobjects(cotesdorregion) )).
+
+fof(act1_formula644,axiom,(
+    kaon2namedobjects(rose) )).
+
+fof(act1_formula645,axiom,(
+    kaon2namedobjects(mountadam) )).
+
+fof(act1_formula646,axiom,(
+    kaon2namedobjects(sevreetmainemuscadet) )).
+
+fof(act1_formula647,axiom,(
+    kaon2namedobjects(pinotnoirgrape) )).
+
+fof(act1_formula648,axiom,(
+    kaon2namedobjects(stemilionregion) )).
+
+fof(act1_formula649,axiom,(
+    kaon2namedobjects(italianregion) )).
+
+fof(act1_formula650,axiom,(
+    kaon2namedobjects(centralcoastregion) )).
+
+fof(act1_formula651,axiom,(
+    kaon2namedobjects(petitesyrahgrape) )).
+
+fof(act1_formula652,axiom,(
+    vintageyear_aux(year1998) )).
+
+fof(act1_formula653,axiom,(
+    hasvintageyear_aux(saucelitocanyonzinfandel1998,year1998) )).
+
