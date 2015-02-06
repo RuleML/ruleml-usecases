@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RuleML xmlns="http://ruleml.org/spec">
+<RuleML xmlns="http://ruleml.org/spec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ruleml.org/spec http://deliberation.ruleml.org/1.01/xsd/datalog_normal.xsd">
   <act index="1">
-    <Assert xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" mapMaterial="yes" mapDirection="bidirectional">
+    <Assert mapMaterial="yes" mapDirection="bidirectional">
       <!--
 	wine facts. based on: http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/data/wine_data.tgz?root=rulebench&view=log (wine_data.tgz)
 -->
