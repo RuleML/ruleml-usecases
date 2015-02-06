@@ -141,7 +141,7 @@ These files can be accessed from pages of OpenRuleBench, the site of the open be
 <section>
   <header>Step 3: RuleML 0.91 - RuleML 1.0 Conversion</header>
   <p>The conversion from RuleML 0.91 to RuleML 1.0 was done by using the
-    <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a> and inserting the root element &lt;RuleML&gt; manually. The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:</p>
+    <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a> and inserting the root element &lt;RuleML&gt; manually (namespace declarations and the schema location are also moved to this root element). The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:</p>
     
   <p>Input Documents:</p>
   <itemize>
@@ -159,7 +159,7 @@ These files can be accessed from pages of OpenRuleBench, the site of the open be
       
 <section>
   <header>Step 4: RuleML 1.0 - RuleML 1.01 Conversion</header>
-  <p>RuleML 1.01 is backward compatible with Version 1.0. Therefore, no upgrade is actually needed. However, a <a href="http://ruleml.org/usecases/wineonto/implicit-closure-free.xslt">utility XSLT convertor</a> specifically composed for this use case is applied to obtain the implicit-closure-free form (the schema location for Version 1.0 is also removed by this utility tool). The result RuleML 1.01 documents without <a href="http://wiki.ruleml.org/index.php/Default_or_Absent_Attributes#Closure">the closure attribute</a> can then be tranlated into the <a href="http://www.tptp.org/">TPTP</a> language by using the <a href="https://github.com/RuleML/RuleML2TPTP">RuleML2TPTP</a> translator. The RuleML 1.0, RuleML 1.01 and their corresponding TPTP files are presented below:</p>
+  <p>RuleML 1.01 is backward compatible with Version 1.0. Therefore, no upgrade is actually needed. However, a <a href="http://ruleml.org/usecases/wineonto/implicit-closure-free.xslt">utility XSLT convertor</a> specifically composed for this use case is applied to obtain the implicit-closure-free form (the schema location for Version 1.0 is removed by this utility tool, and the schema location for Version 1.01 is added manually). The result RuleML 1.01 documents without <a href="http://wiki.ruleml.org/index.php/Default_or_Absent_Attributes#Closure">the closure attribute</a> can then be tranlated into the <a href="http://www.tptp.org/">TPTP</a> language by using the <a href="https://github.com/RuleML/RuleML2TPTP">RuleML2TPTP</a> translator. The RuleML 1.0, RuleML 1.01 and their corresponding TPTP files are presented below:</p>
     
   <p>Input Documents:</p>
   <itemize>
