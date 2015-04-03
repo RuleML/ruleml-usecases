@@ -15,10 +15,11 @@
     <h1>RuleML Use Case WineOnto
       <br/>
       <i>The Wine Ontology</i></h1>
-    <h2>Monika Machunik, Harold Boley</h2>    
+    <h2>Monika Machunik, Harold Boley, Meng Luan</h2>    
     <h4>Version History, 2010-12-28: First Version-Version 0.1</h4>
+    <h4>Version History, 2011-01-15: Second Version</h4>
     <br/>
-    <h2>Version History, 2011-01-15: Current Version</h2></center>
+    <h2>Version History, 2015-04-04: Current Version</h2></center>
   <br/>
   <p>The well-known Wine Ontology is made available as a sizeable RuleML Use Case in Web rule conversion, upgrading, and normalization.</p>
   <p>The WineOnto is a use case of RuleML knowledge bases generated from a non-XML source. Wine Ontology is a publicly available, complex ontology, which was used in
@@ -29,7 +30,7 @@
   
   <p> The Wine Ontology (WineOnto) use case is the result of generating RuleML 1.0 from data stored in Prolog files. These files can be accessed from pages of <a href="http://projects.semwebcentral.org/">SemWebCentral</a>, a portal with open source tools for the Semantic Web. These files are also linked from <a href="http://rulebench.projects.semwebcentral.org/">OpenRuleBench</a> web page. The Wine Ontology data is stored in two main files, one containing data/facts (can be found <a href="http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/data/wine_data.tgz?root=rulebench">here</a>), and the other containing rules (can be found <a href="http://projects.semwebcentral.org/scm/viewvc.php/openrulebench/recursion/xsb/wine.P?root=rulebench">here</a>).</p>
   
-  <p>WineOnto is realized in four steps, where the last step is optional. Firstly, the Prolog source is converted into POSL format, by using the <a href="http://ruleml.org/posl/PrologPOSLConverterDoc.html">Prolog-POSL Converter</a>. Next, the POSL version is converted into RuleML 0.91 format, in one of the two alternative ways. One way is converting from POSL to RuleML 0.89 format by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator.jnlp">POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>), and then manually modifying the resulting RuleML 0.89 file to make it valid against RuleML 0.91 schema. The other, shorter way, is converting the POSL files straight to RuleML 0.91 format, by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>). As a next step, the ontology data is converted from RuleML 0.91 to RuleML 1.0 format by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-based RuleML 0.91-1.0 Upgrader</a>. Finally, the RuleML 1.0 files can be normalized, by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Normalizer">XSLT-based RuleML 1.0 Normalizer</a>.</p>
+  <p>WineOnto is realized in five steps, where the last step is optional. Firstly, the Prolog source is converted into POSL format, by using the <a href="http://ruleml.org/posl/PrologPOSLConverterDoc.html">Prolog-POSL Converter</a>. Next, the POSL version is converted into RuleML 0.91 format, in one of the two alternative ways. One way is converting from POSL to RuleML 0.89 format by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator.jnlp">POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>), and then manually modifying the resulting RuleML 0.89 file to make it valid against RuleML 0.91 schema. The other, shorter way, is converting the POSL files straight to RuleML 0.91 format, by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>). As a next step, the ontology data is converted from RuleML 0.91 to RuleML 1.0 format by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-based RuleML 0.91-1.0 Upgrader</a>. Next, the RuleML 1.01 version is obtained by converting RuleML 1.0 format to implicit-closure-free form. At this step the RuleML 1.01 version is also translated into the TPTP format by using the <a href="https://github.com/RuleML/RuleML2TPTP">RuleML2TPTP</a> translator. Finally, the RuleML 1.0 files can be normalized, by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Normalizer">XSLT-based RuleML 1.0 Normalizer</a>.</p>
   
 <p>Once more direct tools are available, the above desribed migration path of the Wine Ontology could be simplified and shortened even more. For example, data stored in POSL format could be translated straight to RuleML 1.0 format. Also upgrading from RuleML 0.89 to RuleML 0.91 could be done automatically, once a XSLT-based 0.89-0.91 Upgrader is available.</p>
   
@@ -312,7 +313,7 @@ These files can be accessed from pages of OpenRuleBench, the site of the open be
   
 <closing>
   <p>Site Contact:
-    <a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>. 		Page Version: 2011-01-15
+    <a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>. 		Page Version: 2011-04-04
     <br/>
     <br/>
     <br/>
