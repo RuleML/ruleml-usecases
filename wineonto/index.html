@@ -20,11 +20,12 @@
                   <br>
                   <i>The Wine Ontology</i></h1>
              
-         <h2>Monika Machunik, Harold Boley</h2>    
+         <h2>Monika Machunik, Harold Boley, Meng Luan</h2>    
              Version History, 2010-12-28: First Version-Version 0.1
+             Version History, 2011-01-15: Second Version
              <br>
              
-         <h2>Version History, 2011-01-15: Current Version</h2>
+         <h2>Version History, 2015-04-04: Current Version</h2>
       </center>
         <br>
         
@@ -56,10 +57,11 @@
       </p>
         
         
-      <p>WineOnto is realized in four steps, where the last step is optional. Firstly, the Prolog source is converted into POSL format,
+      <p>WineOnto is realized in five steps, where the last step is optional. Firstly, the Prolog source is converted into POSL format,
          by using the <a href="http://ruleml.org/posl/PrologPOSLConverterDoc.html">Prolog-POSL Converter</a>. Next, the POSL version is converted into RuleML 0.91 format, in one of the two alternative ways. One way is converting from
          POSL to RuleML 0.89 format by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator.jnlp">POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>), and then manually modifying the resulting RuleML 0.89 file to make it valid against RuleML 0.91 schema. The other, shorter
-         way, is converting the POSL files straight to RuleML 0.91 format, by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>). As a next step, the ontology data is converted from RuleML 0.91 to RuleML 1.0 format by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-based RuleML 0.91-1.0 Upgrader</a>. Finally, the RuleML 1.0 files can be normalized, by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Normalizer">XSLT-based RuleML 1.0 Normalizer</a>.
+         way, is converting the POSL files straight to RuleML 0.91 format, by using the OO jDREW <a href="http://www.jdrew.org/oojdrew/demo/translator/">Version 0.93 POSL-RuleML Translator Application</a> (linked from <a href="http://www.jdrew.org/oojdrew/demo.html">here</a>). As a next step, the ontology data is converted from RuleML 0.91 to RuleML 1.0 format by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-based RuleML 0.91-1.0 Upgrader</a>. Next, the RuleML 1.01 version is obtained by converting RuleML 1.0 format to implicit-closure-free form. At this step the
+         RuleML 1.01 version is also translated into the TPTP format by using the <a href="https://github.com/RuleML/RuleML2TPTP">RuleML2TPTP</a> translator. Finally, the RuleML 1.0 files can be normalized, by using the <a href="http://ruleml.org/1.0/#XSLT-Based_Normalizer">XSLT-based RuleML 1.0 Normalizer</a>.
       </p>
         
       
@@ -231,8 +233,8 @@
         
         
       <p>The conversion from RuleML 0.91 to RuleML 1.0 was done by using the
-             <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a> and inserting the root element &lt;RuleML&gt; manually. The RuleML 0.91 and their corresponding RuleML 1.0 files are presented
-         below:
+             <a href="http://ruleml.org/1.0/#XSLT-Based_Upgrader">XSLT-Based RuleML 0.91-1.0 Upgrader</a> and inserting the root element &lt;RuleML&gt; manually (namespace declarations and the schema location are also moved to this root
+         element). The RuleML 0.91 and their corresponding RuleML 1.0 files are presented below:
       </p>
           
         
@@ -262,7 +264,8 @@
         
         
       <p>RuleML 1.01 is backward compatible with Version 1.0. Therefore, no upgrade is actually needed. However, a <a href="http://ruleml.org/usecases/wineonto/implicit-closure-free.xslt">utility XSLT convertor</a> specifically composed for this use case is applied to obtain the implicit-closure-free form (the schema location for Version
-         1.0 is also removed by this utility tool). The result RuleML 1.01 documents without <a href="http://wiki.ruleml.org/index.php/Default_or_Absent_Attributes#Closure">the closure attribute</a> can then be tranlated into the <a href="http://www.tptp.org/">TPTP</a> language by using the <a href="https://github.com/RuleML/RuleML2TPTP">RuleML2TPTP</a> translator. The RuleML 1.0, RuleML 1.01 and their corresponding TPTP files are presented below:
+         1.0 is removed by this utility tool, and the schema location for Version 1.01 is added manually). The result RuleML 1.01 documents
+         without <a href="http://wiki.ruleml.org/index.php/Default_or_Absent_Attributes#Closure">the closure attribute</a> can then be tranlated into the <a href="http://www.tptp.org/">TPTP</a> language by using the <a href="https://github.com/RuleML/RuleML2TPTP">RuleML2TPTP</a> translator. The RuleML 1.0, RuleML 1.01 and their corresponding TPTP files are presented below:
       </p>
           
         
@@ -461,7 +464,7 @@
         <br>
         
       <p>Site Contact:
-             <a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>. 		Page Version: 2011-01-15
+             <a href="http://www.cs.unb.ca/~boley/">Harold Boley</a>. 		Page Version: 2011-04-04
              <br>
              <br>
              <br>
